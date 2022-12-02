@@ -48,7 +48,7 @@ const Header = () => {
                         </NavLink>
                         <ul className="dropdown-menu">
                           <li>
-                            <a href="#">Home 1</a>
+                            <NavLink to="/">Home 1</NavLink>
                           </li>
                           <li>
                             <a href="#">Home 2</a>
@@ -259,7 +259,7 @@ const Header = () => {
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
                             <li>
-                              <a href="#">Contact us 1</a>
+                              <NavLink to="/contact">Contact us 1</NavLink>
                             </li>
                             <li>
                               <a href="#">Contact us 2</a>
