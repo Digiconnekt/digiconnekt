@@ -164,23 +164,26 @@ const Header = () => {
                         </div>
                       </li>
                       <li className="nav-item dropdown">
-                        <a
+                        <NavLink
+                          to="/service"
                           className="nav-link dropdown-toggle"
                           href="#"
                           data-bs-toggle="dropdown"
                         >
                           Services
-                        </a>
+                        </NavLink>
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
                             <li>
-                              <a href="service.html">Service 1</a>
+                              <NavLink to="/services">Service 1</NavLink>
                             </li>
                             <li>
                               <a href="service-2.html">Service 2</a>
                             </li>
                             <li>
-                              <a href="service-single.html">Service Single</a>
+                              <NavLink to="/services/single-service">
+                                Service Single
+                              </NavLink>
                             </li>
                           </ul>
                         </div>
