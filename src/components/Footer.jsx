@@ -143,7 +143,6 @@ const Footer = () => {
                         <form id="mc-form" className="group">
                           <input
                             type="email"
-                            value=""
                             name="EMAIL"
                             className="email"
                             id="mc-email"
