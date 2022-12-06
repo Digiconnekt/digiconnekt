@@ -6,7 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
-import SingleService from "./components/SingleService";
+import SearchEngineOptmization from "./components/SearchEngineOptmization";
+import SocialMediaOptimization from "./components/SocialMediaOptimization";
 
 const App = () => {
   return (
@@ -15,7 +16,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/services/:id" element={<SingleService />} />
+        <Route
+          path="/services/search-engine-optimization"
+          element={<SearchEngineOptmization />}
+        />
+        <Route
+          path="/services/social-media-Optimization"
+          element={<SocialMediaOptimization />}
+        />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

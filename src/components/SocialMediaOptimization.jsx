@@ -1,0 +1,1167 @@
+import React from "react";
+import "./scrollBar.css";
+
+const SocialMediaOptimization = () => {
+  return (
+    <>
+      <section
+        className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
+        data-bg-img="../images/pattern/05.png"
+      >
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-12">
+              <h1 className="title">Social Media Optimization</h1>
+              {/* <nav aria-label="breadcrumb" className="page-breadcrumb">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <a href="#">Services</a>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Service Single
+                  </li>
+                </ol>
+              </nav> */}
+            </div>
+          </div>
+        </div>
+        <div className="page-title-pattern">
+          <img className="img-fluid" src="../images/bg/06.png" alt="" />
+        </div>
+      </section>
+
+      <div className="page-content">
+        <section className="overflow-hidden">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">What is SMO?</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    From its inception in the year 2006 to fast forward 2022,
+                    SMO is hitting the digital market with its necessity. SMO or
+                    Social Media Optimization primarily aims at attracting
+                    customers from any source other than search engines. Nobody
+                    can deny the power of social media, having said this it
+                    won’t be wrong to say that using the full potential of
+                    social media marketing can do wonders for your business. SMO
+                    doesn’t only cover the technical aspect but emphasizes
+                    various marketing platforms such as Facebook marketing,
+                    Instagram marketing, LinkedIn, and much more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-0 overflow-hidden">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/03.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">How to do SMO??</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    To start with what Cameron Olthius wrote: <br /> “SMO
+                    tactics can drive huge amounts of people to the website and
+                    can also determine whether a startup, website, or idea will
+                    make it or not. It involves driving traffic to a website
+                    through new channels because search engines aren’t the on;y
+                    sites that drive big traffic anymore.” <br />
+                    This brings me to the point that optimizing Social Media is
+                    the key essential. Optimization of social media not only
+                    portrays a positive image of your brand but has a direct
+                    impact on SEO as it eases the usability of the site which
+                    will automatically generate traffic. <br />
+                    To start with, blend your website and social media! Yes, you
+                    heard it right. Inculcate your social media links on the
+                    website and vice-versa, and allow your users to sign in
+                    through their social media profiles, this will increase the
+                    registration conversation. <br />
+                    Keywords play an important role. Structure your social media
+                    pages with just the right keywords and phrases such as the
+                    company name and info, keeping in mind that it doesn't give
+                    a promotional outlook. <br />
+                    The next key feature could be to encourage inbound links,
+                    that is to encourage more external websites to link to your
+                    content. Besides, you should also post content consistently
+                    on all your social media platforms and into existing threads
+                    and discussion forums. These exercises will maximize your
+                    external link sources. <br />
+                    Share quality and optimized content. Google algorithms might
+                    change continuously but the demand for quality and optimized
+                    content from users remains constant. Optimizing your posts
+                    for searches is important to increase their visibility and
+                    engagement. Here optimization covers short, descriptive
+                    titles, informative descriptions, and everything in between.
+                    These small steps will help you emerge as a leader in your
+                    domain.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container" style={{ maxWidth: "1080px" }}>
+            <div className="row justify-content-center text-center mb-5">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title" style={{ color: "#ff7810" }}>
+                    Social Media Platform for businesses?
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="row align-items-center mb-10">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Facebook Marketing</h2>
+                  <p
+                    className="mb-0 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Facebook caters tools to businesses that want to form
+                    authentic relationships with customers. With over 2 billion
+                    users it provides an extensive platform for marketers to
+                    distribute quality content that will boost traffic to your
+                    site. Facebook marketing requires consistency but returns a
+                    great response in return.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row align-items-center mb-10">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Instagram Marketing</h2>
+                  <p
+                    className="mb-0 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Figures state that 83% of users discover new products or
+                    services through this media, 74% consider them trustworthy
+                    and 78% account for them as popular. This platform runs on
+                    quality images and short-optimized videos. Taking into count
+                    the numbers, Instagram is a great way to create a network
+                    for your community by engaging, following already
+                    established people, or by including hashtags of your brand.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row align-items-center mb-10">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">LinkedIn Marketing</h2>
+                  <p
+                    className="mb-0 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Having your company’s page on LinkedIn increases the
+                    credibility of your brand. For companies operating only in
+                    B2B mode, LinkedIn is the platform that requires your
+                    attention. Even if your brand doesn’t have a very strong
+                    website, LinkedIn helps you connect with potential business
+                    professionals.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row align-items-center mb-10">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">YouTube Marketing</h2>
+                  <p
+                    className="mb-0 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Google-owned YouTube is growing exponentially by being the
+                    second-largest search engine. It has over 5 billion videos
+                    consumed every day which means even if you don’t have n
+                    number of advertising videos for your site you can still
+                    reach your audience through other people’s accounts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Snapchat Marketing</h2>
+                  <p
+                    className="mb-0 text-white"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Having a snap filter option and ‘don’t break the streak’,
+                    yes these USPs of Snapchat differentiate it from other
+                    social advertising platforms. Snapchat provides a wide
+                    spectrum for promoting marketing events and specific
+                    products.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="light-bg position-relative text-center overflow-hidden">
+          <div className="pattern-3">
+            <img
+              className="img-fluid rotateme"
+              src="../images/pattern/03.png"
+              alt=""
+            />
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 col-md-12 mx-auto">
+                <div className="section-title">
+                  <h2 className="title">
+                    Is social media marketing a necessity?
+                  </h2>
+                  <p className="mb-0 text-black">
+                    Be where your customers are!! <br />
+                    Social media is dominant in all spheres which are directly
+                    proportional to the fact that your potential customers are
+                    available here. Social media marketing helps in:
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-6">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/04.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Increasing Your Brand’s Position in Digital Market</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      Social media are the most efficient and cost-effective
+                      platforms for digital marketing. These platforms increase
+                      your visibility and increase client engagement. Studies
+                      state that over 91% of marketers claim a boost in their
+                      business with just the right use of social platforms.
+                      These platforms also come with the advantage of being
+                      cost-effective, which means by investing very little you
+                      get a greater return on investment. <br />
+                      To get started, build your social media accounts, post
+                      optimized audience-targeted content, and be consistent,
+                      this will significantly increase your brand’s recognition
+                      and will improve conversion rates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 sm-mt-3">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/05.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Increasing the traffic rates</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      Social media provides you with the best platform for
+                      interacting with your potential customers and therefore
+                      increasing conversion rates. More interaction with your
+                      clients will help you to cater to their interests with
+                      ease. Moreover, communication also helps you win your
+                      customer's attention and convey your message. Healthy
+                      customer satisfaction helps you in building a good network
+                      and an improved traffic rate. <br />
+                      Besides these improving your brand loyalty or let's say
+                      building your loyal customer base is one of the most
+                      important goals of social media marketing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 md-mt-3">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/06.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Platform to advertising your product or services</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      One of the best places to find your customers, to find
+                      their needs, to know their wants, and directly sell your
+                      solutions to them. Social media helps you bridge the gap
+                      between the want of your potential customers and your
+                      solution. <br />
+                      Social media blesses you with the power of knowing exactly
+                      what are your customer's interests are by observing the
+                      activities on their profile. Besides, as a compliment
+                      research tools of social media help you analyze who your
+                      potential audience is. <br />
+                      By using these algorithms, once when you get a large
+                      customer audience you can use additional tools to examine
+                      other demographics of your audience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="light-bg animatedBackground"
+          data-bg-img="images/pattern/05.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/05.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title">Our Standard SEO process</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="tab style-2 ">
+                  <nav>
+                    <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a
+                        className="nav-link active"
+                        id="nav-tab1"
+                        data-bs-toggle="tab"
+                        href="#tab1-1"
+                        role="tab"
+                        aria-selected="true"
+                      >
+                        Discovery
+                      </a>
+                      <a
+                        className="nav-link"
+                        id="nav-tab2"
+                        data-bs-toggle="tab"
+                        href="#tab1-2"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                      >
+                        Custom SEO Strategy
+                      </a>
+                      <a
+                        className="nav-link"
+                        id="nav-tab3"
+                        data-bs-toggle="tab"
+                        href="#tab1-3"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                      >
+                        Competitive Analysis
+                      </a>
+                      <a
+                        className="nav-link"
+                        id="nav-tab4"
+                        data-bs-toggle="tab"
+                        href="#tab1-4"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                      >
+                        Technical Optimization
+                      </a>
+                      <a
+                        className="nav-link"
+                        id="nav-tab5"
+                        data-bs-toggle="tab"
+                        href="#tab1-5"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                      >
+                        Content Development
+                      </a>
+                    </div>
+                  </nav>
+                  <div className="tab-content" id="nav-tabContent">
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade show active"
+                      id="tab1-1"
+                      aria-labelledby="#nav-tab1"
+                    >
+                      <div className="row align-items-center">
+                        <div className="col-lg-6 col-md-12">
+                          <img
+                            className="img-fluid"
+                            src="../images/about/02.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                          <h4 className="title">
+                            Powerful &amp; Awesome Marketing
+                          </h4>
+                          <p>
+                            Simply dummy text of the printing and typesetting
+                            industry. standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                          </p>
+                          <ul className="list-unstyled list-icon">
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Mattis effic
+                              iturut magna pelle ntesque sit
+                            </li>
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Phasellus eget
+                              purus id felis dignissim convallis
+                            </li>
+                            <li>
+                              <i className="flaticon-tick"></i> Fusce enim nulla
+                              mollis eu metus in sagittis fringilla
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="tab1-2"
+                      aria-labelledby="#nav-tab2"
+                    >
+                      <div className="row align-items-center">
+                        <div className="col-lg-6 col-md-12">
+                          <img
+                            className="img-fluid"
+                            src="../images/about/02.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                          <h4 className="title">
+                            Powerful &amp; Awesome Marketing
+                          </h4>
+                          <p>
+                            Simply dummy text of the printing and typesetting
+                            industry. standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                          </p>
+                          <ul className="list-unstyled list-icon">
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Mattis effic
+                              iturut magna pelle ntesque sit
+                            </li>
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Phasellus eget
+                              purus id felis dignissim convallis
+                            </li>
+                            <li>
+                              <i className="flaticon-tick"></i> Fusce enim nulla
+                              mollis eu metus in sagittis fringilla
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="tab1-3"
+                      aria-labelledby="#nav-tab3"
+                    >
+                      <div className="row align-items-center">
+                        <div className="col-lg-6 col-md-12">
+                          <img
+                            className="img-fluid"
+                            src="../images/about/02.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                          <h4 className="title">
+                            Powerful &amp; Awesome Marketing
+                          </h4>
+                          <p>
+                            Simply dummy text of the printing and typesetting
+                            industry. standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                          </p>
+                          <ul className="list-unstyled list-icon">
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Mattis effic
+                              iturut magna pelle ntesque sit
+                            </li>
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Phasellus eget
+                              purus id felis dignissim convallis
+                            </li>
+                            <li>
+                              <i className="flaticon-tick"></i> Fusce enim nulla
+                              mollis eu metus in sagittis fringilla
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="tab1-4"
+                      aria-labelledby="#nav-tab4"
+                    >
+                      <div className="row align-items-center">
+                        <div className="col-lg-6 col-md-12">
+                          <img
+                            className="img-fluid"
+                            src="../images/about/02.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                          <h4 className="title">
+                            Powerful &amp; Awesome Marketing
+                          </h4>
+                          <p>
+                            Simply dummy text of the printing and typesetting
+                            industry. standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                          </p>
+                          <ul className="list-unstyled list-icon">
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Mattis effic
+                              iturut magna pelle ntesque sit
+                            </li>
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Phasellus eget
+                              purus id felis dignissim convallis
+                            </li>
+                            <li>
+                              <i className="flaticon-tick"></i> Fusce enim nulla
+                              mollis eu metus in sagittis fringilla
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="tab1-5"
+                      aria-labelledby="#nav-tab4"
+                    >
+                      <div className="row align-items-center">
+                        <div className="col-lg-6 col-md-12">
+                          <img
+                            className="img-fluid"
+                            src="../images/about/02.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                          <h4 className="title">
+                            Powerful &amp; Awesome Marketing
+                          </h4>
+                          <p>
+                            Simply dummy text of the printing and typesetting
+                            industry. standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                          </p>
+                          <ul className="list-unstyled list-icon">
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Mattis effic
+                              iturut magna pelle ntesque sit
+                            </li>
+                            <li className="mb-3">
+                              <i className="flaticon-tick"></i> Phasellus eget
+                              purus id felis dignissim convallis
+                            </li>
+                            <li>
+                              <i className="flaticon-tick"></i> Fusce enim nulla
+                              mollis eu metus in sagittis fringilla
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
+          <div className="container-fluid p-0">
+            <div className="row">
+              <div className="col-lg-12 col-md-12">
+                <div
+                  className="owl-carousel owl-center owl-loaded owl-drag"
+                  data-items="4"
+                  data-md-items="2"
+                  data-sm-items="2"
+                  data-center="true"
+                  data-dots="false"
+                  data-nav="true"
+                  data-autoplay="true"
+                >
+                  <div className="owl-stage-outer">
+                    <div
+                      className="owl-stage"
+                      style={{
+                        transition: "all 1s ease 0s",
+                        width: "5318px",
+                        transform: "translate3d(-949px, 0px, 0px)",
+                      }}
+                    >
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Marketing Financing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/06.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  SEO Analiysis
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active center"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Digital Marketing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Web &amp; Mobile Apps
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Marketing Financing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/06.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  SEO Analiysis
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Digital Marketing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Web &amp; Mobile Apps
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="owl-nav">
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-prev"
+                    >
+                      <span className="fas fa-long-arrow-alt-left">
+                        <span></span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-next"
+                    >
+                      <span className="fas fa-long-arrow-alt-right"></span>
+                    </button>
+                  </div>
+                  <div className="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
+
+export default SocialMediaOptimization;

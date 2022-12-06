@@ -1,6 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const seo = () => {
+    navigate("search-engine-optimization");
+  };
+
+  const smo = () => {
+    navigate("social-media-optimization");
+  };
+
   return (
     <>
       <section
@@ -47,8 +58,10 @@ const Services = () => {
             </div>
             <div className="row">
               <div
+                onClick={seo}
                 className="col-lg-4 col-md-6 wow fadeInLeft"
                 data-wow-duration="0.6"
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
@@ -59,7 +72,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Digital Marketing</h5>
+                    <h5>Search Engine Optimization</h5>
                   </div>
                   <div className="featured-desc">
                     <p>
@@ -70,8 +83,10 @@ const Services = () => {
                 </div>
               </div>
               <div
+                onClick={smo}
                 className="col-lg-4 col-md-6 mt-5 mt-md-0 wow fadeInUp"
                 data-wow-duration="0.8"
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
@@ -82,7 +97,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Content marketing</h5>
+                    <h5>Social Media Optimization</h5>
                   </div>
                   <div className="featured-desc">
                     <p>
@@ -346,6 +361,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+
         <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
           <div className="container-fluid p-0">
             <div className="row">

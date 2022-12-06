@@ -1,9 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import "./scrollBar.css";
 
-const SingleService = () => {
-  const { id } = useParams();
-
+const SearchEngineOptmization = () => {
   return (
     <>
       <section
@@ -14,20 +12,6 @@ const SingleService = () => {
           <div className="row align-items-center">
             <div className="col-md-12">
               <h1 className="title">Search Engine Optimization</h1>
-              <p>{id}</p>
-              {/* <nav aria-label="breadcrumb" className="page-breadcrumb">
-                <ol className="breadcrumb">
-                  <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li className="breadcrumb-item">
-                    <a href="#">Services</a>
-                  </li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    Service Single
-                  </li>
-                </ol>
-              </nav> */}
             </div>
           </div>
         </div>
@@ -37,250 +21,78 @@ const SingleService = () => {
       </section>
 
       <div className="page-content">
-        <section>
+        <section className="overflow-hidden">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-8 col-md-12">
-                <div>
-                  {/* <div className="service-images">
-                    <img
-                      className="img-fluid w-100"
-                      src="../images/case-studies/large/03.jpg"
-                      alt=""
-                    />
-                  </div> */}
-                  <div className="service-details mt-4">
-                    <h2 className="title">What is SEO?</h2>
-                    <p className="lead text-black">
-                      SEO or Search Engine Optimization means, making your
-                      website more visible on a Search Engine Results Page
-                      (SERP). According to the latest figures, around 3.5
-                      billion searches happen per day! With such a high volume
-                      of searches, SEO is definitely an important ingredient for
-                      making a perfect website!! A great SEO strategy will
-                      result in making the company’s website at the top of the
-                      Google search page, therefore increasing the engagement of
-                      the viewers.
-                    </p>
-                    <p className="lead text-black">
-                      But does your SEO strategy really help your business get
-                      organically ranked?
-                    </p>
-                    {/* <ul className="custom-li list-unstyled list-icon-2">
-                      <li>Design must be functional</li>
-                      <li>Futionality must translated into</li>
-                      <li>Aenean pellentesque elit vitae</li>
-                      <li>Mattis effic iturut magna</li>
-                      <li>Lusce enim nulla mollis</li>
-                      <li>Phasellus eget purus id felis</li>
-                    </ul> */}
-                  </div>
-                  <div className="service-details mt-6">
-                    <h2 className="title">How does SEO work?</h2>
-                    <p className="lead text-black">
-                      SEO is a customized long-term strategy that is aimed at
-                      giving your business an edge over the competition. SEO
-                      focuses on the ranking and visibility of your business. It
-                      virtually helps you position your brand on the digital
-                      horizon and make it more visible in terms of engagement.
-                      It works by optimizing the website’s content, conducting
-                      keyword research, and in turn increasing the customer’s
-                      engagement on the website.
-                    </p>
-                    <p className="lead text-black">
-                      Search engines have a single goal which is to provide the
-                      most relevant page results to their users. The SEO
-                      algorithm chooses pages that are most relevant to the
-                      user’s query. Pages are ranked depending on the relevance
-                      of keywords. This makes it an important point to choose
-                      your keywords wisely.
-                    </p>
-                    <p className="lead text-black">
-                      Although there are no direct factors affecting SEO it
-                      indirectly follows the E-A-T concept that is “expertise”,
-                      “authoritativeness” and “trustworthiness”.
-                    </p>
-                    <p className="lead text-black">
-                      Besides these adding more optimized content, image
-                      filename, or improving links can increase your SEO ranking
-                      and search visibility.
-                    </p>
-                  </div>
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
                 </div>
-
-                {/* <div className="tab style-2 mt-5">
-                  <nav>
-                    <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a
-                        className="nav-link active"
-                        id="nav-tab1"
-                        data-bs-toggle="tab"
-                        href="#tab1-1"
-                        role="tab"
-                        aria-selected="true"
-                      >
-                        Marketing
-                      </a>
-                      <a
-                        className="nav-link"
-                        id="nav-tab2"
-                        data-bs-toggle="tab"
-                        href="#tab1-2"
-                        role="tab"
-                        aria-selected="false"
-                      >
-                        Planning
-                      </a>
-                    </div>
-                  </nav>
-                  <div className="tab-content" id="nav-tabContent">
-                    <div
-                      role="tabpanel"
-                      className="tab-pane fade show active"
-                      id="tab1-1"
-                    >
-                      <h4 className="title">Powerful & Awesome Marketing</h4>
-                      <p>
-                        Simply dummy text of the printing and typesetting
-                        industry. standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled
-                        it to make a type specimen book.
-                      </p>
-                      <ul className="list-unstyled list-icon">
-                        <li className="mb-3">
-                          <i className="flaticon-tick"></i> Mattis effic iturut
-                          magna pelle ntesque sit
-                        </li>
-                        <li className="mb-3">
-                          <i className="flaticon-tick"></i> Phasellus eget purus
-                          id felis dignissim convallis
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> Fusce enim nulla
-                          mollis eu metus in sagittis fringilla
-                        </li>
-                      </ul>
-                    </div>
-                    <div role="tabpanel" className="tab-pane fade" id="tab1-2">
-                      <h4 className="title">Powerful & Awesome Marketing</h4>
-                      <p>
-                        Simply dummy text of the printing and typesetting
-                        industry. standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled
-                        it to make a type specimen book.
-                      </p>
-                      <ul className="list-unstyled list-icon">
-                        <li className="mb-3">
-                          <i className="flaticon-tick"></i> Mattis effic iturut
-                          magna pelle ntesque sit
-                        </li>
-                        <li className="mb-3">
-                          <i className="flaticon-tick"></i> Phasellus eget purus
-                          id felis dignissim convallis
-                        </li>
-                        <li>
-                          <i className="flaticon-tick"></i> Fusce enim nulla
-                          mollis eu metus in sagittis fringilla
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> */}
               </div>
-              <div className="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
-                <div className="widget mb-5">
-                  <div className="sidebar-links">
-                    <ul className="list-unstyled">
-                      <li className="active">
-                        <a href="service-single.html">All Service</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">Digital Marketing</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">Content marketing</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">Market analysis</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">Email Marketing</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">Link Building</a>
-                      </li>
-                      <li>
-                        <a href="service-single.html">SEO Optimization</a>
-                      </li>
-                    </ul>
-                  </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">What is SEO?</h2>
+                  <p className="mb-0 text-black">
+                    SEO or Search Engine Optimization means, making your website
+                    more visible on a Search Engine Results Page (SERP).
+                    According to the latest figures, around 3.5 billion searches
+                    happen per day! With such a high volume of searches, SEO is
+                    definitely an important ingredient for making a perfect
+                    website!! A great SEO strategy will result in making the
+                    company’s website at the top of the Google search page,
+                    therefore increasing the engagement of the viewers. <br />
+                    But does your SEO strategy really help your business get
+                    organically ranked?
+                  </p>
                 </div>
-                {/* <div className="widget theme-bg text-white">
-                  <div
-                    className="owl-carousel no-pb"
-                    data-items="1"
-                    data-dots="false"
-                    data-autoplay="true"
-                  >
-                    <div className="item">
-                      <div className="testimonial style-2">
-                        <div className="testimonial-content">
-                          <div className="testimonial-quote">
-                            <i className="flaticon-quotation"></i>
-                          </div>
-                          <p>
-                            Professional recommended and great experience, Nam
-                            pulvinar vitae neque et porttitor, Praesent sed nisi
-                            eleifend, Consectetur adipisicing elit, sed do
-                            eiusmodas temporo incididunt
-                          </p>
-                          <div className="testimonial-caption">
-                            <h5>Lana Roadse</h5>
-                            <label>CEO of Loptus</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="testimonial style-2">
-                        <div className="testimonial-content">
-                          <div className="testimonial-quote">
-                            <i className="flaticon-quotation"></i>
-                          </div>
-                          <p>
-                            Professional recommended and great experience, Nam
-                            pulvinar vitae neque et porttitor, Praesent sed nisi
-                            eleifend, Consectetur adipisicing elit, sed do
-                            eiusmodas temporo incididunt
-                          </p>
-                          <div className="testimonial-caption">
-                            <h5>Lana Roadse</h5>
-                            <label>CEO of Loptus</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="testimonial style-2">
-                        <div className="testimonial-content">
-                          <div className="testimonial-quote">
-                            <i className="flaticon-quotation"></i>
-                          </div>
-                          <p>
-                            Professional recommended and great experience, Nam
-                            pulvinar vitae neque et porttitor, Praesent sed nisi
-                            eleifend, Consectetur adipisicing elit, sed do
-                            eiusmodas temporo incididunt
-                          </p>
-                          <div className="testimonial-caption">
-                            <h5>Lana Roadse</h5>
-                            <label>CEO of Loptus</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-0 overflow-hidden">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/03.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">How does SEO work?</h2>
+                  <p className="mb-0 text-black">
+                    SEO is a customized long-term strategy that is aimed at
+                    giving your business an edge over the competition. SEO
+                    focuses on the ranking and visibility of your business. It
+                    virtually helps you position your brand on the digital
+                    horizon and make it more visible in terms of engagement. It
+                    works by optimizing the website’s content, conducting
+                    keyword research, and in turn increasing the customer’s
+                    engagement on the website. <br /> Search engines have a
+                    single goal which is to provide the most relevant page
+                    results to their users. The SEO algorithm chooses pages that
+                    are most relevant to the user’s query. Pages are ranked
+                    depending on the relevance of keywords. This makes it an
+                    important point to choose your keywords wisely. <br />{" "}
+                    Search engines have a single goal which is to provide the
+                    most relevant page results to their users. The SEO algorithm
+                    chooses pages that are most relevant to the user’s query.
+                    Pages are ranked depending on the relevance of keywords.
+                    This makes it an important point to choose your keywords
+                    wisely. <br /> Besides these adding more optimized content,
+                    image filename, or improving links can increase your SEO
+                    ranking and search visibility.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -337,7 +149,7 @@ const SingleService = () => {
                     <h5>Data Driven</h5>
                   </div>
                   <div className="featured-desc">
-                    <p>
+                    <p style={{ textAlign: "justify" }}>
                       We believe in figures! We are determined to increase your
                       organic search leads by a visible number, position your
                       brand in this digital era, influence the customer’s buying
@@ -361,7 +173,7 @@ const SingleService = () => {
                     <h5>Result Oriented</h5>
                   </div>
                   <div className="featured-desc">
-                    <p>
+                    <p style={{ textAlign: "justify" }}>
                       Our SEO specialists search for high-demand,
                       low-competition keywords that will allow customers to
                       easily spot your service. We create backlinks to valuable
@@ -387,7 +199,7 @@ const SingleService = () => {
                     <h5>Industry Experts</h5>
                   </div>
                   <div className="featured-desc">
-                    <p>
+                    <p style={{ textAlign: "justify" }}>
                       We are a team of professionals aimed at improving your
                       visibility and engagement online. The Digiconnekt experts
                       are trained to save your time and help you compete with
@@ -473,6 +285,7 @@ const SingleService = () => {
                         href="#tab1-1"
                         role="tab"
                         aria-selected="true"
+                        style={{ width: "calc(100% / 5)" }}
                       >
                         Discovery
                       </a>
@@ -484,6 +297,7 @@ const SingleService = () => {
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
+                        style={{ width: "calc(100% / 5)" }}
                       >
                         Custom SEO Strategy
                       </a>
@@ -495,6 +309,7 @@ const SingleService = () => {
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
+                        style={{ width: "calc(100% / 5)" }}
                       >
                         Competitive Analysis
                       </a>
@@ -506,6 +321,7 @@ const SingleService = () => {
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
+                        style={{ width: "calc(100% / 5)" }}
                       >
                         Technical Optimization
                       </a>
@@ -517,6 +333,7 @@ const SingleService = () => {
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
+                        style={{ width: "calc(100% / 5)" }}
                       >
                         Content Development
                       </a>
@@ -538,29 +355,12 @@ const SingleService = () => {
                           />
                         </div>
                         <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
+                          <h4 className="title">Discovery</h4>
                           <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
+                            Examining your current status and business goals.
+                            Highlighting the area that needs assistance to set
+                            up a market value.
                           </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -579,29 +379,13 @@ const SingleService = () => {
                           />
                         </div>
                         <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
+                          <h4 className="title">Custom SEO Strategy</h4>
                           <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
+                            Building on the complete strategy from keywords
+                            research, content alignment, creating backlinks, and
+                            much more to getting your website ranked on the top
+                            in the results page. Yes, we strategize everything.
                           </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -620,29 +404,12 @@ const SingleService = () => {
                           />
                         </div>
                         <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
+                          <h4 className="title">Competitive Analysis</h4>
                           <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
+                            Our experts do a detailed survey of your
+                            competitor's position, customers' queries, and the
+                            present demand in the market.
                           </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -661,29 +428,12 @@ const SingleService = () => {
                           />
                         </div>
                         <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
+                          <h4 className="title">Technical Optimization</h4>
                           <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
+                            Our team is aimed to give you an optimized solution
+                            that will lead to the visibility and ranking of your
+                            business.
                           </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -702,29 +452,12 @@ const SingleService = () => {
                           />
                         </div>
                         <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
+                          <h4 className="title">Content Development</h4>
                           <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
+                            Contents play a vital role in SEO. So, whether it’s
+                            an on-page SEO or off-page, we are determined to
+                            increase your ranking organically.
                           </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>
@@ -735,20 +468,22 @@ const SingleService = () => {
           </div>
         </section>
 
-        <section
-          data-bg-img="images/pattern/02.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/02.png")',
-          }}
-        >
+        <section className="light-bg position-relative text-center mt-10 mb-10 overflow-hidden">
+          <div className="pattern-3">
+            <img
+              className="img-fluid rotateme"
+              src="../images/pattern/03.png"
+              alt=""
+            />
+          </div>
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-12 mb-8">
-                <div className="featured-item text-center style-2">
+              <div className="col-lg-4 col-md-6 block-1">
+                <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
                       className="img-fluid"
-                      src="../images/feature/01.png"
+                      src="../images/feature/04.png"
                       alt=""
                     />
                   </div>
@@ -764,28 +499,26 @@ const SingleService = () => {
                       business by increasing your website ranking in search
                       engine results. The main objective of an SEO consultant is
                       to make it easier for your potential clients to find you
-                      in this competitive world.
-                    </p>
-                    <p style={{ textAlign: "justify" }}>
-                      SEO consultants help you grow your business in terms of
-                      revenue. The consultant's guide in all spheres from
-                      increasing organic traffic, generating leads, and turning
-                      them into paying and loyal customers.
+                      in this competitive world. <br /> SEO consultants help you
+                      grow your business in terms of revenue. The consultant's
+                      guide in all spheres from increasing organic traffic,
+                      generating leads, and turning them into paying and loyal
+                      customers.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
-                <div className="featured-item text-center style-2">
+              <div className="col-lg-4 col-md-6 sm-mt-3 block-1">
+                <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
                       className="img-fluid"
-                      src="../images/feature/02.png"
+                      src="../images/feature/05.png"
                       alt=""
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>SEO Optimization </h5>
+                    <h5>SEO Optimization</h5>
                   </div>
                   <div className="featured-desc">
                     <p style={{ textAlign: "justify" }}>
@@ -794,34 +527,30 @@ const SingleService = () => {
                       SEO campaign. SEO optimization also includes links,
                       titles, meta descriptions, headings, subheadings, images,
                       videos, originality of content, and everything in between.
-                      SEO success depends on the complete content as a whole.
-                    </p>
-                    <p style={{ textAlign: "justify" }}>
-                      Besides these, there are additional SEO tools and services
-                      like Google Analytics, Google AdWords, Google Site Map,
-                      Google Page Speed, and much more that will boost your
-                      digital marketing.
-                    </p>
-                    <p style={{ textAlign: "justify" }}>
-                      Overusing keywords, creating abstract headings, or adding
-                      absurd images can be more detrimental than beneficial for
-                      your SEO campaign. Content should always be concentric and
-                      short keeping in mind your main customer spectrum.
+                      SEO success depends on the complete content as a whole.{" "}
+                      <br /> Besides these, there are additional SEO tools and
+                      services like Google Analytics, Google AdWords, Google
+                      Site Map, Google Page Speed, and much more that will boost
+                      your digital marketing. <br /> Overusing keywords,
+                      creating abstract headings, or adding absurd images can be
+                      more detrimental than beneficial for your SEO campaign.
+                      Content should always be concentric and short keeping in
+                      mind your main customer spectrum.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
-                <div className="featured-item text-center style-2">
+              <div className="col-lg-4 col-md-6 md-mt-3 block-1">
+                <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
+                      src="../images/feature/06.png"
                       alt=""
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>SEO Audit </h5>
+                    <h5>SEO Audit</h5>
                   </div>
                   <div className="featured-desc">
                     <p style={{ textAlign: "justify" }}>
@@ -838,7 +567,22 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-bg-img="images/pattern/02.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/02.png")',
+          }}
+        >
+          <div className="container">
+            <div
+              className="row"
+              style={{ maxWidth: "1080px", margin: "0 auto" }}
+            >
+              <div className="col-lg-4 col-md-12 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -862,7 +606,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -888,7 +632,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -911,7 +655,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -935,7 +679,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -959,7 +703,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -981,7 +725,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -1004,7 +748,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -1026,7 +770,7 @@ const SingleService = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
                     <img
@@ -1474,4 +1218,4 @@ const SingleService = () => {
   );
 };
 
-export default SingleService;
+export default SearchEngineOptmization;

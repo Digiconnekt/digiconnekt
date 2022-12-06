@@ -38,31 +38,9 @@ const Header = () => {
                   <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto position-relative">
                       <li className="nav-item dropdown">
-                        <NavLink
-                          to="/"
-                          className="nav-link active dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
-                        >
+                        <NavLink to="/" className="nav-link active">
                           Home
                         </NavLink>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <NavLink to="/">Home 1</NavLink>
-                          </li>
-                          <li>
-                            <a href="#">Home 2</a>
-                          </li>
-                          <li>
-                            <a href="#">Home 3</a>
-                          </li>
-                          <li>
-                            <a href="#">Home 4</a>
-                          </li>
-                          <li>
-                            <a href="#">Home 5</a>
-                          </li>
-                        </ul>
                       </li>
                       <li className="nav-item dropdown">
                         <a
@@ -165,24 +143,21 @@ const Header = () => {
                       </li>
                       <li className="nav-item dropdown">
                         <NavLink
-                          to="/service"
+                          to="/services"
                           className="nav-link dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
                         >
                           Services
                         </NavLink>
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
                             <li>
-                              <NavLink to="/services">Service 1</NavLink>
+                              <NavLink to="/services/search-engine-optimization">
+                                Search Engine Optimization
+                              </NavLink>
                             </li>
                             <li>
-                              <a href="service-2.html">Service 2</a>
-                            </li>
-                            <li>
-                              <NavLink to="/services/single-service">
-                                Service Single
+                              <NavLink to="/services/social-media-optimization">
+                                Social Media Optimization
                               </NavLink>
                             </li>
                           </ul>
@@ -251,24 +226,9 @@ const Header = () => {
                         </div>
                       </li>
                       <li className="nav-item dropdown">
-                        <NavLink
-                          to="/contact"
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
-                        >
+                        <NavLink to="/contact" className="nav-link ">
                           Contact
                         </NavLink>
-                        <div className="dropdown-menu">
-                          <ul className="list-unstyled">
-                            <li>
-                              <NavLink to="/contact">Contact us 1</NavLink>
-                            </li>
-                            <li>
-                              <a href="#">Contact us 2</a>
-                            </li>
-                          </ul>
-                        </div>
                       </li>
                     </ul>
                   </div>

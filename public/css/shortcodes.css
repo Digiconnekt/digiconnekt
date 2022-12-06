@@ -421,7 +421,7 @@
   margin: 0;
   background: #f9f9f9;
   border-radius: 0;
-  width: calc(100% / 5);
+  width: calc(100% / 4);
   border-top: 3px solid transparent;
   padding: 30px 40px;
 }
