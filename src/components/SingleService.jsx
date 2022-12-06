@@ -285,8 +285,9 @@ const SingleService = () => {
             </div>
           </div>
         </section>
+
         <section
-          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
+          className="overflow-hidden dark-bg animatedBackground"
           data-bg-img="../images/pattern/06.png"
           style={{
             backgroundImage: 'url("../images/pattern/06.png")',
@@ -296,17 +297,16 @@ const SingleService = () => {
             <div className="row justify-content-center text-center">
               <div className="col-lg-8 col-md-12">
                 <div className="section-title mb-0">
-                  <h2 className="title">Our Case Study</h2>
-                  <p className="mb-0 text-white">
-                    Deos et accusamus et iusto odio dignissimos qui blanditiis
-                    praesentium voluptatum dele corrupti quos dolores et quas
-                    molestias.
-                  </p>
+                  <h2 className="title">
+                    Want to rank higher in search results? Let’s talk about your
+                    SEO with our experts!
+                  </h2>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <section className="light-bg position-relative text-center overflow-hidden">
           <div className="pattern-3">
             <img
@@ -397,6 +397,48 @@ const SingleService = () => {
                       more. Whether it’s an on-page SEO or off-page support our
                       SEO specialists just know how to get your content on top.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1003,6 +1045,425 @@ const SingleService = () => {
                       increase the graph of revenues.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
+          <div className="container-fluid p-0">
+            <div className="row">
+              <div className="col-lg-12 col-md-12">
+                <div
+                  className="owl-carousel owl-center owl-loaded owl-drag"
+                  data-items="4"
+                  data-md-items="2"
+                  data-sm-items="2"
+                  data-center="true"
+                  data-dots="false"
+                  data-nav="true"
+                  data-autoplay="true"
+                >
+                  <div className="owl-stage-outer">
+                    <div
+                      className="owl-stage"
+                      style={{
+                        transition: "all 1s ease 0s",
+                        width: "5318px",
+                        transform: "translate3d(-949px, 0px, 0px)",
+                      }}
+                    >
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Marketing Financing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/06.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  SEO Analiysis
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active center"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Digital Marketing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Web &amp; Mobile Apps
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Marketing Financing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "379.8px" }}>
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/06.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  SEO Analiysis
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Digital Marketing
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Web &amp; Mobile Apps
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/03.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Traffic Management
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "379.8px" }}
+                      >
+                        <div className="item">
+                          <div className="cases-item">
+                            <div className="cases-images">
+                              <img
+                                className="img-fluid"
+                                src="../images/case-studies/04.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="cases-description">
+                              <h5>
+                                <a href="case-studies-single.html">
+                                  Seo Optimization
+                                </a>
+                              </h5>
+                              <span>Digital</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="owl-nav">
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-prev"
+                    >
+                      <span className="fas fa-long-arrow-alt-left">
+                        <span></span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-next"
+                    >
+                      <span className="fas fa-long-arrow-alt-right"></span>
+                    </button>
+                  </div>
+                  <div className="owl-dots disabled"></div>
                 </div>
               </div>
             </div>
