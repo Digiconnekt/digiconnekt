@@ -6,6 +6,7 @@ const Home = () => {
       <section
         className="fullscreen-banner banner banner-2 p-0 overflow-hidden bg-contain bg-pos-r animatedBackground"
         data-bg-img="images/bg/05.png"
+        style={{ backgroundImage: "url(images/bg/05.png)" }}
       >
         <div
           className="mouse-parallax"
@@ -33,8 +34,8 @@ const Home = () => {
                       </div>
                       <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                         <h1 className="mb-4 animated fadeInUp duration-2">
-                          Powerfull{" "}
-                          <span className="font-w-5">Digital Marketing</span>{" "}
+                          Powerfull
+                          <span className="font-w-5">Digital Marketing</span>
                           Template
                         </h1>
                         <p className="animated fadeInUp delay-1 duration-2">
@@ -173,7 +174,7 @@ const Home = () => {
                     className="img-fluid"
                     src="images/counter/01.png"
                     alt=""
-                  />{" "}
+                  />
                   <span
                     className="count-number"
                     data-to="2304"
@@ -190,7 +191,7 @@ const Home = () => {
                     className="img-fluid"
                     src="images/counter/02.png"
                     alt=""
-                  />{" "}
+                  />
                   <span
                     className="count-number"
                     data-to="3585"
@@ -207,7 +208,7 @@ const Home = () => {
                     className="img-fluid"
                     src="images/counter/03.png"
                     alt=""
-                  />{" "}
+                  />
                   <span
                     className="count-number"
                     data-to="1365"
@@ -224,7 +225,7 @@ const Home = () => {
                     className="img-fluid"
                     src="images/counter/04.png"
                     alt=""
-                  />{" "}
+                  />
                   <span
                     className="count-number"
                     data-to="4328"
@@ -260,7 +261,6 @@ const Home = () => {
                 </div>
                 <div className="work-process style-2">
                   <div className="work-process-inner">
-                    {" "}
                     <span className="step-num" data-bg-color="#ff7810">
                       01
                     </span>
@@ -273,7 +273,6 @@ const Home = () => {
                 </div>
                 <div className="work-process style-2 mt-5">
                   <div className="work-process-inner">
-                    {" "}
                     <span className="step-num" data-bg-color="#ff156a">
                       02
                     </span>
@@ -286,7 +285,6 @@ const Home = () => {
                 </div>
                 <div className="work-process style-2 mt-5">
                   <div className="work-process-inner">
-                    {" "}
                     <span className="step-num" data-bg-color="#ffb72f">
                       03
                     </span>
@@ -305,6 +303,7 @@ const Home = () => {
         <section
           className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
           data-bg-img="images/pattern/06.png"
+          style={{ backgroundImage: "url(images/pattern/06.png)" }}
         >
           <div className="container">
             <div className="row justify-content-center text-center">
@@ -322,6 +321,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
           <div className="container-fluid p-0">
             <div className="row">
@@ -778,7 +778,6 @@ const Home = () => {
                 <div className="tab style-2 ">
                   <nav>
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                      {" "}
                       <a
                         className="nav-link active"
                         id="nav-tab1"
@@ -1123,6 +1122,7 @@ const Home = () => {
         <section
           className="bg-contain bg-pos-r pt-0"
           data-bg-img="images/bg/02.png"
+          style={{ backgroundImage: "url(images/bg/02.png)" }}
         >
           <div className="container">
             <div className="row justify-content-center text-center">

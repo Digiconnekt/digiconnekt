@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -12,26 +12,28 @@ const Services = () => {
     navigate("social-media-optimization");
   };
 
+  const emailMarketing = () => {
+    navigate("email-marketing");
+  };
+
   return (
     <>
       <section
         className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
         data-bg-img="images/pattern/05.png"
+        style={{ backgroundImage: "url(images/pattern/05.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12">
-              <h1 className="title">Service</h1>
+              <h1 className="title">Services</h1>
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li className="breadcrumb-item">
-                    <a href="#">Services</a>
+                    <NavLink to="/">Home</NavLink>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Service
+                    Services
                   </li>
                 </ol>
               </nav>
@@ -108,8 +110,10 @@ const Services = () => {
                 </div>
               </div>
               <div
+                onClick={emailMarketing}
                 className="col-lg-4 col-md-6 mt-5 mt-lg-0 wow fadeInRight"
                 data-wow-duration="0.8"
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
@@ -120,7 +124,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Market analysis</h5>
+                    <h5>Email Marketing</h5>
                   </div>
                   <div className="featured-desc">
                     <p>
@@ -344,6 +348,7 @@ const Services = () => {
         <section
           className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
           data-bg-img="images/pattern/06.png"
+          style={{ backgroundImage: "url(images/pattern/06.png)" }}
         >
           <div className="container">
             <div className="row justify-content-center text-center">

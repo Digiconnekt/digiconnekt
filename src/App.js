@@ -6,8 +6,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
-import SearchEngineOptmization from "./components/SearchEngineOptmization";
-import SocialMediaOptimization from "./components/SocialMediaOptimization";
+import SearchEngineOptmization from "./components/Services/SearchEngineOptmization";
+import SocialMediaOptimization from "./components/Services/SocialMediaOptimization";
+import Error from "./components/Error";
+import EmailMarketing from "./components/Services/EmailMarketing";
 
 const App = () => {
   return (
@@ -24,7 +26,9 @@ const App = () => {
           path="/services/social-media-Optimization"
           element={<SocialMediaOptimization />}
         />
+        <Route path="/services/email-marketing" element={<EmailMarketing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>

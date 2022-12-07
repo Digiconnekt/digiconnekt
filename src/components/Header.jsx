@@ -160,6 +160,11 @@ const Header = () => {
                                 Social Media Optimization
                               </NavLink>
                             </li>
+                            <li>
+                              <NavLink to="/services/email-marketing">
+                                Email Marketing
+                              </NavLink>
+                            </li>
                           </ul>
                         </div>
                       </li>

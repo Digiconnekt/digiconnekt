@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -6,6 +7,7 @@ const Contact = () => {
       <section
         className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
         data-bg-img="images/pattern/05.png"
+        style={{ backgroundImage: "url(../images/pattern/05.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -14,10 +16,7 @@ const Contact = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li className="breadcrumb-item">
-                    <a href="#">Contact</a>
+                    <NavLink to="/">Home</NavLink>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Contact Us

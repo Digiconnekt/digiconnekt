@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
+      {/* footer start */}
       <footer
         className="footer white-bg z-index-1 overflow-hidden bg-contain"
         data-bg-img="images/pattern/01.png"
@@ -169,11 +170,9 @@ const Footer = () => {
             <div className="copyright">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  {" "}
                   <span>Copyright 2018 | All Rights Reserved</span>
                 </div>
                 <div className="col-md-6 text-md-end sm-mt-2">
-                  {" "}
                   <span>
                     Loptus Theme by <a href="#">ThemeHt</a>
                   </span>
@@ -183,6 +182,15 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      {/* footer end */}
+
+      {/* scroll bottom to top btn start */}
+      <div className="scroll-top">
+        <a className="smoothscroll" href="#top">
+          <i className="flaticon-upload"></i>
+        </a>
+      </div>
+      {/* scroll bottom to top btn end */}
     </>
   );
 };
