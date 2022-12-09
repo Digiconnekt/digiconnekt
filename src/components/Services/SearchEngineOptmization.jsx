@@ -37,15 +37,22 @@ const SearchEngineOptmization = () => {
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
                   <h2 className="title">What is SEO?</h2>
-                  <p className="mb-0 text-black">
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     SEO or Search Engine Optimization means, making your website
                     more visible on a Search Engine Results Page (SERP).
                     According to the latest figures, around 3.5 billion searches
                     happen per day! With such a high volume of searches, SEO is
                     definitely an important ingredient for making a perfect
-                    website!! A great SEO strategy will result in making the
-                    company’s website at the top of the Google search page,
-                    therefore increasing the engagement of the viewers. <br />
+                    website!!
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    A great SEO strategy will result in making the company’s
+                    website at the top of the Google search page, therefore
+                    increasing the engagement of the viewers. <br />
+                    But does your SEO strategy really help your business get
+                    organically ranked?
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     But does your SEO strategy really help your business get
                     organically ranked?
                   </p>
@@ -70,7 +77,7 @@ const SearchEngineOptmization = () => {
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
                   <h2 className="title">How does SEO work?</h2>
-                  <p className="mb-0 text-black">
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     SEO is a customized long-term strategy that is aimed at
                     giving your business an edge over the competition. SEO
                     focuses on the ranking and visibility of your business. It
@@ -78,20 +85,28 @@ const SearchEngineOptmization = () => {
                     horizon and make it more visible in terms of engagement. It
                     works by optimizing the website’s content, conducting
                     keyword research, and in turn increasing the customer’s
-                    engagement on the website. <br /> Search engines have a
-                    single goal which is to provide the most relevant page
-                    results to their users. The SEO algorithm chooses pages that
-                    are most relevant to the user’s query. Pages are ranked
-                    depending on the relevance of keywords. This makes it an
-                    important point to choose your keywords wisely. <br />{" "}
+                    engagement on the website.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     Search engines have a single goal which is to provide the
                     most relevant page results to their users. The SEO algorithm
                     chooses pages that are most relevant to the user’s query.
                     Pages are ranked depending on the relevance of keywords.
                     This makes it an important point to choose your keywords
-                    wisely. <br /> Besides these adding more optimized content,
-                    image filename, or improving links can increase your SEO
-                    ranking and search visibility.
+                    wisely.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Search engines have a single goal which is to provide the
+                    most relevant page results to their users. The SEO algorithm
+                    chooses pages that are most relevant to the user’s query.
+                    Pages are ranked depending on the relevance of keywords.
+                    This makes it an important point to choose your keywords
+                    wisely.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Besides these adding more optimized content, image filename,
+                    or improving links can increase your SEO ranking and search
+                    visibility.
                   </p>
                 </div>
               </div>
@@ -108,9 +123,9 @@ const SearchEngineOptmization = () => {
         >
           <div className="container">
             <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
+              <div className="col-lg-12 col-md-12">
                 <div className="section-title mb-0">
-                  <h2 className="title">
+                  <h2 className="title oneLiner">
                     Want to rank higher in search results? Let’s talk about your
                     <span style={{ color: "#ff7810" }}> SEO</span> with our
                     experts!
@@ -138,7 +153,7 @@ const SearchEngineOptmization = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6 block-2">
                 <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
@@ -162,7 +177,7 @@ const SearchEngineOptmization = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 sm-mt-3">
+              <div className="col-lg-4 col-md-6 sm-mt-3 block-2">
                 <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
@@ -188,7 +203,7 @@ const SearchEngineOptmization = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 md-mt-3">
+              <div className="col-lg-4 col-md-6 md-mt-3 block-2">
                 <div className="featured-item text-center">
                   <div className="featured-icon">
                     <img
@@ -281,61 +296,56 @@ const SearchEngineOptmization = () => {
                   <nav>
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
                       <a
-                        className="nav-link active"
+                        className="nav-link active five-tabs"
                         id="nav-tab1"
                         data-bs-toggle="tab"
                         href="#tab1-1"
                         role="tab"
                         aria-selected="true"
-                        style={{ width: "calc(100% / 5)" }}
                       >
                         Discovery
                       </a>
                       <a
-                        className="nav-link"
+                        className="nav-link five-tabs"
                         id="nav-tab2"
                         data-bs-toggle="tab"
                         href="#tab1-2"
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
-                        style={{ width: "calc(100% / 5)" }}
                       >
                         Custom SEO Strategy
                       </a>
                       <a
-                        className="nav-link"
+                        className="nav-link five-tabs"
                         id="nav-tab3"
                         data-bs-toggle="tab"
                         href="#tab1-3"
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
-                        style={{ width: "calc(100% / 5)" }}
                       >
                         Competitive Analysis
                       </a>
                       <a
-                        className="nav-link"
+                        className="nav-link five-tabs"
                         id="nav-tab4"
                         data-bs-toggle="tab"
                         href="#tab1-4"
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
-                        style={{ width: "calc(100% / 5)" }}
                       >
                         Technical Optimization
                       </a>
                       <a
-                        className="nav-link"
+                        className="nav-link five-tabs"
                         id="nav-tab5"
                         data-bs-toggle="tab"
                         href="#tab1-5"
                         role="tab"
                         aria-selected="false"
                         tabindex="-1"
-                        style={{ width: "calc(100% / 5)" }}
                       >
                         Content Development
                       </a>
@@ -797,49 +807,7 @@ const SearchEngineOptmization = () => {
           </div>
         </section>
 
-        <section
-          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <div className="row">
-                    <div className="col-lg-11 col-md-12 me-auto">
-                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                        <h4 className="mb-0">Let's Discuss</h4>
-                        <div className="subscribe-form sm-mt-2">
-                          <form id="mc-form" className="group">
-                            <input
-                              type="email"
-                              name="EMAIL"
-                              className="email"
-                              id="mc-email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <input
-                              className="btn btn-theme"
-                              type="submit"
-                              name="subscribe"
-                              value="Subscribe"
-                            />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
+        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1 mt-0">
           <div className="container-fluid p-0">
             <div className="row">
               <div className="col-lg-12 col-md-12">
@@ -1210,6 +1178,48 @@ const SearchEngineOptmization = () => {
                     </button>
                   </div>
                   <div className="owl-dots disabled"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="overflow-hidden dark-bg animatedBackground mb-10"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

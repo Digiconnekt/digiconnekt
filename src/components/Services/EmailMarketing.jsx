@@ -25,235 +25,198 @@ const EmailMarketing = () => {
 
       {/* page content start */}
       <div className="page-content">
-        {/* smo strategy start */}
-        <section
-          className="light-bg animatedBackground"
-          data-bg-img="images/pattern/01.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/01.png")',
-          }}
-        >
+        {/* Bulk email marketing start */}
+        <section className="overflow-hidden">
           <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <div className="tab style-2 ">
-                  <nav>
-                    <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a
-                        className="nav-link active"
-                        id="nav-tab1"
-                        data-bs-toggle="tab"
-                        href="#tab1-1"
-                        role="tab"
-                        aria-selected="true"
-                        style={{ width: "calc(100% / 3)" }}
-                      >
-                        Bulk email marketing: Is it still worth investing in?
-                      </a>
-                      <a
-                        className="nav-link"
-                        id="nav-tab2"
-                        data-bs-toggle="tab"
-                        href="#tab1-2"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                        style={{ width: "calc(100% / 3)" }}
-                      >
-                        Assets for Social Media Marketing Strategy
-                      </a>
-                      <a
-                        className="nav-link"
-                        id="nav-tab3"
-                        data-bs-toggle="tab"
-                        href="#tab1-3"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                        style={{ width: "calc(100% / 3)" }}
-                      >
-                        Email validation or Data Mining
-                      </a>
-                    </div>
-                  </nav>
-                  <div className="tab-content" id="nav-tabContent">
-                    <div
-                      role="tabpanel"
-                      className="tab-pane fade show active"
-                      id="tab1-1"
-                      aria-labelledby="#nav-tab1"
-                    >
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <img
-                            className="img-fluid"
-                            src="../images/about/02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Bulk email marketing: Is it still worth investing
-                            in?
-                          </h4>
-                          <p>
-                            Studies show that despite the growth of mobile
-                            messengers and chat applications, nearly 61 percent
-                            of consumers prefer brand communication via email.
-                            Moreover, globally around 87 percent of B2B and 79
-                            percent of B2C marketers use email marketing as the
-                            primary channel for distributing content. Email
-                            marketing is still one of ‘the’ methods to rule the
-                            digital world! <br />
-                            Bulk email service as the name suggests is an email
-                            campaign capable of sending emails to a group of
-                            customers at once. These services are generally used
-                            for digital marketing campaigns to send out updates
-                            to the curated lists at once. The type of content
-                            here incorporates newsletters, notifications, the
-                            latest offers, reports, and much more. <br />
-                            When done in the right way, it boosts your loyal
-                            customer number and increases the graph of ROI. At
-                            Digiconnekt, the Bulk email service is one of the
-                            most powerful mediums to increase your digital
-                            marketing campaigns. We manage your clients
-                            effectively by segmenting them into groups,
-                            specifying their needs, and thus improving your
-                            conversion rates. Our AI-powered systems boost your
-                            graph of engagement by sending emails at the perfect
-                            time.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      role="tabpanel"
-                      className="tab-pane fade"
-                      id="tab1-2"
-                      aria-labelledby="#nav-tab2"
-                    >
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <img
-                            className="img-fluid"
-                            src="../images/about/02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Assets for Social Media Marketing Strategy
-                          </h4>
-                          <p>
-                            As a business owner, you can’t go on to respond to
-                            every customer’s query mail rather you look for ways
-                            to grow within the stipulated time. Here’s when
-                            email marketing automation comes to your rescue. The
-                            main advantage of Email marketing is that it keeps
-                            you away from repetitive tasks such as responding to
-                            similar queries or sending in the same updates to
-                            thousand of them. <br />
-                            Email automation is the simplest way to compose
-                            emails that reach your targeted audience at the
-                            right time. Fortunately, you save your time and
-                            money and also increase your potential customers.
-                            These services can help your customers know more
-                            about your brand and encourage them to keep coming
-                            back by reminding them why they bought from you in
-                            the very first place.
-                          </p>
-                          <p style={{ color: "#1c2045" }}>
-                            Email marketing comes with some more benefits. Some
-                            of them like:
-                          </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i>{" "}
-                              <span
-                                style={{ color: "#1c2045", fontWeight: "bold" }}
-                              >
-                                Personalized content -
-                              </span>
-                              Who doesn’t love customization? This service
-                              allows you to create a series of automated emails
-                              which is more appealing to the recipients.
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i>{" "}
-                              <span
-                                style={{ color: "#1c2045", fontWeight: "bold" }}
-                              >
-                                Improves your conversion rates -
-                              </span>
-                              It’s easier to sell to an existing customer than
-                              to make a new one. So, schedule a message
-                              regarding updates and offer and drive in the
-                              sales.
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i>{" "}
-                              <span
-                                style={{ color: "#1c2045", fontWeight: "bold" }}
-                              >
-                                More in less time -
-                              </span>
-                              If less time is spent manually compiling the
-                              message and sending it then more time could be
-                              dedicated to improving the other sectors for
-                              better marketing.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      role="tabpanel"
-                      className="tab-pane fade"
-                      id="tab1-3"
-                      aria-labelledby="#nav-tab3"
-                    >
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <img
-                            className="img-fluid"
-                            src="../images/about/02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Email validation or Data Mining
-                          </h4>
-                          <p>
-                            Data analytics is becoming a basic necessity in
-                            every field. It helps big firms to small
-                            corporations to deal with huge figures, segment them
-                            out, understand the different categories of
-                            potential customers, analyze their needs, and better
-                            strategize their marketing fundamentals. Here data
-                            mining comes into play to portray the big picture in
-                            small pieces. Such email intelligence helps you
-                            improve sales and increase your customer
-                            interaction. <br />
-                            We provide a team of specialists who figure out
-                            large numbers of feeds, enrich the data, clean the
-                            data set, and provide analyzed reports targeting
-                            many groups. Besides, working with Digiconnekt
-                            promise you a highly experienced and cost-effective
-                            team who has great accuracy working with the latest
-                            technology and is determined to reduce your workload
-                            thereby increasing the profit.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">
+                    Bulk email marketing: <br />
+                    Is it still worth investing in?
+                  </h2>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Studies show that despite the growth of mobile messengers
+                    and chat applications, nearly 61 percent of consumers prefer
+                    brand communication via email. Moreover, globally around 87
+                    percent of B2B and 79 percent of B2C marketers use email
+                    marketing as the primary channel for distributing content.
+                    Email marketing is still one of ‘the’ methods to rule the
+                    digital world!
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Bulk email service as the name suggests is an email campaign
+                    capable of sending emails to a group of customers at once.
+                    These services are generally used for digital marketing
+                    campaigns to send out updates to the curated lists at once.
+                    The type of content here incorporates newsletters,
+                    notifications, the latest offers, reports, and much more.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    When done in the right way, it boosts your loyal customer
+                    number and increases the graph of ROI. At Digiconnekt, the
+                    Bulk email service is one of the most powerful mediums to
+                    increase your digital marketing campaigns. We manage your
+                    clients effectively by segmenting them into groups,
+                    specifying their needs, and thus improving your conversion
+                    rates. Our AI-powered systems boost your graph of engagement
+                    by sending emails at the perfect time.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* smo strategy end */}
+        {/* Bulk email marketing end */}
+
+        {/* Email marketing automation start */}
+        <section className="pt-0 overflow-hidden">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/03.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Email marketing automation</h2>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    As a business owner, you can’t go on to respond to every
+                    customer’s query mail rather you look for ways to grow
+                    within the stipulated time. Here’s when email marketing
+                    automation comes to your rescue. The main advantage of Email
+                    marketing is that it keeps you away from repetitive tasks
+                    such as responding to similar queries or sending in the same
+                    updates to thousand of them.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Email automation is the simplest way to compose emails that
+                    reach your targeted audience at the right time. Fortunately,
+                    you save your time and money and also increase your
+                    potential customers. These services can help your customers
+                    know more about your brand and encourage them to keep coming
+                    back by reminding them why they bought from you in the very
+                    first place.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Email marketing comes with some more benefits. Some of them
+                    like:
+                  </p>
+                  <ul class="list-unstyled list-icon">
+                    <li class="mb-3" style={{ textAlign: "justify" }}>
+                      <i class="flaticon-tick"></i>
+                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
+                        Personalized content -
+                      </span>{" "}
+                      Who doesn’t love customization? This service allows you to
+                      create a series of automated emails which is more
+                      appealing to the recipients.
+                    </li>
+                    <li class="mb-3" style={{ textAlign: "justify" }}>
+                      <i class="flaticon-tick"></i>
+                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
+                        Improves your conversion rates -{" "}
+                      </span>{" "}
+                      It’s easier to sell to an existing customer than to make a
+                      new one. So, schedule a message regarding updates and
+                      offer and drive in the sales.
+                    </li>
+                    <li style={{ textAlign: "justify" }}>
+                      <i class="flaticon-tick"></i>
+                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
+                        More in less time -{" "}
+                      </span>{" "}
+                      If less time is spent manually compiling the message and
+                      sending it then more time could be dedicated to improving
+                      the other sectors for better marketing.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Email marketing automation end */}
+
+        {/* one liner start */}
+        <section
+          className="overflow-hidden dark-bg animatedBackground"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-12 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title oneLiner">
+                    Want to rank higher in search results? Let’s talk about your
+                    <span style={{ color: "#ff7810" }}> SEO</span> with our
+                    experts!
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* one liner end */}
+
+        {/* Email validation or Data Mining start */}
+        <section className="overflow-hidden">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/about/02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Email validation or Data Mining</h2>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    Data analytics is becoming a basic necessity in every field.
+                    It helps big firms to small corporations to deal with huge
+                    figures, segment them out, understand the different
+                    categories of potential customers, analyze their needs, and
+                    better strategize their marketing fundamentals. Here data
+                    mining comes into play to portray the big picture in small
+                    pieces. Such email intelligence helps you improve sales and
+                    increase your customer interaction.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    We provide a team of specialists who figure out large
+                    numbers of feeds, enrich the data, clean the data set, and
+                    provide analyzed reports targeting many groups. Besides,
+                    working with Digiconnekt promise you a highly experienced
+                    and cost-effective team who has great accuracy working with
+                    the latest technology and is determined to reduce your
+                    workload thereby increasing the profit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Email validation or Data Mining end */}
 
         {/* contact btn start */}
         <section
@@ -299,7 +262,7 @@ const EmailMarketing = () => {
         </section>
         {/* contact btn end */}
 
-        {/* key features strategy start */}
+        {/* key features start */}
         <section class="light-bg position-relative text-center overflow-hidden">
           <div class="pattern-3">
             <img
@@ -319,7 +282,7 @@ const EmailMarketing = () => {
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -342,7 +305,7 @@ const EmailMarketing = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 sm-mt-3">
+              <div class="col-lg-4 col-md-6 sm-mt-3 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -366,7 +329,7 @@ const EmailMarketing = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 md-mt-3">
+              <div class="col-lg-4 col-md-6 md-mt-3 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -389,7 +352,7 @@ const EmailMarketing = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-lg-4 col-md-6 mt-3 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -413,7 +376,7 @@ const EmailMarketing = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-lg-4 col-md-6 mt-3 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -438,7 +401,7 @@ const EmailMarketing = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 mt-3">
+              <div class="col-lg-4 col-md-6 mt-3 block-2">
                 <div class="featured-item text-center">
                   <div class="featured-icon">
                     <img
@@ -465,54 +428,10 @@ const EmailMarketing = () => {
             </div>
           </div>
         </section>
-        {/* key features strategy end */}
-
-        {/* contact btn start */}
-        <section
-          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <div className="row">
-                    <div className="col-lg-11 col-md-12 me-auto">
-                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                        <h4 className="mb-0">Let's Discuss</h4>
-                        <div className="subscribe-form sm-mt-2">
-                          <form id="mc-form" className="group">
-                            <input
-                              type="email"
-                              name="EMAIL"
-                              className="email"
-                              id="mc-email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <input
-                              className="btn btn-theme"
-                              type="submit"
-                              name="subscribe"
-                              value="Subscribe"
-                            />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* contact btn end */}
+        {/* key features end */}
 
         {/* services links start */}
-        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
+        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1 mt-0">
           <div className="container-fluid p-0">
             <div className="row">
               <div className="col-lg-12 col-md-12">
@@ -889,6 +808,50 @@ const EmailMarketing = () => {
           </div>
         </section>
         {/* services links end */}
+
+        {/* contact btn start */}
+        <section
+          className="overflow-hidden dark-bg animatedBackground mb-10"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* contact btn end */}
       </div>
       {/* page content end */}
     </>

@@ -26,6 +26,37 @@
 
 .block-1::-webkit-scrollbar-thumb,
 .block-2::-webkit-scrollbar-thumb {
-  background: #bec4bd;
   border-radius: 10px;
+  background: transparent;
+}
+
+.block-1:hover::-webkit-scrollbar,
+.block-2:hover::-webkit-scrollbar {
+  width: 3px;
+}
+
+.block-1:hover::-webkit-scrollbar-thumb,
+.block-2:hover::-webkit-scrollbar-thumb {
+  background: #bec4bd;
+}
+
+.oneLiner {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.tab.style-2 .nav-tabs .nav-link.five-tabs {
+  width: calc(100% / 5);
+}
+
+@media (max-width: 991px) {
+  .tab.style-2 .nav-tabs .nav-link.five-tabs {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 576px) {
+  .tab.style-2 .nav-tabs .nav-link.five-tabs {
+    width: 100%;
+  }
 }

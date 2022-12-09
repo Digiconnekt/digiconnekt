@@ -54,18 +54,17 @@ const SocialMediaOptimization = () => {
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
                   <h2 className="title">What is SMO?</h2>
-                  <p
-                    className="mb-0 text-black"
-                    style={{ textAlign: "justify" }}
-                  >
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     From its inception in the year 2006 to fast forward 2022,
                     SMO is hitting the digital market with its necessity. SMO or
                     Social Media Optimization primarily aims at attracting
                     customers from any source other than search engines. Nobody
                     can deny the power of social media, having said this it
                     won’t be wrong to say that using the full potential of
-                    social media marketing can do wonders for your business. SMO
-                    doesn’t only cover the technical aspect but emphasizes
+                    social media marketing can do wonders for your business.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
+                    SMO doesn’t only cover the technical aspect but emphasizes
                     various marketing platforms such as Facebook marketing,
                     Instagram marketing, LinkedIn, and much more.
                   </p>
@@ -91,37 +90,44 @@ const SocialMediaOptimization = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">How to do SMO??</h2>
-                  <p
-                    className="mb-0 text-black"
-                    style={{ textAlign: "justify" }}
-                  >
+                  <h2 className="title">How to do SMO?</h2>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     To start with what Cameron Olthius wrote: <br /> “SMO
                     tactics can drive huge amounts of people to the website and
                     can also determine whether a startup, website, or idea will
                     make it or not. It involves driving traffic to a website
                     through new channels because search engines aren’t the on;y
-                    sites that drive big traffic anymore.” <br />
+                    sites that drive big traffic anymore.”
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     This brings me to the point that optimizing Social Media is
                     the key essential. Optimization of social media not only
                     portrays a positive image of your brand but has a direct
                     impact on SEO as it eases the usability of the site which
-                    will automatically generate traffic. <br />
+                    will automatically generate traffic.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     To start with, blend your website and social media! Yes, you
                     heard it right. Inculcate your social media links on the
                     website and vice-versa, and allow your users to sign in
                     through their social media profiles, this will increase the
-                    registration conversation. <br />
+                    registration conversation.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     Keywords play an important role. Structure your social media
                     pages with just the right keywords and phrases such as the
                     company name and info, keeping in mind that it doesn't give
-                    a promotional outlook. <br />
+                    a promotional outlook.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     The next key feature could be to encourage inbound links,
                     that is to encourage more external websites to link to your
                     content. Besides, you should also post content consistently
                     on all your social media platforms and into existing threads
                     and discussion forums. These exercises will maximize your
-                    external link sources. <br />
+                    external link sources.
+                  </p>
+                  <p className="text-black" style={{ textAlign: "justify" }}>
                     Share quality and optimized content. Google algorithms might
                     change continuously but the demand for quality and optimized
                     content from users remains constant. Optimizing your posts
@@ -138,12 +144,36 @@ const SocialMediaOptimization = () => {
         </section>
         {/* how to do end */}
 
-        {/* social media start */}
+        {/* one liner start */}
         <section
           className="overflow-hidden dark-bg animatedBackground"
           data-bg-img="../images/pattern/06.png"
           style={{
             backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-12 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title oneLiner">
+                    Want to rank higher in search results? Let’s talk about your
+                    <span style={{ color: "#ff7810" }}> SEO</span> with our
+                    experts!
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* one liner end */}
+
+        {/* social media start */}
+        <section
+          className="overflow-hidden light-bg animatedBackground"
+          data-bg-img="../images/pattern/05.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/05.png")',
           }}
         >
           <div className="container" style={{ maxWidth: "1080px" }}>
@@ -171,7 +201,7 @@ const SocialMediaOptimization = () => {
                 <div className="section-title mb-4">
                   <h2 className="title">Facebook Marketing</h2>
                   <p
-                    className="mb-0 text-white"
+                    className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
                   >
                     Facebook caters tools to businesses that want to form
@@ -199,7 +229,7 @@ const SocialMediaOptimization = () => {
                 <div className="section-title mb-4">
                   <h2 className="title">Instagram Marketing</h2>
                   <p
-                    className="mb-0 text-white"
+                    className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
                   >
                     Figures state that 83% of users discover new products or
@@ -228,7 +258,7 @@ const SocialMediaOptimization = () => {
                 <div className="section-title mb-4">
                   <h2 className="title">LinkedIn Marketing</h2>
                   <p
-                    className="mb-0 text-white"
+                    className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
                   >
                     Having your company’s page on LinkedIn increases the
@@ -256,7 +286,7 @@ const SocialMediaOptimization = () => {
                 <div className="section-title mb-4">
                   <h2 className="title">YouTube Marketing</h2>
                   <p
-                    className="mb-0 text-white"
+                    className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
                   >
                     Google-owned YouTube is growing exponentially by being the
@@ -283,7 +313,7 @@ const SocialMediaOptimization = () => {
                 <div className="section-title mb-4">
                   <h2 className="title">Snapchat Marketing</h2>
                   <p
-                    className="mb-0 text-white"
+                    className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
                   >
                     Having a snap filter option and ‘don’t break the streak’,
@@ -298,129 +328,6 @@ const SocialMediaOptimization = () => {
           </div>
         </section>
         {/* social media end */}
-
-        {/* social media necessity start */}
-        <section className="light-bg position-relative text-center overflow-hidden">
-          <div className="pattern-3">
-            <img
-              className="img-fluid rotateme"
-              src="../images/pattern/03.png"
-              alt=""
-            />
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8 col-md-12 mx-auto">
-                <div className="section-title">
-                  <h2 className="title">
-                    Is social media marketing a necessity?
-                  </h2>
-                  <p className="mb-0 text-black">
-                    Be where your customers are!! <br />
-                    Social media is dominant in all spheres which are directly
-                    proportional to the fact that your potential customers are
-                    available here. Social media marketing helps in:
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="../images/feature/04.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Increasing Your Brand’s Position in Digital Market</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p style={{ textAlign: "justify" }}>
-                      Social media are the most efficient and cost-effective
-                      platforms for digital marketing. These platforms increase
-                      your visibility and increase client engagement. Studies
-                      state that over 91% of marketers claim a boost in their
-                      business with just the right use of social platforms.
-                      These platforms also come with the advantage of being
-                      cost-effective, which means by investing very little you
-                      get a greater return on investment. <br />
-                      To get started, build your social media accounts, post
-                      optimized audience-targeted content, and be consistent,
-                      this will significantly increase your brand’s recognition
-                      and will improve conversion rates.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 sm-mt-3">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="../images/feature/05.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Increasing the traffic rates</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p style={{ textAlign: "justify" }}>
-                      Social media provides you with the best platform for
-                      interacting with your potential customers and therefore
-                      increasing conversion rates. More interaction with your
-                      clients will help you to cater to their interests with
-                      ease. Moreover, communication also helps you win your
-                      customer's attention and convey your message. Healthy
-                      customer satisfaction helps you in building a good network
-                      and an improved traffic rate. <br />
-                      Besides these improving your brand loyalty or let's say
-                      building your loyal customer base is one of the most
-                      important goals of social media marketing.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 md-mt-3">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="../images/feature/06.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Platform to advertising your product or services</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p style={{ textAlign: "justify" }}>
-                      One of the best places to find your customers, to find
-                      their needs, to know their wants, and directly sell your
-                      solutions to them. Social media helps you bridge the gap
-                      between the want of your potential customers and your
-                      solution. <br />
-                      Social media blesses you with the power of knowing exactly
-                      what are your customer's interests are by observing the
-                      activities on their profile. Besides, as a compliment
-                      research tools of social media help you analyze who your
-                      potential audience is. <br />
-                      By using these algorithms, once when you get a large
-                      customer audience you can use additional tools to examine
-                      other demographics of your audience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* social media necessity end */}
 
         {/* contact btn start */}
         <section
@@ -466,9 +373,132 @@ const SocialMediaOptimization = () => {
         </section>
         {/* contact btn end */}
 
+        {/* social media necessity start */}
+        <section className="light-bg position-relative text-center overflow-hidden">
+          <div className="pattern-3">
+            <img
+              className="img-fluid rotateme"
+              src="../images/pattern/03.png"
+              alt=""
+            />
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 col-md-12 mx-auto">
+                <div className="section-title">
+                  <h2 className="title">
+                    Is social media marketing a necessity?
+                  </h2>
+                  <p className="mb-0 text-black">
+                    Be where your customers are!! <br />
+                    Social media is dominant in all spheres which are directly
+                    proportional to the fact that your potential customers are
+                    available here. Social media marketing helps in:
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-6 block-1">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/04.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Increasing Your Brand’s Position in Digital Market</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      Social media are the most efficient and cost-effective
+                      platforms for digital marketing. These platforms increase
+                      your visibility and increase client engagement. Studies
+                      state that over 91% of marketers claim a boost in their
+                      business with just the right use of social platforms.
+                      These platforms also come with the advantage of being
+                      cost-effective, which means by investing very little you
+                      get a greater return on investment. <br />
+                      To get started, build your social media accounts, post
+                      optimized audience-targeted content, and be consistent,
+                      this will significantly increase your brand’s recognition
+                      and will improve conversion rates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 sm-mt-3 block-1">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/05.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Increasing the traffic rates</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      Social media provides you with the best platform for
+                      interacting with your potential customers and therefore
+                      increasing conversion rates. More interaction with your
+                      clients will help you to cater to their interests with
+                      ease. Moreover, communication also helps you win your
+                      customer's attention and convey your message. Healthy
+                      customer satisfaction helps you in building a good network
+                      and an improved traffic rate. <br />
+                      Besides these improving your brand loyalty or let's say
+                      building your loyal customer base is one of the most
+                      important goals of social media marketing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 md-mt-3 block-1">
+                <div className="featured-item text-center">
+                  <div className="featured-icon">
+                    <img
+                      className="img-fluid"
+                      src="../images/feature/06.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="featured-title">
+                    <h5>Platform to advertising your product or services</h5>
+                  </div>
+                  <div className="featured-desc">
+                    <p style={{ textAlign: "justify" }}>
+                      One of the best places to find your customers, to find
+                      their needs, to know their wants, and directly sell your
+                      solutions to them. Social media helps you bridge the gap
+                      between the want of your potential customers and your
+                      solution. <br />
+                      Social media blesses you with the power of knowing exactly
+                      what are your customer's interests are by observing the
+                      activities on their profile. Besides, as a compliment
+                      research tools of social media help you analyze who your
+                      potential audience is. <br />
+                      By using these algorithms, once when you get a large
+                      customer audience you can use additional tools to examine
+                      other demographics of your audience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* social media necessity end */}
+
         {/* smo strategy start */}
         <section
-          className="light-bg animatedBackground"
+          className="light-bg animatedBackground mt-5"
           data-bg-img="images/pattern/05.png"
           style={{
             backgroundImage: 'url("../images/pattern/05.png")',
@@ -711,52 +741,8 @@ const SocialMediaOptimization = () => {
         </section>
         {/* smo strategy end */}
 
-        {/* contact btn start */}
-        <section
-          className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <div className="row">
-                    <div className="col-lg-11 col-md-12 me-auto">
-                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                        <h4 className="mb-0">Let's Discuss</h4>
-                        <div className="subscribe-form sm-mt-2">
-                          <form id="mc-form" className="group">
-                            <input
-                              type="email"
-                              name="EMAIL"
-                              className="email"
-                              id="mc-email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <input
-                              className="btn btn-theme"
-                              type="submit"
-                              name="subscribe"
-                              value="Subscribe"
-                            />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* contact btn end */}
-
         {/* services links start */}
-        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1">
+        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1 mt-0">
           <div className="container-fluid p-0">
             <div className="row">
               <div className="col-lg-12 col-md-12">
@@ -1133,6 +1119,50 @@ const SocialMediaOptimization = () => {
           </div>
         </section>
         {/* services links end */}
+
+        {/* contact btn start */}
+        <section
+          className="overflow-hidden dark-bg animatedBackground mb-10"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-0">Let's Discuss</h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <form id="mc-form" className="group">
+                            <input
+                              type="email"
+                              name="EMAIL"
+                              className="email"
+                              id="mc-email"
+                              placeholder="Email Address"
+                              required
+                            />
+                            <input
+                              className="btn btn-theme"
+                              type="submit"
+                              name="subscribe"
+                              value="Subscribe"
+                            />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* contact btn end */}
       </div>
       {/* page content end */}
     </>
