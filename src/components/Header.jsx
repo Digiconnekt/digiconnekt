@@ -165,6 +165,11 @@ const Header = () => {
                                 Email Marketing
                               </NavLink>
                             </li>
+                            <li>
+                              <NavLink to="/services/content-marketing">
+                                Content Marketing
+                              </NavLink>
+                            </li>
                           </ul>
                         </div>
                       </li>

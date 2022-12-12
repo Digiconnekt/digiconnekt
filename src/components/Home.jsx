@@ -1,8 +1,19 @@
 import React from "react";
+import { useState } from "react";
+import PopUpHome from "./PopUpHome";
 
 const Home = () => {
+  const [modal, setModal] = useState(false);
+
+  useState(() => {
+    setTimeout(() => {
+      setModal(true);
+    }, 5000);
+  }, []);
+
   return (
     <>
+      {modal ? <PopUpHome /> : ""}
       <section
         className="fullscreen-banner banner banner-2 p-0 overflow-hidden bg-contain bg-pos-r animatedBackground"
         data-bg-img="images/bg/05.png"

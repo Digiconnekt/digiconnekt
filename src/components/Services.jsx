@@ -16,6 +16,10 @@ const Services = () => {
     navigate("email-marketing");
   };
 
+  const contentMarketing = () => {
+    navigate("content-marketing");
+  };
+
   return (
     <>
       <section
@@ -135,8 +139,10 @@ const Services = () => {
                 </div>
               </div>
               <div
+                onClick={contentMarketing}
                 className="col-lg-4 col-md-6 mt-5 wow fadeInLeft"
                 data-wow-duration="0.6"
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
                   <div className="featured-icon">
@@ -147,7 +153,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Email Marketing</h5>
+                    <h5>Content Marketing</h5>
                   </div>
                   <div className="featured-desc">
                     <p>

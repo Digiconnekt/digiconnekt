@@ -4,6 +4,7 @@ import "./scrollBar.css";
 const SearchEngineOptmization = () => {
   return (
     <>
+      {/* title section start */}
       <section
         className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
         data-bg-img="../images/pattern/05.png"
@@ -20,8 +21,11 @@ const SearchEngineOptmization = () => {
           <img className="img-fluid" src="../images/bg/06.png" alt="" />
         </div>
       </section>
+      {/* title section end */}
 
+      {/* page content start */}
       <div className="page-content">
+        {/* what is seo start */}
         <section className="overflow-hidden">
           <div className="container">
             <div className="row align-items-center">
@@ -61,7 +65,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* what is seo start */}
 
+        {/* how does seo works start */}
         <section className="pt-0 overflow-hidden">
           <div className="container">
             <div className="row align-items-center">
@@ -113,7 +119,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* how does seo works end */}
 
+        {/* one liner start */}
         <section
           className="overflow-hidden dark-bg animatedBackground"
           data-bg-img="../images/pattern/06.png"
@@ -135,7 +143,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* one liner end */}
 
+        {/* How Are We Different? start */}
         <section className="light-bg position-relative text-center overflow-hidden">
           <div className="pattern-3">
             <img
@@ -232,7 +242,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* How Are We Different? end */}
 
+        {/* contact btn start */}
         <section
           className="overflow-hidden dark-bg animatedBackground"
           data-bg-img="../images/pattern/06.png"
@@ -274,7 +286,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* contact btn end */}
 
+        {/* Our Standard SEO Process start */}
         <section
           className="light-bg animatedBackground"
           data-bg-img="images/pattern/05.png"
@@ -479,7 +493,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* Our Standard SEO Process end */}
 
+        {/* 3 block start */}
         <section className="light-bg position-relative text-center mt-10 mb-10 overflow-hidden">
           <div className="pattern-3">
             <img
@@ -582,7 +598,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* 3 block end */}
 
+        {/* 6 block start */}
         <section
           data-bg-img="images/pattern/02.png"
           style={{
@@ -806,7 +824,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* 6 block end */}
 
+        {/* services links start */}
         <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1 mt-0">
           <div className="container-fluid p-0">
             <div className="row">
@@ -1183,7 +1203,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* services links end */}
 
+        {/* contact btn start */}
         <section
           className="overflow-hidden dark-bg animatedBackground mb-10"
           data-bg-img="../images/pattern/06.png"
@@ -1225,7 +1247,9 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
+        {/* contact btn end */}
       </div>
+      {/* page content end */}
     </>
   );
 };

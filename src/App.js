@@ -10,6 +10,7 @@ import SearchEngineOptmization from "./components/Services/SearchEngineOptmizati
 import SocialMediaOptimization from "./components/Services/SocialMediaOptimization";
 import Error from "./components/Error";
 import EmailMarketing from "./components/Services/EmailMarketing";
+import ContentMarketing from "./components/Services/ContentMarketing";
 
 const App = () => {
   return (
@@ -27,6 +28,10 @@ const App = () => {
           element={<SocialMediaOptimization />}
         />
         <Route path="/services/email-marketing" element={<EmailMarketing />} />
+        <Route
+          path="/services/content-marketing"
+          element={<ContentMarketing />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
