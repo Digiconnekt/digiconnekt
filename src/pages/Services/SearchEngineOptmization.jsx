@@ -1,26 +1,13 @@
 import React from "react";
+import OneLiner from "../../components/OneLiner";
+import TitleSection from "../../components/TitleSection";
 import "./scrollBar.css";
 
 const SearchEngineOptmization = () => {
   return (
     <>
       {/* title section start */}
-      <section
-        className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
-        data-bg-img="../images/pattern/05.png"
-        style={{ backgroundImage: "url(../images/pattern/05.png)" }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <h1 className="title">Search Engine Optimization</h1>
-            </div>
-          </div>
-        </div>
-        <div className="page-title-pattern">
-          <img className="img-fluid" src="../images/bg/06.png" alt="" />
-        </div>
-      </section>
+      <TitleSection title="Search Engine Optimization" />
       {/* title section end */}
 
       {/* page content start */}
@@ -122,27 +109,11 @@ const SearchEngineOptmization = () => {
         {/* how does seo works end */}
 
         {/* one liner start */}
-        <section
-          className="overflow-hidden dark-bg animatedBackground"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-12 col-md-12">
-                <div className="section-title mb-0">
-                  <h2 className="title oneLiner">
-                    Want to rank higher in search results? Let’s talk about your
-                    <span style={{ color: "#ff7810" }}> SEO</span> with our
-                    experts!
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <OneLiner
+          textBeforeHighlight="Want to rank higher in search results? Let’s talk about your "
+          highlightText="SEO "
+          textAfterHighlight="with our experts!"
+        />
         {/* one liner end */}
 
         {/* How Are We Different? start */}

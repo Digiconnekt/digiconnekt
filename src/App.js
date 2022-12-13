@@ -1,16 +1,17 @@
 import React from "react";
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./pages/Footer";
+import Header from "./pages/Header";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import SearchEngineOptmization from "./components/Services/SearchEngineOptmization";
-import SocialMediaOptimization from "./components/Services/SocialMediaOptimization";
-import Error from "./components/Error";
-import EmailMarketing from "./components/Services/EmailMarketing";
-import ContentMarketing from "./components/Services/ContentMarketing";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import SearchEngineOptmization from "./pages/Services/SearchEngineOptmization";
+import SocialMediaOptimization from "./pages/Services/SocialMediaOptimization";
+import Error from "./pages/Error";
+import EmailMarketing from "./pages/Services/EmailMarketing";
+import ContentMarketing from "./pages/Services/ContentMarketing";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route
           path="/services/search-engine-optimization"

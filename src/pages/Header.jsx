@@ -10,6 +10,7 @@ const Header = () => {
             <div className="row">
               <div className="col">
                 <nav className="navbar navbar-expand-lg">
+                  {/* logo start */}
                   <NavLink
                     to="/"
                     className="navbar-brand logo"
@@ -22,6 +23,7 @@ const Header = () => {
                       alt=""
                     />
                   </NavLink>
+                  {/* logo end */}
                   <button
                     className="navbar-toggler"
                     type="button"
@@ -37,110 +39,23 @@ const Header = () => {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto position-relative">
+                      {/* home link start */}
                       <li className="nav-item dropdown">
                         <NavLink to="/" className="nav-link active">
                           Home
                         </NavLink>
                       </li>
+                      {/* home link end */}
+
+                      {/* about us link start */}
                       <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
-                        >
-                          Pages
-                        </a>
-                        <div className="dropdown-menu">
-                          <ul className="list-unstyled">
-                            <li>
-                              <a href="about-us.html">About Us 1</a>
-                            </li>
-                            <li>
-                              <a href="about-us-2.html">About Us 2</a>
-                            </li>
-                            <li>
-                              <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                              <a href="team-single.html">Team Single</a>
-                            </li>
-                            <li>
-                              <a href="faq.html">Faq</a>
-                            </li>
-                            <li className="dropdown-submenu">
-                              <a href="#" className="dropdown-toggle">
-                                Case Studies
-                              </a>
-                              <ul className="dropdown-menu">
-                                <li>
-                                  <a href="case-studies-grid-2.html">
-                                    Case Studies Column 2
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="case-studies-grid-3.html">
-                                    Case Studies Column 3
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="case-studies-fullwidth.html">
-                                    Case Studies FullWidth
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="case-studies-single.html">
-                                    Case Studies Single
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="dropdown-submenu">
-                              <a href="#" className="dropdown-toggle">
-                                Features
-                              </a>
-                              <ul className="dropdown-menu">
-                                <li>
-                                  <a href="shortcode-accordions.html">
-                                    Accordion
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-blog-post.html">
-                                    Blog Post
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-counter.html">Counter</a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-feature-box.html">
-                                    Featured Box
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-pricing.html">
-                                    Pricing Table
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-team.html">Team</a>
-                                </li>
-                                <li>
-                                  <a href="shortcode-testimonial.html">
-                                    Testimonials
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="coming-soon.html">Coming Soon</a>
-                            </li>
-                            <li>
-                              <a href="error-404.html">Error 404</a>
-                            </li>
-                          </ul>
-                        </div>
+                        <NavLink to="/about-us" className="nav-link ">
+                          About Us
+                        </NavLink>
                       </li>
+                      {/* about us link end */}
+
+                      {/* services link start */}
                       <li className="nav-item dropdown">
                         <NavLink
                           to="/services"
@@ -173,7 +88,9 @@ const Header = () => {
                           </ul>
                         </div>
                       </li>
-                      <li className="nav-item dropdown">
+                      {/* services link end */}
+
+                      {/* <li className="nav-item dropdown">
                         <a
                           className="nav-link dropdown-toggle"
                           href="#"
@@ -200,6 +117,7 @@ const Header = () => {
                           </ul>
                         </div>
                       </li>
+
                       <li className="nav-item dropdown">
                         <a
                           className="nav-link dropdown-toggle"
@@ -234,12 +152,15 @@ const Header = () => {
                             </li>
                           </ul>
                         </div>
-                      </li>
+                      </li> */}
+
+                      {/* contact link start */}
                       <li className="nav-item dropdown">
                         <NavLink to="/contact" className="nav-link ">
                           Contact
                         </NavLink>
                       </li>
+                      {/* contact link end */}
                     </ul>
                   </div>
                   <div className="right-nav align-items-center d-flex justify-content-end">

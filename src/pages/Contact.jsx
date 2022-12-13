@@ -1,35 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import TitleSection from "../components/TitleSection";
 
 const Contact = () => {
   return (
     <>
-      <section
-        className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
-        data-bg-img="images/pattern/05.png"
-        style={{ backgroundImage: "url(../images/pattern/05.png)" }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <h1 className="title">Contact Us</h1>
-              <nav aria-label="breadcrumb" className="page-breadcrumb">
-                <ol className="breadcrumb">
-                  <li className="breadcrumb-item">
-                    <NavLink to="/">Home</NavLink>
-                  </li>
-                  <li className="breadcrumb-item active" aria-current="page">
-                    Contact Us
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div className="page-title-pattern">
-          <img className="img-fluid" src="images/bg/06.png" alt="" />
-        </div>
-      </section>
+      {/* title section start */}
+      <TitleSection title="Contact" />
+      {/* title section end */}
 
       <div className="page-content">
         <section className="contact-1" data-bg-img="images/pattern/02.png">

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import PopUpHome from "./PopUpHome";
+import PopUpHome from "../components/PopUpHome";
 
 const Home = () => {
   const [modal, setModal] = useState(false);
