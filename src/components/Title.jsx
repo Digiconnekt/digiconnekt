@@ -1,6 +1,6 @@
 import React from "react";
 
-const TitleSection = ({ title }) => {
+const Title = ({ title }) => {
   return (
     <>
       {/* title section start */}
@@ -17,7 +17,7 @@ const TitleSection = ({ title }) => {
           </div>
         </div>
         <div className="page-title-pattern">
-          <img className="img-fluid" src="images/bg/06.png" alt="" />
+          <img className="img-fluid" src="../images/bg/06.png" alt="" />
         </div>
       </section>
       {/* title section end */}
@@ -25,4 +25,4 @@ const TitleSection = ({ title }) => {
   );
 };
 
-export default TitleSection;
+export default Title;

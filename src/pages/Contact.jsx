@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import TitleSection from "../components/TitleSection";
+import TitleSection from "../components/Title";
 
 const Contact = () => {
   return (

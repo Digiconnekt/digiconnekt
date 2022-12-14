@@ -1,9 +1,91 @@
 import React from "react";
+// import ContentImg from "../../components/ContentImg";
+import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
-import TitleSection from "../../components/TitleSection";
+import TitleSection from "../../components/Title";
 import "./scrollBar.css";
 
 const ContentMarketing = () => {
+  // Strategizing The Content start
+  const strategizingTheContent = {
+    img: "../images/about/02.png",
+    title: "Strategizing The Content That’s Relevant For You",
+    para: [
+      `Strategizing The Content That’s Relevant For You Statistics state that 50% of buyers use ad-block methodology and around 80% prefer to look for the appropriate option instead of speaking to your sales team during their initial purchasing journey. This is when content marketing comes to your rescue!`,
+      `Content marketing helps you to portray your business’s voice. The right content can lead to higher ROI rates via clicking on the links, staying on the page, knowing more about you, and having more potential customers on board. Creating the right content while keeping in mind the market needs might take time to show results but promise you an increase in your potential customers.`,
+      `To get it right, content marketing is about more than just selling your product. It is about building relationships with your customers across spheres! With the help of digital platforms, you can connect with your customers worldwide by providing them with just the right content!`,
+    ],
+  };
+  // Strategizing The Content end
+
+  // // customize any content start
+  // // Article Writing start
+  // const articleWriting = {
+  //   img: "../images/about/02.png",
+  //   title: "Article Writing",
+  //   para: [
+  //     `Article writing basically focuses on a massive audience and explicates your ideologies, thoughts, and vision. We help you promote your business with just the right content!`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // Article Writing end
+
+  // // Blog Writing start
+  // const blogWriting = {
+  //   img: "../images/about/02.png",
+  //   title: "Blog Writing",
+  //   para: [
+  //     `Get them wrong and your rankings will never result in your desired output. No worries we come to your rescue focused on building quality content and powerful links that win your website.`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // Blog Writing end
+
+  // // SEO Content Writing start
+  // const seoContentWriting = {
+  //   img: "../images/about/02.png",
+  //   title: "SEO Content Writing",
+  //   para: [
+  //     `We have experts in SEO! They are aimed to work from analyzing the most demanded keywords to framing the paragraph right and everything in between.`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // SEO Content Writing end
+
+  // // Content Editing start
+  // const contentEditing = {
+  //   img: "../images/about/02.png",
+  //   title: "Content Editing",
+  //   para: [
+  //     `Have raw content or visual ideas. We offer services to convert your raw data into optimized content focused on improving your conversion rates.`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // Content Editing end
+
+  // // Press Releases start
+  // const pressReleases = {
+  //   img: "../images/about/02.png",
+  //   title: "Press Releases",
+  //   para: [
+  //     `A well-framed press release notifies your customer about something new or updated. We have a team of experts who format the content in the appropriate manner to match the need of release.`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // Press Releases end
+
+  // // Social Media Writing start
+  // const socialMediaWriting = {
+  //   img: "../images/about/02.png",
+  //   title: "Social Media Writing",
+  //   para: [
+  //     `Social Media is undoubtedly the most powerful tool but keeping content right is of utmost importance. Our content creators stay updated with the latest trend and merge them with your need to meet the desired output.`,
+  //   ],
+  //   subPara: null,
+  // };
+  // // Social Media Writing end
+  // // customize any content end
+
   return (
     <>
       {/* title section start */}
@@ -13,51 +95,11 @@ const ContentMarketing = () => {
       {/* page content start */}
       <div className="page-content">
         {/* Strategizing content start */}
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/02.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">
-                    Strategizing the content that’s relevant for you
-                  </h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Statistics state that 50% of buyers use ad-block methodology
-                    and around 80% prefer to look for the appropriate option
-                    instead of speaking to your sales team during their initial
-                    purchasing journey. This is when content marketing comes to
-                    your rescue!
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Content marketing helps you to portray your business’s
-                    voice. The right content can lead to higher ROI rates via
-                    clicking on the links, staying on the page, knowing more
-                    about you, and having more potential customers on board.
-                    Creating the right content while keeping in mind the market
-                    needs might take time to show results but promise you an
-                    increase in your potential customers.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    To get it right, content marketing is about more than just
-                    selling your product. It is about building relationships
-                    with your customers across spheres! With the help of digital
-                    platforms, you can connect with your customers worldwide by
-                    providing them with just the right content!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImgContent
+          img={strategizingTheContent.img}
+          title={strategizingTheContent.title}
+          para={strategizingTheContent.para}
+        />
         {/* Strategizing content end */}
 
         {/* one liner start */}

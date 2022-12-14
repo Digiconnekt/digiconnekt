@@ -1,9 +1,66 @@
 import React from "react";
+import ContentImg from "../../components/ContentImg";
+import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
-import TitleSection from "../../components/TitleSection";
+import TitleSection from "../../components/Title";
 import "./scrollBar.css";
 
 const EmailMarketing = () => {
+  // Bulk email marketing start
+  const bulkEmailMarketing = {
+    img: "../images/about/02.png",
+    title: `Bulk Email Marketing:
+    Is It Still Worth Investing In?`,
+    para: [
+      `Studies show that despite the growth of mobile messengers and chat applications, nearly 61 percent of consumers prefer brand communication via email. Moreover, globally around 87 percent of B2B and 79 percent of B2C marketers use email marketing as the primary channel for distributing content. Email marketing is still one of ‘the’ methods to rule the digital world!`,
+
+      `Bulk email service as the name suggests is an email campaign capable of sending emails to a group of customers at once. These services are generally used for digital marketing campaigns to send out updates to the curated lists at once. The type of content here incorporates newsletters, notifications, the latest offers, reports, and much more.`,
+
+      `When done in the right way, it boosts your loyal customer number and increases the graph of ROI. At Digiconnekt, the Bulk email service is one of the most powerful mediums to increase your digital marketing campaigns. We manage your clients effectively by segmenting them into groups, specifying their needs, and thus improving your conversion rates. Our AI-powered systems boost your graph of engagement by sending emails at the perfect time.`,
+    ],
+  };
+  // Bulk email marketing end
+
+  // Email validation or Data Mining start
+  const emailValidation = {
+    img: "../images/about/02.png",
+    title: `Email Validation Or Data Mining`,
+    para: [
+      `Data analytics is becoming a basic necessity in every field. It helps big firms to small corporations to deal with huge figures, segment them out, understand the different categories of potential customers, analyze their needs, and better strategize their marketing fundamentals. Here data mining comes into play to portray the big picture in small pieces. Such email intelligence helps you improve sales and increase your customer interaction.`,
+
+      `We provide a team of specialists who figure out large numbers of feeds, enrich the data, clean the data set, and provide analyzed reports targeting many groups. Besides, working with Digiconnekt promise you a highly experienced and cost-effective team who has great accuracy working with the latest technology and is determined to reduce your workload thereby increasing the profit.`,
+    ],
+  };
+  // Email validation or Data Mining end
+
+  // Email marketing automation start start
+  const emailMarketingAutomation = {
+    img: "../images/about/03.png",
+    title: "Email marketing automation",
+    para: [
+      `As a business owner, you can’t go on to respond to every customer’s query mail rather you look for ways to grow within the stipulated time. Here’s when email marketing automation comes to your rescue. The main advantage of Email marketing is that it keeps you away from repetitive tasks such as responding to similar queries or sending in the same updates to thousand of them.`,
+
+      `Email automation is the simplest way to compose emails that reach your targeted audience at the right time. Fortunately, you save your time and money and also increase your potential customers. These services can help your customers know more about your brand and encourage them to keep coming back by reminding them why they bought from you in the very first place.`,
+
+      `Email marketing comes with some more benefits. Some of them like:`,
+    ],
+    subPara: [
+      {
+        title: `Personalized content -`,
+        text: `Who doesn’t love customization? This service allows you to create a series of automated emails which is more appealing to the recipients.`,
+      },
+      {
+        title: `Improves your conversion rates -`,
+        text: `It’s easier to sell to an existing customer than to make a new one. So, schedule a message regarding updates and offer and drive in the sales.`,
+      },
+      {
+        title: `More in less time -`,
+        text: `If less time is spent manually compiling the message and sending it then more time could be dedicated to improving the other sectors for better marketing.`,
+      },
+    ],
+  };
+  // Email marketing automation start end
+
   return (
     <>
       {/* title section start */}
@@ -13,130 +70,20 @@ const EmailMarketing = () => {
       {/* page content start */}
       <div className="page-content">
         {/* Bulk email marketing start */}
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/02.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">
-                    Bulk email marketing: <br />
-                    Is it still worth investing in?
-                  </h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Studies show that despite the growth of mobile messengers
-                    and chat applications, nearly 61 percent of consumers prefer
-                    brand communication via email. Moreover, globally around 87
-                    percent of B2B and 79 percent of B2C marketers use email
-                    marketing as the primary channel for distributing content.
-                    Email marketing is still one of ‘the’ methods to rule the
-                    digital world!
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Bulk email service as the name suggests is an email campaign
-                    capable of sending emails to a group of customers at once.
-                    These services are generally used for digital marketing
-                    campaigns to send out updates to the curated lists at once.
-                    The type of content here incorporates newsletters,
-                    notifications, the latest offers, reports, and much more.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    When done in the right way, it boosts your loyal customer
-                    number and increases the graph of ROI. At Digiconnekt, the
-                    Bulk email service is one of the most powerful mediums to
-                    increase your digital marketing campaigns. We manage your
-                    clients effectively by segmenting them into groups,
-                    specifying their needs, and thus improving your conversion
-                    rates. Our AI-powered systems boost your graph of engagement
-                    by sending emails at the perfect time.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImgContent
+          img={bulkEmailMarketing.img}
+          title={bulkEmailMarketing.title}
+          para={bulkEmailMarketing.para}
+        />
         {/* Bulk email marketing end */}
 
         {/* Email marketing automation start */}
-        <section className="pt-0 overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 order-lg-1">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/03.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">Email marketing automation</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    As a business owner, you can’t go on to respond to every
-                    customer’s query mail rather you look for ways to grow
-                    within the stipulated time. Here’s when email marketing
-                    automation comes to your rescue. The main advantage of Email
-                    marketing is that it keeps you away from repetitive tasks
-                    such as responding to similar queries or sending in the same
-                    updates to thousand of them.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Email automation is the simplest way to compose emails that
-                    reach your targeted audience at the right time. Fortunately,
-                    you save your time and money and also increase your
-                    potential customers. These services can help your customers
-                    know more about your brand and encourage them to keep coming
-                    back by reminding them why they bought from you in the very
-                    first place.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Email marketing comes with some more benefits. Some of them
-                    like:
-                  </p>
-                  <ul className="list-unstyled list-icon">
-                    <li className="mb-3" style={{ textAlign: "justify" }}>
-                      <i className="flaticon-tick"></i>
-                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
-                        Personalized content -
-                      </span>{" "}
-                      Who doesn’t love customization? This service allows you to
-                      create a series of automated emails which is more
-                      appealing to the recipients.
-                    </li>
-                    <li className="mb-3" style={{ textAlign: "justify" }}>
-                      <i className="flaticon-tick"></i>
-                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
-                        Improves your conversion rates -{" "}
-                      </span>{" "}
-                      It’s easier to sell to an existing customer than to make a
-                      new one. So, schedule a message regarding updates and
-                      offer and drive in the sales.
-                    </li>
-                    <li style={{ textAlign: "justify" }}>
-                      <i className="flaticon-tick"></i>
-                      <span style={{ color: "#1c2045", fontWeight: "bold" }}>
-                        More in less time -{" "}
-                      </span>{" "}
-                      If less time is spent manually compiling the message and
-                      sending it then more time could be dedicated to improving
-                      the other sectors for better marketing.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContentImg
+          img={emailMarketingAutomation.img}
+          title={emailMarketingAutomation.title}
+          para={emailMarketingAutomation.para}
+          subPara={emailMarketingAutomation.subPara}
+        />
         {/* Email marketing automation end */}
 
         {/* one liner start */}
@@ -148,45 +95,11 @@ const EmailMarketing = () => {
         {/* one liner end */}
 
         {/* Email validation or Data Mining start */}
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/02.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">Email validation or Data Mining</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Data analytics is becoming a basic necessity in every field.
-                    It helps big firms to small corporations to deal with huge
-                    figures, segment them out, understand the different
-                    categories of potential customers, analyze their needs, and
-                    better strategize their marketing fundamentals. Here data
-                    mining comes into play to portray the big picture in small
-                    pieces. Such email intelligence helps you improve sales and
-                    increase your customer interaction.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    We provide a team of specialists who figure out large
-                    numbers of feeds, enrich the data, clean the data set, and
-                    provide analyzed reports targeting many groups. Besides,
-                    working with Digiconnekt promise you a highly experienced
-                    and cost-effective team who has great accuracy working with
-                    the latest technology and is determined to reduce your
-                    workload thereby increasing the profit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImgContent
+          img={emailValidation.img}
+          title={emailValidation.title}
+          para={emailValidation.para}
+        />
         {/* Email validation or Data Mining end */}
 
         {/* contact btn start */}

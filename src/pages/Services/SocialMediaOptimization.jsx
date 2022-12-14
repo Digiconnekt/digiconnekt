@@ -1,9 +1,44 @@
 import React from "react";
+import ContentImg from "../../components/ContentImg";
+import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
-import TitleSection from "../../components/TitleSection";
+import TitleSection from "../../components/Title";
 import "./scrollBar.css";
 
 const SocialMediaOptimization = () => {
+  // what is smo start
+  const whatIsSmo = {
+    img: "../images/about/02.png",
+    title: "What is SMO?",
+    para: [
+      `From its inception in the year 2006 to fast forward 2022, SMO is hitting the digital market with its necessity. SMO or Social Media Optimization primarily aims at attracting customers from any source other than search engines. Nobody can deny the power of social media, having said this it won’t be wrong to say that using the full potential of social media marketing can do wonders for your business.`,
+
+      `SMO doesn’t only cover the technical aspect but emphasizes various marketing platforms such as Facebook marketing, Instagram marketing, LinkedIn, and much more.`,
+    ],
+  };
+  // what is smo end
+
+  // how to do smo start
+  const howToDoSmo = {
+    img: "../images/about/03.png",
+    title: "How to do SMO?",
+    para: [
+      `To start with what Cameron Olthius wrote: “SMO tactics can drive huge amounts of people to the website and can also determine whether a startup, website, or idea will make it or not. It involves driving traffic to a website through new channels because search engines aren’t the on;y sites that drive big traffic anymore.”`,
+
+      `This brings me to the point that optimizing Social Media is the key essential. Optimization of social media not only portrays a positive image of your brand but has a direct impact on SEO as it eases the usability of the site which will automatically generate traffic.`,
+
+      `To start with, blend your website and social media! Yes, you heard it right. Inculcate your social media links on the website and vice-versa, and allow your users to sign in through their social media profiles, this will increase the registration conversation.`,
+
+      `Keywords play an important role. Structure your social media pages with just the right keywords and phrases such as the company name and info, keeping in mind that it doesn't give a promotional outlook.`,
+
+      `The next key feature could be to encourage inbound links, that is to encourage more external websites to link to your content. Besides, you should also post content consistently on all your social media platforms and into existing threads and discussion forums. These exercises will maximize your external link sources.`,
+
+      `Share quality and optimized content. Google algorithms might change continuously but the demand for quality and optimized content from users remains constant. Optimizing your posts for searches is important to increase their visibility and engagement. Here optimization covers short, descriptive titles, informative descriptions, and everything in between. These small steps will help you emerge as a leader in your domain.`,
+    ],
+    subPara: null,
+  };
+  // how to do smo end
+
   return (
     <>
       {/* title section start */}
@@ -13,109 +48,20 @@ const SocialMediaOptimization = () => {
       {/* page content start */}
       <div className="page-content">
         {/* what is smo start */}
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/02.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">What is SMO?</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    From its inception in the year 2006 to fast forward 2022,
-                    SMO is hitting the digital market with its necessity. SMO or
-                    Social Media Optimization primarily aims at attracting
-                    customers from any source other than search engines. Nobody
-                    can deny the power of social media, having said this it
-                    won’t be wrong to say that using the full potential of
-                    social media marketing can do wonders for your business.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    SMO doesn’t only cover the technical aspect but emphasizes
-                    various marketing platforms such as Facebook marketing,
-                    Instagram marketing, LinkedIn, and much more.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImgContent
+          img={whatIsSmo.img}
+          title={whatIsSmo.title}
+          para={whatIsSmo.para}
+        />
         {/* what is smo end */}
 
         {/* how to do start */}
-        <section className="pt-0 overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 order-lg-1">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/03.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">How to do SMO?</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    To start with what Cameron Olthius wrote: <br /> “SMO
-                    tactics can drive huge amounts of people to the website and
-                    can also determine whether a startup, website, or idea will
-                    make it or not. It involves driving traffic to a website
-                    through new channels because search engines aren’t the on;y
-                    sites that drive big traffic anymore.”
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    This brings me to the point that optimizing Social Media is
-                    the key essential. Optimization of social media not only
-                    portrays a positive image of your brand but has a direct
-                    impact on SEO as it eases the usability of the site which
-                    will automatically generate traffic.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    To start with, blend your website and social media! Yes, you
-                    heard it right. Inculcate your social media links on the
-                    website and vice-versa, and allow your users to sign in
-                    through their social media profiles, this will increase the
-                    registration conversation.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Keywords play an important role. Structure your social media
-                    pages with just the right keywords and phrases such as the
-                    company name and info, keeping in mind that it doesn't give
-                    a promotional outlook.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    The next key feature could be to encourage inbound links,
-                    that is to encourage more external websites to link to your
-                    content. Besides, you should also post content consistently
-                    on all your social media platforms and into existing threads
-                    and discussion forums. These exercises will maximize your
-                    external link sources.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Share quality and optimized content. Google algorithms might
-                    change continuously but the demand for quality and optimized
-                    content from users remains constant. Optimizing your posts
-                    for searches is important to increase their visibility and
-                    engagement. Here optimization covers short, descriptive
-                    titles, informative descriptions, and everything in between.
-                    These small steps will help you emerge as a leader in your
-                    domain.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContentImg
+          img={howToDoSmo.img}
+          title={howToDoSmo.title}
+          para={howToDoSmo.para}
+          subPara={howToDoSmo.subPara}
+        />
         {/* how to do end */}
 
         {/* one liner start */}

@@ -1,9 +1,42 @@
 import React from "react";
+import ContentImg from "../../components/ContentImg";
+import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
-import TitleSection from "../../components/TitleSection";
+import TitleSection from "../../components/Title";
 import "./scrollBar.css";
 
 const SearchEngineOptmization = () => {
+  // what is seo start
+  const whatIsSeo = {
+    img: "../images/about/02.png",
+    title: "What is SEO?",
+    para: [
+      `SEO or Search Engine Optimization means, making your website more visible on a Search Engine Results Page (SERP). According to the latest figures, around 3.5 billion searches happen per day! With such a high volume of searches, SEO is
+      definitely an important ingredient for making a perfect website!!`,
+
+      `A great SEO strategy will result in making the company’s website at the top of the Google search page, therefore increasing the engagement of the viewers. But does your SEO strategy really help your business get organically ranked?`,
+      `But does your SEO strategy really help your business get organically ranked?`,
+    ],
+  };
+  // what is seo end
+
+  // how does seo works start
+  const howDoesSeoWorks = {
+    img: "../images/about/03.png",
+    title: "How does SEO work?",
+    para: [
+      `SEO is a customized long-term strategy that is aimed at giving your business an edge over the competition. SEO focuses on the ranking and visibility of your business. It virtually helps you position your brand on the digital horizon and make it more visible in terms of engagement. It works by optimizing the website’s content, conducting keyword research, and in turn increasing the customer’s engagement on the website.`,
+
+      `Search engines have a single goal which is to provide the most relevant page results to their users. The SEO algorithm chooses pages that are most relevant to the user’s query. Pages are ranked depending on the relevance of keywords. This makes it an important point to choose your keywords wisely.`,
+
+      `Search engines have a single goal which is to provide the most relevant page results to their users. The SEO algorithm chooses pages that are most relevant to the user’s query. Pages are ranked depending on the relevance of keywords. This makes it an important point to choose your keywords wisely.`,
+
+      `Besides these adding more optimized content, image filename, or improving links can increase your SEO ranking and search visibility.`,
+    ],
+    subPara: null,
+  };
+  // how does seo works end
+
   return (
     <>
       {/* title section start */}
@@ -13,99 +46,20 @@ const SearchEngineOptmization = () => {
       {/* page content start */}
       <div className="page-content">
         {/* what is seo start */}
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/02.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">What is SEO?</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    SEO or Search Engine Optimization means, making your website
-                    more visible on a Search Engine Results Page (SERP).
-                    According to the latest figures, around 3.5 billion searches
-                    happen per day! With such a high volume of searches, SEO is
-                    definitely an important ingredient for making a perfect
-                    website!!
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    A great SEO strategy will result in making the company’s
-                    website at the top of the Google search page, therefore
-                    increasing the engagement of the viewers. <br />
-                    But does your SEO strategy really help your business get
-                    organically ranked?
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    But does your SEO strategy really help your business get
-                    organically ranked?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImgContent
+          img={whatIsSeo.img}
+          title={whatIsSeo.title}
+          para={whatIsSeo.para}
+        />
         {/* what is seo start */}
 
         {/* how does seo works start */}
-        <section className="pt-0 overflow-hidden">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 order-lg-1">
-                <div className="info-img position-relative">
-                  <img
-                    className="img-fluid topBottom"
-                    src="../images/about/03.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                <div className="section-title mb-4">
-                  <h2 className="title">How does SEO work?</h2>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    SEO is a customized long-term strategy that is aimed at
-                    giving your business an edge over the competition. SEO
-                    focuses on the ranking and visibility of your business. It
-                    virtually helps you position your brand on the digital
-                    horizon and make it more visible in terms of engagement. It
-                    works by optimizing the website’s content, conducting
-                    keyword research, and in turn increasing the customer’s
-                    engagement on the website.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Search engines have a single goal which is to provide the
-                    most relevant page results to their users. The SEO algorithm
-                    chooses pages that are most relevant to the user’s query.
-                    Pages are ranked depending on the relevance of keywords.
-                    This makes it an important point to choose your keywords
-                    wisely.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Search engines have a single goal which is to provide the
-                    most relevant page results to their users. The SEO algorithm
-                    chooses pages that are most relevant to the user’s query.
-                    Pages are ranked depending on the relevance of keywords.
-                    This makes it an important point to choose your keywords
-                    wisely.
-                  </p>
-                  <p className="text-black" style={{ textAlign: "justify" }}>
-                    Besides these adding more optimized content, image filename,
-                    or improving links can increase your SEO ranking and search
-                    visibility.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContentImg
+          img={howDoesSeoWorks.img}
+          title={howDoesSeoWorks.title}
+          para={howDoesSeoWorks.para}
+          subPara={howDoesSeoWorks.subPara}
+        />
         {/* how does seo works end */}
 
         {/* one liner start */}

@@ -17,6 +17,8 @@ const PopUpHome = () => {
     setStyle({
       display: "block",
       backdropFilter: "blur(5px)",
+      backgroundImage: "url(../images/bg/05.png)",
+      backgroundColor: "rgba(60,60,60,0.7)",
       zIndex: "1300",
     });
   }, []);
@@ -32,7 +34,7 @@ const PopUpHome = () => {
   return (
     <>
       <div
-        className={`modal fade ${show}`}
+        className={`modal fade animatedBackground ${show}`}
         id="exampleModalToggle"
         aria-labelledby="exampleModalToggleLabel"
         tabindex="-1"
