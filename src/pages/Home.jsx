@@ -14,6 +14,7 @@ const Home = () => {
   return (
     <>
       {modal ? <PopUpHome /> : ""}
+
       <section
         className="fullscreen-banner banner banner-2 p-0 overflow-hidden bg-contain bg-pos-r animatedBackground"
         data-bg-img="images/bg/05.png"
@@ -1122,131 +1123,6 @@ const Home = () => {
                           </a>
                         </li>
                       </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="bg-contain bg-pos-r pt-0"
-          data-bg-img="images/bg/02.png"
-          style={{ backgroundImage: "url(images/bg/02.png)" }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title">
-                  <h6>Testimonial</h6>
-                  <h2 className="title">
-                    You Can See our clients feedback What You Say?
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-12">
-                <div
-                  className="owl-carousel"
-                  data-items="1"
-                  data-autoplay="true"
-                >
-                  <div className="item">
-                    <div className="testimonial style-2">
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <div className="testimonial-img info-img round-animation">
-                            <img
-                              className="img-fluid leftRight"
-                              src="images/testimonial/01.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
-                          <div className="testimonial-content">
-                            <div className="testimonial-quote">
-                              <i className="flaticon-quotation"></i>
-                            </div>
-                            <p>
-                              Professional recommended and great experience, Nam
-                              pulvinar vitae neque et porttitor, Praesent sed
-                              nisi eleifend, Consectetur adipisicing elit, sed
-                              do eiusmodas temporo incididunt
-                            </p>
-                            <div className="testimonial-caption">
-                              <h5>Lana Roadse</h5>
-                              <label>CEO of Loptus</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimonial style-2">
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <div className="testimonial-img info-img round-animation">
-                            <img
-                              className="img-fluid leftRight"
-                              src="images/testimonial/01.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
-                          <div className="testimonial-content">
-                            <div className="testimonial-quote">
-                              <i className="flaticon-quotation"></i>
-                            </div>
-                            <p>
-                              Professional recommended and great experience, Nam
-                              pulvinar vitae neque et porttitor, Praesent sed
-                              nisi eleifend, Consectetur adipisicing elit, sed
-                              do eiusmodas temporo incididunt
-                            </p>
-                            <div className="testimonial-caption">
-                              <h5>Lana Roadse</h5>
-                              <label>CEO of Loptus</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="testimonial style-2">
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <div className="testimonial-img info-img round-animation">
-                            <img
-                              className="img-fluid leftRight"
-                              src="images/testimonial/01.png"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
-                          <div className="testimonial-content">
-                            <div className="testimonial-quote">
-                              <i className="flaticon-quotation"></i>
-                            </div>
-                            <p>
-                              Professional recommended and great experience, Nam
-                              pulvinar vitae neque et porttitor, Praesent sed
-                              nisi eleifend, Consectetur adipisicing elit, sed
-                              do eiusmodas temporo incididunt
-                            </p>
-                            <div className="testimonial-caption">
-                              <h5>Lana Roadse</h5>
-                              <label>CEO of Loptus</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

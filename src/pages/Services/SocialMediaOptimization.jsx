@@ -66,9 +66,9 @@ const SocialMediaOptimization = () => {
 
         {/* one liner start */}
         <OneLiner
-          textBeforeHighlight="Want to rank higher in search results? Let’s talk about your "
-          highlightText="SEO "
-          textAfterHighlight="with our experts!"
+          textBeforeHighlight="Grow your organization "
+          highlightText="10x "
+          textAfterHighlight="with the online presence. Get in touch with our experts now!"
         />
         {/* one liner end */}
 

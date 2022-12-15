@@ -41,7 +41,7 @@ const Header = () => {
                     <ul className="navbar-nav mx-auto position-relative">
                       {/* home link start */}
                       <li className="nav-item dropdown">
-                        <NavLink to="/" className="nav-link active">
+                        <NavLink to="/" className="nav-link ">
                           Home
                         </NavLink>
                       </li>

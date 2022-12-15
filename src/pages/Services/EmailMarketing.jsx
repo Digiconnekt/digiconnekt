@@ -88,9 +88,9 @@ const EmailMarketing = () => {
 
         {/* one liner start */}
         <OneLiner
-          textBeforeHighlight="Want to rank higher in search results? Let’s talk about your "
-          highlightText="SEO "
-          textAfterHighlight="with our experts!"
+          textBeforeHighlight="Get the right "
+          highlightText="words "
+          textAfterHighlight="from our expert to hit the potential graph"
         />
         {/* one liner end */}
 
