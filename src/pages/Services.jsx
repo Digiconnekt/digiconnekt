@@ -42,9 +42,9 @@ const Services = () => {
             </div>
             <div className="row">
               <div
-                onClick={seo}
                 className="col-lg-4 col-md-6 wow fadeInLeft"
                 data-wow-duration="0.6"
+                onClick={seo}
                 style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">

@@ -90,69 +90,13 @@ const Header = () => {
                       </li>
                       {/* services link end */}
 
-                      {/* <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
-                        >
-                          Project
-                        </a>
-                        <div className="dropdown-menu">
-                          <ul className="list-unstyled">
-                            <li>
-                              <a href="project-grid-2.html">Project Grid 2</a>
-                            </li>
-                            <li>
-                              <a href="project-grid-3.html">Project Grid 3</a>
-                            </li>
-                            <li>
-                              <a href="project-fullwidth.html">
-                                Project FullWidth
-                              </a>
-                            </li>
-                            <li>
-                              <a href="project-details.html">Project Details</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-
+                      {/* proposal link start */}
                       <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#"
-                          data-bs-toggle="dropdown"
-                        >
-                          News
-                        </a>
-                        <div className="dropdown-menu">
-                          <ul className="list-unstyled">
-                            <li>
-                              <a href="blog-classic.html">Blog Classic</a>
-                            </li>
-                            <li>
-                              <a href="blog-grid-2.html">Blog Grid 2</a>
-                            </li>
-                            <li>
-                              <a href="blog-grid-3.html">Blog Grid 3</a>
-                            </li>
-                            <li>
-                              <a href="blog-left-sidebar.html">
-                                Blog left sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-right-sidebar.html">
-                                Blog right sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Single</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li> */}
+                        <NavLink to="/proposal" className="nav-link ">
+                          Get A Proposal
+                        </NavLink>
+                      </li>
+                      {/* proposal link end */}
 
                       {/* contact link start */}
                       <li className="nav-item dropdown">
@@ -163,7 +107,8 @@ const Header = () => {
                       {/* contact link end */}
                     </ul>
                   </div>
-                  <div className="right-nav align-items-center d-flex justify-content-end">
+
+                  {/* <div className="right-nav align-items-center d-flex justify-content-end">
                     <a className="btn btn-white btn-sm" href="login.html">
                       Login
                     </a>
@@ -184,7 +129,7 @@ const Header = () => {
                     <a href="#" className="ht-nav-toggle">
                       <span></span>
                     </a>
-                  </div>
+                  </div> */}
                 </nav>
               </div>
             </div>

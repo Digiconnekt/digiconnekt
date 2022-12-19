@@ -1,7 +1,7 @@
 import React from "react";
 import TitleSection from "../components/Title";
 
-const Contact = () => {
+const Proposal = () => {
   const style = {
     borderRadius: "5px",
     fontSize: "13px",
@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <>
       {/* title section start */}
-      <TitleSection title="Contact" />
+      <TitleSection title="Get A Proposal" />
       {/* title section end */}
 
       <div className="page-content">
@@ -236,4 +236,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Proposal;

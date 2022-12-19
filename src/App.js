@@ -12,6 +12,7 @@ import Error from "./pages/Error";
 import EmailMarketing from "./pages/Services/EmailMarketing";
 import ContentMarketing from "./pages/Services/ContentMarketing";
 import About from "./pages/About";
+import Proposal from "./pages/Proposal";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           path="/services/content-marketing"
           element={<ContentMarketing />}
         />
+        <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
