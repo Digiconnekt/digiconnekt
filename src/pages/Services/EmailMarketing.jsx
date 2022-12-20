@@ -8,7 +8,7 @@ import "./scrollBar.css";
 const EmailMarketing = () => {
   // Bulk email marketing start
   const bulkEmailMarketing = {
-    img: "../images/about/02.png",
+    img: "../images/services/email-marketing/bulkEmailMarketing.png",
     title: `Bulk Email Marketing:
     Is It Still Worth Investing In?`,
     para: [
@@ -23,7 +23,7 @@ const EmailMarketing = () => {
 
   // Email validation or Data Mining start
   const emailValidation = {
-    img: "../images/about/02.png",
+    img: "../images/services/email-marketing/emailValidation.png",
     title: `Email Validation Or Data Mining`,
     para: [
       `Data analytics is becoming a basic necessity in every field. It helps big firms to small corporations to deal with huge figures, segment them out, understand the different categories of potential customers, analyze their needs, and better strategize their marketing fundamentals. Here data mining comes into play to portray the big picture in small pieces. Such email intelligence helps you improve sales and increase your customer interaction.`,
@@ -35,7 +35,7 @@ const EmailMarketing = () => {
 
   // Email marketing automation start start
   const emailMarketingAutomation = {
-    img: "../images/about/03.png",
+    img: "../images/services/email-marketing/emailMarketingAutomation.png",
     title: "Email marketing automation",
     para: [
       `As a business owner, you can’t go on to respond to every customer’s query mail rather you look for ways to grow within the stipulated time. Here’s when email marketing automation comes to your rescue. The main advantage of Email marketing is that it keeps you away from repetitive tasks such as responding to similar queries or sending in the same updates to thousand of them.`,

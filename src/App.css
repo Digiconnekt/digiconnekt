@@ -1,0 +1,13 @@
+.btn-check:checked + .btn-hover,
+.btn-hover.active,
+.btn-hover.show,
+.btn-hover:first-child:active,
+:not(.btn-check) + .btn-hover:active {
+  color: #fff;
+  background-color: #ff7810;
+}
+
+.btn-hover:hover {
+  color: #fff;
+  background-color: #ff7810;
+}

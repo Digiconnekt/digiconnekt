@@ -8,7 +8,7 @@ import "./scrollBar.css";
 const ContentMarketing = () => {
   // Strategizing The Content start
   const strategizingTheContent = {
-    img: "../images/about/02.png",
+    img: "../images/services/content-marketing/strategizingContent.png",
     title: "Strategizing The Content That’s Relevant For You",
     para: [
       `Strategizing The Content That’s Relevant For You Statistics state that 50% of buyers use ad-block methodology and around 80% prefer to look for the appropriate option instead of speaking to your sales team during their initial purchasing journey. This is when content marketing comes to your rescue!`,
@@ -276,7 +276,7 @@ const ContentMarketing = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/content-marketing/articleWriting.png"
                     alt=""
                   />
                 </div>
@@ -301,7 +301,7 @@ const ContentMarketing = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/content-marketing/blog.png"
                     alt=""
                   />
                 </div>
@@ -327,7 +327,7 @@ const ContentMarketing = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/content-marketing/seoContentWriting.png"
                     alt=""
                   />
                 </div>
@@ -352,7 +352,7 @@ const ContentMarketing = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/content-marketing/contentEditing.png"
                     alt=""
                   />
                 </div>

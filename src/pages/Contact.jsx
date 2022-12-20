@@ -22,7 +22,11 @@ const Contact = () => {
       {/* title section end */}
 
       <div className="page-content">
-        <section className="contact-1" data-bg-img="images/pattern/02.png">
+        <section
+          className="contact-1"
+          data-bg-img="images/pattern/02.png"
+          style={{ backgroundImage: "url(images/pattern/02.png)" }}
+        >
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-6 col-md-7">

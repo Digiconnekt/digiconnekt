@@ -8,7 +8,7 @@ import "./scrollBar.css";
 const SocialMediaOptimization = () => {
   // what is smo start
   const whatIsSmo = {
-    img: "../images/about/02.png",
+    img: "../images/services/smo/whatIsSmo.png",
     title: "What is SMO?",
     para: [
       `From its inception in the year 2006 to fast forward 2022, SMO is hitting the digital market with its necessity. SMO or Social Media Optimization primarily aims at attracting customers from any source other than search engines. Nobody can deny the power of social media, having said this it won’t be wrong to say that using the full potential of social media marketing can do wonders for your business.`,
@@ -20,7 +20,7 @@ const SocialMediaOptimization = () => {
 
   // how to do smo start
   const howToDoSmo = {
-    img: "../images/about/03.png",
+    img: "../images/services/smo/howToDoSmo.png",
     title: "How to do SMO?",
     para: [
       `To start with what Cameron Olthius wrote: “SMO tactics can drive huge amounts of people to the website and can also determine whether a startup, website, or idea will make it or not. It involves driving traffic to a website through new channels because search engines aren’t the on;y sites that drive big traffic anymore.”`,
@@ -96,7 +96,7 @@ const SocialMediaOptimization = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/smo/facebook.png"
                     alt=""
                   />
                 </div>
@@ -124,7 +124,7 @@ const SocialMediaOptimization = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/smo/instagram.png"
                     alt=""
                   />
                 </div>
@@ -153,7 +153,7 @@ const SocialMediaOptimization = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/smo/linkedin.png"
                     alt=""
                   />
                 </div>
@@ -208,7 +208,7 @@ const SocialMediaOptimization = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/services/smo/snapchat.png"
                     alt=""
                   />
                 </div>
@@ -477,7 +477,7 @@ const SocialMediaOptimization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/smo/strategy.png"
                             alt=""
                           />
                         </div>

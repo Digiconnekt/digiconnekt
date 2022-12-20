@@ -8,7 +8,7 @@ import "./scrollBar.css";
 const SearchEngineOptmization = () => {
   // what is seo start
   const whatIsSeo = {
-    img: "../images/about/02.png",
+    img: "../images/services/seo/whatIsSeo.png",
     title: "What is SEO?",
     para: [
       `SEO or Search Engine Optimization means, making your website more visible on a Search Engine Results Page (SERP). According to the latest figures, around 3.5 billion searches happen per day! With such a high volume of searches, SEO is
@@ -301,7 +301,7 @@ const SearchEngineOptmization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/seo/discovery.png"
                             alt=""
                           />
                         </div>
