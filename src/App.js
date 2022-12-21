@@ -13,10 +13,12 @@ import EmailMarketing from "./pages/Services/EmailMarketing";
 import ContentMarketing from "./pages/Services/ContentMarketing";
 import About from "./pages/About";
 import Proposal from "./pages/Proposal";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
