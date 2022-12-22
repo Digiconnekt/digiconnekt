@@ -6,7 +6,7 @@ const Title = ({ title }) => {
       {/* title section start */}
       <section
         className="page-title overflow-hidden text-center light-bg bg-contain animatedBackground"
-        data-bg-img="images/pattern/05.png"
+        data-bg-img="../images/pattern/05.png"
         style={{ backgroundImage: "url(../images/pattern/05.png)" }}
       >
         <div className="container">

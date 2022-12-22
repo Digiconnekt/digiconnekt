@@ -23,7 +23,7 @@ const About = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/04.jpg"
+                        src="images/about/aboutUs1.png"
                         alt=""
                       />
                     </div>
@@ -32,7 +32,7 @@ const About = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/05.jpg"
+                        src="images/about/aboutUs2.png"
                         alt=""
                       />
                     </div>
@@ -41,7 +41,7 @@ const About = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/06.jpg"
+                        src="images/about/aboutUs3.png"
                         alt=""
                       />
                     </div>
@@ -50,7 +50,7 @@ const About = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/07.jpg"
+                        src="images/about/aboutUs4.png"
                         alt=""
                       />
                     </div>
@@ -154,8 +154,38 @@ const About = () => {
         </section>
         {/* how it works end */}
 
-        {/* case study start */}
+        {/* one liner start */}
         <section
+          className="overflow-hidden dark-bg animatedBackground pt-5 pb-3 px-2"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="section-title mb-0">
+                <h2
+                  className="title oneLiner"
+                  style={{ fontSize: "70px", lineHeight: "90px" }}
+                >
+                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
+                    Think{" "}
+                  </span>
+                  with Digiconnekt <br />
+                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
+                    Grow{" "}
+                  </span>
+                  with Digiconnekt
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* one liner end */}
+
+        {/* case study start */}
+        {/* <section
           className="overflow-hidden dark-bg animatedBackground"
           data-bg-img="images/pattern/06.png"
           style={{ backgroundImage: "url(../images/pattern/06.png)" }}
@@ -175,7 +205,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* case study end */}
 
         {/* what we do start */}
@@ -186,7 +216,7 @@ const About = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/02.png"
+                    src="../images/about/whatWeDo.png"
                     alt=""
                   />
                 </div>
@@ -229,7 +259,7 @@ const About = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/about/03.png"
+                    src="../images/about/whyUs.png"
                     alt=""
                   />
                 </div>
@@ -260,7 +290,7 @@ const About = () => {
 
         {/* services we provide start */}
         <section
-          className="bg-contain bg-pos-r p-0"
+          className="bg-contain bg-pos-r p-0 mt-10 mb-10"
           data-bg-img="images/pattern/02.png"
           style={{ backgroundImage: "url(../images/pattern/02.png)" }}
         >
@@ -280,84 +310,92 @@ const About = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 mt-5 mt-md-0">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="images/feature/04.png"
-                      alt=""
-                    />
+                <a href="/services/search-engine-optimization">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/04.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Search Engine Optimization</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
                   </div>
-                  <div className="featured-title">
-                    <h5>Search Engine Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="images/feature/05.png"
-                      alt=""
-                    />
+                <a href="/services/social-media-optimization">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/05.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Social Media Optimization</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
                   </div>
-                  <div className="featured-title">
-                    <h5>Social Media Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 mt-5">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="images/feature/06.png"
-                      alt=""
-                    />
+                <a href="/services/email-marketing">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/06.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Email Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
                   </div>
-                  <div className="featured-title">
-                    <h5>Email Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 mt-5">
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="images/feature/07.png"
-                      alt=""
-                    />
+                <a href="/services/content-marketing">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/07.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Content Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
                   </div>
-                  <div className="featured-title">
-                    <h5>Content Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -365,7 +403,7 @@ const About = () => {
         {/* services we provide end */}
 
         {/* contact btn start */}
-        <section
+        {/* <section
           className="overflow-hidden dark-bg animatedBackground mb-10 mt-5"
           data-bg-img="../images/pattern/06.png"
           style={{
@@ -405,7 +443,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* contact btn end */}
       </div>
       {/* page content end */}

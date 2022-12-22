@@ -24,13 +24,10 @@ const Error = () => {
                   <h5 className="mb-4 text-capitalize mt-3">
                     Ooops, the page doesn't seem to exit.{" "}
                   </h5>
-                  <NavLink
-                    to="/"
-                    className="btn btn-theme btn-radius btn-iconic"
-                  >
+                  <a href="/" className="btn btn-theme btn-radius btn-iconic">
                     <i className="fas fa-long-arrow-alt-left"></i>{" "}
                     <span>Back to Home</span>
-                  </NavLink>
+                  </a>
                 </div>
               </div>
             </div>

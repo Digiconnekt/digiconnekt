@@ -41,12 +41,16 @@ const Proposal = () => {
                     className="row g-4 needs-validation"
                     method="post"
                     action="php/contact.php"
-                    novalidate
+                    noValidate
                   >
                     <div className="messages"></div>
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* first name start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         Let's start by asking you for your first name.
                       </label>
                       <input
@@ -58,9 +62,14 @@ const Proposal = () => {
                         required
                       />
                     </div>
+                    {/* first name end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* website name start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         What is your website, then?
                       </label>
                       <input
@@ -72,67 +81,81 @@ const Proposal = () => {
                         required
                       />
                     </div>
+                    {/* website name end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* main objective start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         And what is your main objective?
                       </label>
                       <div className="" style={{ ...style, ...bgStyle }}>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="increaseRevenue"
                           />
-                          <label class="form-check-label" for="increaseRevenue">
+                          <label
+                            className="form-check-label"
+                            htmlFor="increaseRevenue"
+                          >
                             Increase My Revenue
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="getMoreLeads"
                           />
-                          <label class="form-check-label" for="getMoreLeads">
+                          <label
+                            className="form-check-label"
+                            htmlFor="getMoreLeads"
+                          >
                             Get More Leads
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="growBrandAwareness"
                           />
                           <label
-                            class="form-check-label"
-                            for="growBrandAwareness"
+                            className="form-check-label"
+                            htmlFor="growBrandAwareness"
                           >
                             Grow brand awareness
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="startMyBusiness"
                           />
-                          <label class="form-check-label" for="startMyBusiness">
+                          <label
+                            className="form-check-label"
+                            htmlFor="startMyBusiness"
+                          >
                             Start My Business
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="other"
                           />
-                          <label class="form-check-label" for="other">
+                          <label className="form-check-label" htmlFor="other">
                             Other
                           </label>
                           <input
@@ -149,9 +172,14 @@ const Proposal = () => {
                         </div>
                       </div>
                     </div>
+                    {/* main objective end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* which concern start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         Which concern do you have the most at the moment? How
                         come?
                       </label>
@@ -164,39 +192,49 @@ const Proposal = () => {
                         required
                       />
                     </div>
+                    {/* which concern end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* have you ever collab start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         Have you ever collaborated with an organisation?
                       </label>
                       <div className="" style={{ ...style, ...bgStyle }}>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="yes"
                           />
-                          <label class="form-check-label" for="yes">
+                          <label className="form-check-label" htmlFor="yes">
                             Yes
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="no"
                           />
-                          <label class="form-check-label" for="no">
+                          <label className="form-check-label" htmlFor="no">
                             No
                           </label>
                         </div>
                       </div>
                     </div>
+                    {/* have you ever collab end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* what prior experience start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         What prior experience did you have?
                       </label>
                       <div
@@ -205,315 +243,351 @@ const Proposal = () => {
                       >
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="zero"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="zero"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="zero"
+                          style={{ padding: "8px 12px" }}
                         >
                           0
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="one"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="one"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="one"
+                          style={{ padding: "8px 12px" }}
                         >
                           1
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="two"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="two"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="two"
+                          style={{ padding: "8px 12px" }}
                         >
                           2
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="three"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="three"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="three"
+                          style={{ padding: "8px 12px" }}
                         >
                           3
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="four"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="four"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="four"
+                          style={{ padding: "8px 12px" }}
                         >
                           4
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="five"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="five"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="five"
+                          style={{ padding: "8px 12px" }}
                         >
                           5
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="six"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="six"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="six"
+                          style={{ padding: "8px 12px" }}
                         >
                           6
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="seven"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="seven"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="seven"
+                          style={{ padding: "8px 12px" }}
                         >
                           7
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="eight"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="eight"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="eight"
+                          style={{ padding: "8px 12px" }}
                         >
                           8
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="nine"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="nine"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="nine"
+                          style={{ padding: "8px 12px" }}
                         >
                           9
                         </label>
                         <input
                           type="radio"
-                          class="btn-check"
+                          className="btn-check"
                           name="options"
                           id="ten"
-                          autocomplete="off"
+                          autoComplete="off"
                         />
                         <label
-                          class="btn btn-secondary btn-hover"
-                          for="ten"
-                          style={{ padding: "8px 15px" }}
+                          className="btn btn-secondary btn-hover"
+                          htmlFor="ten"
+                          style={{ padding: "8px 12px" }}
                         >
                           10
                         </label>
                       </div>
                     </div>
+                    {/* what prior experience end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* what service looking start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         All right! Now, in what services are you looking?
                       </label>
                       <div className="" style={{ ...style, ...bgStyle }}>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="seo"
                           />
-                          <label class="form-check-label" for="seo">
+                          <label className="form-check-label" htmlFor="seo">
                             Search Engine Optimization
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="smo"
                           />
-                          <label class="form-check-label" for="smo">
+                          <label className="form-check-label" htmlFor="smo">
                             Social Media Optimization
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="emailMarketing"
                           />
-                          <label class="form-check-label" for="emailMarketing">
+                          <label
+                            className="form-check-label"
+                            htmlFor="emailMarketing"
+                          >
                             Email Marketing
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="checkbox"
                             value=""
                             id="contentMarketing"
                           />
                           <label
-                            class="form-check-label"
-                            for="contentMarketing"
+                            className="form-check-label"
+                            htmlFor="contentMarketing"
                           >
                             Content Marketing
                           </label>
                         </div>
                       </div>
                     </div>
+                    {/* what service looking end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* how much money start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         How much money does your company now bring in each month
                         on average?
                       </label>
                       <div className="" style={{ ...style, ...bgStyle }}>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="launch"
                           />
-                          <label class="form-check-label" for="launch">
+                          <label className="form-check-label" htmlFor="launch">
                             I'm preparing to launch
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="zeroToFiveK"
                           />
-                          <label class="form-check-label" for="zeroToFiveK">
+                          <label
+                            className="form-check-label"
+                            htmlFor="zeroToFiveK"
+                          >
                             $0 - $5000
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="fiveToTenK"
                           />
-                          <label class="form-check-label" for="fiveToTenK">
+                          <label
+                            className="form-check-label"
+                            htmlFor="fiveToTenK"
+                          >
                             $5000 - $10000
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="tenToTwentyK"
                           />
-                          <label class="form-check-label" for="tenToTwentyK">
+                          <label
+                            className="form-check-label"
+                            htmlFor="tenToTwentyK"
+                          >
                             $10000 - $20000
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="twentyToFiftyK"
                           />
-                          <label class="form-check-label" for="twentyToFiftyK">
+                          <label
+                            className="form-check-label"
+                            htmlFor="twentyToFiftyK"
+                          >
                             $20000 - $50000
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="fiftyToOneLac"
                           />
-                          <label class="form-check-label" for="fiftyToOneLac">
+                          <label
+                            className="form-check-label"
+                            htmlFor="fiftyToOneLac"
+                          >
                             $50000 - $100000
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="OneLacPlus"
                           />
-                          <label class="form-check-label" for="OneLacPlus">
+                          <label
+                            className="form-check-label"
+                            htmlFor="OneLacPlus"
+                          >
                             $100000+
                           </label>
                         </div>
-                        <div class="form-check mt-2 mb-2">
+                        <div className="form-check mt-2 mb-2">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
                             value=""
                             id="hold"
                           />
-                          <label class="form-check-label" for="hold">
+                          <label className="form-check-label" htmlFor="hold">
                             I'd rather hold off for now.
                           </label>
                         </div>
                       </div>
                     </div>
+                    {/* how much money end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* provide contact info start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         Please provide your contact information so that we may
                         contact you with your quote.
                       </label>
@@ -559,20 +633,28 @@ const Proposal = () => {
                         </div>
                       </div>
                     </div>
+                    {/* provide contact info end */}
 
-                    <div className="col-md-12">
-                      <label className="mb-2" style={{ fontWeight: "500" }}>
+                    {/* when would you like to meet start */}
+                    <div className="col-md-12 mb-3">
+                      <label
+                        className="mb-2"
+                        style={{ fontSize: "18px", fontWeight: "500" }}
+                      >
                         When would you like to meet with us online?
                       </label>
                       <br />
-                      <input type="datetime-local" />
+                      <input className="text-black" type="datetime-local" />
                     </div>
+                    {/* when would you like to meet end */}
 
+                    {/* send button start */}
                     <div className="col-md-12">
                       <button className="btn btn-theme btn-radius">
                         <span>Send Message</span>
                       </button>
                     </div>
+                    {/* send button end */}
                   </form>
                 </div>
               </div>

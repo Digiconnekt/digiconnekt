@@ -37,7 +37,7 @@ const PopUpHome = () => {
         className={`modal fade animatedBackground ${show}`}
         id="exampleModalToggle"
         aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
+        tabIndex="-1"
         aria-hidden={ariaHidden}
         aria-modal={ariaModal}
         role={role}
@@ -215,7 +215,7 @@ const PopUpHome = () => {
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
-        tabindex="-1"
+        tabIndex="-1"
       >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">

@@ -1,7 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [navActive, setNavActive] = useState(false);
+
+  const activateNavActive = () => {
+    setNavActive(true);
+  };
+
   return (
     <>
       <header id="site-header" className="header">
@@ -11,18 +18,14 @@ const Header = () => {
               <div className="col">
                 <nav className="navbar navbar-expand-lg">
                   {/* logo start */}
-                  <NavLink
-                    to="/"
-                    className="navbar-brand logo"
-                    href="index.html"
-                  >
+                  <a href="/" className="navbar-brand logo">
                     <img
                       id="logo-img"
                       className="img-fluid"
-                      src="images/logo.png"
+                      src="../images/logo.png"
                       alt=""
                     />
-                  </NavLink>
+                  </a>
                   {/* logo end */}
                   <button
                     className="navbar-toggler"
@@ -41,34 +44,34 @@ const Header = () => {
                     <ul className="navbar-nav mx-auto position-relative">
                       {/* home link start */}
                       <li className="nav-item dropdown">
-                        <NavLink to="/" className="nav-link ">
+                        <a href="/" className="nav-link active">
                           Home
-                        </NavLink>
+                        </a>
                       </li>
                       {/* home link end */}
 
                       {/* about us link start */}
                       <li className="nav-item dropdown">
-                        <NavLink to="/about-us" className="nav-link ">
+                        <a href="/about-us" className="nav-link">
                           About Us
-                        </NavLink>
+                        </a>
                       </li>
                       {/* about us link end */}
 
                       {/* services link start */}
                       <li className="nav-item dropdown">
-                        <NavLink
-                          to="/services"
+                        <a
+                          href="/services"
                           className="nav-link dropdown-toggle"
                         >
                           Services
-                        </NavLink>
+                        </a>
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
                             <li>
-                              <NavLink to="/services/search-engine-optimization">
+                              <a href="/services/search-engine-optimization">
                                 Search Engine Optimization
-                              </NavLink>
+                              </a>
                             </li>
                             <li>
                               <NavLink to="/services/social-media-optimization">
@@ -92,17 +95,17 @@ const Header = () => {
 
                       {/* proposal link start */}
                       <li className="nav-item dropdown">
-                        <NavLink to="/proposal" className="nav-link ">
+                        <a href="/proposal" className="nav-link ">
                           Get A Proposal
-                        </NavLink>
+                        </a>
                       </li>
                       {/* proposal link end */}
 
                       {/* contact link start */}
                       <li className="nav-item dropdown">
-                        <NavLink to="/contact" className="nav-link ">
+                        <a href="/contact" className="nav-link ">
                           Contact
-                        </NavLink>
+                        </a>
                       </li>
                       {/* contact link end */}
                     </ul>

@@ -40,7 +40,7 @@ const Contact = () => {
                     className="row g-4 needs-validation"
                     method="post"
                     action="php/contact.php"
-                    novalidate
+                    noValidate
                   >
                     <div className="messages"></div>
                     <div className="col-md-6">
@@ -93,7 +93,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-12">
                       <select
-                        class="form-select"
+                        className="form-select"
                         style={{
                           ...style,
                           paddingTop: "14px",
@@ -113,49 +113,52 @@ const Contact = () => {
                         <label className="mb-2" style={{ fontWeight: "500" }}>
                           I require assistance with:
                         </label>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
                             id="seo"
+                            value="Search Engine Optimization"
                           />
-                          <label class="form-check-label" for="seo">
+                          <label className="form-check-label" htmlFor="seo">
                             Search Engine Optimization
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Social Media Optimization"
                             id="smo"
                           />
-                          <label class="form-check-label" for="smo">
+                          <label className="form-check-label" htmlFor="smo">
                             Social Media Optimization
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Email Marketing"
                             id="emailMarketing"
                           />
-                          <label class="form-check-label" for="emailMarketing">
+                          <label
+                            className="form-check-label"
+                            htmlFor="emailMarketing"
+                          >
                             Email Marketing
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Content Marketing"
                             id="contentMarketing"
                           />
                           <label
-                            class="form-check-label"
-                            for="contentMarketing"
+                            className="form-check-label"
+                            htmlFor="contentMarketing"
                           >
                             Content Marketing
                           </label>
@@ -167,58 +170,67 @@ const Contact = () => {
                         <label className="mb-2" style={{ fontWeight: "500" }}>
                           How did you find out about us?
                         </label>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Instagram"
                             id="instagram"
                           />
-                          <label class="form-check-label" for="instagram">
+                          <label
+                            className="form-check-label"
+                            htmlFor="instagram"
+                          >
                             Instagram
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Facebook"
                             id="facebook"
                           />
-                          <label class="form-check-label" for="facebook">
+                          <label
+                            className="form-check-label"
+                            htmlFor="facebook"
+                          >
                             Facebook
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Google"
                             id="google"
                           />
-                          <label class="form-check-label" for="google">
+                          <label className="form-check-label" htmlFor="google">
                             Google
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="LinkedIn"
                             id="linkedIn"
                           />
-                          <label class="form-check-label" for="linkedIn">
+                          <label
+                            className="form-check-label"
+                            htmlFor="linkedIn"
+                          >
                             LinkedIn
                           </label>
                         </div>
-                        <div class="form-check">
+                        <div className="form-check">
                           <input
-                            class="form-check-input"
+                            className="form-check-input"
                             type="checkbox"
-                            value=""
+                            value="Other"
                             id="other"
                           />
-                          <label class="form-check-label" for="other">
+                          <label className="form-check-label" htmlFor="other">
                             Other
                           </label>
                         </div>

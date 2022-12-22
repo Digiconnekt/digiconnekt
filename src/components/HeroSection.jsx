@@ -4,176 +4,204 @@ const HeroSection = () => {
   return (
     <>
       <section
-        class="fullscreen-banner banner banner-3 p-0 overflow-hidden grediant-overlay"
-        data-overlay="9"
-        style={{ height: "722px" }}
+        className="fullscreen-banner banner banner-3 p-0 overflow-hidden bg-contain bg-pos-r animatedBackground "
+        style={{
+          height: "722px",
+          backgroundImage: "url(../images/bg/05.png)",
+        }}
       >
-        <div class="insideText" style={{ top: "241px" }}>
+        <div className="insideText" style={{ top: "241px" }}>
           Digiconnekt
         </div>
         <div
-          class="owl-carousel no-pb owl-loaded owl-drag"
+          className="owl-carousel no-pb owl-loaded owl-drag"
           data-items="1"
           data-dots="false"
           data-autoplay="true"
         >
-          <div class="owl-stage-outer">
+          <div className="owl-stage-outer">
             <div
-              class="owl-stage"
+              className="owl-stage"
               style={{
                 transform: `translate3d(0px, 0px, 0px)`,
                 transition: "all 1s ease 0s",
                 width: "8516px",
               }}
             >
-              <div class="owl-item active" style={{ width: "1419.2px" }}>
-                <div class="item">
-                  <div class="align-center p-0" style={{ paddingTop: "100px" }}>
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-12 order-lg-1">
+              <div className="owl-item active" style={{ width: "1419.2px" }}>
+                <div className="item">
+                  <div
+                    className="align-center p-0"
+                    style={{ paddingTop: "100px" }}
+                  >
+                    <div className="container">
+                      <div className="row align-items-center">
+                        <div className="col-lg-5 col-md-12 order-lg-1">
                           <div
-                            class="mouse-parallax info-img"
+                            className="mouse-parallax info-img"
                             style={{
                               transform: "matrix(1, 0, 0, 1, -8.93333, 11.1)",
                             }}
                           >
                             <img
-                              class="img-fluid animated1"
+                              className="img-fluid animated1"
                               src="images/about/02.png"
                               alt=""
                             />
                           </div>
                         </div>
-                        <div class="col-lg-7 col-md-12 mt-5 mt-lg-0">
-                          <h1 class="mb-4 text-white animated2">
+                        <div className="col-lg-7 col-md-12 mt-5 mt-lg-0">
+                          <h1
+                            className="mb-4 text animated2"
+                            style={{ color: "#ff7810" }}
+                          >
                             Empowering <br />
-                            <span class="font-w-6 text-black">
+                            <span className="font-w-6 text-black">
                               Digitalization
                             </span>
                           </h1>
-                          <p class="lead text-white animated3">
+                          <p className="lead text-black animated3">
                             We talk digital!! <br />
                             We focus on driving potential customers by analyzing
                             market needs, <br /> advertising in the required
                             domain, and optimizing your digital space.
                           </p>
-                          <div class="animated3"></div>
+                          <div className="animated3"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="owl-item " style={{ width: "1419.2px" }}>
-                <div class="item">
-                  <div class="align-center p-0" style={{ paddingTop: "100px" }}>
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-12 order-lg-1">
+              <div className="owl-item " style={{ width: "1419.2px" }}>
+                <div className="item">
+                  <div
+                    className="align-center p-0"
+                    style={{ paddingTop: "100px" }}
+                  >
+                    <div className="container">
+                      <div className="row align-items-center">
+                        <div className="col-lg-5 col-md-12 order-lg-1">
                           <div
-                            class="mouse-parallax info-img"
+                            className="mouse-parallax info-img"
                             style={{
                               transform: "matrix(1, 0, 0, 1, -8.93333, 11.1)",
                             }}
                           >
                             <img
-                              class="img-fluid animated1"
+                              className="img-fluid animated1"
                               src="images/about/03.png"
                               alt=""
                             />
                           </div>
                         </div>
-                        <div class="col-lg-7 col-md-12 mt-5 mt-lg-0">
-                          <h1 class="mb-4 text-white animated2">
+                        <div className="col-lg-7 col-md-12 mt-5 mt-lg-0">
+                          <h1
+                            className="mb-4 text animated2"
+                            style={{ color: "#ff7810" }}
+                          >
                             Optimized{" "}
-                            <span class="font-w-6 text-black">Digital</span>{" "}
+                            <span className="font-w-6 text-black">Digital</span>{" "}
                             Platform
                           </h1>
-                          <p class="lead text-white animated3">
+                          <p className="lead text-black animated3">
                             We talk digital!! <br />
                             We focus on driving potential customers by analyzing
                             market needs, advertising in the required domain,
                             and optimizing your digital space.
                           </p>
-                          <div class="animated3"></div>
+                          <div className="animated3"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="owl-item" style={{ width: "1419.2px" }}>
-                <div class="item">
-                  <div class="align-center p-0" style={{ paddingTop: "100px" }}>
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-12 order-lg-1">
+              <div className="owl-item" style={{ width: "1419.2px" }}>
+                <div className="item">
+                  <div
+                    className="align-center p-0"
+                    style={{ paddingTop: "100px" }}
+                  >
+                    <div className="container">
+                      <div className="row align-items-center">
+                        <div className="col-lg-5 col-md-12 order-lg-1">
                           <div
-                            class="mouse-parallax info-img"
+                            className="mouse-parallax info-img"
                             style={{
                               transform: "matrix(1, 0, 0, 1, -8.93333, 11.1)",
                             }}
                           >
                             <img
-                              class="img-fluid animated1"
+                              className="img-fluid animated1"
                               src="images/about/02.png"
                               alt=""
                             />
                           </div>
                         </div>
-                        <div class="col-lg-7 col-md-12 mt-5 mt-lg-0">
-                          <h1 class="mb-4 text-white animated2">
+                        <div className="col-lg-7 col-md-12 mt-5 mt-lg-0">
+                          <h1
+                            className="mb-4 text animated2"
+                            style={{ color: "#ff7810" }}
+                          >
                             Let’s Talk <br />{" "}
-                            <span class="font-w-6 text-black">Digital !!</span>
+                            <span className="font-w-6 text-black">
+                              Digital !!
+                            </span>
                           </h1>
-                          <p class="lead text-white animated3">
+                          <p className="lead text-black animated3">
                             Analyze, Advertise, Optimize. Yes, We do it all!! We
                             focus on driving potential customers by analyzing
                             market needs, advertising in the required domain,
                             and optimizing your digital space.
                           </p>
-                          <div class="animated3"></div>
+                          <div className="animated3"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="owl-item" style={{ width: "1419.2px" }}>
-                <div class="item">
-                  <div class="align-center p-0" style={{ paddingTop: "100px" }}>
-                    <div class="container">
-                      <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-12 order-lg-1">
+              <div className="owl-item" style={{ width: "1419.2px" }}>
+                <div className="item">
+                  <div
+                    className="align-center p-0"
+                    style={{ paddingTop: "100px" }}
+                  >
+                    <div className="container">
+                      <div className="row align-items-center">
+                        <div className="col-lg-5 col-md-12 order-lg-1">
                           <div
-                            class="mouse-parallax info-img"
+                            className="mouse-parallax info-img"
                             style={{
                               transform: "matrix(1, 0, 0, 1, -8.93333, 11.1)",
                             }}
                           >
                             <img
-                              class="img-fluid animated1"
+                              className="img-fluid animated1"
                               src="images/about/03.png"
                               alt=""
                             />
                           </div>
                         </div>
-                        <div class="col-lg-7 col-md-12 mt-5 mt-lg-0">
-                          <h1 class="mb-4 text-white animated2">
+                        <div className="col-lg-7 col-md-12 mt-5 mt-lg-0">
+                          <h1
+                            className="mb-4 text animated2"
+                            style={{ color: "#ff7810" }}
+                          >
                             Analyze,{" "}
-                            <span class="font-w-6 text-black">
+                            <span className="font-w-6 text-black">
                               Advertise, <br />{" "}
                             </span>{" "}
                             Optimize
                           </h1>
-                          <p class="lead text-white animated3">
+                          <p className="lead text-black animated3">
                             Blending the best of technology and marketing!! We
                             focus on driving potential customers by analyzing
                             market needs, <br /> advertising in the required
                             domain, and optimizing your digital space.
                           </p>
-                          <div class="animated3"></div>
+                          <div className="animated3"></div>
                         </div>
                       </div>
                     </div>
@@ -182,17 +210,17 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div class="owl-nav disabled">
-            <button type="button" role="presentation" class="owl-prev">
-              <span class="fas fa-long-arrow-alt-left">
+          <div className="owl-nav disabled">
+            <button type="button" role="presentation" className="owl-prev">
+              <span className="fas fa-long-arrow-alt-left">
                 <span></span>
               </span>
             </button>
-            <button type="button" role="presentation" class="owl-next">
-              <span class="fas fa-long-arrow-alt-right"></span>
+            <button type="button" role="presentation" className="owl-next">
+              <span className="fas fa-long-arrow-alt-right"></span>
             </button>
           </div>
-          <div class="owl-dots disabled"></div>
+          <div className="owl-dots disabled"></div>
         </div>
       </section>
     </>

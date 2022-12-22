@@ -11,3 +11,9 @@
   color: #fff;
   background-color: #ff7810;
 }
+
+.checkbox-color:checked {
+  background-color: #ff7810;
+  border-color: #ff7810;
+  box-shadow: 0px 0px 10px #ff7810;
+}

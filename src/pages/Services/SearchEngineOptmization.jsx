@@ -2,6 +2,7 @@ import React from "react";
 import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
+import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import TitleSection from "../../components/Title";
 import "./scrollBar.css";
 
@@ -22,7 +23,7 @@ const SearchEngineOptmization = () => {
 
   // how does seo works start
   const howDoesSeoWorks = {
-    img: "../images/about/03.png",
+    img: "../images/services/seo/howDoesSeoWork.png",
     title: "How does SEO work?",
     para: [
       `SEO is a customized long-term strategy that is aimed at giving your business an edge over the competition. SEO focuses on the ranking and visibility of your business. It virtually helps you position your brand on the digital horizon and make it more visible in terms of engagement. It works by optimizing the website’s content, conducting keyword research, and in turn increasing the customer’s engagement on the website.`,
@@ -251,7 +252,7 @@ const SearchEngineOptmization = () => {
                         href="#tab1-2"
                         role="tab"
                         aria-selected="false"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         Custom SEO Strategy
                       </a>
@@ -262,7 +263,7 @@ const SearchEngineOptmization = () => {
                         href="#tab1-3"
                         role="tab"
                         aria-selected="false"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         Competitive Analysis
                       </a>
@@ -273,7 +274,7 @@ const SearchEngineOptmization = () => {
                         href="#tab1-4"
                         role="tab"
                         aria-selected="false"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         Technical Optimization
                       </a>
@@ -284,7 +285,7 @@ const SearchEngineOptmization = () => {
                         href="#tab1-5"
                         role="tab"
                         aria-selected="false"
-                        tabindex="-1"
+                        tabIndex="-1"
                       >
                         Content Development
                       </a>
@@ -325,7 +326,7 @@ const SearchEngineOptmization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/seo/customSeoStrategy.png"
                             alt=""
                           />
                         </div>
@@ -350,7 +351,7 @@ const SearchEngineOptmization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/seo/competitiveAnalysis.png"
                             alt=""
                           />
                         </div>
@@ -752,382 +753,7 @@ const SearchEngineOptmization = () => {
         {/* 6 block end */}
 
         {/* services links start */}
-        <section className="overflow-hidden pt-0 custom-mt-10 position-relative z-index-1 mt-0">
-          <div className="container-fluid p-0">
-            <div className="row">
-              <div className="col-lg-12 col-md-12">
-                <div
-                  className="owl-carousel owl-center owl-loaded owl-drag"
-                  data-items="4"
-                  data-md-items="2"
-                  data-sm-items="2"
-                  data-center="true"
-                  data-dots="false"
-                  data-nav="true"
-                  data-autoplay="true"
-                >
-                  <div className="owl-stage-outer">
-                    <div
-                      className="owl-stage"
-                      style={{
-                        transition: "all 1s ease 0s",
-                        width: "5318px",
-                        transform: "translate3d(-949px, 0px, 0px)",
-                      }}
-                    >
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/03.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Traffic Management
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/04.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Seo Optimization
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/05.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Marketing Financing
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned active"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/06.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  SEO Analiysis
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item active center"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/01.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Digital Marketing
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item active"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/02.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Web &amp; Mobile Apps
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item active"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/03.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Traffic Management
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="owl-item" style={{ width: "379.8px" }}>
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/04.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Seo Optimization
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="owl-item" style={{ width: "379.8px" }}>
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/05.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Marketing Financing
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="owl-item" style={{ width: "379.8px" }}>
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/06.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  SEO Analiysis
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/01.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Digital Marketing
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/02.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Web &amp; Mobile Apps
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/03.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Traffic Management
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="owl-item cloned"
-                        style={{ width: "379.8px" }}
-                      >
-                        <div className="item">
-                          <div className="cases-item">
-                            <div className="cases-images">
-                              <img
-                                className="img-fluid"
-                                src="../images/case-studies/04.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cases-description">
-                              <h5>
-                                <a href="case-studies-single.html">
-                                  Seo Optimization
-                                </a>
-                              </h5>
-                              <span>Digital</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="owl-nav">
-                    <button
-                      type="button"
-                      role="presentation"
-                      className="owl-prev"
-                    >
-                      <span className="fas fa-long-arrow-alt-left">
-                        <span></span>
-                      </span>
-                    </button>
-                    <button
-                      type="button"
-                      role="presentation"
-                      className="owl-next"
-                    >
-                      <span className="fas fa-long-arrow-alt-right"></span>
-                    </button>
-                  </div>
-                  <div className="owl-dots disabled"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServicesLinkCarousel />
         {/* services links end */}
 
         {/* contact btn start */}

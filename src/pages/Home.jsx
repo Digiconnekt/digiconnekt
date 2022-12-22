@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
-import OneLiner from "../components/OneLiner";
 import PopUpHome from "../components/PopUpHome";
 
 const Home = () => {
@@ -14,27 +12,9 @@ const Home = () => {
     }, 5000);
   }, []);
 
-  const navigate = useNavigate();
-
-  const seo = () => {
-    navigate("services/search-engine-optimization");
-  };
-
-  const smo = () => {
-    navigate("services/social-media-optimization");
-  };
-
-  const emailMarketing = () => {
-    navigate("services/email-marketing");
-  };
-
-  const contentMarketing = () => {
-    navigate("services/content-marketing");
-  };
-
   return (
     <>
-      {/* {modal ? <PopUpHome /> : ""} */}
+      {modal ? <PopUpHome /> : ""}
 
       {/* hero section start */}
       <HeroSection />
@@ -85,9 +65,9 @@ const Home = () => {
                   deeply analyzing the latest tool and technology, the demand of
                   the market, and generating results accordingly.
                 </p>
-                <NavLink className="btn btn-theme" to="/about-us">
+                <a className="btn btn-theme" href="/about-us">
                   <span>Learn More</span>
-                </NavLink>
+                </a>
               </div>
             </div>
           </div>
@@ -95,11 +75,33 @@ const Home = () => {
         {/* About us end */}
 
         {/* one liner start */}
-        <OneLiner
-          textBeforeHighlight="Think with Digiconnekt "
-          highlightText="Grow "
-          textAfterHighlight="with Digiconnekt"
-        />
+        <section
+          className="overflow-hidden dark-bg animatedBackground pt-5 pb-3 px-2"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-12 col-md-12">
+              <div className="section-title mb-0">
+                <h2
+                  className="title oneLiner"
+                  style={{ fontSize: "70px", lineHeight: "90px" }}
+                >
+                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
+                    Think{" "}
+                  </span>
+                  with Digiconnekt <br />
+                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
+                    Grow{" "}
+                  </span>
+                  with Digiconnekt
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* one liner end */}
 
         {/* how it works end */}
@@ -339,98 +341,539 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5 mt-md-0"
-                onClick={seo}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
+              <div className="col-lg-4 col-md-6 mt-5 mt-md-0">
+                <a href="/services/search-engine-optimization">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/04.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Search Engine Optimization</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
+                <a href="/services/social-media-optimization">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/05.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Social Media Optimization</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 mt-5">
+                <a href="/services/email-marketing">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/06.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Email Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 mt-5">
+                <a href="/services/content-marketing">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon">
+                      <img
+                        className="img-fluid"
+                        src="images/feature/07.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Content Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* services we provide end */}
+
+        {/* feedback start */}
+        <section
+          className="bg-contain bg-pos-r pt-0"
+          data-bg-img="images/bg/02.png"
+          style={{ backgroundImage: "url(images/bg/02.png)" }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title">
+                  <h6>Testimonial</h6>
+                  <h2 className="title">
+                    You Can See our clients feedback What You Say?
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <div
+                  className="owl-carousel owl-loaded owl-drag"
+                  data-items="1"
+                  data-autoplay="true"
+                >
+                  <div className="owl-stage-outer">
+                    <div
+                      className="owl-stage"
+                      style={{
+                        transform: "translate3d(0px, 0px, 0px)",
+                        transition: "all 1s ease 0s",
+                        width: "9072px",
+                      }}
+                    >
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "1296px" }}
+                      >
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "1296px" }}
+                      >
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item active"
+                        style={{ width: "1296px" }}
+                      >
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "1296px" }}>
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="owl-item" style={{ width: "1296px" }}>
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "1296px" }}
+                      >
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="owl-item cloned"
+                        style={{ width: "1296px" }}
+                      >
+                        <div className="item">
+                          <div className="testimonial style-2">
+                            <div className="row align-items-center">
+                              <div className="col-lg-6 col-md-12">
+                                <div className="testimonial-img info-img round-animation">
+                                  <img
+                                    className="img-fluid leftRight"
+                                    src="images/testimonial/01.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-5 col-md-12 ms-auto mt-5 mt-lg-0">
+                                <div className="testimonial-content">
+                                  <div className="testimonial-quote">
+                                    <i className="flaticon-quotation"></i>
+                                  </div>
+                                  <p>
+                                    Professional recommended and great
+                                    experience, Nam pulvinar vitae neque et
+                                    porttitor, Praesent sed nisi eleifend,
+                                    Consectetur adipisicing elit, sed do
+                                    eiusmodas temporo incididunt
+                                  </p>
+                                  <div className="testimonial-caption">
+                                    <h5>Lana Roadse</h5>
+                                    <label>CEO of Loptus</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="owl-nav disabled">
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-prev"
+                    >
+                      <span className="fas fa-long-arrow-alt-left">
+                        <span></span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      role="presentation"
+                      className="owl-next"
+                    >
+                      <span className="fas fa-long-arrow-alt-right"></span>
+                    </button>
+                  </div>
+                  <div className="owl-dots">
+                    <button
+                      role="button"
+                      className="owl-dot active"
+                      fdprocessedid="5h5hln"
+                    >
+                      <span></span>
+                    </button>
+                    <button
+                      role="button"
+                      className="owl-dot"
+                      fdprocessedid="y9g3d"
+                    >
+                      <span></span>
+                    </button>
+                    <button
+                      role="button"
+                      className="owl-dot"
+                      fdprocessedid="tyvsbzj"
+                    >
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* feedback end */}
+
+        {/* blog start */}
+        <section>
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title">
+                  <h6>Blog</h6>
+                  <h2 className="title">Read our latest news</h2>
+                  <p className="mb-0">
+                    Deos et accusamus et iusto odio dignissimos qui blanditiis
+                    praesentium voluptatum dele corrupti quos dolores et quas
+                    molestias.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-12">
+                <div className="post style-2">
+                  <div className="post-image">
                     <img
-                      className="img-fluid"
-                      src="images/feature/04.png"
+                      className="img-fluid h-100 w-100"
+                      src="images/blog/01.jpg"
                       alt=""
                     />
                   </div>
-                  <div className="featured-title">
-                    <h5>Search Engine Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
+                  <div className="post-desc">
+                    <div className="post-date">
+                      23 <span>November 2018</span>
+                    </div>
+                    <div className="post-title">
+                      <h5>
+                        <a href="blog-details.html">
+                          The Powerfull look for best in 2018
+                        </a>
+                      </h5>
+                    </div>
                     <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
+                      Phasellus eget purus id felis dignissim convallis
+                      Suspendisse et augue dui gravida{" "}
+                      <a href="blog-details.html">read more...</a>
                     </p>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5 mt-lg-0"
-                onClick={smo}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
+                <div className="post style-2">
+                  <div className="post-image">
                     <img
-                      className="img-fluid"
-                      src="images/feature/05.png"
+                      className="img-fluid h-100 w-100"
+                      src="images/blog/02.jpg"
                       alt=""
                     />
                   </div>
-                  <div className="featured-title">
-                    <h5>Social Media Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
+                  <div className="post-desc">
+                    <div className="post-date">
+                      23 <span>November 2018</span>
+                    </div>
+                    <div className="post-title">
+                      <h5>
+                        <a href="blog-details.html">
+                          Loptus It's Awesome, We need your help
+                        </a>
+                      </h5>
+                    </div>
                     <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
+                      Phasellus eget purus id felis dignissim convallis
+                      Suspendisse et augue dui gravida{" "}
+                      <a href="blog-details.html">read more...</a>
                     </p>
                   </div>
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5"
-                onClick={emailMarketing}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
+              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
+                <div className="post style-2">
+                  <div className="post-image">
                     <img
-                      className="img-fluid"
-                      src="images/feature/06.png"
+                      className="img-fluid h-100 w-100"
+                      src="images/blog/03.jpg"
                       alt=""
                     />
                   </div>
-                  <div className="featured-title">
-                    <h5>Email Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
+                  <div className="post-desc">
+                    <div className="post-date">
+                      23 <span>November 2018</span>
+                    </div>
+                    <div className="post-title">
+                      <h5>
+                        <a href="blog-details.html">
+                          We Become Best sale marketer in a year!
+                        </a>
+                      </h5>
+                    </div>
                     <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5"
-                onClick={contentMarketing}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center">
-                  <div className="featured-icon">
-                    <img
-                      className="img-fluid"
-                      src="images/feature/07.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Content Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
+                      Phasellus eget purus id felis dignissim convallis
+                      Suspendisse et augue dui gravida{" "}
+                      <a href="blog-details.html">read more...</a>
                     </p>
                   </div>
                 </div>
@@ -438,7 +881,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* services we provide end */}
+        {/* blog end */}
       </div>
     </>
   );
