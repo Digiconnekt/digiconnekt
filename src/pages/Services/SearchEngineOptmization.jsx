@@ -375,7 +375,7 @@ const SearchEngineOptmization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/seo/technicalOptimization.png"
                             alt=""
                           />
                         </div>
@@ -399,7 +399,7 @@ const SearchEngineOptmization = () => {
                         <div className="col-lg-6 col-md-12">
                           <img
                             className="img-fluid"
-                            src="../images/about/02.png"
+                            src="../images/services/seo/contentDevelopment.png"
                             alt=""
                           />
                         </div>

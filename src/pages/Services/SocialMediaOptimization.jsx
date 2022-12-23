@@ -597,47 +597,6 @@ const SocialMediaOptimization = () => {
                         </div>
                       </div>
                     </div>
-                    <div
-                      role="tabpanel"
-                      className="tab-pane fade"
-                      id="tab1-5"
-                      aria-labelledby="#nav-tab4"
-                    >
-                      <div className="row align-items-center">
-                        <div className="col-lg-6 col-md-12">
-                          <img
-                            className="img-fluid"
-                            src="../images/about/02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                          <h4 className="title">
-                            Powerful &amp; Awesome Marketing
-                          </h4>
-                          <p>
-                            Simply dummy text of the printing and typesetting
-                            industry. standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                          </p>
-                          <ul className="list-unstyled list-icon">
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Mattis effic
-                              iturut magna pelle ntesque sit
-                            </li>
-                            <li className="mb-3">
-                              <i className="flaticon-tick"></i> Phasellus eget
-                              purus id felis dignissim convallis
-                            </li>
-                            <li>
-                              <i className="flaticon-tick"></i> Fusce enim nulla
-                              mollis eu metus in sagittis fringilla
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

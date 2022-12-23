@@ -30,10 +30,10 @@ const Home = () => {
                   <div className="video-box">
                     <img
                       className="img-fluid"
-                      src="images/about/08.png"
+                      src="images/home/hero-1.png"
                       alt=""
                     />
-                    <div className="video-btn video-btn-pos">
+                    {/* <div className="video-btn video-btn-pos">
                       <a
                         className="play-btn popup-youtube d-flex align-items-center"
                         href="https://www.youtube.com/watch?v=P_wKDMcr1Tg"
@@ -45,7 +45,7 @@ const Home = () => {
                           alt=""
                         />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -85,17 +85,10 @@ const Home = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-12 col-md-12">
               <div className="section-title mb-0">
-                <h2
-                  className="title oneLiner"
-                  style={{ fontSize: "70px", lineHeight: "90px" }}
-                >
-                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
-                    Think{" "}
-                  </span>
+                <h2 className="title oneLiner">
+                  <span>Think </span>
                   with Digiconnekt <br />
-                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
-                    Grow{" "}
-                  </span>
+                  <span>Grow </span>
                   with Digiconnekt
                 </h2>
               </div>
@@ -115,20 +108,24 @@ const Home = () => {
                 className="col-lg-5 bg-contain bg-pos-l"
                 data-bg-img="images/pattern/07.png"
               >
-                <img className="img-fluid" src="images/about/01.png" alt="" />
+                <img
+                  className="img-fluid"
+                  src="images/home/howItWork.png"
+                  alt=""
+                />
               </div>
               <div
-                className="col-lg-5 col-md-12 me-auto mt-5 mt-lg-0 ps-lg-11"
+                className="col-lg-6 col-md-12 me-auto mt-5 mt-lg-0"
                 style={{ margin: "0 auto" }}
               >
                 <div className="section-title">
                   <h6>How It Works</h6>
-                  <h5>
+                  <p style={{ fontWeight: "600" }}>
                     We address the need for digital literacy in this era.
                     Therefore, our team of experts helps you with your raw idea
                     blending them with the latest technologies and producing
                     result-oriented outputs
-                  </h5>
+                  </p>
                   <p className="text-black">
                     We primarily focus on the following three steps:
                   </p>
@@ -187,7 +184,7 @@ const Home = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/04.jpg"
+                        src="images/home/whatWeDo1.png"
                         alt=""
                       />
                     </div>
@@ -196,16 +193,16 @@ const Home = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/05.jpg"
+                        src="images/home/whatWeDo2.png"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div className="col-md-6 sm-mt-3">
+                  <div className="col-md-6 mTop">
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/06.jpg"
+                        src="images/home/whatWeDo3.png"
                         alt=""
                       />
                     </div>
@@ -214,7 +211,7 @@ const Home = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/07.jpg"
+                        src="images/home/whatWeDo4.png"
                         alt=""
                       />
                     </div>
@@ -253,16 +250,16 @@ const Home = () => {
         {/* what we do end */}
 
         {/* why choose us end */}
-        <section className="light-bg">
+        <section className="light-bg whyChooseUs">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+              <div className="col-lg-6 col-md-12 mt-lg-0">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/04.jpg"
+                        src="images/home/whyChooseUs1.png"
                         alt=""
                       />
                     </div>
@@ -271,16 +268,16 @@ const Home = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/05.jpg"
+                        src="images/home/whyChooseUs2.png"
                         alt=""
                       />
                     </div>
                   </div>
-                  <div className="col-md-6 sm-mt-3">
+                  <div className="col-md-6 mTop">
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/06.jpg"
+                        src="images/home/whyChooseUs3.png"
                         alt=""
                       />
                     </div>
@@ -289,14 +286,14 @@ const Home = () => {
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
-                        src="images/about/07.jpg"
+                        src="images/home/whyChooseUs4.png"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-12 order-lg-1">
+              <div className="col-lg-6 col-md-12 mt-5 order-lg-1">
                 <div className="section-title">
                   <h6>Why</h6>
                   <h2 className="title">Why Choose Us</h2>

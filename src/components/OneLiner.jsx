@@ -21,12 +21,10 @@ const OneLiner = ({
             <div className="section-title mb-0">
               <h2
                 className="title oneLiner"
-                style={{ fontSize: "70px", lineHeight: "90px" }}
+                // style={{ fontSize: "70px", lineHeight: "90px" }}
               >
                 {textBeforeHighlight}
-                <span style={{ color: "#ff7810", fontSize: "85px" }}>
-                  {highlightText}
-                </span>
+                <span>{highlightText}</span>
                 {textAfterHighlight}
               </h2>
             </div>

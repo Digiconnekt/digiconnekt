@@ -40,11 +40,6 @@
   background: #bec4bd;
 }
 
-/* .oneLiner {
-  font-size: 60px;
-  line-height: 70px;
-} */
-
 .tab.style-2 .nav-tabs .nav-link.five-tabs {
   width: calc(100% / 5);
 }

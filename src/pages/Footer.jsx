@@ -32,7 +32,7 @@ const Footer = () => {
                     like with the Loptus, Loptus is the creative, modern HTML5
                     Template suitable for Your business.
                   </p>
-                  <a className="btn-simple" href="#">
+                  <a className="btn-simple" href="/about-us">
                     <span>
                       Read More <i className="fas fa-long-arrow-alt-right"></i>
                     </span>
@@ -77,40 +77,43 @@ const Footer = () => {
                       <div className="col-sm-5">
                         <ul className="list-unstyled">
                           <li>
-                            <a href="about-us.html">About Us</a>
+                            <a href="/">Home</a>
                           </li>
                           <li>
-                            <a href="service.html">Our Service</a>
+                            <a href="/about-us">About Us</a>
                           </li>
                           <li>
-                            <a href="case-studies-grid-3.html">Case Studies</a>
+                            <a href="/proposal">Get A Proposal</a>
                           </li>
                           <li>
-                            <a href="project-grid-3.html">Project</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Faq</a>
+                            <a href="/contact">Contact</a>
                           </li>
                         </ul>
                       </div>
                       <div className="col-sm-7">
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled mTopFooter">
                           <li>
-                            <a href="team.html">Our Team</a>
+                            <a href="/services">Services</a>
                           </li>
                           <li>
-                            <a href="blog-grid-3.html">Blog</a>
-                          </li>
-                          <li>
-                            <a href="privacy-policy.html">Privacy Policy</a>
-                          </li>
-                          <li>
-                            <a href="terms-and-conditions.html">
-                              Terms & Condition
+                            <a href="/services/search-engine-optimization">
+                              Search Engine Optimization
                             </a>
                           </li>
                           <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="/services/social-media-optimization">
+                              Social Media Optimization
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/services/email-marketing">
+                              Email Marketing
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/services/content-marketing">
+                              Content Marketing
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -145,13 +148,13 @@ const Footer = () => {
                           <input
                             type="email"
                             name="EMAIL"
-                            className="email"
+                            className="email mt-1 mb-1"
                             id="mc-email"
                             placeholder="Email Address"
                             required=""
                           />
                           <input
-                            className="btn btn-theme"
+                            className="btn btn-theme mt-1 mb-1"
                             type="submit"
                             name="subscribe"
                             value="Subscribe"
@@ -170,11 +173,11 @@ const Footer = () => {
             <div className="copyright">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <span>Copyright 2018 | All Rights Reserved</span>
+                  <span>Copyright 2023 | All Rights Reserved</span>
                 </div>
                 <div className="col-md-6 text-md-end sm-mt-2">
                   <span>
-                    Loptus Theme by <a href="#">ThemeHt</a>
+                    <a href="/">Digiconnekt</a>
                   </span>
                 </div>
               </div>

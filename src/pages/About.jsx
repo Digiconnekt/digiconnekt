@@ -37,7 +37,7 @@ const About = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-md-6 sm-mt-3">
+                  <div className="col-md-6 mTop">
                     <div className="image-block">
                       <img
                         className="img-fluid box-shadow radius w-100"
@@ -165,17 +165,10 @@ const About = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-12 col-md-12">
               <div className="section-title mb-0">
-                <h2
-                  className="title oneLiner"
-                  style={{ fontSize: "70px", lineHeight: "90px" }}
-                >
-                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
-                    Think{" "}
-                  </span>
+                <h2 className="title oneLiner">
+                  <span>Think </span>
                   with Digiconnekt <br />
-                  <span style={{ color: "#ff7810", fontSize: "85px" }}>
-                    Grow{" "}
-                  </span>
+                  <span>Grow </span>
                   with Digiconnekt
                 </h2>
               </div>
@@ -252,7 +245,7 @@ const About = () => {
         {/* what we do end */}
 
         {/* why choose start */}
-        <section className="pt-0 overflow-hidden">
+        <section className="overflow-hidden whyChooseUs">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 order-lg-1">
@@ -290,7 +283,7 @@ const About = () => {
 
         {/* services we provide start */}
         <section
-          className="bg-contain bg-pos-r p-0 mt-10 mb-10"
+          className="bg-contain bg-pos-r p-0 mt-5 mb-5"
           data-bg-img="images/pattern/02.png"
           style={{ backgroundImage: "url(../images/pattern/02.png)" }}
         >
