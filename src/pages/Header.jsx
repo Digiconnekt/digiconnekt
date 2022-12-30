@@ -88,6 +88,16 @@ const Header = () => {
                                 Content Marketing
                               </NavLink>
                             </li>
+                            <li>
+                              <NavLink to="/services/lead-generation">
+                                Lead Generation
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/services/programmatic-advertising">
+                                Programmatic Advertising
+                              </NavLink>
+                            </li>
                           </ul>
                         </div>
                       </li>

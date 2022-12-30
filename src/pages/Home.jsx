@@ -30,7 +30,7 @@ const Home = () => {
                   <div className="video-box">
                     <img
                       className="img-fluid"
-                      src="images/home/hero-1.png"
+                      src="images/home/aboutUs.png"
                       alt=""
                     />
                     {/* <div className="video-btn video-btn-pos">
@@ -796,7 +796,7 @@ const Home = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/01.jpg"
+                      src="images/home/blog1.png"
                       alt=""
                     />
                   </div>
@@ -824,7 +824,7 @@ const Home = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/02.jpg"
+                      src="images/home/blog2.png"
                       alt=""
                     />
                   </div>
@@ -852,7 +852,7 @@ const Home = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/03.jpg"
+                      src="images/home/blog3.png"
                       alt=""
                     />
                   </div>

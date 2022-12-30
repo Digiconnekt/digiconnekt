@@ -14,6 +14,8 @@ import ContentMarketing from "./pages/Services/ContentMarketing";
 import About from "./pages/About";
 import Proposal from "./pages/Proposal";
 import ScrollToTop from "./components/ScrollToTop";
+import LeadGeneration from "./pages/Services/LeadGeneration";
+import ProgrammaticAdvertising from "./pages/Services/ProgrammaticAdvertising";
 
 const App = () => {
   return (
@@ -36,6 +38,11 @@ const App = () => {
         <Route
           path="/services/content-marketing"
           element={<ContentMarketing />}
+        />
+        <Route path="/services/lead-generation" element={<LeadGeneration />} />
+        <Route
+          path="/services/programmatic-advertising"
+          element={<ProgrammaticAdvertising />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
