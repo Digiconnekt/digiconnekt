@@ -1,8 +1,8 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./pages/Footer";
 import Header from "./pages/Header";
-import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
