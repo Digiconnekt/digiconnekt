@@ -91,10 +91,10 @@ const SearchEngineOptmization = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
+                      src="../images/services/seo/dataDrivenIcon.png"
                       alt=""
                     />
                   </div>
@@ -115,10 +115,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-6 sm-mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
+                      src="../images/services/seo/resultOrientedIcon.png"
                       alt=""
                     />
                   </div>
@@ -141,10 +141,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-6 md-mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
+                      src="../images/services/seo/industryExpertIcon.png"
                       alt=""
                     />
                   </div>
@@ -434,10 +434,10 @@ const SearchEngineOptmization = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
+                      src="../images/services/seo/seoConsultingIcon.png"
                       alt=""
                     />
                   </div>
@@ -464,10 +464,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-6 sm-mt-3 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
+                      src="../images/services/seo/seoOptimizationIcon.png"
                       alt=""
                     />
                   </div>
@@ -496,10 +496,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-6 md-mt-3 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
+                      src="../images/services/seo/seoAuditIcon.png"
                       alt=""
                     />
                   </div>
@@ -526,7 +526,7 @@ const SearchEngineOptmization = () => {
         </section>
         {/* 3 block end */}
 
-        {/* 6 block start */}
+        {/* 9 block start */}
         <section
           data-bg-img="images/pattern/02.png"
           style={{
@@ -540,10 +540,10 @@ const SearchEngineOptmization = () => {
             >
               <div className="col-lg-4 col-md-12 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
+                      src="../images/services/seo/websiteAuditIcon.png"
                       alt=""
                     />
                   </div>
@@ -564,10 +564,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/01.png"
+                      src="../images/services/seo/keywordResearchIcon.png"
                       alt=""
                     />
                   </div>
@@ -590,7 +590,7 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="../images/feature/02.png"
@@ -613,7 +613,7 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="../images/feature/03.png"
@@ -637,10 +637,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
+                      src="../images/services/seo/nationalGlobalSeoIcon.png"
                       alt=""
                     />
                   </div>
@@ -661,7 +661,7 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="../images/feature/03.png"
@@ -683,7 +683,7 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="../images/feature/03.png"
@@ -706,10 +706,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
+                      src="../images/services/seo/businessListingIcon.png"
                       alt=""
                     />
                   </div>
@@ -728,10 +728,10 @@ const SearchEngineOptmization = () => {
               </div>
               <div className="col-lg-4 col-md-12 mt-5 mt-lg-0 mb-8 block-2">
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
+                      src="../images/services/seo/contentMarketingIcon.png"
                       alt=""
                     />
                   </div>
@@ -750,7 +750,7 @@ const SearchEngineOptmization = () => {
             </div>
           </div>
         </section>
-        {/* 6 block end */}
+        {/* 9 block end */}
 
         {/* services links start */}
         <ServicesLinkCarousel />

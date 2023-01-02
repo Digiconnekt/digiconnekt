@@ -341,11 +341,11 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mt-5 mt-md-0">
                 <a href="/services/search-engine-optimization">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/04.png"
-                        alt=""
+                        src="./images/services/seoIcon.png"
+                        alt="seo"
                       />
                     </div>
                     <div className="featured-title">
@@ -363,7 +363,7 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
                 <a href="/services/social-media-optimization">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
                         src="images/feature/05.png"
@@ -385,10 +385,10 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mt-5">
                 <a href="/services/email-marketing">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/06.png"
+                        src="./images/services/emailMarketingIcon.png"
                         alt=""
                       />
                     </div>
@@ -407,15 +407,37 @@ const Home = () => {
               <div className="col-lg-4 col-md-6 mt-5">
                 <a href="/services/content-marketing">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/07.png"
+                        src="./images/services/contentMarketingIcon.png"
                         alt=""
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Content Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 mt-5">
+                <a href="/services/lead-generation">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
+                      <img
+                        className="img-fluid"
+                        src="./images/services/contentMarketingIcon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Lead Generation</h5>
                     </div>
                     <div className="featured-desc">
                       <p className="text-black">

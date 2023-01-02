@@ -96,7 +96,7 @@ const About = () => {
                     <div className="work-img">
                       <img
                         className="img-fluid"
-                        src="images/how-it-work/01.png"
+                        src="./images/about/analyzeIcon.png"
                         alt=""
                       />
                       <span className="step-num">01</span>
@@ -135,7 +135,7 @@ const About = () => {
                     <div className="work-img">
                       <img
                         className="img-fluid"
-                        src="images/how-it-work/03.png"
+                        src="./images/about/optimizeIcon.png"
                         alt=""
                       />
                       <span className="step-num">03</span>
@@ -176,30 +176,6 @@ const About = () => {
           </div>
         </section>
         {/* one liner end */}
-
-        {/* case study start */}
-        {/* <section
-          className="overflow-hidden dark-bg animatedBackground"
-          data-bg-img="images/pattern/06.png"
-          style={{ backgroundImage: "url(../images/pattern/06.png)" }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <h6>SUCCESS STORIES</h6>
-                  <h2 className="title">Our Case Study</h2>
-                  <p className="mb-0 text-white">
-                    Deos et accusamus et iusto odio dignissimos qui blanditiis
-                    praesentium voluptatum dele corrupti quos dolores et quas
-                    molestias.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* case study end */}
 
         {/* what we do start */}
         <section className="overflow-hidden">
@@ -305,10 +281,10 @@ const About = () => {
               <div className="col-lg-4 col-md-6 mt-5 mt-md-0">
                 <a href="/services/search-engine-optimization">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/04.png"
+                        src="./images/services/seoIcon.png"
                         alt=""
                       />
                     </div>
@@ -327,7 +303,7 @@ const About = () => {
               <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
                 <a href="/services/social-media-optimization">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
                         src="images/feature/05.png"
@@ -349,10 +325,10 @@ const About = () => {
               <div className="col-lg-4 col-md-6 mt-5">
                 <a href="/services/email-marketing">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/06.png"
+                        src="./images/services/emailMarketingIcon.png"
                         alt=""
                       />
                     </div>
@@ -371,15 +347,37 @@ const About = () => {
               <div className="col-lg-4 col-md-6 mt-5">
                 <a href="/services/content-marketing">
                   <div className="featured-item text-center">
-                    <div className="featured-icon">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/07.png"
+                        src="./images/services/contentMarketingIcon.png"
                         alt=""
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Content Marketing</h5>
+                    </div>
+                    <div className="featured-desc">
+                      <p className="text-black">
+                        Design must be functional, and futionality must
+                        translated into, and futionality must translated into.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 mt-5">
+                <a href="/services/lead-generation">
+                  <div className="featured-item text-center">
+                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
+                      <img
+                        className="img-fluid"
+                        src="./images/services/contentMarketingIcon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="featured-title">
+                      <h5>Lead Generation</h5>
                     </div>
                     <div className="featured-desc">
                       <p className="text-black">

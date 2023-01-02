@@ -21,6 +21,14 @@ const Services = () => {
     navigate("content-marketing");
   };
 
+  const leadGeneration = () => {
+    navigate("lead-generation");
+  };
+
+  const programmaticAdvertising = () => {
+    navigate("programmatic-advertising");
+  };
+
   return (
     <>
       {/* title section start */}
@@ -48,10 +56,10 @@ const Services = () => {
                 style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="images/feature/04.png"
+                      src="./images/services/seoIcon.png"
                       alt=""
                     />
                   </div>
@@ -73,7 +81,7 @@ const Services = () => {
                 style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="images/feature/05.png"
@@ -98,10 +106,10 @@ const Services = () => {
                 style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="images/feature/06.png"
+                      src="./images/services/emailMarketingIcon.png"
                       alt=""
                     />
                   </div>
@@ -117,16 +125,16 @@ const Services = () => {
                 </div>
               </div>
               <div
-                onClick={contentMarketing}
                 className="col-lg-4 col-md-6 mt-5 wow fadeInLeft"
                 data-wow-duration="0.6"
+                onClick={contentMarketing}
                 style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="images/feature/07.png"
+                      src="./images/services/contentMarketingIcon.png"
                       alt=""
                     />
                   </div>
@@ -144,9 +152,11 @@ const Services = () => {
               <div
                 className="col-lg-4 col-md-6 mt-5 wow fadeInUp"
                 data-wow-duration="0.8"
+                onClick={leadGeneration}
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="images/feature/08.png"
@@ -154,7 +164,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Link Building</h5>
+                    <h5>Lead Generation</h5>
                   </div>
                   <div className="featured-desc">
                     <p>
@@ -167,9 +177,11 @@ const Services = () => {
               <div
                 className="col-lg-4 col-md-6 mt-5 wow fadeInRight"
                 data-wow-duration="0.8"
+                onClick={programmaticAdvertising}
+                style={{ cursor: "pointer" }}
               >
                 <div className="featured-item text-center style-2">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
                       src="images/feature/09.png"
@@ -177,7 +189,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="featured-title">
-                    <h5>Quick Support</h5>
+                    <h5>programmatic Advertising</h5>
                   </div>
                   <div className="featured-desc">
                     <p>
@@ -571,7 +583,7 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/01.jpg"
+                      src="images/home/blog1.png"
                       alt=""
                     />
                   </div>
@@ -598,7 +610,7 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/02.jpg"
+                      src="images/home/blog2.png"
                       alt=""
                     />
                   </div>
@@ -625,7 +637,7 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/blog/03.jpg"
+                      src="images/home/blog3.png"
                       alt=""
                     />
                   </div>

@@ -45,7 +45,7 @@ const HeroSection = () => {
                           >
                             <img
                               className="img-fluid animated1"
-                              src="images/home/hero-1.png"
+                              src="../images/home/hero-1.png"
                               alt=""
                             />
                           </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                           >
                             <img
                               className="img-fluid animated1"
-                              src="images/home/hero-2.png"
+                              src="../images/home/hero-2.png"
                               alt=""
                             />
                           </div>
@@ -134,7 +134,7 @@ const HeroSection = () => {
                           >
                             <img
                               className="img-fluid animated1"
-                              src="images/home/hero-3.png"
+                              src="../images/home/hero-3.png"
                               alt=""
                             />
                           </div>
@@ -179,7 +179,7 @@ const HeroSection = () => {
                           >
                             <img
                               className="img-fluid animated1"
-                              src="images/home/hero-4.png"
+                              src="../images/home/hero-4.png"
                               alt=""
                             />
                           </div>
