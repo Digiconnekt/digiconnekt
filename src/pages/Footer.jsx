@@ -18,10 +18,10 @@ const Footer = () => {
                   data-bg-img="images/bg/02.png"
                 >
                   <div className="footer-logo">
-                    <a href="index.html">
+                    <a href="/">
                       <img
                         className="img-fluid"
-                        src="images/logo-white.png"
+                        src="../images/digiconnekt-logo.png"
                         alt=""
                       />
                     </a>

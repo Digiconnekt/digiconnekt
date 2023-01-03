@@ -35,13 +35,13 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/03.jpg"
+                              src="../images/services/links-section/seo.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/search-engine-optimization">
                                 Search Engine Optimization
                               </a>
                             </h5>
@@ -60,13 +60,13 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/04.jpg"
+                              src="../images/services/links-section/smo.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/social-media-optimization">
                                 Social Media Optimization
                               </a>
                             </h5>
@@ -85,13 +85,13 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/05.jpg"
+                              src="../images/services/links-section/contentMarketing.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/content-marketing">
                                 Content Marketing
                               </a>
                             </h5>
@@ -116,7 +116,7 @@ const ServicesLinkCarousel = () => {
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/email-marketing">
                                 Email Marketing
                               </a>
                             </h5>
@@ -135,14 +135,14 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/01.jpg"
+                              src="../images/services/links-section/leadGeneration.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
-                                Search Engine Optimization
+                              <a href="/services/lead-generation">
+                                Lead Generation
                               </a>
                             </h5>
                             {/* <span>Digital</span> */}
@@ -160,83 +160,61 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/02.jpg"
+                              src="../images/services/links-section/programmaticAdvertising.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/programmatic-advertising">
+                                Programmatic Advertising
+                              </a>
+                            </h5>
+                            {/* <span>Digital</span> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="owl-item active"
+                      style={{ width: "379.8px" }}
+                    >
+                      <div className="item">
+                        <div className="cases-item">
+                          <div className="cases-images">
+                            <img
+                              className="img-fluid"
+                              src="../images/services/links-section/seo.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="cases-description">
+                            <h5>
+                              <a href="/services/search-engine-optimization">
+                                Search Engine Optimization
+                              </a>
+                            </h5>
+                            {/* <span>Digital</span> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="owl-item" style={{ width: "379.8px" }}>
+                      <div className="item">
+                        <div className="cases-item">
+                          <div className="cases-images">
+                            <img
+                              className="img-fluid"
+                              src="../images/services/links-section/smo.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="cases-description">
+                            <h5>
+                              <a href="/services/social-media-optimization">
                                 Social Media Optimization
-                              </a>
-                            </h5>
-                            {/* <span>Digital</span> */}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      className="owl-item active"
-                      style={{ width: "379.8px" }}
-                    >
-                      <div className="item">
-                        <div className="cases-item">
-                          <div className="cases-images">
-                            <img
-                              className="img-fluid"
-                              src="../images/case-studies/03.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="cases-description">
-                            <h5>
-                              <a href="case-studies-single.html">
-                                Email Marketing
-                              </a>
-                            </h5>
-                            {/* <span>Digital</span> */}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="owl-item" style={{ width: "379.8px" }}>
-                      <div className="item">
-                        <div className="cases-item">
-                          <div className="cases-images">
-                            <img
-                              className="img-fluid"
-                              src="../images/case-studies/04.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="cases-description">
-                            <h5>
-                              <a href="case-studies-single.html">
-                                Content Marketing
-                              </a>
-                            </h5>
-                            {/* <span>Digital</span> */}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="owl-item" style={{ width: "379.8px" }}>
-                      <div className="item">
-                        <div className="cases-item">
-                          <div className="cases-images">
-                            <img
-                              className="img-fluid"
-                              src="../images/case-studies/05.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="cases-description">
-                            <h5>
-                              <a href="case-studies-single.html">
-                                Search Engine Optimization
                               </a>
                             </h5>
                             {/* <span>Digital</span> */}
@@ -257,32 +235,7 @@ const ServicesLinkCarousel = () => {
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
-                                Social Media Optimization
-                              </a>
-                            </h5>
-                            {/* <span>Digital</span> */}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: "379.8px" }}
-                    >
-                      <div className="item">
-                        <div className="cases-item">
-                          <div className="cases-images">
-                            <img
-                              className="img-fluid"
-                              src="../images/case-studies/01.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="cases-description">
-                            <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/email-marketing">
                                 Email Marketing
                               </a>
                             </h5>
@@ -292,22 +245,19 @@ const ServicesLinkCarousel = () => {
                       </div>
                     </div>
 
-                    <div
-                      className="owl-item cloned"
-                      style={{ width: "379.8px" }}
-                    >
+                    <div className="owl-item" style={{ width: "379.8px" }}>
                       <div className="item">
                         <div className="cases-item">
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/02.jpg"
+                              src="../images/services/links-section/contentMarketing.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/content-marketing">
                                 Content Marketing
                               </a>
                             </h5>
@@ -326,13 +276,63 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/03.jpg"
+                              src="../images/services/links-section/programmaticAdvertising.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/programmatic-advertising">
+                                Programmatic Advertising
+                              </a>
+                            </h5>
+                            {/* <span>Digital</span> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="owl-item cloned"
+                      style={{ width: "379.8px" }}
+                    >
+                      <div className="item">
+                        <div className="cases-item">
+                          <div className="cases-images">
+                            <img
+                              className="img-fluid"
+                              src="../images/services/links-section/leadGeneration.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="cases-description">
+                            <h5>
+                              <a href="/services/lead-generation">
+                                Lead Generation
+                              </a>
+                            </h5>
+                            {/* <span>Digital</span> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="owl-item cloned"
+                      style={{ width: "379.8px" }}
+                    >
+                      <div className="item">
+                        <div className="cases-item">
+                          <div className="cases-images">
+                            <img
+                              className="img-fluid"
+                              src="../images/services/links-section/seo.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="cases-description">
+                            <h5>
+                              <a href="/services/search-engine-optimization">
                                 Search Engine Optimization
                               </a>
                             </h5>
@@ -351,13 +351,13 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/case-studies/04.jpg"
+                              src="../images/services/links-section/smo.png"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="case-studies-single.html">
+                              <a href="/services/social-media-optimization">
                                 Social Media Optimization
                               </a>
                             </h5>
