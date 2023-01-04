@@ -37,10 +37,11 @@ const PPC = () => {
         {/* what is ppc end */}
 
         {/* one liner start */}
+
         <OneLiner
-          textBeforeHighlight="Grow your organization "
-          highlightText="10x "
-          textAfterHighlight="with the online presence. Get in touch with our experts now!"
+          textBeforeHighlight="We are a "
+          highlightText="Huge "
+          textAfterHighlight="bang for one’s buck by helping you get into the game!!"
         />
         {/* one liner end */}
 
