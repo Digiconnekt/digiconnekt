@@ -204,6 +204,7 @@ const Services = () => {
           </div>
         </section>
 
+        {/* how it works end */}
         <section
           className="position-relative bg-contain bg-pos-r"
           data-bg-img="images/bg/02.png"
@@ -214,9 +215,16 @@ const Services = () => {
                 className="col-lg-5 bg-contain bg-pos-l"
                 data-bg-img="images/pattern/07.png"
               >
-                <img className="img-fluid" src="images/about/01.png" alt="" />
+                <img
+                  className="img-fluid"
+                  src="../images/services/howItWork.png"
+                  alt=""
+                />
               </div>
-              <div className="col-lg-5 col-md-12 me-auto mt-5 mt-lg-0 ps-lg-11">
+              <div
+                className="col-lg-6 col-md-12 me-auto mt-5 mt-lg-0"
+                style={{ margin: "0 auto" }}
+              >
                 <div className="section-title">
                   <h6>How It Work</h6>
                   <h2 className="title">
@@ -266,11 +274,16 @@ const Services = () => {
             </div>
           </div>
         </section>
+        {/* how it works end */}
 
-        <section>
+        {/* projects done start */}
+        <section style={{ backgroundImage: "none" }}>
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 col-md-3 col-sm-6">
+              <div
+                className="col-lg-3 col-md-3 col-sm-6"
+                style={{ backgroundImage: "none" }}
+              >
                 <div className="counter style-2">
                   <img
                     className="img-fluid"
@@ -341,6 +354,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+        {/* projects done end */}
 
         {/* <section
           className="overflow-hidden dark-bg custom-pb-18 animatedBackground"
@@ -364,6 +378,7 @@ const Services = () => {
           </div>
         </section> */}
 
+        {/* 8 blocks start */}
         <section className="light-bg">
           <div className="container">
             <div className="row">
@@ -430,7 +445,9 @@ const Services = () => {
             </div>
           </div>
         </section>
+        {/* 8 blocks end */}
 
+        {/* blog start */}
         <section>
           <div className="container">
             <div className="row justify-content-center text-center">
@@ -531,6 +548,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+        {/* blog end */}
 
         <ServicesLinkCarousel />
       </div>

@@ -185,15 +185,13 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-images">
                             <img
                               className="img-fluid"
-                              src="../images/services/links-section/seo.png"
+                              src="../images/case-studies/06.jpg"
                               alt=""
                             />
                           </div>
                           <div className="cases-description">
                             <h5>
-                              <a href="/services/search-engine-optimization">
-                                Search Engine Optimization
-                              </a>
+                              <a href="/services/ppc">Pay Per Click</a>
                             </h5>
                             {/* <span>Digital</span> */}
                           </div>

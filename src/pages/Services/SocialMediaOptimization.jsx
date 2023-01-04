@@ -306,10 +306,10 @@ const SocialMediaOptimization = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
+                      src="../images/services/smo/nessesityIcon1.png"
                       alt=""
                     />
                   </div>
@@ -337,10 +337,10 @@ const SocialMediaOptimization = () => {
 
               <div className="col-lg-4 col-md-6 sm-mt-3 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "95px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
+                      src="../images/services/smo/nessesityIcon2.png"
                       alt=""
                     />
                   </div>
@@ -367,10 +367,10 @@ const SocialMediaOptimization = () => {
 
               <div className="col-lg-4 col-md-6 md-mt-3 block-1">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "75px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
+                      src="../images/services/smo/nessesityIcon3.png"
                       alt=""
                     />
                   </div>

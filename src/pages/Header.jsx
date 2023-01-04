@@ -74,29 +74,32 @@ const Header = () => {
                               </a>
                             </li>
                             <li>
-                              <NavLink to="/services/social-media-optimization">
+                              <a href="/services/social-media-optimization">
                                 Social Media Optimization
-                              </NavLink>
+                              </a>
                             </li>
                             <li>
-                              <NavLink to="/services/email-marketing">
+                              <a href="/services/email-marketing">
                                 Email Marketing
-                              </NavLink>
+                              </a>
                             </li>
                             <li>
-                              <NavLink to="/services/content-marketing">
+                              <a href="/services/content-marketing">
                                 Content Marketing
-                              </NavLink>
+                              </a>
                             </li>
                             <li>
-                              <NavLink to="/services/lead-generation">
+                              <a href="/services/lead-generation">
                                 Lead Generation
-                              </NavLink>
+                              </a>
                             </li>
                             <li>
-                              <NavLink to="/services/programmatic-advertising">
+                              <a href="/services/programmatic-advertising">
                                 Programmatic Advertising
-                              </NavLink>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/services/ppc">Pay Per Click</a>
                             </li>
                           </ul>
                         </div>

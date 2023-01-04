@@ -169,10 +169,10 @@ const EmailMarketing = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
+                      src="../images/services/email-marketing/emailServiceIcon1.png"
                       alt=""
                     />
                   </div>
@@ -192,10 +192,10 @@ const EmailMarketing = () => {
               </div>
               <div className="col-lg-4 col-md-6 sm-mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
+                      src="../images/services/email-marketing/emailServiceIcon2.png"
                       alt=""
                     />
                   </div>
@@ -216,10 +216,10 @@ const EmailMarketing = () => {
               </div>
               <div className="col-lg-4 col-md-6 md-mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
+                      src="../images/services/email-marketing/emailServiceIcon3.png"
                       alt=""
                     />
                   </div>
@@ -239,10 +239,10 @@ const EmailMarketing = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/07.png"
+                      src="../images/services/email-marketing/emailServiceIcon4.png"
                       alt=""
                     />
                   </div>
@@ -263,10 +263,10 @@ const EmailMarketing = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/08.png"
+                      src="../images/services/email-marketing/emailServiceIcon5.png"
                       alt=""
                     />
                   </div>
@@ -288,10 +288,10 @@ const EmailMarketing = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-3 block-2">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/09.png"
+                      src="../images/services/email-marketing/emailServiceIcon6.png"
                       alt=""
                     />
                   </div>
