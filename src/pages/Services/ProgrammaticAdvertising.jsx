@@ -1,5 +1,6 @@
 import React from "react";
 import ContentImg from "../../components/ContentImg";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -9,7 +10,7 @@ import "./scrollBar.css";
 const ProgrammaticAdvertising = () => {
   // Programmatic Advertising accelerates start
   const programmaticAdvertising = {
-    img: "../images/services/smo/whatIsSmo.png",
+    img: "../images/services/programmatic-advertising/programmatic-advertising.png",
     title: "Programmatic Advertising accelerates your marketing",
     para: [
       `All big terms - RTB, DSP, SSP all clustered in one phrase. Is it difficult to understand? Or is it hectic to include their advantages in your marketing strategy? No worries, the team at Digiconnekt is always at your rescue.`,
@@ -21,7 +22,7 @@ const ProgrammaticAdvertising = () => {
 
   // So what is this big word start
   const soWhatIs = {
-    img: "../images/services/smo/howToDoSmo.png",
+    img: "../images/services/programmatic-advertising/big-word.png",
     title: "So what is this big word - Programmatic Advertising?",
     para: [
       `Programmatic advertising basically is categorized into two categories - Ad tech and Mar tech. 
@@ -44,6 +45,10 @@ const ProgrammaticAdvertising = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* what is smo start */}
         <ImgContent
           img={programmaticAdvertising.img}
@@ -99,8 +104,8 @@ const ProgrammaticAdvertising = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/facebook.png"
-                    alt=""
+                    src="../images/services/programmatic-advertising/improve-ad-1.png"
+                    alt="Improve Ad"
                   />
                 </div>
               </div>
@@ -131,8 +136,8 @@ const ProgrammaticAdvertising = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/instagram.png"
-                    alt=""
+                    src="../images/services/programmatic-advertising/improve-ad-2.png"
+                    alt="Improve Ad"
                   />
                 </div>
               </div>
@@ -162,8 +167,8 @@ const ProgrammaticAdvertising = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/linkedin.png"
-                    alt=""
+                    src="../images/services/programmatic-advertising/improve-ad-3.png"
+                    alt="Improve Ad"
                   />
                 </div>
               </div>
@@ -194,8 +199,8 @@ const ProgrammaticAdvertising = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/youtube.png"
-                    alt=""
+                    src="../images/services/programmatic-advertising/improve-ad-4.png"
+                    alt="Improve Ad"
                   />
                 </div>
               </div>
@@ -219,8 +224,8 @@ const ProgrammaticAdvertising = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/snapchat.png"
-                    alt=""
+                    src="../images/services/programmatic-advertising/improve-ad-5.png"
+                    alt="Improve Ad"
                   />
                 </div>
               </div>

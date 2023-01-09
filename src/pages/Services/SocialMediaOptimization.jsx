@@ -1,5 +1,6 @@
 import React from "react";
 import ContentImg from "../../components/ContentImg";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -48,6 +49,10 @@ const SocialMediaOptimization = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* what is smo start */}
         <ImgContent
           img={whatIsSmo.img}

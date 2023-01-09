@@ -259,7 +259,7 @@ const About = () => {
 
         {/* services we provide start */}
         <section
-          className="bg-contain bg-pos-r p-0 mt-5 mb-5"
+          className="bg-contain bg-pos-r p-0 mt-10 mb-10"
           data-bg-img="images/pattern/02.png"
           style={{ backgroundImage: "url(../images/pattern/02.png)" }}
         >
@@ -285,16 +285,23 @@ const About = () => {
                       <img
                         className="img-fluid"
                         src="./images/services/seoIcon.png"
-                        alt=""
+                        alt="Search Engine Optimization"
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Search Engine Optimization</h5>
                     </div>
                     <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
+                      <p
+                        className="text-black"
+                        style={{ textAlign: "justify" }}
+                      >
+                        We trust statistics! We are committed to boosting your
+                        organic search leads by a noticeable amount, positioning
+                        your company in the digital age, influencing consumer
+                        behavior, promoting autonomous purchasing, and boosting
+                        local traffic, all of which will improve the graph of
+                        your visibility and engagement.
                       </p>
                     </div>
                   </div>
@@ -306,17 +313,28 @@ const About = () => {
                     <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="images/feature/05.png"
-                        alt=""
+                        src="./images/services/smoIcon.png"
+                        alt="Social Media Optimization"
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Social Media Optimization</h5>
                     </div>
                     <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
+                      <p
+                        className="text-black"
+                        style={{ textAlign: "justify" }}
+                      >
+                        After research doing a search audit is a must as it
+                        filters the flaws in your content. Once your content is
+                        ready set up your social media pages, find inspiration,
+                        and improve your profile. Bingo, get started, create
+                        content, be consistent and see your engagement rate
+                        increase!
+                        <span style={{ opacity: "0" }}>
+                          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                          amet.
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -329,16 +347,24 @@ const About = () => {
                       <img
                         className="img-fluid"
                         src="./images/services/emailMarketingIcon.png"
-                        alt=""
+                        alt="Email Marketing"
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Email Marketing</h5>
                     </div>
                     <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
+                      <p
+                        className="text-black"
+                        style={{ textAlign: "justify" }}
+                      >
+                        A great tool for boosting your digital marketing
+                        initiatives at Digiconnekt is the bulk email service. By
+                        dividing your customers into distinct categories and
+                        identifying their demands, we can manage your customers
+                        more effectively and raise your conversion rates. By
+                        sending emails at the ideal time, our AI-powered
+                        technologies improve your engagement graph.
                       </p>
                     </div>
                   </div>
@@ -351,16 +377,27 @@ const About = () => {
                       <img
                         className="img-fluid"
                         src="./images/services/contentMarketingIcon.png"
-                        alt=""
+                        alt="Content Marketing"
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Content Marketing</h5>
                     </div>
                     <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
+                      <p
+                        className="text-black"
+                        style={{ textAlign: "justify" }}
+                      >
+                        We look into the interests and demands of our target
+                        audiences worldwide. The needs of your users are the
+                        main priority for our content. Your website will
+                        continue to rank highly in Google search results thanks
+                        to our expertly crafted content that is SEO-aligned and
+                        drives organic traffic.
+                        <span style={{ opacity: "0" }}>
+                          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                          Lorem ipsum dolor sit amet.
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -372,61 +409,28 @@ const About = () => {
                     <div className="featured-icon" style={{ maxWidth: "80px" }}>
                       <img
                         className="img-fluid"
-                        src="./images/services/contentMarketingIcon.png"
-                        alt=""
+                        src="./images/services/leadGenerationIcon.png"
+                        alt="Lead Generation"
                       />
                     </div>
                     <div className="featured-title">
                       <h5>Lead Generation</h5>
                     </div>
                     <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-md-6 mt-5">
-                <a href="/services/content-marketing">
-                  <div className="featured-item text-center">
-                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                      <img
-                        className="img-fluid"
-                        src="./images/services/contentMarketingIcon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="featured-title">
-                      <h5>Programmatic Advertising</h5>
-                    </div>
-                    <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-md-6 mt-5">
-                <a href="/services/lead-generation">
-                  <div className="featured-item text-center">
-                    <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                      <img
-                        className="img-fluid"
-                        src="./images/services/contentMarketingIcon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="featured-title">
-                      <h5>Pay Per Click</h5>
-                    </div>
-                    <div className="featured-desc">
-                      <p className="text-black">
-                        Design must be functional, and futionality must
-                        translated into, and futionality must translated into.
+                      <p
+                        className="text-black"
+                        style={{ textAlign: "justify" }}
+                      >
+                        We review data three times per week and feed the results
+                        back to our internal campaigns to revise our plans in
+                        order to optimise for highly profitable and high
+                        set-rate campaigns. We track and enhance the success of
+                        your marketing initiatives using solid statistics. We
+                        are aware of your most profitable Zips, counties, and
+                        cities before you are.
+                        <span style={{ opacity: "0" }}>
+                          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -436,6 +440,75 @@ const About = () => {
           </div>
         </section>
         {/* services we provide end */}
+
+        {/* 8 blocks clients start */}
+        <section className="light-bg">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="ht-clients d-flex flex-wrap align-items-center text-center">
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/07.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/08.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/09.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/10.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/11.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/12.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/12.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/client/12.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 8 blocks clients end */}
 
         {/* contact btn start */}
         {/* <section

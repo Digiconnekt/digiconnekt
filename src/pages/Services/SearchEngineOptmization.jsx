@@ -1,5 +1,6 @@
 import React from "react";
 import ContentImg from "../../components/ContentImg";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -46,6 +47,10 @@ const SearchEngineOptmization = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* what is seo start */}
         <ImgContent
           img={whatIsSeo.img}
@@ -593,8 +598,8 @@ const SearchEngineOptmization = () => {
                   <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/02.png"
-                      alt=""
+                      src="../images/services/seo/enquiryFormIcon.png"
+                      alt="Enquiry Form"
                     />
                   </div>
                   <div className="featured-title">
@@ -616,8 +621,8 @@ const SearchEngineOptmization = () => {
                   <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
-                      alt=""
+                      src="../images/services/seo/localSeoIcon.png"
+                      alt="Local Seo"
                     />
                   </div>
                   <div className="featured-title">
@@ -664,8 +669,8 @@ const SearchEngineOptmization = () => {
                   <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
-                      alt=""
+                      src="../images/services/seo/onlineDirectoriesIcon.png"
+                      alt="Online Directories"
                     />
                   </div>
                   <div className="featured-title">
@@ -686,8 +691,8 @@ const SearchEngineOptmization = () => {
                   <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/03.png"
-                      alt=""
+                      src="../images/services/seo/linkBuildingIcon.png"
+                      alt="Link Building"
                     />
                   </div>
                   <div className="featured-title">

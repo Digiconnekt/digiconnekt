@@ -1,12 +1,12 @@
 import React from "react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [navActive, setNavActive] = useState(false);
+  const location = window.location.pathname;
 
-  const activateNavActive = () => {
-    setNavActive(true);
+  const subMenuActive = {
+    background: "#ff7810",
+    color: "#ffffff",
+    paddingLeft: "15px",
   };
 
   return (
@@ -44,7 +44,12 @@ const Header = () => {
                     <ul className="navbar-nav mx-auto position-relative">
                       {/* home link start */}
                       <li className="nav-item dropdown">
-                        <a href="/" className="nav-link active">
+                        <a
+                          href="/"
+                          className={`${
+                            location === "/" ? "nav-link active" : "nav-link"
+                          }`}
+                        >
                           Home
                         </a>
                       </li>
@@ -52,7 +57,14 @@ const Header = () => {
 
                       {/* about us link start */}
                       <li className="nav-item dropdown">
-                        <a href="/about-us" className="nav-link">
+                        <a
+                          href="/about-us"
+                          className={`${
+                            location === "/about-us"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }`}
+                        >
                           About Us
                         </a>
                       </li>
@@ -62,44 +74,111 @@ const Header = () => {
                       <li className="nav-item dropdown">
                         <a
                           href="/services"
-                          className="nav-link dropdown-toggle"
+                          className={`${
+                            location === "/services" ||
+                            location ===
+                              "/services/search-engine-optimization" ||
+                            location ===
+                              "/services/social-media-optimization" ||
+                            location === "/services/email-marketing" ||
+                            location === "/services/content-marketing" ||
+                            location === "/services/lead-generation" ||
+                            location === "/services/programmatic-advertising" ||
+                            location === "/services/ppc"
+                              ? "nav-link dropdown-toggle active"
+                              : "nav-link dropdown-toggle"
+                          }`}
                         >
                           Services
                         </a>
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
                             <li>
-                              <a href="/services/search-engine-optimization">
+                              <a
+                                href="/services/search-engine-optimization"
+                                style={
+                                  location ===
+                                  "/services/search-engine-optimization"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Search Engine Optimization
                               </a>
                             </li>
                             <li>
-                              <a href="/services/social-media-optimization">
+                              <a
+                                href="/services/social-media-optimization"
+                                style={
+                                  location ===
+                                  "/services/social-media-optimization"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Social Media Optimization
                               </a>
                             </li>
                             <li>
-                              <a href="/services/email-marketing">
+                              <a
+                                href="/services/email-marketing"
+                                style={
+                                  location === "/services/email-marketing"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Email Marketing
                               </a>
                             </li>
                             <li>
-                              <a href="/services/content-marketing">
+                              <a
+                                href="/services/content-marketing"
+                                style={
+                                  location === "/services/content-marketing"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Content Marketing
                               </a>
                             </li>
                             <li>
-                              <a href="/services/lead-generation">
+                              <a
+                                href="/services/lead-generation"
+                                style={
+                                  location === "/services/lead-generation"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Lead Generation
                               </a>
                             </li>
                             <li>
-                              <a href="/services/programmatic-advertising">
+                              <a
+                                href="/services/programmatic-advertising"
+                                style={
+                                  location ===
+                                  "/services/programmatic-advertising"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
                                 Programmatic Advertising
                               </a>
                             </li>
                             <li>
-                              <a href="/services/ppc">Pay Per Click</a>
+                              <a
+                                href="/services/ppc"
+                                style={
+                                  location === "/services/ppc"
+                                    ? subMenuActive
+                                    : {}
+                                }
+                              >
+                                Pay Per Click
+                              </a>
                             </li>
                           </ul>
                         </div>
@@ -108,7 +187,14 @@ const Header = () => {
 
                       {/* proposal link start */}
                       <li className="nav-item dropdown">
-                        <a href="/proposal" className="nav-link ">
+                        <a
+                          href="/proposal"
+                          className={`${
+                            location === "/proposal"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }`}
+                        >
                           Get A Proposal
                         </a>
                       </li>
@@ -116,7 +202,14 @@ const Header = () => {
 
                       {/* contact link start */}
                       <li className="nav-item dropdown">
-                        <a href="/contact" className="nav-link ">
+                        <a
+                          href="/contact"
+                          className={`${
+                            location === "/contact"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }`}
+                        >
                           Contact
                         </a>
                       </li>

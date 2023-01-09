@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import TitleSection from "../components/Title";
-import ServicesLinkCarousel from "../components/ServicesLinkCarousel";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -30,6 +29,10 @@ const Services = () => {
     navigate("programmatic-advertising");
   };
 
+  const ppc = () => {
+    navigate("ppc");
+  };
+
   return (
     <>
       {/* title section start */}
@@ -37,172 +40,249 @@ const Services = () => {
       {/* title section end */}
 
       <div className="page-content">
-        <section className="overflow-hidden">
-          <div className="container">
-            <div className="row justify-content-center text-center">
+        {/* we provide services start */}
+        <section
+          className="overflow-hidden animatedBackground"
+          data-bg-img="../images/pattern/02.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/02.png")',
+          }}
+        >
+          <div className="container" style={{ maxWidth: "1080px" }}>
+            <div className="row justify-content-center text-center mb-5">
               <div className="col-lg-8 col-md-12">
                 <div className="section-title">
-                  <h6>Service</h6>
-                  <h2 className="title">
-                    We’r Provided Best Digital Marketing Services!
-                  </h2>
+                  <h6>Service's</h6>
+                  <h2 className="title">We’r Providing Following Services!</h2>
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div
-                className="col-lg-4 col-md-6 wow fadeInLeft"
-                data-wow-duration="0.6"
-                onClick={seo}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="./images/services/seoIcon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Search Engine Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={seo}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/seo.png"
+                    alt="Search Engine Optimization"
+                  />
                 </div>
               </div>
-              <div
-                onClick={smo}
-                className="col-lg-4 col-md-6 mt-5 mt-md-0 wow fadeInUp"
-                data-wow-duration="0.8"
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="images/feature/05.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Social Media Optimization</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Search Engine Optimization</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    We trust statistics! We are committed to boosting your
+                    organic search leads by a noticeable amount, positioning
+                    your company in the digital age, influencing consumer
+                    behavior, promoting autonomous purchasing, and boosting
+                    local traffic, all of which will improve the graph of your
+                    visibility and engagement.
+                  </p>
                 </div>
               </div>
-              <div
-                onClick={emailMarketing}
-                className="col-lg-4 col-md-6 mt-5 mt-lg-0 wow fadeInRight"
-                data-wow-duration="0.8"
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="./images/services/emailMarketingIcon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Email Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+            </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={smo}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/smo.png"
+                    alt="Social Media Optimization"
+                  />
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5 wow fadeInLeft"
-                data-wow-duration="0.6"
-                onClick={contentMarketing}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="./images/services/contentMarketingIcon.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Content Marketing</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Social Media Optimization</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    After research doing a search audit is a must as it filters
+                    the flaws in your content. Once your content is ready set up
+                    your social media pages, find inspiration, and improve your
+                    profile. Bingo, get started, create content, be consistent
+                    and see your engagement rate increase!
+                  </p>
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5 wow fadeInUp"
-                data-wow-duration="0.8"
-                onClick={leadGeneration}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="images/feature/08.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>Lead Generation</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+            </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={emailMarketing}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/emailMarketing.png"
+                    alt="Email Marketing"
+                  />
                 </div>
               </div>
-              <div
-                className="col-lg-4 col-md-6 mt-5 wow fadeInRight"
-                data-wow-duration="0.8"
-                onClick={programmaticAdvertising}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="featured-item text-center style-2">
-                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
-                    <img
-                      className="img-fluid"
-                      src="images/feature/09.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="featured-title">
-                    <h5>programmatic Advertising</h5>
-                  </div>
-                  <div className="featured-desc">
-                    <p>
-                      Design must be functional, and futionality must translated
-                      into, and futionality must translated into.
-                    </p>
-                  </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Email Marketing</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    A great tool for boosting your digital marketing initiatives
+                    at Digiconnekt is the bulk email service. By dividing your
+                    customers into distinct categories and identifying their
+                    demands, we can manage your customers more effectively and
+                    raise your conversion rates. By sending emails at the ideal
+                    time, our AI-powered technologies improve your engagement
+                    graph.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={contentMarketing}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/contentMarketing.png"
+                    alt="Content Marketing"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Content Marketing</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    We look into the interests and demands of our target
+                    audiences worldwide. The needs of your users are the main
+                    priority for our content. Your website will continue to rank
+                    highly in Google search results thanks to our expertly
+                    crafted content that is SEO-aligned and drives organic
+                    traffic.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={leadGeneration}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/leadGeneration.png"
+                    alt="Lead Generation"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Lead Generation</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    We review data three times per week and feed the results
+                    back to our internal campaigns to revise our plans in order
+                    to optimise for highly profitable and high set-rate
+                    campaigns. We track and enhance the success of your
+                    marketing initiatives using solid statistics. We are aware
+                    of your most profitable Zips, counties, and cities before
+                    you are.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="row align-items-center mb-10"
+              onClick={programmaticAdvertising}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/programmaticAdvertising.png"
+                    alt="Programmatic Advertising"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Programmatic Advertising</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    In a market where clients have many options, we recognise
+                    the necessity to find strategies to set your company apart
+                    from the competitors. By gathering and utilising zero-party
+                    data, we are better able to comprehend your customers and
+                    organisation in order to provide them with a customised
+                    customer experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="row align-items-center"
+              onClick={ppc}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="col-lg-6 col-md-12 order-lg-1">
+                <div className="info-img position-relative">
+                  <img
+                    className="img-fluid topBottom"
+                    src="../images/services/links-section/ppc.png"
+                    alt="Pay Per Click"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                <div className="section-title mb-4">
+                  <h2 className="title">Pay Per Click</h2>
+                  <p
+                    className="mb-0 text-black"
+                    style={{ textAlign: "justify" }}
+                  >
+                    Through joint research, we'll choose the best opportunity
+                    keywords for your campaign. We will create a robust
+                    architecture of campaigns, ad groups, and advertising to
+                    provide a strong foundation for performance.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        {/* we provide services end */}
 
         {/* how it works end */}
         <section
@@ -378,82 +458,13 @@ const Services = () => {
           </div>
         </section> */}
 
-        {/* 8 blocks start */}
-        <section className="light-bg">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="ht-clients d-flex flex-wrap align-items-center text-center">
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/07.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/08.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/09.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/10.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/11.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* 8 blocks end */}
-
         {/* blog start */}
         <section>
           <div className="container">
             <div className="row justify-content-center text-center">
               <div className="col-lg-8 col-md-12">
                 <div className="section-title">
-                  <h6>Blog</h6>
+                  <h6>Blog's</h6>
                   <h2 className="title">Read our latest news</h2>
                   <p className="mb-0 text-black">
                     Deos et accusamus et iusto odio dignissimos qui blanditiis
@@ -550,7 +561,9 @@ const Services = () => {
         </section>
         {/* blog end */}
 
-        <ServicesLinkCarousel />
+        {/* services links start */}
+        {/* <ServicesLinkCarousel /> */}
+        {/* services links end */}
       </div>
     </>
   );

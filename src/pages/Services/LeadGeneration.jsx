@@ -1,4 +1,5 @@
 import React from "react";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import TitleSection from "../../components/Title";
@@ -7,7 +8,7 @@ import "./scrollBar.css";
 const LeadGeneration = () => {
   // lead generation start
   const leadGeneration = {
-    img: "../images/services/smo/whatIsSmo.png",
+    img: "../images/services/lead-generation/lead-generation.png",
     title: "The Initial Step: Lead Generation",
     para: [
       `Since lead generation is the first step in bringing clients to the business, it is given a lot of attention. The team assists in creating leads for the company to attract additional clients, and the CRM team will turn those leads into clients. `,
@@ -29,6 +30,10 @@ const LeadGeneration = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* lead generation start */}
         <ImgContent
           img={leadGeneration.img}
@@ -84,8 +89,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/facebook.png"
-                    alt=""
+                    src="../images/services/lead-generation/viral-ads.png"
+                    alt="Viral Ads"
                   />
                 </div>
               </div>
@@ -109,8 +114,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/instagram.png"
-                    alt=""
+                    src="../images/services/lead-generation/increasing-graph.png"
+                    alt="Increasing Graph"
                   />
                 </div>
               </div>
@@ -134,8 +139,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/linkedin.png"
-                    alt=""
+                    src="../images/services/lead-generation/retention-system.png"
+                    alt="Retention System"
                   />
                 </div>
               </div>
@@ -159,8 +164,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/youtube.png"
-                    alt=""
+                    src="../images/services/lead-generation/lead-perfection.png"
+                    alt="Lead Perfection"
                   />
                 </div>
               </div>
@@ -184,8 +189,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/snapchat.png"
-                    alt=""
+                    src="../images/services/lead-generation/optimizing-area.png"
+                    alt="Optimizing Areas"
                   />
                 </div>
               </div>
@@ -209,8 +214,8 @@ const LeadGeneration = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/youtube.png"
-                    alt=""
+                    src="../images/services/lead-generation/success-strategies.png"
+                    alt="Success Strategies"
                   />
                 </div>
               </div>

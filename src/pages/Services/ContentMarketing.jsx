@@ -1,4 +1,5 @@
 import React from "react";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 // import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
@@ -26,6 +27,10 @@ const ContentMarketing = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* Strategizing content start */}
         <ImgContent
           img={strategizingTheContent.img}
@@ -67,11 +72,11 @@ const ContentMarketing = () => {
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
-                      alt=""
+                      src="../images/services/content-marketing/contentDrivesIcon1.png"
+                      alt="Experts on board"
                     />
                   </div>
                   <div className="featured-title">
@@ -89,11 +94,11 @@ const ContentMarketing = () => {
 
               <div className="col-lg-4 col-md-6 sm-mt-3">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
-                      alt=""
+                      src="../images/services/content-marketing/contentDrivesIcon2.png"
+                      alt="Audience across globe"
                     />
                   </div>
                   <div className="featured-title">
@@ -111,11 +116,11 @@ const ContentMarketing = () => {
 
               <div className="col-lg-4 col-md-6 md-mt-3">
                 <div className="featured-item text-center">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
-                      alt=""
+                      src="../images/services/content-marketing/contentDrivesIcon3.png"
+                      alt="Get highlighted online"
                     />
                   </div>
                   <div className="featured-title">

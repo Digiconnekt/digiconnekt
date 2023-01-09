@@ -5,6 +5,7 @@ import OneLiner from "../../components/OneLiner";
 import TitleSection from "../../components/Title";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import "./scrollBar.css";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 
 const EmailMarketing = () => {
   // Bulk email marketing start
@@ -70,6 +71,10 @@ const EmailMarketing = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* Bulk email marketing start */}
         <ImgContent
           img={bulkEmailMarketing.img}

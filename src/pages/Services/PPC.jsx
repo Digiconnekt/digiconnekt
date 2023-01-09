@@ -1,4 +1,5 @@
 import React from "react";
+import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -28,6 +29,10 @@ const PPC = () => {
 
       {/* page content start */}
       <div className="page-content">
+        {/* get free site audit start */}
+        <GetFreeSiteAudit />
+        {/* get free site audit end */}
+
         {/* what is ppc start */}
         <ImgContent
           img={whatIsPpc.img}
@@ -69,8 +74,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/facebook.png"
-                    alt=""
+                    src="../images/services/ppc/google-ad.png"
+                    alt="Google Ads"
                   />
                 </div>
               </div>
@@ -96,8 +101,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/instagram.png"
-                    alt=""
+                    src="../images/services/ppc/fb-insta-ad.png"
+                    alt="Facebook And Instagram Ads"
                   />
                 </div>
               </div>
@@ -124,8 +129,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/linkedin.png"
-                    alt=""
+                    src="../images/services/ppc/linkedin-ad.png"
+                    alt="Linkedin Ads"
                   />
                 </div>
               </div>
@@ -152,8 +157,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/youtube.png"
-                    alt=""
+                    src="../images/services/ppc/microsoft-ad.png"
+                    alt="Microsoft Ads"
                   />
                 </div>
               </div>
@@ -179,8 +184,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/snapchat.png"
-                    alt=""
+                    src="../images/services/ppc/twitter-ad.png"
+                    alt="Twitter Ads"
                   />
                 </div>
               </div>
@@ -206,8 +211,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/youtube.png"
-                    alt=""
+                    src="../images/services/ppc/spotify-ad.png"
+                    alt="Spotify Ads"
                   />
                 </div>
               </div>
@@ -232,8 +237,8 @@ const PPC = () => {
                 <div className="info-img position-relative">
                   <img
                     className="img-fluid topBottom"
-                    src="../images/services/smo/snapchat.png"
-                    alt=""
+                    src="../images/services/ppc/tiktok-ad.png"
+                    alt="Tiktok Ads"
                   />
                 </div>
               </div>
@@ -318,11 +323,11 @@ const PPC = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-1.png"
+                      alt="Discovery"
                     />
                   </div>
                   <div className="featured-title">
@@ -338,11 +343,11 @@ const PPC = () => {
               </div>
               <div className="col-lg-6 col-md-6 mt-5 mt-md-0">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-2.png"
+                      alt="Keyword Research"
                     />
                   </div>
                   <div className="featured-title">
@@ -358,11 +363,11 @@ const PPC = () => {
               </div>
               <div className="col-lg-6 col-md-6 mt-5">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/06.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-3.png"
+                      alt="Campaign Build"
                     />
                   </div>
                   <div className="featured-title">
@@ -379,11 +384,11 @@ const PPC = () => {
               </div>
               <div className="col-lg-6 col-md-6 mt-5">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/07.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-4.png"
+                      alt="Ad Creation"
                     />
                   </div>
                   <div className="featured-title">
@@ -399,11 +404,11 @@ const PPC = () => {
               </div>
               <div className="col-lg-6 col-md-6 mt-5">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/04.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-5.png"
+                      alt="Pixels & Tracking"
                     />
                   </div>
                   <div className="featured-title">
@@ -421,11 +426,11 @@ const PPC = () => {
               </div>
               <div className="col-lg-6 col-md-6 mt-5">
                 <div className="featured-item style-3">
-                  <div className="featured-icon">
+                  <div className="featured-icon" style={{ maxWidth: "80px" }}>
                     <img
                       className="img-fluid"
-                      src="../images/feature/05.png"
-                      alt=""
+                      src="../images/services/ppc/ad-process-icon-6.png"
+                      alt="Proactive Statergy"
                     />
                   </div>
                   <div className="featured-title">
