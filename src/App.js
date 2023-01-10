@@ -17,6 +17,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import LeadGeneration from "./pages/Services/LeadGeneration";
 import ProgrammaticAdvertising from "./pages/Services/ProgrammaticAdvertising";
 import PPC from "./pages/Services/PPC";
+import Blogs from "./pages/Blogs";
+import Blog1 from "./pages/Blogs/Blog1";
+import Blog2 from "./pages/Blogs/Blog2";
+import Blog3 from "./pages/Blogs/Blog3";
 
 const App = () => {
   return (
@@ -46,6 +50,12 @@ const App = () => {
           element={<ProgrammaticAdvertising />}
         />
         <Route path="/services/ppc" element={<PPC />} />
+
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/blog1" element={<Blog1 />} />
+        <Route path="/blogs/blog2" element={<Blog2 />} />
+        <Route path="/blogs/blog3" element={<Blog3 />} />
+
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />

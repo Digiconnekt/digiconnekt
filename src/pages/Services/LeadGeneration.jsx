@@ -1,5 +1,4 @@
 import React from "react";
-import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import TitleSection from "../../components/Title";
@@ -30,10 +29,6 @@ const LeadGeneration = () => {
 
       {/* page content start */}
       <div className="page-content">
-        {/* get free site audit start */}
-        <GetFreeSiteAudit />
-        {/* get free site audit end */}
-
         {/* lead generation start */}
         <ImgContent
           img={leadGeneration.img}

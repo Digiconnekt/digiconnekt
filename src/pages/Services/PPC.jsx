@@ -1,5 +1,4 @@
 import React from "react";
-import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -29,10 +28,6 @@ const PPC = () => {
 
       {/* page content start */}
       <div className="page-content">
-        {/* get free site audit start */}
-        <GetFreeSiteAudit />
-        {/* get free site audit end */}
-
         {/* what is ppc start */}
         <ImgContent
           img={whatIsPpc.img}

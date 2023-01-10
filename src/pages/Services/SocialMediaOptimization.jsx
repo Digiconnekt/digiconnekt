@@ -1,6 +1,5 @@
 import React from "react";
 import ContentImg from "../../components/ContentImg";
-import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -25,7 +24,7 @@ const SocialMediaOptimization = () => {
     img: "../images/services/smo/howToDoSmo.png",
     title: "How to do SMO?",
     para: [
-      `To start with what Cameron Olthius wrote: “SMO tactics can drive huge amounts of people to the website and can also determine whether a startup, website, or idea will make it or not. It involves driving traffic to a website through new channels because search engines aren’t the on;y sites that drive big traffic anymore.”`,
+      `To start with what Cameron Olthius wrote: “SMO tactics can drive huge amounts of people to the website and can also determine whether a startup, website, or idea will make it or not. It involves driving traffic to a website through new channels because search engines aren’t the only sites that drive big traffic anymore.”`,
 
       `This brings me to the point that optimizing Social Media is the key essential. Optimization of social media not only portrays a positive image of your brand but has a direct impact on SEO as it eases the usability of the site which will automatically generate traffic.`,
 
@@ -49,10 +48,6 @@ const SocialMediaOptimization = () => {
 
       {/* page content start */}
       <div className="page-content">
-        {/* get free site audit start */}
-        <GetFreeSiteAudit />
-        {/* get free site audit end */}
-
         {/* what is smo start */}
         <ImgContent
           img={whatIsSmo.img}

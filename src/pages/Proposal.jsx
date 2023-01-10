@@ -30,7 +30,7 @@ const Proposal = () => {
         >
           <div className="container">
             <div className="row align-items-center justify-content-center">
-              <div className="col-lg-6 col-md-7">
+              <div className="col-lg-8 col-md-7">
                 <div className="section-title mb-2">
                   <h6>Proposal</h6>
                   <h2 className="title">Get A Proposal</h2>
@@ -102,6 +102,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="increaseRevenue"
+                            style={{ fontSize: "15px" }}
                           >
                             Increase My Revenue
                           </label>
@@ -116,6 +117,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="getMoreLeads"
+                            style={{ fontSize: "15px" }}
                           >
                             Get More Leads
                           </label>
@@ -130,6 +132,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="growBrandAwareness"
+                            style={{ fontSize: "15px" }}
                           >
                             Grow brand awareness
                           </label>
@@ -144,6 +147,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="startMyBusiness"
+                            style={{ fontSize: "15px" }}
                           >
                             Start My Business
                           </label>
@@ -155,10 +159,14 @@ const Proposal = () => {
                             value=""
                             id="other"
                           />
-                          <label className="form-check-label" htmlFor="other">
+                          <label
+                            className="form-check-label"
+                            htmlFor="other"
+                            style={{ fontSize: "15px" }}
+                          >
                             Other
                           </label>
-                          <input
+                          {/* <input
                             type="text"
                             name="name"
                             placeholder="Type here..."
@@ -167,8 +175,9 @@ const Proposal = () => {
                               borderBottom: "1px solid #333",
                               marginLeft: "8px",
                               color: "#333",
+                              fontSize: "15px",
                             }}
-                          />
+                          /> */}
                         </div>
                       </div>
                     </div>
@@ -210,7 +219,11 @@ const Proposal = () => {
                             value=""
                             id="yes"
                           />
-                          <label className="form-check-label" htmlFor="yes">
+                          <label
+                            className="form-check-label"
+                            htmlFor="yes"
+                            style={{ fontSize: "15px" }}
+                          >
                             Yes
                           </label>
                         </div>
@@ -221,7 +234,11 @@ const Proposal = () => {
                             value=""
                             id="no"
                           />
-                          <label className="form-check-label" htmlFor="no">
+                          <label
+                            className="form-check-label"
+                            htmlFor="no"
+                            style={{ fontSize: "15px" }}
+                          >
                             No
                           </label>
                         </div>
@@ -415,7 +432,11 @@ const Proposal = () => {
                             value=""
                             id="seo"
                           />
-                          <label className="form-check-label" htmlFor="seo">
+                          <label
+                            className="form-check-label"
+                            htmlFor="seo"
+                            style={{ fontSize: "15px" }}
+                          >
                             Search Engine Optimization
                           </label>
                         </div>
@@ -426,7 +447,11 @@ const Proposal = () => {
                             value=""
                             id="smo"
                           />
-                          <label className="form-check-label" htmlFor="smo">
+                          <label
+                            className="form-check-label"
+                            htmlFor="smo"
+                            style={{ fontSize: "15px" }}
+                          >
                             Social Media Optimization
                           </label>
                         </div>
@@ -440,6 +465,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="emailMarketing"
+                            style={{ fontSize: "15px" }}
                           >
                             Email Marketing
                           </label>
@@ -454,8 +480,54 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="contentMarketing"
+                            style={{ fontSize: "15px" }}
                           >
                             Content Marketing
+                          </label>
+                        </div>
+                        <div className="form-check mt-2 mb-2">
+                          <input
+                            className="form-check-input checkbox-color"
+                            type="checkbox"
+                            value=""
+                            id="leadGeneration"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="leadGeneration"
+                            style={{ fontSize: "15px" }}
+                          >
+                            Lead Generation
+                          </label>
+                        </div>
+                        <div className="form-check mt-2 mb-2">
+                          <input
+                            className="form-check-input checkbox-color"
+                            type="checkbox"
+                            value=""
+                            id="programmaticAdvertising"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="programmaticAdvertising"
+                            style={{ fontSize: "15px" }}
+                          >
+                            Programmatic Advertising
+                          </label>
+                        </div>
+                        <div className="form-check mt-2 mb-2">
+                          <input
+                            className="form-check-input checkbox-color"
+                            type="checkbox"
+                            value=""
+                            id="payPerClick"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="payPerClick"
+                            style={{ fontSize: "15px" }}
+                          >
+                            Pay Per Click
                           </label>
                         </div>
                       </div>
@@ -479,7 +551,11 @@ const Proposal = () => {
                             value=""
                             id="launch"
                           />
-                          <label className="form-check-label" htmlFor="launch">
+                          <label
+                            className="form-check-label"
+                            htmlFor="launch"
+                            style={{ fontSize: "15px" }}
+                          >
                             I'm preparing to launch
                           </label>
                         </div>
@@ -493,6 +569,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="zeroToFiveK"
+                            style={{ fontSize: "15px" }}
                           >
                             $0 - $5000
                           </label>
@@ -507,6 +584,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="fiveToTenK"
+                            style={{ fontSize: "15px" }}
                           >
                             $5000 - $10000
                           </label>
@@ -521,6 +599,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="tenToTwentyK"
+                            style={{ fontSize: "15px" }}
                           >
                             $10000 - $20000
                           </label>
@@ -535,6 +614,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="twentyToFiftyK"
+                            style={{ fontSize: "15px" }}
                           >
                             $20000 - $50000
                           </label>
@@ -549,6 +629,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="fiftyToOneLac"
+                            style={{ fontSize: "15px" }}
                           >
                             $50000 - $100000
                           </label>
@@ -563,6 +644,7 @@ const Proposal = () => {
                           <label
                             className="form-check-label"
                             htmlFor="OneLacPlus"
+                            style={{ fontSize: "15px" }}
                           >
                             $100000+
                           </label>
@@ -574,7 +656,11 @@ const Proposal = () => {
                             value=""
                             id="hold"
                           />
-                          <label className="form-check-label" htmlFor="hold">
+                          <label
+                            className="form-check-label"
+                            htmlFor="hold"
+                            style={{ fontSize: "15px" }}
+                          >
                             I'd rather hold off for now.
                           </label>
                         </div>

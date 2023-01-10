@@ -1,38 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import TitleSection from "../components/Title";
 
 const Services = () => {
-  const navigate = useNavigate();
-
-  const seo = () => {
-    navigate("search-engine-optimization");
-  };
-
-  const smo = () => {
-    navigate("social-media-optimization");
-  };
-
-  const emailMarketing = () => {
-    navigate("email-marketing");
-  };
-
-  const contentMarketing = () => {
-    navigate("content-marketing");
-  };
-
-  const leadGeneration = () => {
-    navigate("lead-generation");
-  };
-
-  const programmaticAdvertising = () => {
-    navigate("programmatic-advertising");
-  };
-
-  const ppc = () => {
-    navigate("ppc");
-  };
-
   return (
     <>
       {/* title section start */}
@@ -58,11 +27,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={seo}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12 order-lg-1">
                 <div className="info-img position-relative">
                   <img
@@ -74,7 +39,11 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Search Engine Optimization</h2>
+                  <h2>
+                    <a href="/services/search-engine-optimization">
+                      Search Engine Optimization
+                    </a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -90,11 +59,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={smo}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12">
                 <div className="info-img position-relative">
                   <img
@@ -106,7 +71,11 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Social Media Optimization</h2>
+                  <h2>
+                    <a href="/services/social-media-optimization">
+                      Social Media Optimization
+                    </a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -121,11 +90,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={emailMarketing}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12 order-lg-1">
                 <div className="info-img position-relative">
                   <img
@@ -137,7 +102,9 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Email Marketing</h2>
+                  <h2>
+                    <a href="/services/email-marketing">Email Marketing</a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -154,11 +121,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={contentMarketing}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12">
                 <div className="info-img position-relative">
                   <img
@@ -170,7 +133,9 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Content Marketing</h2>
+                  <h2>
+                    <a href="/services/content-marketing">Content Marketing</a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -186,11 +151,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={leadGeneration}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12 order-lg-1">
                 <div className="info-img position-relative">
                   <img
@@ -202,7 +163,9 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Lead Generation</h2>
+                  <h2>
+                    <a href="/services/lead-generation">Lead Generation</a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -219,11 +182,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center mb-10"
-              onClick={programmaticAdvertising}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center mb-10">
               <div className="col-lg-6 col-md-12">
                 <div className="info-img position-relative">
                   <img
@@ -235,7 +194,11 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Programmatic Advertising</h2>
+                  <h2>
+                    <a href="/services/programmatic-advertising">
+                      Programmatic Advertising
+                    </a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}
@@ -251,11 +214,7 @@ const Services = () => {
               </div>
             </div>
 
-            <div
-              className="row align-items-center"
-              onClick={ppc}
-              style={{ cursor: "pointer" }}
-            >
+            <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 order-lg-1">
                 <div className="info-img position-relative">
                   <img
@@ -267,7 +226,9 @@ const Services = () => {
               </div>
               <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
                 <div className="section-title mb-4">
-                  <h2 className="title">Pay Per Click</h2>
+                  <h2>
+                    <a href="/services/ppc">Pay Per Click</a>
+                  </h2>
                   <p
                     className="mb-0 text-black"
                     style={{ textAlign: "justify" }}

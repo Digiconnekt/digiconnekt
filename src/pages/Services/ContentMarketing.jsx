@@ -1,5 +1,4 @@
 import React from "react";
-import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
 // import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
@@ -27,10 +26,6 @@ const ContentMarketing = () => {
 
       {/* page content start */}
       <div className="page-content">
-        {/* get free site audit start */}
-        <GetFreeSiteAudit />
-        {/* get free site audit end */}
-
         {/* Strategizing content start */}
         <ImgContent
           img={strategizingTheContent.img}

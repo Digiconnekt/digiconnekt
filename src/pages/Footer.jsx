@@ -27,10 +27,11 @@ const Footer = () => {
                     </a>
                   </div>
                   <p className="mb-3">
-                    Loptus Digital Marketing HTML5 Template Is fully
-                    responsible, Performance oriented theme, Build whatever you
-                    like with the Loptus, Loptus is the creative, modern HTML5
-                    Template suitable for Your business.
+                    DigiConnekt is an experienced digital marketing company with
+                    headquarters in Singapore. Our primary focus is to provide
+                    highly efficient designs and functional user interfaces,
+                    integrating the latest technologies and frameworks to
+                    deliver innovation and end-user delight.
                   </p>
                   <a className="btn-simple" href="/about-us">
                     <span>
@@ -83,18 +84,21 @@ const Footer = () => {
                             <a href="/about-us">About Us</a>
                           </li>
                           <li>
+                            <a href="/blogs">Blogs</a>
+                          </li>
+                          <li>
                             <a href="/proposal">Get A Proposal</a>
                           </li>
                           <li>
                             <a href="/contact">Contact</a>
                           </li>
+                          <li>
+                            <a href="/services">Services</a>
+                          </li>
                         </ul>
                       </div>
                       <div className="col-sm-7">
                         <ul className="list-unstyled mTopFooter">
-                          <li>
-                            <a href="/services">Services</a>
-                          </li>
                           <li>
                             <a href="/services/search-engine-optimization">
                               Search Engine Optimization
@@ -114,6 +118,19 @@ const Footer = () => {
                             <a href="/services/content-marketing">
                               Content Marketing
                             </a>
+                          </li>
+                          <li>
+                            <a href="/services/lead-generation">
+                              Lead Generation
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/services/programmatic-advertising">
+                              Programmatic Advertising
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/services/ppc">Pay Per Click</a>
                           </li>
                         </ul>
                       </div>
