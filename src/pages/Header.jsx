@@ -23,7 +23,7 @@ const Header = () => {
                       id="logo-img"
                       className="img-fluid"
                       src="../images/digiconnekt-logo.png"
-                      alt=""
+                      alt="DigiConnekt"
                     />
                   </a>
                   {/* logo end */}

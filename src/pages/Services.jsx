@@ -427,7 +427,7 @@ const Services = () => {
                 <div className="section-title">
                   <h6>Blog's</h6>
                   <h2 className="title">Read our latest news</h2>
-                  <p className="mb-0 text-black">
+                  <p className="mb-0">
                     Deos et accusamus et iusto odio dignissimos qui blanditiis
                     praesentium voluptatum dele corrupti quos dolores et quas
                     molestias.
@@ -441,8 +441,8 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog1.png"
-                      alt=""
+                      src="images/blog/blog1.png"
+                      alt="Blog 1"
                     />
                   </div>
                   <div className="post-desc">
@@ -451,14 +451,16 @@ const Services = () => {
                     </div>
                     <div className="post-title">
                       <h5>
-                        <a href="blog-details.html">
-                          The Powerfull look for best in 2018
+                        <a href="/blogs/blog1">
+                          The role of SEO in modern digital marketing strategies
                         </a>
                       </h5>
                     </div>
                     <p>
-                      Phasellus eget purus id felis dignissim convallis
-                      Suspendisse et augue dui gravida
+                      In today's digital landscape, search engine optimization
+                      (SEO) is more important than ever for businesses looking
+                      to reach their target audience...{" "}
+                      <a href="/blogs/blog1">read more</a>
                     </p>
                   </div>
                 </div>
@@ -468,8 +470,8 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog2.png"
-                      alt=""
+                      src="images/blog/blog2.png"
+                      alt="Blog 2"
                     />
                   </div>
                   <div className="post-desc">
@@ -478,14 +480,16 @@ const Services = () => {
                     </div>
                     <div className="post-title">
                       <h5>
-                        <a href="blog-details.html">
-                          Loptus It's Awesome, We need your help
+                        <a href="/blogs/blog2">
+                          10 Tips for Optimizing Your Social Media Presence
                         </a>
                       </h5>
                     </div>
                     <p>
-                      Phasellus eget purus id felis dignissim convallis
-                      Suspendisse et augue dui gravida
+                      Social media is an essential part of any modern marketing
+                      strategy, but with so many platforms to choose from and an
+                      ever-evolving set of best practices...{" "}
+                      <a href="/blogs/blog2">read more</a>
                     </p>
                   </div>
                 </div>
@@ -495,8 +499,8 @@ const Services = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog3.png"
-                      alt=""
+                      src="images/blog/blog3.png"
+                      alt="Blog 3"
                     />
                   </div>
                   <div className="post-desc">
@@ -505,14 +509,16 @@ const Services = () => {
                     </div>
                     <div className="post-title">
                       <h5>
-                        <a href="blog-details.html">
-                          We Become Best sale marketer in a year!
+                        <a href="/blogs/blog3">
+                          Advanced PPC Techniques: Taking Your Campaigns to the
+                          Next Level
                         </a>
                       </h5>
                     </div>
                     <p>
-                      Phasellus eget purus id felis dignissim convallis
-                      Suspendisse et augue dui gravida
+                      Pay-per-click (PPC) advertising is an effective way for
+                      businesses of all sizes to reach their target audience
+                      and... <a href="/blogs/blog3">read more</a>
                     </p>
                   </div>
                 </div>

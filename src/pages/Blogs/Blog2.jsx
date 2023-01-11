@@ -26,7 +26,7 @@ const Blog2 = () => {
                     <div className="post-image">
                       <img
                         className="img-fluid"
-                        src="../images/home/blog2.png"
+                        src="../images/blog/blog2.png"
                         alt="Blog 2"
                       />
                     </div>
@@ -288,14 +288,14 @@ const Blog2 = () => {
               <div className="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
                 {/* recent post start */}
                 <div className="widget recent-post">
-                  <h5 className="widget-title">Recent Blog's</h5>
+                  <h5 className="widget-title">Recent Post</h5>
                   <article>
                     <div className="row">
                       <div className="col-sm">
                         <img
-                          src="../images/blog/blog-thumb/01.jpg"
+                          src="../images/blog/blog1-sm.png"
                           className="img-fluid"
-                          alt="..."
+                          alt="Blog 1"
                         />
                       </div>
                       <div className="col-sm-9 mt-3 mt-sm-0">
@@ -312,9 +312,9 @@ const Blog2 = () => {
                     <div className="row mt-4">
                       <div className="col-sm">
                         <img
-                          src="../images/blog/blog-thumb/02.jpg"
+                          src="../images/blog/blog2-sm.png"
                           className="img-fluid"
-                          alt="..."
+                          alt="Blog 2"
                         />
                       </div>
                       <div className="col-sm-9 mt-3 mt-sm-0">
@@ -331,9 +331,9 @@ const Blog2 = () => {
                     <div className="row mt-4">
                       <div className="col-sm">
                         <img
-                          src="../images/blog/blog-thumb/03.jpg"
+                          src="../images/blog/blog3-sm.png"
                           className="img-fluid"
-                          alt="..."
+                          alt="Blog 3"
                         />
                       </div>
                       <div className="col-sm-9 mt-3 mt-sm-0">
@@ -371,7 +371,7 @@ const Blog2 = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="../images/home/blog1.png"
+                      src="../images/blog/blog1.png"
                       alt="Blog 1"
                     />
                   </div>
@@ -400,7 +400,7 @@ const Blog2 = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="../images/home/blog2.png"
+                      src="../images/blog/blog2.png"
                       alt=""
                     />
                   </div>
@@ -429,7 +429,7 @@ const Blog2 = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="../images/home/blog3.png"
+                      src="../images/blog/blog3.png"
                       alt=""
                     />
                   </div>

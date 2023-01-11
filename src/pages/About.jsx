@@ -576,7 +576,7 @@ const About = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog1.png"
+                      src="images/blog/blog1.png"
                       alt="Blog 1"
                     />
                   </div>
@@ -605,8 +605,8 @@ const About = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog2.png"
-                      alt=""
+                      src="images/blog/blog2.png"
+                      alt="Blog 2"
                     />
                   </div>
                   <div className="post-desc">
@@ -634,8 +634,8 @@ const About = () => {
                   <div className="post-image">
                     <img
                       className="img-fluid h-100 w-100"
-                      src="images/home/blog3.png"
-                      alt=""
+                      src="images/blog/blog3.png"
+                      alt="Blog 3"
                     />
                   </div>
                   <div className="post-desc">

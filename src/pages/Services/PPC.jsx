@@ -8,7 +8,7 @@ import "./scrollBar.css";
 const PPC = () => {
   // what is ppc start
   const whatIsPpc = {
-    img: "../images/services/smo/whatIsSmo.png",
+    img: "../images/services/ppc/why-ppc.png",
     title: "Why PPC?",
     para: [
       `One of the most well-known types of digital marketing is pay-per-click advertising. However, the first query from companies that haven't used it is certainly, "Why is PPC important?"`,

@@ -21,8 +21,8 @@ const Footer = () => {
                     <a href="/">
                       <img
                         className="img-fluid"
-                        src="../images/digiconnekt-logo.png"
-                        alt=""
+                        src="../images/digiconnekt-logo-white.png"
+                        alt="DigiConnekt"
                       />
                     </a>
                   </div>
@@ -42,18 +42,13 @@ const Footer = () => {
                     <h4 className="title">Follow Us</h4>
                     <ul className="list-inline">
                       <li className="social-facebook">
-                        <a href="#">
+                        <a href="https://www.facebook.com/DigiConnekt/">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li className="social-twitter">
                         <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li className="social-gplus">
-                        <a href="#">
-                          <i className="fab fa-google-plus-g"></i>
+                          <i class="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li className="social-linkedin">
@@ -61,9 +56,9 @@ const Footer = () => {
                           <i className="fab fa-linkedin-in"></i>
                         </a>
                       </li>
-                      <li className="social-skype">
+                      <li className="social-twitter">
                         <a href="#">
-                          <i className="fab fa-skype"></i>
+                          <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                     </ul>
@@ -140,11 +135,14 @@ const Footer = () => {
                     <h4 className="title">Contact us</h4>
                     <ul className="media-icon list-unstyled">
                       <li>
-                        <p className="mb-0">423B, Road Wordwide Country, USA</p>
+                        <p className="mb-0">
+                          1 Marine Parade Central, #04-06 Above McDonald's
+                          Marine Cove, Parkway Centre, Singapore 449408
+                        </p>
                       </li>
                       <li>
-                        <a href="mailto:themeht23@gmail.com">
-                          themeht23@gmail.com
+                        <a href="mailto:info@digiconnekt.com">
+                          info@digiconnekt.com
                         </a>
                       </li>
                       <li>
