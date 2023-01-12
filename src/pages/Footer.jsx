@@ -48,7 +48,7 @@ const Footer = () => {
                       </li>
                       <li className="social-twitter">
                         <a href="#">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li className="social-linkedin">

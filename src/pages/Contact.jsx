@@ -1,8 +1,15 @@
+import axios from "axios";
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import TitleSection from "../components/Title";
 
 const Contact = () => {
+  const API_URL = "https://jsonplaceholder.typicode.com/posts";
+
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,9 +42,82 @@ const Contact = () => {
     }
   };
 
-  const getFormData = (e) => {
+  useEffect(
+    (e) => {
+      // console.log(formErrors);
+      if (Object.keys(formErrors).length === 0 && isSubmit) {
+        console.log(formData);
+      }
+    },
+    [formErrors]
+  );
+
+  const submitFormData = (e) => {
     e.preventDefault();
-    console.log(formData);
+    setFormErrors(validate(formData));
+    setIsSubmit(true);
+
+    const sendFormDataToAPI = async (url) => {
+      const response = await axios.post(API_URL, {
+        fullName: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        joinWithUs: formData.joinWithUs,
+        requireAssistanceWith: formData.requireAssistanceWith,
+        findOutAboutUs: formData.findOutAboutUs,
+      });
+      const data = await response.data;
+
+      console.log(response);
+      console.log(data);
+    };
+
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      sendFormDataToAPI(API_URL);
+    }
+
+    // console.log(formData);
+  };
+
+  const validate = (values) => {
+    const errors = {};
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regexPhone = /^[0-9]/;
+
+    if (!values.name) {
+      errors.name = "FullName is required";
+    }
+
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regexEmail.test(values.email)) {
+      errors.email = "Please enter a Valid Email";
+    }
+
+    if (!values.phone) {
+      errors.phone = "Phone number is required";
+    } else if (!regexPhone.test(values.phone)) {
+      errors.phone = "Please enter a Valid Phone Number";
+    }
+
+    if (!values.message) {
+      errors.message = "Please, leave us a message";
+    }
+
+    if (!values.joinWithUs) {
+      errors.joinWithUs = "Please select any one";
+    }
+
+    if (values.requireAssistanceWith < 1) {
+      errors.requireAssistanceWith = "Please select atleast one";
+    }
+
+    if (!values.findOutAboutUs) {
+      errors.findOutAboutUs = "Please select any one";
+    }
+
+    return errors;
   };
 
   const style = {
@@ -77,9 +157,8 @@ const Contact = () => {
                     // id="contact-form"
                     className="row g-4"
                     noValidate
-                    onSubmit={getFormData}
+                    onSubmit={submitFormData}
                   >
-                    <div className="messages"></div>
                     {/* name start */}
                     <div className="col-md-6">
                       <input
@@ -91,7 +170,12 @@ const Contact = () => {
                         required
                         onChange={onChangeHandler}
                       />
-                      <div className="invalid-feedback">Name is required.</div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.name}
+                      </div>
                     </div>
                     {/* name end */}
 
@@ -106,8 +190,11 @@ const Contact = () => {
                         required
                         onChange={onChangeHandler}
                       />
-                      <div className="invalid-feedback">
-                        Valid email is required.
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.email}
                       </div>
                     </div>
                     {/* email end */}
@@ -123,7 +210,12 @@ const Contact = () => {
                         required
                         onChange={onChangeHandler}
                       />
-                      <div className="invalid-feedback">Phone is required</div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.phone}
+                      </div>
                     </div>
                     {/* phone end */}
 
@@ -138,8 +230,11 @@ const Contact = () => {
                         required
                         onChange={onChangeHandler}
                       ></textarea>
-                      <div className="invalid-feedback">
-                        Please,leave us a message.
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.message}
                       </div>
                     </div>
                     {/* message end */}
@@ -167,6 +262,12 @@ const Contact = () => {
                           <option value="Of Course!">Of Course!</option>
                           <option value="No, Thank You">No, Thank You</option>
                         </select>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.joinWithUs}
                       </div>
                     </div>
                     {/* would you mind end */}
@@ -300,6 +401,12 @@ const Contact = () => {
                           </label>
                         </div>
                       </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.requireAssistanceWith}
+                      </div>
                     </div>
                     {/* I require assistance end */}
 
@@ -401,7 +508,7 @@ const Contact = () => {
                     </div> */}
                     {/* How did you find end */}
 
-                    {/* TEST TEST How did you find start */}
+                    {/* How did you find start */}
                     <div className="col-md-12">
                       <div className="" style={{ ...style, ...bgStyle }}>
                         <label
@@ -513,8 +620,14 @@ const Contact = () => {
                           </div>
                         </div>
                       </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.findOutAboutUs}
+                      </div>
                     </div>
-                    {/* TEST TEST How did you find end */}
+                    {/* How did you find end */}
 
                     {/* send button start */}
                     <div className="col-md-12">
@@ -523,6 +636,18 @@ const Contact = () => {
                       </button>
                     </div>
                     {/* send button end */}
+
+                    {Object.keys(formErrors).length === 0 && isSubmit ? (
+                      <div className="messages" style={{ color: "green" }}>
+                        Message send Successfully!!
+                      </div>
+                    ) : null}
+
+                    {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                      <div className="messages" style={{ color: "red" }}>
+                        Please fill all the input fileds
+                      </div>
+                    ) : null}
                   </form>
                 </div>
               </div>
