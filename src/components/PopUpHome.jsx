@@ -1,8 +1,13 @@
 import React from "react";
+import "./PopUpHome.css";
+
 import { useEffect } from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PopUpHome = () => {
+  const navigate = useNavigate();
+
   const [show, setShow] = useState("");
   const [ariaHidden, setAriaHidden] = useState(true);
   const [ariaModal, setAriaModal] = useState(false);
@@ -29,6 +34,10 @@ const PopUpHome = () => {
     setAriaModal(false);
     setRole("");
     setStyle({ display: "none" });
+  };
+
+  const serviceClicked = (value) => {
+    navigate(`/service-form/${value}`);
   };
 
   return (
@@ -64,132 +73,151 @@ const PopUpHome = () => {
                     <div className="info-img position-relative">
                       <img
                         className="img-fluid topBottom"
-                        src="images/about/02.png"
-                        alt=""
+                        src="./images/services/select-service.png"
+                        alt="Services"
                       />
                     </div>
                   </div>
                   <div className="col-lg-7 col-md-12 mt-5 mt-lg-0">
-                    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                    <div
+                      className="card mb-2"
+                      onClick={() =>
+                        serviceClicked("search-engine-optimization")
+                      }
+                    >
                       <div className="row g-0">
-                        <div
-                          className="col-md-2"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
+                        <div className="col-md-2 card-flex">
                           <img
-                            src="images/feature/01.png"
+                            src="./images/services/seoIcon.png"
                             className="img-fluid rounded-start"
-                            alt="..."
-                            style={{
-                              maxWidth: "60px",
-                            }}
+                            alt="Search Engine Optimization"
                           />
                         </div>
                         <div className="col-md-10">
                           <div className="card-body">
-                            <h5
-                              className="card-title"
-                              style={{ fontSize: "16px" }}
-                            >
+                            <h5 className="card-title">
                               Search Engine Optimization
                             </h5>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                    <div
+                      className="card mb-2"
+                      onClick={() =>
+                        serviceClicked("social-media-optimization")
+                      }
+                    >
                       <div className="row g-0">
-                        <div
-                          className="col-md-2"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
+                        <div className="col-md-2 card-flex">
                           <img
-                            src="images/feature/02.png"
+                            src="./images/services/smoIcon.png"
                             className="img-fluid rounded-start"
-                            alt="..."
-                            style={{
-                              maxWidth: "60px",
-                            }}
+                            alt="Social Media Optimization"
                           />
                         </div>
                         <div className="col-md-10">
                           <div className="card-body">
-                            <h5
-                              className="card-title"
-                              style={{ fontSize: "16px" }}
-                            >
+                            <h5 className="card-title">
                               Social Media Optimization
                             </h5>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                    <div
+                      className="card mb-2"
+                      onClick={() => serviceClicked("email-marketing")}
+                    >
                       <div className="row g-0">
-                        <div
-                          className="col-md-2"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
+                        <div className="col-md-2 card-flex">
                           <img
-                            src="images/feature/03.png"
+                            src="./images/services/emailMarketingIcon.png"
                             className="img-fluid rounded-start"
-                            alt="..."
-                            style={{
-                              maxWidth: "60px",
-                            }}
+                            alt="Email Marketing"
                           />
                         </div>
                         <div className="col-md-10">
                           <div className="card-body">
-                            <h5
-                              className="card-title"
-                              style={{ fontSize: "16px" }}
-                            >
-                              Email Marketing
+                            <h5 className="card-title">Email Marketing</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="card mb-2"
+                      onClick={() => serviceClicked("content-marketing")}
+                    >
+                      <div className="row g-0">
+                        <div className="col-md-2 card-flex">
+                          <img
+                            src="./images/services/contentMarketingIcon.png"
+                            className="img-fluid rounded-start"
+                            alt="Content Marketing"
+                          />
+                        </div>
+                        <div className="col-md-10">
+                          <div className="card-body">
+                            <h5 className="card-title">Content Marketing</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="card mb-2"
+                      onClick={() => serviceClicked("lead-generation")}
+                    >
+                      <div className="row g-0">
+                        <div className="col-md-2 card-flex">
+                          <img
+                            src="./images/services/leadGenerationIcon.png"
+                            className="img-fluid rounded-start"
+                            alt="Lead Generation"
+                          />
+                        </div>
+                        <div className="col-md-10">
+                          <div className="card-body">
+                            <h5 className="card-title">Lead Generation</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="card mb-2"
+                      onClick={() => serviceClicked("programmatic-advertising")}
+                    >
+                      <div className="row g-0">
+                        <div className="col-md-2 card-flex">
+                          <img
+                            src="./images/services/programmaticAdIcon.png"
+                            className="img-fluid rounded-start"
+                            alt="Programmatic Advertising"
+                          />
+                        </div>
+                        <div className="col-md-10">
+                          <div className="card-body">
+                            <h5 className="card-title">
+                              Programmatic Advertising
                             </h5>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                    <div
+                      className="card mb-2"
+                      onClick={() => serviceClicked("pay-per-click")}
+                    >
                       <div className="row g-0">
-                        <div
-                          className="col-md-2"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
+                        <div className="col-md-2 card-flex">
                           <img
-                            src="images/feature/04.png"
+                            src="./images/services/ppcIcon.png"
                             className="img-fluid rounded-start"
-                            alt="..."
-                            style={{
-                              maxWidth: "60px",
-                            }}
+                            alt="Pay Per Click"
                           />
                         </div>
                         <div className="col-md-10">
                           <div className="card-body">
-                            <h5
-                              className="card-title"
-                              style={{ fontSize: "16px" }}
-                            >
-                              Digital Marketing
-                            </h5>
+                            <h5 className="card-title">Pay Per Click</h5>
                           </div>
                         </div>
                       </div>
@@ -198,7 +226,7 @@ const PopUpHome = () => {
                 </div>
               </div>
             </div>
-            <div className="modal-footer">
+            {/* <div className="modal-footer">
               <button
                 className="btn btn-primary"
                 data-bs-target="#exampleModalToggle2"
@@ -206,7 +234,7 @@ const PopUpHome = () => {
               >
                 Open second modal
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

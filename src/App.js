@@ -21,6 +21,7 @@ import Blogs from "./pages/Blogs";
 import Blog1 from "./pages/Blogs/Blog1";
 import Blog2 from "./pages/Blogs/Blog2";
 import Blog3 from "./pages/Blogs/Blog3";
+import ServiceForm from "./components/ServiceForm";
 
 const App = () => {
   return (
@@ -50,6 +51,8 @@ const App = () => {
           element={<ProgrammaticAdvertising />}
         />
         <Route path="/services/ppc" element={<PPC />} />
+
+        <Route path="/service-form/:id" element={<ServiceForm />} />
 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/blog1" element={<Blog1 />} />

@@ -259,7 +259,7 @@ const Services = () => {
                 <img
                   className="img-fluid"
                   src="../images/services/howItWork.png"
-                  alt=""
+                  alt="How It Works"
                 />
               </div>
               <div
@@ -278,10 +278,14 @@ const Services = () => {
                     <span className="step-num" data-bg-color="#ff7810">
                       01
                     </span>
-                    <h4>Research Project</h4>
+                    <h4>Project Research</h4>
                     <p className="mb-0">
-                      Fusce enim nulla mollis eu metus in sagittis fringilla
-                      lnim nulla
+                      This step also includes an analysis of the company that
+                      takes into account the sector and the competition. After
+                      that, companies should develop a target vision of the
+                      digital business model and prioritize digital issues based
+                      on their own business and IT strategy. Determining the
+                      level of digital maturity is an important part of this.
                     </p>
                   </div>
                 </div>
@@ -291,10 +295,14 @@ const Services = () => {
                     <span className="step-num" data-bg-color="#ff156a">
                       02
                     </span>
-                    <h4>Project Targeting</h4>
+                    <h4>Operationalizing the digitalization strategy</h4>
                     <p className="mb-0">
-                      Fusce enim nulla mollis eu metus in sagittis fringilla
-                      lnim nulla
+                      It can then utilize the results to identify innovations,
+                      such as new services, by using the know-how and expertise
+                      it may need. Here, it's crucial to collaborate with middle
+                      management, specialized departments, and IT in order to
+                      take into consideration the requirements of all a
+                      company's divisions and departments.
                     </p>
                   </div>
                 </div>
@@ -304,10 +312,13 @@ const Services = () => {
                     <span className="step-num" data-bg-color="#ffb72f">
                       03
                     </span>
-                    <h4>Reach Target</h4>
+                    <h4>Implementing the strategy</h4>
                     <p className="mb-0">
-                      Fusce enim nulla mollis eu metus in sagittis fringilla
-                      lnim nulla
+                      The final phase is to put the created strategy into action
+                      based on this knowledge. The business may now create its
+                      own digital strategy, portfolio, and priority-setting
+                      framework. The business will then be in the midst of its
+                      digital transformation after this phase is finished.
                     </p>
                   </div>
                 </div>

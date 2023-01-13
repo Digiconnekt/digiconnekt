@@ -44,9 +44,27 @@ const Contact = () => {
 
   useEffect(
     (e) => {
-      // console.log(formErrors);
+      console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
-        console.log(formData);
+        // console.log(formData);
+
+        const sendFormDataToAPI = async (url) => {
+          const response = await axios.post(API_URL, {
+            fullName: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+            joinWithUs: formData.joinWithUs,
+            requireAssistanceWith: formData.requireAssistanceWith,
+            findOutAboutUs: formData.findOutAboutUs,
+          });
+          const data = await response.data;
+
+          console.log(response);
+          console.log(data);
+        };
+
+        sendFormDataToAPI(API_URL);
       }
     },
     [formErrors]
@@ -56,30 +74,9 @@ const Contact = () => {
     e.preventDefault();
     setFormErrors(validate(formData));
     setIsSubmit(true);
-
-    const sendFormDataToAPI = async (url) => {
-      const response = await axios.post(API_URL, {
-        fullName: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        message: formData.message,
-        joinWithUs: formData.joinWithUs,
-        requireAssistanceWith: formData.requireAssistanceWith,
-        findOutAboutUs: formData.findOutAboutUs,
-      });
-      const data = await response.data;
-
-      console.log(response);
-      console.log(data);
-    };
-
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      sendFormDataToAPI(API_URL);
-    }
-
-    // console.log(formData);
   };
 
+  // validation start
   const validate = (values) => {
     const errors = {};
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -119,6 +116,7 @@ const Contact = () => {
 
     return errors;
   };
+  // validation end
 
   const style = {
     borderRadius: "5px",

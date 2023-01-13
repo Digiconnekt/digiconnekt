@@ -115,6 +115,11 @@
   background-color: #40bff5;
 }
 
+.social-icons.social-colored .social-instagram a,
+.social-icons.social-hover .social-instagram a:hover {
+  background-color: #cd486b;
+}
+
 .social-icons.social-colored .social-vimeo a,
 .social-icons.social-hover .social-vimeo a:hover {
   background-color: #35c6ea;
@@ -132,7 +137,7 @@
 
 .social-icons.social-colored .social-instagram a,
 .social-icons.social-hover .social-instagram a:hover {
-  background-color: #548bb6;
+  background-color: #cd486b;
 }
 
 .social-icons.social-colored .social-gplus a,

@@ -1,4 +1,5 @@
 import React from "react";
+import StickyWhatsapp from "../components/StickyWhatsapp";
 
 const Footer = () => {
   return (
@@ -42,22 +43,31 @@ const Footer = () => {
                     <h4 className="title">Follow Us</h4>
                     <ul className="list-inline">
                       <li className="social-facebook">
-                        <a href="https://www.facebook.com/DigiConnekt/">
+                        <a
+                          href="https://www.facebook.com/DigiConnekt/"
+                          target="_blank"
+                        >
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
-                      <li className="social-twitter">
-                        <a href="#">
+                      <li className="social-instagram">
+                        <a
+                          href="https://www.instagram.com/digiconnekt/"
+                          target="_blank"
+                        >
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li className="social-linkedin">
-                        <a href="#">
+                        <a
+                          href="https://www.linkedin.com/company/digiconnekt/mycompany/"
+                          target="_blank"
+                        >
                           <i className="fab fa-linkedin-in"></i>
                         </a>
                       </li>
                       <li className="social-twitter">
-                        <a href="#">
+                        <a href="#" target="_blank">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
@@ -203,11 +213,7 @@ const Footer = () => {
       {/* footer end */}
 
       {/* scroll bottom to top btn start */}
-      <div className="scroll-top">
-        <a className="smoothscroll" href="#top">
-          <i className="flaticon-upload"></i>
-        </a>
-      </div>
+      <StickyWhatsapp />
       {/* scroll bottom to top btn end */}
     </>
   );
