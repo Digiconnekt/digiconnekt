@@ -78,4 +78,10 @@
   }
 }
 
+@media (max-width: 325px) {
+  .navbar-brand.logo {
+    width: 210px;
+  }
+}
+
 /* mediaQuery end */

@@ -86,10 +86,8 @@ const Home = () => {
             <div className="col-lg-12 col-md-12">
               <div className="section-title mb-0">
                 <h2 className="title oneLiner">
-                  <span>Think </span>
-                  with Digiconnekt <br />
-                  <span>Grow </span>
-                  with Digiconnekt
+                  <span>Digiconnekt, </span>a string of
+                  <span> Solutions </span>
                 </h2>
               </div>
             </div>
@@ -97,7 +95,7 @@ const Home = () => {
         </section>
         {/* one liner end */}
 
-        {/* how it works end */}
+        {/* how it works start */}
         <section
           className="position-relative bg-contain bg-pos-r"
           data-bg-img="images/bg/02.png"
@@ -174,7 +172,7 @@ const Home = () => {
         </section>
         {/* how it works end */}
 
-        {/* what we do end */}
+        {/* what we do start */}
         <section className="light-bg">
           <div className="container">
             <div className="row align-items-center">
@@ -249,7 +247,7 @@ const Home = () => {
         </section>
         {/* what we do end */}
 
-        {/* why choose us end */}
+        {/* why choose us start */}
         <section className="light-bg whyChooseUs">
           <div className="container">
             <div className="row align-items-center">
@@ -545,8 +543,8 @@ const Home = () => {
                                 <div className="testimonial-img info-img round-animation">
                                   <img
                                     className="img-fluid leftRight"
-                                    src="images/testimonial/01.png"
-                                    alt=""
+                                    src="images/home/testimonial/milind.png"
+                                    alt="Milind Srivastava"
                                   />
                                 </div>
                               </div>
@@ -556,15 +554,20 @@ const Home = () => {
                                     <i className="flaticon-quotation"></i>
                                   </div>
                                   <p>
-                                    Professional recommended and great
-                                    experience, Nam pulvinar vitae neque et
-                                    porttitor, Praesent sed nisi eleifend,
-                                    Consectetur adipisicing elit, sed do
-                                    eiusmodas temporo incididunt
+                                    Digiconnekt's digital marketing services
+                                    have helped take our online presence to new
+                                    heights. Their team is highly skilled and
+                                    dedicated, constantly striving to improve
+                                    our ROI and drive more sales.
+                                  </p>
+                                  <p>
+                                    I highly recommend Digiconnekt to any
+                                    business looking for top-notch digital
+                                    marketing services.
                                   </p>
                                   <div className="testimonial-caption">
-                                    <h5>Lana Roadse</h5>
-                                    <label>CEO of Loptus</label>
+                                    <h5>Milind Srivastava</h5>
+                                    <label>Senior Manager, Wise</label>
                                   </div>
                                 </div>
                               </div>
@@ -583,8 +586,8 @@ const Home = () => {
                                 <div className="testimonial-img info-img round-animation">
                                   <img
                                     className="img-fluid leftRight"
-                                    src="images/testimonial/01.png"
-                                    alt=""
+                                    src="images/home/testimonial/sunny.png"
+                                    alt="Sunny Nandwani"
                                   />
                                 </div>
                               </div>
@@ -594,15 +597,26 @@ const Home = () => {
                                     <i className="flaticon-quotation"></i>
                                   </div>
                                   <p>
-                                    Professional recommended and great
-                                    experience, Nam pulvinar vitae neque et
-                                    porttitor, Praesent sed nisi eleifend,
-                                    Consectetur adipisicing elit, sed do
-                                    eiusmodas temporo incididunt
+                                    I have been extremely impressed with the
+                                    digital marketing services provided by
+                                    Digiconnekt. Their team of experts helped to
+                                    increase our online presence and drive more
+                                    traffic to our website. Their strategies for
+                                    SEO, PPC, and social media marketing were
+                                    highly effective and resulted in a
+                                    significant increase in conversions and
+                                    sales.
+                                  </p>
+                                  <p>
+                                    The team was also great at communicating
+                                    with us and keeping us informed about the
+                                    progress of our campaigns. I highly
+                                    recommend Digiconnekt to anyone looking to
+                                    improve their digital marketing efforts.
                                   </p>
                                   <div className="testimonial-caption">
-                                    <h5>Lana Roadse</h5>
-                                    <label>CEO of Loptus</label>
+                                    <h5>Sunny Nandwani</h5>
+                                    <label>Founder, Acuver</label>
                                   </div>
                                 </div>
                               </div>
@@ -621,8 +635,8 @@ const Home = () => {
                                 <div className="testimonial-img info-img round-animation">
                                   <img
                                     className="img-fluid leftRight"
-                                    src="images/testimonial/01.png"
-                                    alt=""
+                                    src="images/home/testimonial/stuti.png"
+                                    alt="Stuti Shukla"
                                   />
                                 </div>
                               </div>
@@ -632,15 +646,17 @@ const Home = () => {
                                     <i className="flaticon-quotation"></i>
                                   </div>
                                   <p>
-                                    Professional recommended and great
-                                    experience, Nam pulvinar vitae neque et
-                                    porttitor, Praesent sed nisi eleifend,
-                                    Consectetur adipisicing elit, sed do
-                                    eiusmodas temporo incididunt
+                                    Digiconnekt's digital marketing services
+                                    have been a game-changer for my business.
+                                    Their team is extremely knowledgeable and
+                                    helped me to increase my online visibility
+                                    and customer engagement. I highly recommend
+                                    their services to any business looking to
+                                    grow their online presence.
                                   </p>
                                   <div className="testimonial-caption">
-                                    <h5>Lana Roadse</h5>
-                                    <label>CEO of Loptus</label>
+                                    <h5>Stuti Shukla</h5>
+                                    <label>Senior Manager, Family Movers</label>
                                   </div>
                                 </div>
                               </div>
@@ -648,7 +664,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="owl-item" style={{ width: "1296px" }}>
+                      {/* <div className="owl-item" style={{ width: "1296px" }}>
                         <div className="item">
                           <div className="testimonial style-2">
                             <div className="row align-items-center">
@@ -793,7 +809,7 @@ const Home = () => {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="owl-nav disabled">

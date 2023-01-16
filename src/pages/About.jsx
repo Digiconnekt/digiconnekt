@@ -333,7 +333,6 @@ const About = () => {
                         increase!
                         <span style={{ opacity: "0" }}>
                           Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                          amet.
                         </span>
                       </p>
                     </div>

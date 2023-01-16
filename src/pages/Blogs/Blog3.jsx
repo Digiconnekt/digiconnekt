@@ -22,7 +22,7 @@ const Blog3 = () => {
                   <div className="post">
                     <div className="post-image">
                       <img
-                        className="img-fluid"
+                        className="img-fluid h-100 w-100"
                         src="../images/blog/blog3.png"
                         alt="Blog 3"
                       />
