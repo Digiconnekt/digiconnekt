@@ -27,7 +27,7 @@ const Blogs = () => {
                     </div>
                     <div class="post-desc">
                       <div class="post-date">
-                        23 <span>November 2018</span>
+                        02 <span>January 2023</span>
                       </div>
                       <div class="post-title">
                         <h5>
@@ -70,7 +70,7 @@ const Blogs = () => {
                     </div>
                     <div class="post-desc">
                       <div class="post-date">
-                        23 <span>November 2018</span>
+                        09 <span>January 2023</span>
                       </div>
                       <div class="post-title">
                         <h5>
@@ -102,7 +102,7 @@ const Blogs = () => {
                     </div>
                     <div class="post-desc">
                       <div class="post-date">
-                        23 <span>November 2018</span>
+                        11 <span>January 2023</span>
                       </div>
                       <div class="post-title">
                         <h5>
@@ -159,7 +159,7 @@ const Blogs = () => {
               {/* left side content start */}
               <div class="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
                 {/* Categories block start */}
-                <div class="widget light-bg px-4 py-4">
+                {/* <div class="widget light-bg px-4 py-4">
                   <h5 class="widget-title">Categories</h5>
                   <ul class="widget-categories list-unstyled">
                     <li>
@@ -178,7 +178,7 @@ const Blogs = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 {/* Categories block end */}
 
                 {/* <div class="widget">
@@ -292,7 +292,7 @@ const Blogs = () => {
                           The Role Of SEO In Modern Digital Marketing Strategies
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          02 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -311,7 +311,7 @@ const Blogs = () => {
                           10 Tips for Optimizing Your Social Media Presence
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          09 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -331,7 +331,7 @@ const Blogs = () => {
                           Next Level
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          11 <span>January 2023</span>
                         </div>
                       </div>
                     </div>

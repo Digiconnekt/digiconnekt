@@ -29,7 +29,7 @@ const Blog3 = () => {
                     </div>
                     <div className="post-desc">
                       <div className="post-date mb-2">
-                        23 <span>November 2018</span>
+                        11 <span>January 2023</span>
                       </div>
                       <div className="post-title">
                         <h2>
@@ -347,7 +347,7 @@ const Blog3 = () => {
                   </div>
                   <div className="post-desc">
                     <div className="post-date">
-                      23 <span>November 2018</span>
+                      02 <span>January 2023</span>
                     </div>
                     <div className="post-title">
                       <h5>
@@ -376,7 +376,7 @@ const Blog3 = () => {
                   </div>
                   <div className="post-desc">
                     <div className="post-date">
-                      23 <span>November 2018</span>
+                      09 <span>January 2023</span>
                     </div>
                     <div className="post-title">
                       <h5>
@@ -405,7 +405,7 @@ const Blog3 = () => {
                   </div>
                   <div className="post-desc">
                     <div className="post-date">
-                      23 <span>November 2018</span>
+                      11 <span>January 2023</span>
                     </div>
                     <div className="post-title">
                       <h5>
