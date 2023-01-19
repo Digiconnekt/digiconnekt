@@ -1,5 +1,5 @@
 import React from "react";
-import StickyWhatsapp from "../components/StickyWhatsapp";
+import StickyWhatsapp from "./StickyWhatsapp";
 
 const Footer = () => {
   return (

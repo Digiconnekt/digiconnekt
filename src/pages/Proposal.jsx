@@ -4,123 +4,6 @@ import "../App.css";
 import axios from "axios";
 
 const Proposal = () => {
-  // const API_URL = "https://jsonplaceholder.typicode.com/posts";
-
-  // const [formErrors, setFormErrors] = useState({});
-  // const [isSubmit, setIsSubmit] = useState(false);
-
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   phone: "",
-  //   message: "",
-  //   joinWithUs: "Of Course!",
-  //   requireAssistanceWith: [],
-  //   findOutAboutUs: "",
-  // });
-
-  // const onChangeHandler = (e) => {
-  //   const handlerName = e.target.name;
-  //   const handlerValue = e.target.value;
-
-  //   if (handlerName === "requireAssistanceWith") {
-  //     let copyOfFormData = { ...formData };
-  //     if (e.target.checked) {
-  //       copyOfFormData.requireAssistanceWith.push(handlerValue);
-  //     } else {
-  //       copyOfFormData.requireAssistanceWith =
-  //         copyOfFormData.requireAssistanceWith.filter(
-  //           (elem) => elem !== handlerValue
-  //         );
-  //     }
-  //     setFormData(copyOfFormData);
-  //   } else {
-  //     setFormData(() => ({ ...formData, [handlerName]: handlerValue }));
-  //     // console.log(handlerName, handlerValue);
-  //     // console.log(e);
-  //   }
-  // };
-
-  // useEffect(
-  //   (e) => {
-  //     // console.log(formErrors);
-  //     if (Object.keys(formErrors).length === 0 && isSubmit) {
-  //       console.log(formData);
-  //     }
-  //   },
-  //   [formErrors]
-  // );
-
-  // const submitFormData = (e) => {
-  //   e.preventDefault();
-  //   setFormErrors(validate(formData));
-  //   setIsSubmit(true);
-
-  //   const sendFormDataToAPI = async (url) => {
-  //     const response = await axios.post(API_URL, {
-  //       fullName: formData.name,
-  //       email: formData.email,
-  //       phone: formData.phone,
-  //       message: formData.message,
-  //       joinWithUs: formData.joinWithUs,
-  //       requireAssistanceWith: formData.requireAssistanceWith,
-  //       findOutAboutUs: formData.findOutAboutUs,
-  //     });
-  //     const data = await response.data;
-
-  //     console.log(response);
-  //     console.log(data);
-  //   };
-
-  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
-  //     sendFormDataToAPI(API_URL);
-  //   }
-
-  //   // console.log(formData);
-  // };
-
-  // // validation start
-  // const validate = (values) => {
-  //   const errors = {};
-  //   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-  //   const regexPhone = /^[0-9]/;
-
-  //   if (!values.name) {
-  //     errors.name = "FullName is required";
-  //   }
-
-  //   if (!values.email) {
-  //     errors.email = "Email is required";
-  //   } else if (!regexEmail.test(values.email)) {
-  //     errors.email = "Please enter a Valid Email";
-  //   }
-
-  //   if (!values.phone) {
-  //     errors.phone = "Phone number is required";
-  //   } else if (!regexPhone.test(values.phone)) {
-  //     errors.phone = "Please enter a Valid Phone Number";
-  //   }
-
-  //   if (!values.message) {
-  //     errors.message = "Please, leave us a message";
-  //   }
-
-  //   if (!values.joinWithUs) {
-  //     errors.joinWithUs = "Please select any one";
-  //   }
-
-  //   if (values.requireAssistanceWith < 1) {
-  //     errors.requireAssistanceWith = "Please select atleast one";
-  //   }
-
-  //   if (!values.findOutAboutUs) {
-  //     errors.findOutAboutUs = "Please select any one";
-  //   }
-
-  //   return errors;
-  // };
-  // // validation end
-
   const style = {
     borderRadius: "5px",
     fontSize: "13px",
@@ -195,7 +78,7 @@ const Proposal = () => {
                         type="text"
                         name="name"
                         className="form-control"
-                        placeholder="Enter Your Website link here..."
+                        placeholder="https://example.com"
                         required
                       />
                     </div>

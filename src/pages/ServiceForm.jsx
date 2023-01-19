@@ -172,14 +172,21 @@ const ServiceForm = () => {
                     <div className="col-md-12 mb-3">
                       <label
                         className="mb-2"
+                        style={{ fontSize: "27px", fontWeight: "500" }}
+                      >
+                        All right! You are looking for{" "}
+                        <span style={{ textTransform: "uppercase" }}>
+                          {selectedService}.
+                        </span>
+                      </label>
+                      <div className="section-title mb-0">
+                        <h6>5 more steps to submit the form</h6>
+                      </div>
+                      <label
+                        className="mb-2"
                         style={{ fontSize: "18px", fontWeight: "500" }}
                       >
-                        All right! you are looking for{" "}
-                        <span style={{ textTransform: "uppercase" }}>
-                          {selectedService},
-                        </span>
-                        <br />
-                        would you like to choose more services
+                        Would you like to choose more services?
                       </label>
                       <div className="" style={{ ...style, ...bgStyle }}>
                         <div className="form-check mt-2 mb-2">

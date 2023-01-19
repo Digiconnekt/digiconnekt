@@ -34,6 +34,10 @@
   font-size: 15px;
 }
 
+.footer-logo img {
+  height: auto;
+}
+
 /* mediaQuery start */
 @media (max-width: 992px) {
   .whyChooseUs {

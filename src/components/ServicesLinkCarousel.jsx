@@ -42,7 +42,7 @@ const ServicesLinkCarousel = () => {
                           <div className="cases-description">
                             <h5>
                               <a href="/services/search-engine-optimization">
-                                Search Engine Optimization
+                                Search Engine Optimization 1
                               </a>
                             </h5>
                             {/* <span>Digital</span> */}

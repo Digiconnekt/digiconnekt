@@ -427,7 +427,14 @@ const SearchEngineOptmization = () => {
         {/* Our Standard SEO Process end */}
 
         {/* 3 block start */}
-        <section className="light-bg position-relative text-center mt-10 mb-10 overflow-hidden">
+        <section className="light-bg position-relative text-center mb-5 overflow-hidden">
+          <div className="row justify-content-center text-center mb-4">
+            <div className="col-lg-8 col-md-12">
+              <div className="section-title mb-0">
+                <h2 className="title">We provide assistance in</h2>
+              </div>
+            </div>
+          </div>
           <div className="pattern-3">
             <img
               className="img-fluid rotateme"
@@ -539,6 +546,13 @@ const SearchEngineOptmization = () => {
           }}
         >
           <div className="container">
+            <div className="row justify-content-center text-center mb-4">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title">Boost your internet visibility</h2>
+                </div>
+              </div>
+            </div>
             <div
               className="row"
               style={{ maxWidth: "1080px", margin: "0 auto" }}

@@ -440,66 +440,130 @@ const About = () => {
         </section>
         {/* services we provide end */}
 
-        {/* 8 blocks clients start */}
+        {/* clients start */}
         <section className="light-bg">
           <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title">
+                  <h6>Clients</h6>
+                  <h2 className="title">Our Clients</h2>
+                </div>
+              </div>
+            </div>
             <div className="row">
               <div className="col-md-12">
                 <div className="ht-clients d-flex flex-wrap align-items-center text-center">
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/07.png"
-                      alt=""
+                      src="images/home/clients/m-and-s.png"
+                      alt="M and S"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/08.png"
-                      alt=""
+                      src="images/home/clients/acuver.png"
+                      alt="Acuver"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/09.png"
-                      alt=""
+                      src="images/home/clients/car-dekho.png"
+                      alt="Car Dekho"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/10.png"
-                      alt=""
+                      src="images/home/clients/design-pax.png"
+                      alt="Design Pax"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/11.png"
-                      alt=""
+                      src="images/home/clients/dream-webies.png"
+                      alt="Dream Webies"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
+                      src="images/home/clients/epam.png"
+                      alt="Epam"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
+                      src="images/home/clients/life-trail.png"
+                      alt="Life Trail"
                     />
                   </div>
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/client/12.png"
-                      alt=""
+                      src="images/home/clients/listed.png"
+                      alt="Listed"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/m-and-s.png"
+                      alt="M And S"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/marsh-mc-lennan.png"
+                      alt="Marsh Mc Lennan"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/metamore.png"
+                      alt="Metamore"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/startup-buddy.png"
+                      alt="Startup Buddy"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/buildnetic.png"
+                      alt="Buildnetic"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/air-tour-australia.png"
+                      alt="Air Tour Australia"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/the-coding-trail.png"
+                      alt="The Coding Trail"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/ddf.png"
+                      alt="Delhi Duty Free"
                     />
                   </div>
                 </div>
@@ -507,7 +571,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        {/* 8 blocks clients end */}
+        {/* clients end */}
 
         {/* contact btn start */}
         {/* <section
