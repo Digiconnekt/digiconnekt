@@ -145,7 +145,7 @@ const ServiceForm = () => {
     <>
       {/* title section start */}
       <TitleSection title={selectedService} />
-      {/* title section end */}
+      {/* title section end -*/}
 
       <div className="page-content">
         <section
