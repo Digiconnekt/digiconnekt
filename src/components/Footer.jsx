@@ -67,7 +67,10 @@ const Footer = () => {
                         </a>
                       </li>
                       <li className="social-twitter">
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://twitter.com/DigiConnekt"
+                          target="_blank"
+                        >
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
