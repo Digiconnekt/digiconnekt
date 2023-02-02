@@ -1,9 +1,165 @@
 import React, { useEffect, useState } from "react";
 import TitleSection from "../components/Title";
 import "../App.css";
-import axios from "axios";
+import AxiosPost from "../API";
 
 const Proposal = () => {
+  const API_URL = "https://jsonplaceholder.typicode.com/posts";
+
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    website: "",
+    mainObjective: [],
+    concern: "",
+    everCollaborated: "",
+    experience: "",
+    lookingFor: [],
+    moneyBring: "",
+    phone: "",
+    email: "",
+    company: "",
+    dateTime: "",
+  });
+
+  const onChangeHandler = (e) => {
+    const handlerName = e.target.name;
+    const handlerValue = e.target.value;
+
+    let copyOfFormData;
+    if (handlerName === "mainObjective") {
+      copyOfFormData = { ...formData };
+      if (e.target.checked) {
+        copyOfFormData.mainObjective.push(handlerValue);
+      } else {
+        copyOfFormData.mainObjective = copyOfFormData.mainObjective.filter(
+          (elem) => elem !== handlerValue
+        );
+      }
+      setFormData(copyOfFormData);
+    } else if (handlerName === "lookingFor") {
+      copyOfFormData = { ...formData };
+      if (e.target.checked) {
+        copyOfFormData.lookingFor.push(handlerValue);
+      } else {
+        copyOfFormData.lookingFor = copyOfFormData.lookingFor.filter(
+          (elem) => elem !== handlerValue
+        );
+      }
+      setFormData(copyOfFormData);
+    } else {
+      setFormData(() => ({ ...formData, [handlerName]: handlerValue }));
+      // console.log(handlerName, handlerValue);
+      // console.log(e);
+    }
+  };
+
+  const sendFormDataToAPI = async (url, headers) => {
+    try {
+      const data = await AxiosPost(url, headers);
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(
+    (e) => {
+      console.log(formErrors);
+      if (Object.keys(formErrors).length === 0 && isSubmit) {
+        // console.log(formData);
+
+        const header = {
+          fullName: formData.name,
+          website: formData.website,
+          mainObjective: formData.mainObjective,
+          concern: formData.concern,
+          everCollaborated: formData.everCollaborated,
+          experience: formData.experience,
+          lookingFor: formData.lookingFor,
+          moneyBring: formData.moneyBring,
+          phone: formData.phone,
+          email: formData.email,
+          company: formData.company,
+          dateTime: formData.dateTime,
+        };
+
+        sendFormDataToAPI(API_URL, header);
+      }
+    },
+    [formErrors]
+  );
+
+  const submitFormData = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formData));
+    setIsSubmit(true);
+  };
+
+  // validation start
+  const validate = (values) => {
+    const errors = {};
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regexPhone = /^[0-9]/;
+
+    if (!values.name) {
+      errors.name = "FullName is required";
+    }
+
+    if (!values.website) {
+      errors.website = "Website link is required";
+    }
+
+    if (values.mainObjective < 1) {
+      errors.mainObjective = "Please select atleast one";
+    }
+
+    if (!values.concern) {
+      errors.concern = "This Field is required";
+    }
+
+    if (!values.everCollaborated) {
+      errors.everCollaborated = "This Field is required";
+    }
+
+    if (!values.experience) {
+      errors.experience = "This Field is required";
+    }
+
+    if (values.lookingFor < 1) {
+      errors.lookingFor = "Please select atleast one";
+    }
+
+    if (!values.moneyBring) {
+      errors.moneyBring = "This Field is required";
+    }
+
+    if (!values.phone) {
+      errors.phone = "Phone number is required";
+    } else if (!regexPhone.test(values.phone)) {
+      errors.phone = "Please enter a Valid Phone Number";
+    }
+
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regexEmail.test(values.email)) {
+      errors.email = "Please enter a Valid Email";
+    }
+
+    if (!values.company) {
+      errors.company = "This Field is required";
+    }
+
+    if (!values.dateTime) {
+      errors.dateTime = "This Field is required";
+    }
+
+    return errors;
+  };
+  // validation end
+
   const style = {
     borderRadius: "5px",
     fontSize: "13px",
@@ -38,32 +194,38 @@ const Proposal = () => {
                 </div>
                 <div className="contact-main">
                   <form
-                    id="contact-form"
+                    // id="contact-form"
                     className="row g-4 needs-validation"
-                    method="post"
-                    action="php/contact.php"
                     noValidate
+                    onSubmit={submitFormData}
                   >
                     <div className="messages"></div>
 
-                    {/* first name start */}
+                    {/* name start */}
                     <div className="col-md-12 mb-3">
                       <label
                         className="mb-2"
                         style={{ fontSize: "18px", fontWeight: "500" }}
                       >
-                        Let's start by asking you for your first name.
+                        Let's start by asking you for your Fullname.
                       </label>
                       <input
                         id="form_name"
                         type="text"
                         name="name"
                         className="form-control"
-                        placeholder="Enter Your First Name here..."
+                        placeholder="Enter Your Fullname here..."
                         required
+                        onChange={onChangeHandler}
                       />
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.name}
+                      </div>
                     </div>
-                    {/* first name end */}
+                    {/* name end */}
 
                     {/* website name start */}
                     <div className="col-md-12 mb-3">
@@ -76,11 +238,18 @@ const Proposal = () => {
                       <input
                         id="form_name"
                         type="text"
-                        name="name"
+                        name="website"
                         className="form-control"
                         placeholder="https://example.com"
                         required
+                        onChange={onChangeHandler}
                       />
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.website}
+                      </div>
                     </div>
                     {/* website name end */}
 
@@ -97,8 +266,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Increase My Revenue"
                             id="increaseRevenue"
+                            onChange={onChangeHandler}
+                            name="mainObjective"
                           />
                           <label
                             className="form-check-label"
@@ -112,8 +283,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Get More Leads"
                             id="getMoreLeads"
+                            onChange={onChangeHandler}
+                            name="mainObjective"
                           />
                           <label
                             className="form-check-label"
@@ -127,8 +300,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Grow brand awareness"
                             id="growBrandAwareness"
+                            onChange={onChangeHandler}
+                            name="mainObjective"
                           />
                           <label
                             className="form-check-label"
@@ -142,8 +317,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Start My Business"
                             id="startMyBusiness"
+                            onChange={onChangeHandler}
+                            name="mainObjective"
                           />
                           <label
                             className="form-check-label"
@@ -157,8 +334,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Other"
                             id="other"
+                            onChange={onChangeHandler}
+                            name="mainObjective"
                           />
                           <label
                             className="form-check-label"
@@ -181,6 +360,12 @@ const Proposal = () => {
                           /> */}
                         </div>
                       </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.mainObjective}
+                      </div>
                     </div>
                     {/* main objective end */}
 
@@ -196,11 +381,18 @@ const Proposal = () => {
                       <input
                         id="form_name"
                         type="text"
-                        name="name"
+                        name="concern"
                         className="form-control"
                         placeholder="Type here..."
                         required
+                        onChange={onChangeHandler}
                       />
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.concern}
+                      </div>
                     </div>
                     {/* which concern end */}
 
@@ -220,6 +412,7 @@ const Proposal = () => {
                             name="everCollaborated"
                             id="yes"
                             value="Yes"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -236,6 +429,7 @@ const Proposal = () => {
                             name="everCollaborated"
                             id="no"
                             value="No"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -245,6 +439,12 @@ const Proposal = () => {
                             No
                           </label>
                         </div>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.everCollaborated}
                       </div>
                     </div>
                     {/* have you ever collab end */}
@@ -264,9 +464,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="zero"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="0"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -278,9 +480,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="one"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="1"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -292,9 +496,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="two"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="2"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -306,9 +512,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="three"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="3"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -320,9 +528,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="four"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="4"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -334,9 +544,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="five"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="5"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -348,9 +560,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="six"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="6"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -362,9 +576,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="seven"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="7"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -376,9 +592,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="eight"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="8"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -390,9 +608,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="nine"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="9"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -404,9 +624,11 @@ const Proposal = () => {
                         <input
                           type="radio"
                           className="btn-check"
-                          name="options"
+                          name="experience"
                           id="ten"
                           autoComplete="off"
+                          onChange={onChangeHandler}
+                          value="10"
                         />
                         <label
                           className="btn btn-secondary btn-hover"
@@ -415,6 +637,12 @@ const Proposal = () => {
                         >
                           10
                         </label>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.experience}
                       </div>
                     </div>
                     {/* what prior experience end */}
@@ -432,8 +660,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Search Engine Optimization"
                             id="seo"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -447,8 +677,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Social Media Optimization"
                             id="smo"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -462,8 +694,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Email Marketing"
                             id="emailMarketing"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -477,8 +711,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Content Marketing"
                             id="contentMarketing"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -492,8 +728,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Lead Generation"
                             id="leadGeneration"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -507,8 +745,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Programmatic Advertising"
                             id="programmaticAdvertising"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -522,8 +762,10 @@ const Proposal = () => {
                           <input
                             className="form-check-input checkbox-color"
                             type="checkbox"
-                            value=""
+                            value="Pay Per Click"
                             id="payPerClick"
+                            onChange={onChangeHandler}
+                            name="lookingFor"
                           />
                           <label
                             className="form-check-label"
@@ -533,6 +775,12 @@ const Proposal = () => {
                             Pay Per Click
                           </label>
                         </div>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.lookingFor}
                       </div>
                     </div>
                     {/* what service looking end */}
@@ -549,11 +797,12 @@ const Proposal = () => {
                       <div className="" style={{ ...style, ...bgStyle }}>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="I'm preparing to launch"
                             id="launch"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -565,11 +814,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$0 - $5000"
                             id="zeroToFiveK"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -581,11 +831,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$5000 - $10000"
                             id="fiveToTenK"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -597,11 +848,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$10000 - $20000"
                             id="tenToTwentyK"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -613,11 +865,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$20000 - $50000"
                             id="twentyToFiftyK"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -629,11 +882,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$50000 - $100000"
                             id="fiftyToOneLac"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -645,11 +899,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="$100000+"
                             id="OneLacPlus"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -661,11 +916,12 @@ const Proposal = () => {
                         </div>
                         <div className="form-check mt-2 mb-2">
                           <input
-                            className="form-check-input"
+                            className="form-check-input checkbox-color"
                             type="radio"
                             value="I'd rather hold off for now."
                             id="hold"
                             name="moneyBring"
+                            onChange={onChangeHandler}
                           />
                           <label
                             className="form-check-label"
@@ -675,6 +931,12 @@ const Proposal = () => {
                             I'd rather hold off for now.
                           </label>
                         </div>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.moneyBring}
                       </div>
                     </div>
                     {/* how much money end */}
@@ -697,9 +959,13 @@ const Proposal = () => {
                             className="form-control"
                             placeholder="Phone"
                             required
+                            onChange={onChangeHandler}
                           />
-                          <div className="invalid-feedback">
-                            Phone is required
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.phone}
                           </div>
                         </div>
                         <div className="col-md-6  mt-2 mb-2">
@@ -710,9 +976,13 @@ const Proposal = () => {
                             className="form-control"
                             placeholder="Email"
                             required
+                            onChange={onChangeHandler}
                           />
-                          <div className="invalid-feedback">
-                            Valid email is required.
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.email}
                           </div>
                         </div>
                         <div className="col-md-12  mt-2 mb-2">
@@ -723,9 +993,13 @@ const Proposal = () => {
                             className="form-control"
                             placeholder="Company name"
                             required
+                            onChange={onChangeHandler}
                           />
-                          <div className="invalid-feedback">
-                            Company Name is required.
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.company}
                           </div>
                         </div>
                       </div>
@@ -741,7 +1015,18 @@ const Proposal = () => {
                         When would you like to meet with us online?
                       </label>
                       <br />
-                      <input className="text-black" type="datetime-local" />
+                      <input
+                        className="text-black"
+                        type="datetime-local"
+                        name="dateTime"
+                        onChange={onChangeHandler}
+                      />
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.dateTime}
+                      </div>
                     </div>
                     {/* when would you like to meet end */}
 
@@ -752,6 +1037,12 @@ const Proposal = () => {
                       </button>
                     </div>
                     {/* send button end */}
+
+                    {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                      <div className="messages" style={{ color: "red" }}>
+                        Please fill all the input fileds
+                      </div>
+                    ) : null}
                   </form>
                 </div>
               </div>

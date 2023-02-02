@@ -56,7 +56,7 @@ const PopUpHome = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalToggleLabel">
-                Select Service
+                Select The Right Services For Your Needs
               </h1>
               <button
                 type="button"

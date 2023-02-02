@@ -23,9 +23,12 @@ import Blog2 from "./pages/Blogs/Blog2";
 import Blog3 from "./pages/Blogs/Blog3";
 import ServiceForm from "./pages/ServiceForm";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const App = () => {
   return (
-    <div>
+    <>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -64,7 +67,9 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </div>
+
+      <ToastContainer />
+    </>
   );
 };
 

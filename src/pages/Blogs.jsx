@@ -9,27 +9,27 @@ const Blogs = () => {
       {/* title section end */}
 
       {/* page content start */}
-      <div class="page-content">
+      <div className="page-content">
         <section>
-          <div class="container">
-            <div class="row">
+          <div className="container">
+            <div className="row">
               {/* right side content start */}
-              <div class="col-lg-8 col-md-12 order-lg-1">
+              <div className="col-lg-8 col-md-12 order-lg-1">
                 {/* blog 1 start */}
-                <div class="blog-classic">
-                  <div class="post">
-                    <div class="post-image">
+                <div className="blog-classic">
+                  <div className="post">
+                    <div className="post-image">
                       <img
-                        class="img-fluid h-100 w-100"
+                        className="img-fluid h-100 w-100"
                         src="images/blog/blog1.png"
                         alt="Blog 1"
                       />
                     </div>
-                    <div class="post-desc">
-                      <div class="post-date">
+                    <div className="post-desc">
+                      <div className="post-date">
                         02 <span>January 2023</span>
                       </div>
-                      <div class="post-title">
+                      <div className="post-title">
                         <h5>
                           <a href="/blogs/blog1">
                             The role of SEO in modern digital marketing
@@ -43,10 +43,10 @@ const Blogs = () => {
                         to reach their target audience...{" "}
                         <a href="/blogs/blog1">read more</a>
                       </p>
-                      {/* <div class="post-author">
-                        <div class="post-author-img">
+                      {/* <div className="post-author">
+                        <div className="post-author-img">
                           <img
-                            class="img-fluid"
+                            className="img-fluid"
                             src="images/thumbnail/01.png"
                             alt=""
                           />
@@ -59,20 +59,20 @@ const Blogs = () => {
                 {/* blog 1 end */}
 
                 {/* blog 2 start */}
-                <div class="blog-classic">
-                  <div class="post">
-                    <div class="post-image">
+                <div className="blog-classic">
+                  <div className="post">
+                    <div className="post-image">
                       <img
-                        class="img-fluid h-100 w-100"
+                        className="img-fluid h-100 w-100"
                         src="images/blog/blog2.png"
                         alt="Blog 2"
                       />
                     </div>
-                    <div class="post-desc">
-                      <div class="post-date">
+                    <div className="post-desc">
+                      <div className="post-date">
                         09 <span>January 2023</span>
                       </div>
-                      <div class="post-title">
+                      <div className="post-title">
                         <h5>
                           <a href="/blogs/blog2">
                             10 Tips for Optimizing Your Social Media Presence
@@ -91,20 +91,20 @@ const Blogs = () => {
                 {/* blog 2 end */}
 
                 {/* blog 3 start */}
-                <div class="blog-classic">
-                  <div class="post">
-                    <div class="post-image">
+                <div className="blog-classic">
+                  <div className="post">
+                    <div className="post-image">
                       <img
-                        class="img-fluid h-100 w-100"
+                        className="img-fluid h-100 w-100"
                         src="images/blog/blog3.png"
                         alt="Blog 3"
                       />
                     </div>
-                    <div class="post-desc">
-                      <div class="post-date">
+                    <div className="post-desc">
+                      <div className="post-date">
                         11 <span>January 2023</span>
                       </div>
-                      <div class="post-title">
+                      <div className="post-title">
                         <h5>
                           <a href="/blogs/blog3">
                             Advanced PPC Techniques: Taking Your Campaigns to
@@ -123,31 +123,31 @@ const Blogs = () => {
                 {/* blog 3 end */}
 
                 {/* pagination start */}
-                {/* <nav aria-label="Page navigation" class="mt-8">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        <i class="fas fa-arrow-left"></i>
+                {/* <nav aria-label="Page navigation" className="mt-8">
+                  <ul className="pagination">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
+                        <i className="fas fa-arrow-left"></i>
                       </a>
                     </li>
-                    <li class="page-item active">
-                      <a class="page-link" href="#">
+                    <li className="page-item active">
+                      <a className="page-link" href="#">
                         1
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         2
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
+                    <li className="page-item">
+                      <a className="page-link" href="#">
                         3
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        <i class="fas fa-arrow-right"></i>
+                    <li className="page-item">
+                      <a className="page-link" href="#">
+                        <i className="fas fa-arrow-right"></i>
                       </a>
                     </li>
                   </ul>
@@ -157,11 +157,11 @@ const Blogs = () => {
               {/* right side content end */}
 
               {/* left side content start */}
-              <div class="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
+              <div className="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
                 {/* Categories block start */}
-                {/* <div class="widget light-bg px-4 py-4">
-                  <h5 class="widget-title">Categories</h5>
-                  <ul class="widget-categories list-unstyled">
+                {/* <div className="widget light-bg px-4 py-4">
+                  <h5 className="widget-title">Categories</h5>
+                  <ul className="widget-categories list-unstyled">
                     <li>
                       <a href="#">
                         Search Engine Optimization <span>(1)</span>
@@ -181,9 +181,9 @@ const Blogs = () => {
                 </div> */}
                 {/* Categories block end */}
 
-                {/* <div class="widget">
-                  <h5 class="widget-title">Tags</h5>
-                  <ul class="widget-tags list-inline">
+                {/* <div className="widget">
+                  <h5 className="widget-title">Tags</h5>
+                  <ul className="widget-tags list-inline">
                     <li>
                       <a href="#">Design</a>
                     </li>
@@ -208,18 +208,18 @@ const Blogs = () => {
                   </ul>
                 </div> */}
 
-                {/* <div class="widget theme-bg text-white">
+                {/* <div className="widget theme-bg text-white">
                   <div
-                    class="owl-carousel no-pb"
+                    className="owl-carousel no-pb"
                     data-items="1"
                     data-dots="false"
                     data-autoplay="true"
                   >
-                    <div class="item">
-                      <div class="testimonial style-2">
-                        <div class="testimonial-content">
-                          <div class="testimonial-quote">
-                            <i class="flaticon-quotation"></i>
+                    <div className="item">
+                      <div className="testimonial style-2">
+                        <div className="testimonial-content">
+                          <div className="testimonial-quote">
+                            <i className="flaticon-quotation"></i>
                           </div>
                           <p>
                             Professional recommended and great experience, Nam
@@ -227,18 +227,18 @@ const Blogs = () => {
                             eleifend, Consectetur adipisicing elit, sed do
                             eiusmodas temporo incididunt
                           </p>
-                          <div class="testimonial-caption">
+                          <div className="testimonial-caption">
                             <h5>Lana Roadse</h5>
                             <label>CEO of Loptus</label>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="item">
-                      <div class="testimonial style-2">
-                        <div class="testimonial-content">
-                          <div class="testimonial-quote">
-                            <i class="flaticon-quotation"></i>
+                    <div className="item">
+                      <div className="testimonial style-2">
+                        <div className="testimonial-content">
+                          <div className="testimonial-quote">
+                            <i className="flaticon-quotation"></i>
                           </div>
                           <p>
                             Professional recommended and great experience, Nam
@@ -246,18 +246,18 @@ const Blogs = () => {
                             eleifend, Consectetur adipisicing elit, sed do
                             eiusmodas temporo incididunt
                           </p>
-                          <div class="testimonial-caption">
+                          <div className="testimonial-caption">
                             <h5>Lana Roadse</h5>
                             <label>CEO of Loptus</label>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="item">
-                      <div class="testimonial style-2">
-                        <div class="testimonial-content">
-                          <div class="testimonial-quote">
-                            <i class="flaticon-quotation"></i>
+                    <div className="item">
+                      <div className="testimonial style-2">
+                        <div className="testimonial-content">
+                          <div className="testimonial-quote">
+                            <i className="flaticon-quotation"></i>
                           </div>
                           <p>
                             Professional recommended and great experience, Nam
@@ -265,7 +265,7 @@ const Blogs = () => {
                             eleifend, Consectetur adipisicing elit, sed do
                             eiusmodas temporo incididunt
                           </p>
-                          <div class="testimonial-caption">
+                          <div className="testimonial-caption">
                             <h5>Lana Roadse</h5>
                             <label>CEO of Loptus</label>
                           </div>

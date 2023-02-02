@@ -180,7 +180,7 @@ const ServiceForm = () => {
                         </span>
                       </label>
                       <div className="section-title mb-0">
-                        <h6>5 more steps to submit the form</h6>
+                        <h6>Hit only 5 steps to reach us</h6>
                       </div>
                       <label
                         className="mb-2"

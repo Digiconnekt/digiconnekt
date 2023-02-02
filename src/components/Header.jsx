@@ -88,11 +88,22 @@ const Header = () => {
                               ? "nav-link dropdown-toggle active"
                               : "nav-link dropdown-toggle"
                           }`}
+                          data-bs-toggle="dropdown"
                         >
                           Services
                         </a>
                         <div className="dropdown-menu">
                           <ul className="list-unstyled">
+                            <li>
+                              <a
+                                href="/services"
+                                style={
+                                  location === "/services" ? subMenuActive : {}
+                                }
+                              >
+                                Services
+                              </a>
+                            </li>
                             <li>
                               <a
                                 href="/services/search-engine-optimization"

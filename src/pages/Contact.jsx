@@ -1,7 +1,7 @@
-import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import AxiosPost from "../API";
 import TitleSection from "../components/Title";
 
 const Contact = () => {
@@ -42,29 +42,32 @@ const Contact = () => {
     }
   };
 
+  const sendFormDataToAPI = async (url, headers) => {
+    try {
+      const data = await AxiosPost(url, headers);
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   useEffect(
     (e) => {
       console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         // console.log(formData);
 
-        const sendFormDataToAPI = async (url) => {
-          const response = await axios.post(API_URL, {
-            fullName: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            message: formData.message,
-            joinWithUs: formData.joinWithUs,
-            requireAssistanceWith: formData.requireAssistanceWith,
-            findOutAboutUs: formData.findOutAboutUs,
-          });
-          const data = await response.data;
-
-          console.log(response);
-          console.log(data);
+        const header = {
+          fullName: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          joinWithUs: formData.joinWithUs,
+          requireAssistanceWith: formData.requireAssistanceWith,
+          findOutAboutUs: formData.findOutAboutUs,
         };
 
-        sendFormDataToAPI(API_URL);
+        sendFormDataToAPI(API_URL, header);
       }
     },
     [formErrors]
@@ -409,104 +412,6 @@ const Contact = () => {
                     {/* I require assistance end */}
 
                     {/* How did you find start */}
-                    {/* <div className="col-md-12">
-                      <div className="" style={{ ...style, ...bgStyle }}>
-                        <label
-                          className="mb-2"
-                          style={{ fontWeight: "500", fontSize: "15px" }}
-                        >
-                          How did you find out about us?
-                        </label>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Instagram"
-                            id="instagram"
-                            name="findOutAboutUs"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="instagram"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Instagram
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Facebook"
-                            id="facebook"
-                            name="findOutAboutUs"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="facebook"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Facebook
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Google"
-                            id="google"
-                            name="findOutAboutUs"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="google"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Google
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="LinkedIn"
-                            id="linkedIn"
-                            name="findOutAboutUs"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="linkedIn"
-                            style={{ fontSize: "15px" }}
-                          >
-                            LinkedIn
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Other"
-                            id="other"
-                            name="findOutAboutUs"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="other"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Other
-                          </label>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* How did you find end */}
-
-                    {/* How did you find start */}
                     <div className="col-md-12">
                       <div className="" style={{ ...style, ...bgStyle }}>
                         <label
@@ -634,12 +539,6 @@ const Contact = () => {
                       </button>
                     </div>
                     {/* send button end */}
-
-                    {Object.keys(formErrors).length === 0 && isSubmit ? (
-                      <div className="messages" style={{ color: "green" }}>
-                        Message send Successfully!!
-                      </div>
-                    ) : null}
 
                     {Object.keys(formErrors).length !== 0 && isSubmit ? (
                       <div className="messages" style={{ color: "red" }}>
