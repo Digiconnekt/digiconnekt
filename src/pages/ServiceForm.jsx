@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import AxiosPost from "../API";
 import TitleSection from "../components/Title";
 
 const ServiceForm = () => {
@@ -58,31 +59,27 @@ const ServiceForm = () => {
     // console.log(e);
   };
 
+  const payload = {
+    serviceLookingFor: formData.serviceLookingFor,
+    mainObjective: formData.mainObjective,
+    wantToScheduleMeeting: formData.wantToScheduleMeeting,
+    meetingTimeAndDate: formData.meetingTimeAndDate,
+    fullName: formData.fullName,
+    phone: formData.phone,
+    email: formData.email,
+    websiteLink: formData.websiteLink,
+    message: formData.message,
+
+    organisation: "digiconnekt",
+    messageFrom: window.location.href,
+  };
+
   useEffect(
     (e) => {
       // console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
+        AxiosPost(payload);
         // console.log(formData);
-
-        const sendFormDataToAPI = async (url) => {
-          const response = await axios.post(API_URL, {
-            serviceLookingFor: formData.serviceLookingFor,
-            mainObjective: formData.mainObjective,
-            wantToScheduleMeeting: formData.wantToScheduleMeeting,
-            meetingTimeAndDate: formData.meetingTimeAndDate,
-            fullName: formData.fullName,
-            phone: formData.phone,
-            email: formData.email,
-            websiteLink: formData.websiteLink,
-            message: formData.message,
-          });
-          const data = await response.data;
-
-          console.log(response);
-          console.log(data);
-        };
-
-        sendFormDataToAPI(API_URL);
       }
     },
     [formErrors]
@@ -743,12 +740,6 @@ const ServiceForm = () => {
                       )}
 
                     {/* send button end */}
-
-                    {Object.keys(formErrors).length === 0 && isSubmit ? (
-                      <div className="messages" style={{ color: "green" }}>
-                        Message send Successfully!!
-                      </div>
-                    ) : null}
 
                     {Object.keys(formErrors).length !== 0 && isSubmit ? (
                       <div className="messages" style={{ color: "red" }}>

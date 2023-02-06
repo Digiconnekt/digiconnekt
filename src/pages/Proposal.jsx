@@ -4,8 +4,6 @@ import "../App.css";
 import AxiosPost from "../API";
 
 const Proposal = () => {
-  const API_URL = "https://jsonplaceholder.typicode.com/posts";
-
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
@@ -56,37 +54,30 @@ const Proposal = () => {
     }
   };
 
-  const sendFormDataToAPI = async (url, headers) => {
-    try {
-      const data = await AxiosPost(url, headers);
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
+  const payload = {
+    fullName: formData.name,
+    website: formData.website,
+    mainObjective: formData.mainObjective,
+    concern: formData.concern,
+    everCollaborated: formData.everCollaborated,
+    experience: formData.experience,
+    lookingFor: formData.lookingFor,
+    moneyBring: formData.moneyBring,
+    phone: formData.phone,
+    email: formData.email,
+    company: formData.company,
+    dateTime: formData.dateTime,
+
+    organisation: "digiconnekt",
+    messageFrom: window.location.href,
   };
 
   useEffect(
     (e) => {
       console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
+        AxiosPost(payload);
         // console.log(formData);
-
-        const header = {
-          fullName: formData.name,
-          website: formData.website,
-          mainObjective: formData.mainObjective,
-          concern: formData.concern,
-          everCollaborated: formData.everCollaborated,
-          experience: formData.experience,
-          lookingFor: formData.lookingFor,
-          moneyBring: formData.moneyBring,
-          phone: formData.phone,
-          email: formData.email,
-          company: formData.company,
-          dateTime: formData.dateTime,
-        };
-
-        sendFormDataToAPI(API_URL, header);
       }
     },
     [formErrors]

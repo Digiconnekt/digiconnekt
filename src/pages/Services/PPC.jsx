@@ -1,4 +1,5 @@
 import React from "react";
+import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -255,47 +256,7 @@ const PPC = () => {
         {/* ppc services end */}
 
         {/* contact btn start */}
-        <section
-          className="overflow-hidden dark-bg animatedBackground"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <div className="row">
-                    <div className="col-lg-11 col-md-12 me-auto">
-                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                        <h4 className="mb-0">Let's Discuss</h4>
-                        <div className="subscribe-form sm-mt-2">
-                          <form id="mc-form" className="group">
-                            <input
-                              type="email"
-                              name="EMAIL"
-                              className="email"
-                              id="mc-email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <input
-                              className="btn btn-theme"
-                              type="submit"
-                              name="subscribe"
-                              value="Subscribe"
-                            />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactBtnBanner fromSection="section - 1" />
         {/* contact btn end */}
 
         {/* standard ad process start */}
@@ -449,47 +410,7 @@ const PPC = () => {
         {/* services links end */}
 
         {/* contact btn start */}
-        <section
-          className="overflow-hidden dark-bg animatedBackground mb-10"
-          data-bg-img="../images/pattern/06.png"
-          style={{
-            backgroundImage: 'url("../images/pattern/06.png")',
-          }}
-        >
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title mb-0">
-                  <div className="row">
-                    <div className="col-lg-11 col-md-12 me-auto">
-                      <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                        <h4 className="mb-0">Let's Discuss</h4>
-                        <div className="subscribe-form sm-mt-2">
-                          <form id="mc-form" className="group">
-                            <input
-                              type="email"
-                              name="EMAIL"
-                              className="email"
-                              id="mc-email"
-                              placeholder="Email Address"
-                              required
-                            />
-                            <input
-                              className="btn btn-theme"
-                              type="submit"
-                              name="subscribe"
-                              value="Subscribe"
-                            />
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactBtnBanner fromSection="section - 2" />
         {/* contact btn end */}
       </div>
       {/* page content end */}

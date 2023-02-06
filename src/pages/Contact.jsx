@@ -5,8 +5,6 @@ import AxiosPost from "../API";
 import TitleSection from "../components/Title";
 
 const Contact = () => {
-  const API_URL = "https://jsonplaceholder.typicode.com/posts";
-
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
@@ -42,32 +40,25 @@ const Contact = () => {
     }
   };
 
-  const sendFormDataToAPI = async (url, headers) => {
-    try {
-      const data = await AxiosPost(url, headers);
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
+  const payload = {
+    fullName: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    message: formData.message,
+    joinWithUs: formData.joinWithUs,
+    requireAssistanceWith: formData.requireAssistanceWith,
+    findOutAboutUs: formData.findOutAboutUs,
+
+    organisation: "digiconnekt",
+    messageFrom: window.location.href,
   };
 
   useEffect(
     (e) => {
       console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
+        AxiosPost(payload);
         // console.log(formData);
-
-        const header = {
-          fullName: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          joinWithUs: formData.joinWithUs,
-          requireAssistanceWith: formData.requireAssistanceWith,
-          findOutAboutUs: formData.findOutAboutUs,
-        };
-
-        sendFormDataToAPI(API_URL, header);
       }
     },
     [formErrors]

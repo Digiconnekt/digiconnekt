@@ -1,6 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AxiosPost from "../API";
 
 const GetFreeSiteAudit = () => {
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    websiteLink: "",
+  });
+
+  const onChangeHandler = (e) => {
+    const handlerName = e.target.name;
+    const handlerValue = e.target.value;
+
+    setFormData(() => ({ ...formData, [handlerName]: handlerValue }));
+  };
+
+  const payload = {
+    name: formData.name,
+    email: formData.email,
+    websiteLink: formData.websiteLink,
+
+    organisation: "digiconnekt",
+    messageFrom: window.location.href,
+  };
+
+  useEffect(
+    (e) => {
+      console.log(formErrors);
+      if (Object.keys(formErrors).length === 0 && isSubmit) {
+        AxiosPost(payload);
+        // console.log(formData);
+      }
+    },
+    [formErrors]
+  );
+
+  const submitFormData = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formData));
+    setIsSubmit(true);
+  };
+
+  // validation start
+  const validate = (values) => {
+    const errors = {};
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    if (!values.name) {
+      errors.name = "Name is required";
+    }
+
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regexEmail.test(values.email)) {
+      errors.email = "Please enter a Valid Email";
+    }
+
+    if (!values.websiteLink) {
+      errors.websiteLink = "Website Link is required";
+    }
+
+    return errors;
+  };
+  // validation end
+
   return (
     <>
       <section
@@ -21,40 +87,58 @@ const GetFreeSiteAudit = () => {
               </div>
             </div>
             <div className="col-md-12">
-              <form>
+              <form noValidate onSubmit={submitFormData}>
                 <div className="row">
                   <div className="col-md-3 mb-3">
                     <input
-                      id="form_name"
                       type="text"
                       name="name"
                       className="form-control"
                       placeholder="Name"
                       required
+                      onChange={onChangeHandler}
                       style={{ background: "none", borderColor: "#ff7810" }}
                     />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.name}
+                    </div>
                   </div>
                   <div className="col-md-3 mb-3">
                     <input
-                      id="form_email"
                       type="email"
                       name="email"
                       className="form-control"
                       placeholder="Email"
                       required
+                      onChange={onChangeHandler}
                       style={{ background: "none", borderColor: "#ff7810" }}
                     />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.email}
+                    </div>
                   </div>
                   <div className="col-md-3 mb-3">
                     <input
-                      id="form_phone"
                       type="text"
-                      name="phone"
+                      name="websiteLink"
                       className="form-control"
                       placeholder="Website Link"
                       required
+                      onChange={onChangeHandler}
                       style={{ background: "none", borderColor: "#ff7810" }}
                     />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.websiteLink}
+                    </div>
                   </div>
                   <div className="col-md-3 ">
                     <button
@@ -64,6 +148,12 @@ const GetFreeSiteAudit = () => {
                       <span>Get Audit</span>
                     </button>
                   </div>
+
+                  {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                    <div className="messages" style={{ color: "red" }}>
+                      Please fill all the input fileds
+                    </div>
+                  ) : null}
                 </div>
               </form>
             </div>
