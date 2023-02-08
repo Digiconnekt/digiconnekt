@@ -2,18 +2,22 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const AxiosPost = async (payload) => {
-  const config = {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  };
+  // const config = {
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // };
 
   try {
-    const res = await axios.post(
-      process.env.REACT_APP_BASE_URL,
-      payload,
-      config
-    );
+    const res = await axios({
+      method: "post",
+      url: process.env.REACT_APP_BASE_URL,
+      withCredentials: false,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
     console.log("🚀 ~ file: API.js:6 ~ AxiosPost ~ res", res);
     const data = await res.data;
     console.log("🚀 ~ file: API.js:9 ~ AxiosPost ~ data", data);
@@ -21,7 +25,6 @@ const AxiosPost = async (payload) => {
     toast.success("Message Send Successfully, Thank You!!", {
       position: "top-center",
     });
-    return data;
   } catch (err) {
     console.log(err);
   }

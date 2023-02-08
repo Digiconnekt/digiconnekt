@@ -21,7 +21,7 @@ const Services = () => {
             <div className="row justify-content-center text-center mb-5">
               <div className="col-lg-8 col-md-12">
                 <div className="section-title">
-                  <h6>Service's</h6>
+                  <h6>Service</h6>
                   <h2 className="title">We’r Providing Following Services!</h2>
                 </div>
               </div>
