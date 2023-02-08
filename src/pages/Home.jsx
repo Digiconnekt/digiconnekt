@@ -988,11 +988,6 @@ const Home = () => {
                 <div className="section-title">
                   <h6>Blog's</h6>
                   <h2 className="title">Read our latest news</h2>
-                  <p className="mb-0">
-                    Deos et accusamus et iusto odio dignissimos qui blanditiis
-                    praesentium voluptatum dele corrupti quos dolores et quas
-                    molestias.
-                  </p>
                 </div>
               </div>
             </div>
