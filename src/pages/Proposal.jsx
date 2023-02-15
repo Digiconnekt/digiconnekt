@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TitleSection from "../components/Title";
 import "../App.css";
 import AxiosPost from "../API";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Proposal = () => {
   const [formErrors, setFormErrors] = useState({});

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ContentImg from "../../components/ContentImg";
 import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";

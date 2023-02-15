@@ -4,7 +4,7 @@ import { useState } from "react";
 import AxiosPost from "../API";
 import TitleSection from "../components/Title";
 import ReCAPTCHA from "react-google-recaptcha";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [formErrors, setFormErrors] = useState({});
@@ -552,10 +552,10 @@ const Contact = () => {
                     {/* How did you find end */}
 
                     {/* RECAPTCHA start */}
-                    <ReCAPTCHA
+                    {/* <ReCAPTCHA
                       sitekey={process.env.REACT_APP_SITE_KEY}
                       size="invisible"
-                    />
+                    /> */}
                     {/* RECAPTCHA end */}
 
                     {/* send button start */}

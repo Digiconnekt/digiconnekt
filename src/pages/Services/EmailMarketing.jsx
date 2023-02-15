@@ -6,7 +6,7 @@ import TitleSection from "../../components/Title";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import "./scrollBar.css";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const EmailMarketing = () => {
   // Bulk email marketing start
