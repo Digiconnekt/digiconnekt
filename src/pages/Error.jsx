@@ -1,9 +1,26 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Error = () => {
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>404 Error - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta name="title" content="" />
+
+        {/* Description */}
+        <meta name="description" content="" />
+
+        {/* Keywords */}
+        <meta name="keywords" content="" />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       <div className="page-content">
         <section
           className="fullscreen-banner p-0 overflow-hidden text-center white-overlay error-page"

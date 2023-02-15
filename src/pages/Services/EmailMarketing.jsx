@@ -6,6 +6,7 @@ import TitleSection from "../../components/Title";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import "./scrollBar.css";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
+import { Helmet } from "react-helmet";
 
 const EmailMarketing = () => {
   // Bulk email marketing start
@@ -65,6 +66,32 @@ const EmailMarketing = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Email Marketing - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Best Email Marketing Company USA & Canada | Email Marketing Agency"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Digiconnekt offers top Email Marketing Automation Services in the USA & Canada. Get the right Email Marketing Strategy as Email Campaign Services for your business."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="email marketing agency usa, email marketing automation services, email marketing strategy, email campaign services, email marketing company"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Email Marketing" />
       {/* title section end */}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 // import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
@@ -21,6 +22,32 @@ const ContentMarketing = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Content Marketing - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Get SEO Content Marketing Services in USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Connect with us for Content Marketing Agency Services in USA & Canada. We offer Seo Content Writing Services, Seo Optimized, and content marketing services."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="content marketing agency services, seo content marketing services, seo content writing services, seo optimized content, seo and content marketing services"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Content Marketing" />
       {/* title section end */}

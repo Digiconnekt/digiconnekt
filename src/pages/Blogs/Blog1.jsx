@@ -1,11 +1,29 @@
 // blog1 === The Role Of SEO In Modern Digital Marketing Strategies
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import TitleSection from "../../components/Title";
 
 const Blog1 = () => {
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Blogs - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta name="title" content="" />
+
+        {/* Description */}
+        <meta name="description" content="" />
+
+        {/* Keywords */}
+        <meta name="keywords" content="" />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="The Role Of SEO In Modern Digital Marketing Strategies" />
       {/* title section end */}

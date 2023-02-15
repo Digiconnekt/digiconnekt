@@ -1,9 +1,36 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import TitleSection from "../components/Title";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>About Us - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="DigiConnekt- Online Advertising Companies USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="DigiConnekt is a leading Marketing Agency in USA & Canada. We offer Digital Advertising Services to all small and big businesses from our Digital Agency USA."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="marketing agency usa, digital advertising services, online advertising companies usa, digital agencies usa"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="About Us" />
       {/* title section end */}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TitleSection from "../components/Title";
 import "../App.css";
 import AxiosPost from "../API";
+import { Helmet } from "react-helmet";
 
 const Proposal = () => {
   const [formErrors, setFormErrors] = useState({});
@@ -166,6 +167,32 @@ const Proposal = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Get A Proposal - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Get Digital Marketing Proposal for your business in USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Check out Digital Marketing Pricing Packages to learn more about our Digital Marketing Services Costs. Our digital marketing quotations for USA & Canada are distinct."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="digital marketing proposal, digital marketing services cost, digital marketing pricing packages, quotation for digital marketing"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Get A Proposal" />
       {/* title section end */}

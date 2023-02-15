@@ -1,11 +1,29 @@
 // blog3 === Advanced PPC Techniques: Taking Your Campaigns to the Next Level
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import TitleSection from "../../components/Title";
 
 const Blog3 = () => {
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Blogs - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta name="title" content="" />
+
+        {/* Description */}
+        <meta name="description" content="" />
+
+        {/* Keywords */}
+        <meta name="keywords" content="" />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Advanced PPC Techniques: Taking Your Campaigns to the Next Level" />
       {/* title section end */}

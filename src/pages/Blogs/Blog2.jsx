@@ -1,11 +1,29 @@
 // blog2 === 10 Tips for Optimizing Your Social Media Presence
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import TitleSection from "../../components/Title";
 
 const Blog2 = () => {
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Blogs - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta name="title" content="" />
+
+        {/* Description */}
+        <meta name="description" content="" />
+
+        {/* Keywords */}
+        <meta name="keywords" content="" />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection
         title="10 Tips for Optimizing Your Social Media Presence

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ImgContent from "../../components/ImgContent";
 import OneLiner from "../../components/OneLiner";
@@ -23,6 +24,32 @@ const PPC = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Pay Per Click - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Paid Search Marketing in USA, Canada | Paid Ads campaign"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Digiconnekt provides ROI-driven Google PPC Management Services in USA & Canada. Get leads by choosing our Pay Per Click Management Agency for PPC Search Advertising"
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="ppc search advertising, paid search marketing, paid ads campaign, google ppc management services, pay per click management agency"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Pay Per Click" />
       {/* title section end */}

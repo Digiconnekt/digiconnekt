@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
@@ -39,6 +40,32 @@ const ProgrammaticAdvertising = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Programmatic Advertising - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Top Programmatic Advertising Companies in USA & Canada."
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="We ranked the No.1 Programmatic Marketing, and Advertising agency in USA & Canada. We offer the Best Marktech Services as Ad Tech Agency from Best Adtech Companies"
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="programmatic advertising company, programmatic advertising agency, programmatic marketing companies, ad tech agency, best adtech companies, marktech services "
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Programmatic Advertising" />
       {/* title section end */}

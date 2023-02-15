@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ContentImg from "../../components/ContentImg";
 import ImgContent from "../../components/ImgContent";
@@ -43,6 +44,32 @@ const SocialMediaOptimization = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Social Media Optimization - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Social Media Marketing & Advertising Agency in USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Digiconnekt offers Social Media Marketing Services in USA & Canada. Hire our Online Marketing and Social Media Manager team for your Community manager as services."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Social media marketing services usa, social media management services, Social Media Marketing Agency USA, social media advertising agency, online marketing and social media manager, Community manager services"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Social Media Optimization" />
       {/* title section end */}

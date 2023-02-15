@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ImgContent from "../../components/ImgContent";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
@@ -24,6 +25,32 @@ const LeadGeneration = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Lead Generation - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Top B2B Lead Generation Companies in USA & Canada- Digiconnekt"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Digiconnekt is the top Lead Generation Agency in USA & Canada. We are the Online lead generation companies that offer Sales Lead Generation Services, B2B Lead Generation"
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="b2b lead generation companies usa, sales lead generation services, lead generation agency in usa, online lead generation companies, b2b lead generation services"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Lead Generation" />
       {/* title section end */}

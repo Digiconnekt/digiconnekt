@@ -4,6 +4,7 @@ import { useState } from "react";
 import AxiosPost from "../API";
 import TitleSection from "../components/Title";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [formErrors, setFormErrors] = useState({});
@@ -128,6 +129,32 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Contact Us - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Contact Us For Digital Branding | Online Marketing Company in USA"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Do you ready to hire Internet Marketing Company to grow your business? Do contact us for Best digital marketing strategy in USA & Canada for online digital branding."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="online marketing company, internet marketing company, digital marketing strategy, digital branding"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Contact" />
       {/* title section end */}

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import AxiosPost from "../API";
 import TitleSection from "../components/Title";
@@ -140,6 +141,23 @@ const ServiceForm = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Services - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta name="title" content="" />
+
+        {/* Description */}
+        <meta name="description" content="" />
+
+        {/* Keywords */}
+        <meta name="keywords" content="" />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title={selectedService} />
       {/* title section end -*/}

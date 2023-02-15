@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import ContactBtnBanner from "../../components/ContactBtnBanner";
 import ContentImg from "../../components/ContentImg";
 import GetFreeSiteAudit from "../../components/GetFreeSiteAudit";
@@ -42,6 +43,32 @@ const SearchEngineOptmization = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Search Engine Optimization - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="We are the best Search Engine Optimization (SEO) agency USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Choose Digiconnekt as a Local SEO Company in USA & Canada to promote your business from the best Seo Company. We as SEO Agency offer top SEO services in the USA."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Best seo agency usa, search engine optimization agency usa, local seo Company usa, seo services usa, seo company usa"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="Search Engine Optimization" />
       {/* title section end */}

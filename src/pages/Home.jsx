@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
 import PopUpHome from "../components/PopUpHome";
 
@@ -14,6 +15,32 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Home - Digiconnekt</title>
+
+        {/* meta title */}
+        <meta
+          name="title"
+          content="Best Internet, Digital Marketing Service in USA & Canada"
+        />
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="We are the best Digital Marketing Company in USA & Canada. From our Digital Marketing Agency, we provide various services like- Performance & Internet for clients."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="digital marketing services usa, performance marketing agency usa, internet marketing agency usa, digital marketing company usa, digital marketing agency usa"
+        />
+
+        {/* Author */}
+        {/* <meta name="author" content="www.themeht.com" /> */}
+      </Helmet>
+
       {modal ? <PopUpHome /> : ""}
 
       {/* hero section start */}
