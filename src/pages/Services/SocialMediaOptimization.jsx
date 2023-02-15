@@ -46,13 +46,9 @@ const SocialMediaOptimization = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Social Media Optimization - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Social Media Marketing & Advertising Agency in USA & Canada"
-        />
+        <title>
+          Social Media Marketing & Advertising Agency in USA & Canada
+        </title>
 
         {/* Description */}
         <meta

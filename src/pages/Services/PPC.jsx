@@ -26,13 +26,7 @@ const PPC = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Pay Per Click - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Paid Search Marketing in USA, Canada | Paid Ads campaign"
-        />
+        <title>Paid Search Marketing in USA, Canada | Paid Ads campaign</title>
 
         {/* Description */}
         <meta

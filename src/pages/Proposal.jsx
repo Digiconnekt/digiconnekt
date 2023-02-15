@@ -169,13 +169,9 @@ const Proposal = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Get A Proposal - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Get Digital Marketing Proposal for your business in USA & Canada"
-        />
+        <title>
+          Get Digital Marketing Proposal for your business in USA & Canada
+        </title>
 
         {/* Description */}
         <meta

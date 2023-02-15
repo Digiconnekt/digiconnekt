@@ -145,9 +145,6 @@ const ServiceForm = () => {
         {/* Title */}
         <title>Services - Digiconnekt</title>
 
-        {/* meta title */}
-        <meta name="title" content="" />
-
         {/* Description */}
         <meta name="description" content="" />
 

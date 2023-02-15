@@ -7,13 +7,7 @@ const Blogs = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Blogs - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Get the latest Digital Marketing News from Digiconnekt"
-        />
+        <title>Get the latest Digital Marketing News from Digiconnekt</title>
 
         {/* Description */}
         <meta

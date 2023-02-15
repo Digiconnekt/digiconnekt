@@ -7,13 +7,9 @@ const Services = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Services - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Digiconnekt offers top Digital Marketing Solutions in USA & Canada"
-        />
+        <title>
+          Digiconnekt offers top Digital Marketing Solutions in USA & Canada
+        </title>
 
         {/* Description */}
         <meta

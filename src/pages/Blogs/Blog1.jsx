@@ -11,9 +11,6 @@ const Blog1 = () => {
         {/* Title */}
         <title>Blogs - Digiconnekt</title>
 
-        {/* meta title */}
-        <meta name="title" content="" />
-
         {/* Description */}
         <meta name="description" content="" />
 

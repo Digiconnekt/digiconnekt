@@ -27,13 +27,9 @@ const LeadGeneration = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Lead Generation - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Top B2B Lead Generation Companies in USA & Canada- Digiconnekt"
-        />
+        <title>
+          Top B2B Lead Generation Companies in USA & Canada- Digiconnekt
+        </title>
 
         {/* Description */}
         <meta

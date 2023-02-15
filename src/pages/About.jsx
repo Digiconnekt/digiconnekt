@@ -7,13 +7,7 @@ const About = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>About Us - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="DigiConnekt- Online Advertising Companies USA & Canada"
-        />
+        <title>DigiConnekt- Online Advertising Companies USA & Canada</title>
 
         {/* Description */}
         <meta

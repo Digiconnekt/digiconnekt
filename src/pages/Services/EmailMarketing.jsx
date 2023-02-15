@@ -68,13 +68,9 @@ const EmailMarketing = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Email Marketing - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Best Email Marketing Company USA & Canada | Email Marketing Agency"
-        />
+        <title>
+          Best Email Marketing Company USA & Canada | Email Marketing Agency
+        </title>
 
         {/* Description */}
         <meta

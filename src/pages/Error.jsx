@@ -8,9 +8,6 @@ const Error = () => {
         {/* Title */}
         <title>404 Error - Digiconnekt</title>
 
-        {/* meta title */}
-        <meta name="title" content="" />
-
         {/* Description */}
         <meta name="description" content="" />
 

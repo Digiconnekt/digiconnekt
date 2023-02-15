@@ -42,13 +42,7 @@ const ProgrammaticAdvertising = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Programmatic Advertising - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Top Programmatic Advertising Companies in USA & Canada."
-        />
+        <title>Top Programmatic Advertising Companies in USA & Canada.</title>
 
         {/* Description */}
         <meta

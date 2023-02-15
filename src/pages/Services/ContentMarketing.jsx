@@ -24,13 +24,7 @@ const ContentMarketing = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Content Marketing - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Get SEO Content Marketing Services in USA & Canada"
-        />
+        <title>Get SEO Content Marketing Services in USA & Canada</title>
 
         {/* Description */}
         <meta

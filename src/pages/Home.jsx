@@ -17,13 +17,7 @@ const Home = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Home - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Best Internet, Digital Marketing Service in USA & Canada"
-        />
+        <title>Best Internet, Digital Marketing Service in USA & Canada</title>
 
         {/* Description */}
         <meta

@@ -131,13 +131,9 @@ const Contact = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Contact Us - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="Contact Us For Digital Branding | Online Marketing Company in USA"
-        />
+        <title>
+          Contact Us For Digital Branding | Online Marketing Company in USA
+        </title>
 
         {/* Description */}
         <meta

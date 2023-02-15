@@ -45,13 +45,9 @@ const SearchEngineOptmization = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Search Engine Optimization - Digiconnekt</title>
-
-        {/* meta title */}
-        <meta
-          name="title"
-          content="We are the best Search Engine Optimization (SEO) agency USA & Canada"
-        />
+        <title>
+          We are the best Search Engine Optimization (SEO) agency USA & Canada
+        </title>
 
         {/* Description */}
         <meta
