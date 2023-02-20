@@ -25,7 +25,7 @@ const ContactBtnBanner = ({ fromSection }) => {
 
   useEffect(
     (e) => {
-      console.log(formErrors);
+      // console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         AxiosPost(payload);
         // console.log(formData);

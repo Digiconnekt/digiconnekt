@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
@@ -8,8 +7,6 @@ import TitleSection from "../components/Title";
 const ServiceForm = () => {
   const { id } = useParams();
   const selectedService = id.replace(/-/g, " ");
-
-  const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
@@ -557,9 +554,9 @@ const ServiceForm = () => {
                     {/* when would you like to meet end */}
 
                     {/* provide contact info start */}
-                    {((formData.wantToScheduleMeeting == "Yes" &&
+                    {((formData.wantToScheduleMeeting === "Yes" &&
                       formData.meetingTimeAndDate !== "") ||
-                      formData.wantToScheduleMeeting == "No") && (
+                      formData.wantToScheduleMeeting === "No") && (
                       <div className="col-md-12 mb-3">
                         <label
                           className="mb-2"
@@ -741,8 +738,8 @@ const ServiceForm = () => {
                       ))} */}
                     {/* provide contact info end */}
 
-                    {/* send button start */}
-                    {formData.fullName.length !== 0 &&
+                    {/* send data to API button start */}
+                    {/* {formData.fullName.length !== 0 &&
                       formData.phone.length !== 0 &&
                       formData.email.length !== 0 &&
                       formData.websiteLink.length !== 0 &&
@@ -752,9 +749,33 @@ const ServiceForm = () => {
                             <span>Send Message</span>
                           </button>
                         </div>
-                      )}
+                      )} */}
+                    {/* send data to API button end */}
 
-                    {/* send button end */}
+                    {/* send data to API button start */}
+                    {((formData.wantToScheduleMeeting === "Yes" &&
+                      formData.meetingTimeAndDate !== "") ||
+                      formData.wantToScheduleMeeting === "No") && (
+                      <div className="col-md-12">
+                        <button className="btn btn-theme btn-radius">
+                          <span>Send Message</span>
+                        </button>
+                      </div>
+                    )}
+                    {/* send data to API button end */}
+
+                    {/* send msg button start */}
+                    {(formData.mainObjective.length === 0 ||
+                      formData.wantToScheduleMeeting === "" ||
+                      (formData.wantToScheduleMeeting === "Yes" &&
+                        formData.meetingTimeAndDate === "")) && (
+                      <div className="col-md-12">
+                        <div className="btn btn-theme btn-radius">
+                          <span>Send Message</span>
+                        </div>
+                      </div>
+                    )}
+                    {/* send msg button end */}
 
                     {Object.keys(formErrors).length !== 0 && isSubmit ? (
                       <div className="messages" style={{ color: "red" }}>

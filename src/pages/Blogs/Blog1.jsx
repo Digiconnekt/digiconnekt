@@ -1,7 +1,7 @@
 // blog1 === The Role Of SEO In Modern Digital Marketing Strategies
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import TitleSection from "../../components/Title";
 
 const Blog1 = () => {
@@ -172,7 +172,7 @@ const Blog1 = () => {
                   {/* blog content end */}
 
                   {/* leave comment start */}
-                  <div className="post-comments mt-5 position-relative light-bg p-md-5 p-4">
+                  {/* <div className="post-comments mt-5 position-relative light-bg p-md-5 p-4">
                     <div className="section-title mb-3">
                       <h3 className="title">
                         Leave A <span>Comment</span>
@@ -183,7 +183,7 @@ const Blog1 = () => {
                       className="needs-validation"
                       method="post"
                       action="php/contact.php"
-                      novalidate
+                      noValidate
                     >
                       <div className="messages"></div>
                       <div className="row g-4">
@@ -241,7 +241,7 @@ const Blog1 = () => {
                         </div>
                       </div>
                     </form>
-                  </div>
+                  </div> */}
                   {/* leave comment end */}
                 </div>
               </div>
@@ -266,7 +266,7 @@ const Blog1 = () => {
                           The Role Of SEO In Modern Digital Marketing Strategies
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          02 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -285,7 +285,7 @@ const Blog1 = () => {
                           10 Tips for Optimizing Your Social Media Presence
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          09 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -305,7 +305,7 @@ const Blog1 = () => {
                           Next Level
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          11 <span>January 2023</span>
                         </div>
                       </div>
                     </div>

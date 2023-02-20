@@ -1,7 +1,7 @@
 // blog2 === 10 Tips for Optimizing Your Social Media Presence
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import TitleSection from "../../components/Title";
 
 const Blog2 = () => {
@@ -222,79 +222,6 @@ const Blog2 = () => {
                     </div>
                   </div>
                   {/* blog content end */}
-
-                  {/* leave comment start */}
-                  <div className="post-comments mt-5 position-relative light-bg p-md-5 p-4">
-                    <div className="section-title mb-3">
-                      <h3 className="title">
-                        Leave A <span>Comment</span>
-                      </h3>
-                    </div>
-                    <form
-                      id="contact-form"
-                      className="needs-validation"
-                      method="post"
-                      action="php/contact.php"
-                      novalidate
-                    >
-                      <div className="messages"></div>
-                      <div className="row g-4">
-                        <div className="col-md-6">
-                          <div>
-                            <input
-                              id="form_name"
-                              type="text"
-                              name="name"
-                              className="form-control"
-                              placeholder="Name"
-                              required
-                            />
-                            <div className="invalid-feedback">
-                              Name is required.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-6">
-                          <div>
-                            <input
-                              id="form_email"
-                              type="email"
-                              name="email"
-                              className="form-control"
-                              placeholder="Email"
-                              required
-                            />
-                            <div className="invalid-feedback">
-                              Valid email is required.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-12">
-                          <div>
-                            <textarea
-                              id="form_message"
-                              name="message"
-                              className="form-control h-100"
-                              placeholder="Your Comment"
-                              rows="3"
-                              required
-                            ></textarea>
-                            <div className="invalid-feedback">
-                              Please,leave us a message.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="row mt-5">
-                        <div className="col-md-12">
-                          <button className="btn btn-theme">
-                            <span>Post Comment</span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  {/* leave comment end */}
                 </div>
               </div>
               {/* right side content end */}
@@ -318,7 +245,7 @@ const Blog2 = () => {
                           The Role Of SEO In Modern Digital Marketing Strategies
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          02 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -337,7 +264,7 @@ const Blog2 = () => {
                           10 Tips for Optimizing Your Social Media Presence
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          09 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
@@ -357,7 +284,7 @@ const Blog2 = () => {
                           Next Level
                         </a>
                         <div className="post-date">
-                          23 <span>November 2018</span>
+                          11 <span>January 2023</span>
                         </div>
                       </div>
                     </div>
