@@ -25,6 +25,7 @@ import ServiceForm from "./pages/ServiceForm";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Landing from "./pages/Landing";
 
 const App = () => {
   return (
@@ -64,6 +65,8 @@ const App = () => {
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/landing" element={<Landing />} />
+
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
