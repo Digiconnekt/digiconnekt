@@ -44,6 +44,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .landing.banner {
+    padding: 100px 0 100px !important;
+  }
 }
 
 @media (max-width: 768px) {

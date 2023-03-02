@@ -71,7 +71,7 @@ const ContactBtnBanner = ({ fromSection }) => {
                 <div className="row">
                   <div className="col-lg-11 col-md-12 me-auto">
                     <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                      <h4 className="mb-0">Let's Discuss</h4>
+                      <h4 className="mb-3 mb-md-0">Let's Discuss</h4>
                       <div className="subscribe-form sm-mt-2">
                         <form
                           id="mc-form"
@@ -89,7 +89,7 @@ const ContactBtnBanner = ({ fromSection }) => {
                             onChange={onChangeHandler}
                           />
                           <input
-                            className="btn btn-theme"
+                            className="btn btn-theme mt-3 mt-sm-0"
                             type="submit"
                             name="subscribe"
                             value="Subscribe"

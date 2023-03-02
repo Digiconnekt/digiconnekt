@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AxiosPost from "../API";
+import ContactBtnBanner from "../components/ContactBtnBanner";
 
 const Landing = () => {
   const [formErrors, setFormErrors] = useState({});
@@ -10,9 +11,7 @@ const Landing = () => {
     email: "",
     phone: "",
     message: "",
-    joinWithUs: "",
     requireAssistanceWith: [],
-    findOutAboutUs: "",
   });
 
   const onChangeHandler = (e) => {
@@ -42,9 +41,7 @@ const Landing = () => {
     email: formData.email,
     phone: formData.phone,
     message: formData.message,
-    joinWithUs: formData.joinWithUs,
     requireAssistanceWith: formData.requireAssistanceWith,
-    findOutAboutUs: formData.findOutAboutUs,
 
     organisation: "digiconnekt",
     messageFrom: window.location.href,
@@ -93,48 +90,284 @@ const Landing = () => {
       errors.message = "Please, leave us a message";
     }
 
-    if (!values.joinWithUs) {
-      errors.joinWithUs = "Please select any one";
-    }
-
     if (values.requireAssistanceWith < 1) {
       errors.requireAssistanceWith = "Please select atleast one";
-    }
-
-    if (!values.findOutAboutUs) {
-      errors.findOutAboutUs = "Please select any one";
     }
 
     return errors;
   };
   // validation end
 
-  const style = {
-    borderRadius: "5px",
-    fontSize: "15px",
-    color: "#111121",
-    border: "1px solid transparent",
-    boxShadow: "0px 15px 35px rgb(0 0 0 / 10%)",
-    padding: "0.375rem 2.25rem 0.375rem 0.75rem",
-  };
-
-  const bgStyle = {
-    background: "#ffffff",
+  const inputBlockStyle = {
+    border: "none",
+    borderRadius: "0px",
+    borderBottom: "1px solid #000000",
+    boxShadow: "none",
   };
 
   return (
     <>
       {/* hero section start */}
       <section
-        className="fullscreen-banner p-0 banner overflow-hidden"
+        className="fullscreen-banner p-0 landing banner overflow-hidden"
         data-bg-img="images/pattern/01.png"
-        style={{ minHeight: "1300px" }}
+        style={{ minHeight: "900px" }}
       >
         <div className="insideText">Digiconnekt</div>
         <div className="align-center">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 animated bounceInLeft delay-2 duration-3">
+              <div className="col-lg-6 col-md-12 order-lg-1 animated bounceInRight delay-2 duration-3">
+                <div className="login-form box-shadow white-bg p-4 p-md-5 text-center">
+                  <h2 className="title mb-5">Get In Touch</h2>
+                  <form noValidate onSubmit={submitFormData}>
+                    <div className="row">
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            className="form-control"
+                            placeholder="Enter Your Name"
+                            required
+                            style={inputBlockStyle}
+                            onChange={onChangeHandler}
+                          />
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.name}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <input
+                            id="form_phone"
+                            type="tel"
+                            name="phone"
+                            className="form-control"
+                            placeholder="Enter Your Mobile Number"
+                            required
+                            style={inputBlockStyle}
+                            onChange={onChangeHandler}
+                          />
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.phone}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-12">
+                        <div className="form-group">
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            className="form-control"
+                            placeholder="Enter Your Email"
+                            required
+                            style={inputBlockStyle}
+                            onChange={onChangeHandler}
+                          />
+                          <div
+                            className="invalid-feedback"
+                            style={{ display: "block", marginLeft: "5px" }}
+                          >
+                            {formErrors.email}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        className="form-control"
+                        placeholder="Enter Your Message..."
+                        rows="3"
+                        required
+                        style={inputBlockStyle}
+                        onChange={onChangeHandler}
+                      ></textarea>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.message}
+                      </div>
+                    </div>
+                    <div className="form-group text-start">
+                      <div className="">
+                        <label
+                          className="mb-2"
+                          style={{ fontWeight: "500", fontSize: "15px" }}
+                        >
+                          I require assistance with:
+                        </label>
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                id="seo"
+                                value="Search Engine Optimization"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="seo"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Search Engine Optimization
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Social Media Optimization"
+                                id="smo"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="smo"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Social Media Optimization
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Email Marketing"
+                                id="emailMarketing"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="emailMarketing"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Email Marketing
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Content Marketing"
+                                id="contentMarketing"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="contentMarketing"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Content Marketing
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Lead Generation"
+                                id="leadGeneration"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="leadGeneration"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Lead Generation
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Pay Per Click"
+                                id="payPerClick"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="payPerClick"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Pay Per Click
+                              </label>
+                            </div>
+                          </div>
+                          <div className="col-md-6">
+                            <div className="form-check mb-2">
+                              <input
+                                className="form-check-input checkbox-color"
+                                type="checkbox"
+                                value="Programmatic Advertising"
+                                id="programmaticAdvertising"
+                                name="requireAssistanceWith"
+                                onChange={onChangeHandler}
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="programmaticAdvertising"
+                                style={{ fontSize: "15px" }}
+                              >
+                                Programmatic Advertising
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="invalid-feedback"
+                        style={{ display: "block", marginLeft: "5px" }}
+                      >
+                        {formErrors.requireAssistanceWith}
+                      </div>
+                    </div>
+
+                    <div className="col-md-12">
+                      <button className="btn btn-theme btn-radius w-100">
+                        <span>Send Message</span>
+                      </button>
+                    </div>
+
+                    {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                      <div className="messages" style={{ color: "red" }}>
+                        Please fill all the input fileds
+                      </div>
+                    ) : null}
+                  </form>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 mt-5 mt-lg-0 animated bounceInLeft delay-2 duration-3">
                 <div
                   className="owl-carousel"
                   data-items="1"
@@ -211,414 +444,15 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-12 animated bounceInRight delay-2 duration-3">
-                <div className="login-form box-shadow white-bg p-4 p-md-5 text-center">
-                  <h2 className="title mb-5">Get In Touch</h2>
-                  <form noValidate onSubmit={submitFormData}>
-                    <div className="messages"></div>
-                    <div className="row">
-                      <div className="col-md-6">
-                        <div className="form-group">
-                          <input
-                            id="form_name"
-                            type="text"
-                            name="name"
-                            className="form-control"
-                            placeholder="Enter Your Name"
-                            required
-                            onChange={onChangeHandler}
-                          />
-                          <div
-                            className="invalid-feedback"
-                            style={{ display: "block", marginLeft: "5px" }}
-                          >
-                            {formErrors.name}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="form-group">
-                          <input
-                            id="form_email"
-                            type="email"
-                            name="email"
-                            className="form-control"
-                            placeholder="Enter Your Email"
-                            required
-                            onChange={onChangeHandler}
-                          />
-                          <div
-                            className="invalid-feedback"
-                            style={{ display: "block", marginLeft: "5px" }}
-                          >
-                            {formErrors.email}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="form-group">
-                          <input
-                            id="form_phone"
-                            type="tel"
-                            name="phone"
-                            className="form-control"
-                            placeholder="Enter Your Mobile Number"
-                            required
-                            onChange={onChangeHandler}
-                          />
-                          <div
-                            className="invalid-feedback"
-                            style={{ display: "block", marginLeft: "5px" }}
-                          >
-                            {formErrors.phone}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="form-group">
-                          <div className="">
-                            <select
-                              className="form-select mb-2"
-                              style={{
-                                paddingTop: "14px",
-                                paddingBottom: "14px",
-                                borderColor: "#ffffff",
-                                boxShadow: "0px 15px 35px rgb(0 0 0 / 10%)",
-                              }}
-                              aria-label="Default select example"
-                              name="joinWithUs"
-                              defaultValue={
-                                "Would you mind joining our email list?"
-                              }
-                              onChange={onChangeHandler}
-                            >
-                              <option
-                                value="Would you mind joining our email list?"
-                                disabled
-                              >
-                                Would you mind joining our email list?
-                              </option>
-                              <option value="Of Course!">Of Course!</option>
-                              <option value="No, Thank You">
-                                No, Thank You
-                              </option>
-                            </select>
-                          </div>
-                          <div
-                            className="invalid-feedback"
-                            style={{ display: "block", marginLeft: "5px" }}
-                          >
-                            {formErrors.joinWithUs}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <textarea
-                        id="form_message"
-                        name="message"
-                        className="form-control"
-                        placeholder="Enter Your Message..."
-                        rows="3"
-                        required
-                        onChange={onChangeHandler}
-                      ></textarea>
-                      <div
-                        className="invalid-feedback"
-                        style={{ display: "block", marginLeft: "5px" }}
-                      >
-                        {formErrors.message}
-                      </div>
-                    </div>
-                    <div className="form-group text-start">
-                      <div className="" style={{ ...style, ...bgStyle }}>
-                        <label
-                          className="mb-2"
-                          style={{ fontWeight: "500", fontSize: "15px" }}
-                        >
-                          I require assistance with:
-                        </label>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            id="seo"
-                            value="Search Engine Optimization"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="seo"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Search Engine Optimization
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Social Media Optimization"
-                            id="smo"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="smo"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Social Media Optimization
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Email Marketing"
-                            id="emailMarketing"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="emailMarketing"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Email Marketing
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Content Marketing"
-                            id="contentMarketing"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="contentMarketing"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Content Marketing
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Lead Generation"
-                            id="leadGeneration"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="leadGeneration"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Lead Generation
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Programmatic Advertising"
-                            id="programmaticAdvertising"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="programmaticAdvertising"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Programmatic Advertising
-                          </label>
-                        </div>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input checkbox-color"
-                            type="checkbox"
-                            value="Pay Per Click"
-                            id="payPerClick"
-                            name="requireAssistanceWith"
-                            onChange={onChangeHandler}
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="payPerClick"
-                            style={{ fontSize: "15px" }}
-                          >
-                            Pay Per Click
-                          </label>
-                        </div>
-                      </div>
-                      <div
-                        className="invalid-feedback"
-                        style={{ display: "block", marginLeft: "5px" }}
-                      >
-                        {formErrors.requireAssistanceWith}
-                      </div>
-                    </div>
-                    <div className="form-group text-start">
-                      <div className="" style={{ ...style, ...bgStyle }}>
-                        <label
-                          className="mb-2"
-                          style={{ fontWeight: "500", fontSize: "15px" }}
-                        >
-                          How did you find out about us?
-                        </label>
-                        <div className="form-check">
-                          <div className="row">
-                            <div className="col-md-6">
-                              <div
-                                className="form-check"
-                                style={{ paddingLeft: "0" }}
-                              >
-                                <input
-                                  className="form-check-input checkbox-color"
-                                  type="radio"
-                                  name="findOutAboutUs"
-                                  id="instagram"
-                                  value="Instagram"
-                                  onChange={onChangeHandler}
-                                />
-                                <label
-                                  className="form-check-label"
-                                  htmlFor="instagram"
-                                  style={{ fontSize: "15px" }}
-                                >
-                                  Instagram
-                                </label>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              {" "}
-                              <div
-                                className="form-check"
-                                style={{ paddingLeft: "0" }}
-                              >
-                                <input
-                                  className="form-check-input checkbox-color"
-                                  type="radio"
-                                  name="findOutAboutUs"
-                                  id="facebook"
-                                  value="Facebook"
-                                  onChange={onChangeHandler}
-                                />
-                                <label
-                                  className="form-check-label"
-                                  htmlFor="facebook"
-                                  style={{ fontSize: "15px" }}
-                                >
-                                  Facebook
-                                </label>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              {" "}
-                              <div
-                                className="form-check"
-                                style={{ paddingLeft: "0" }}
-                              >
-                                <input
-                                  className="form-check-input checkbox-color"
-                                  type="radio"
-                                  name="findOutAboutUs"
-                                  id="google"
-                                  value="Google"
-                                  onChange={onChangeHandler}
-                                />
-                                <label
-                                  className="form-check-label"
-                                  htmlFor="google"
-                                  style={{ fontSize: "15px" }}
-                                >
-                                  Google
-                                </label>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              {" "}
-                              <div
-                                className="form-check"
-                                style={{ paddingLeft: "0" }}
-                              >
-                                <input
-                                  className="form-check-input checkbox-color"
-                                  type="radio"
-                                  name="findOutAboutUs"
-                                  id="linkedin"
-                                  value="Linkedin"
-                                  onChange={onChangeHandler}
-                                />
-                                <label
-                                  className="form-check-label"
-                                  htmlFor="linkedin"
-                                  style={{ fontSize: "15px" }}
-                                >
-                                  Linkedin
-                                </label>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              {" "}
-                              <div
-                                className="form-check"
-                                style={{ paddingLeft: "0" }}
-                              >
-                                <input
-                                  className="form-check-input checkbox-color"
-                                  type="radio"
-                                  name="findOutAboutUs"
-                                  id="other"
-                                  value="Other"
-                                  onChange={onChangeHandler}
-                                />
-                                <label
-                                  className="form-check-label"
-                                  htmlFor="other"
-                                  style={{ fontSize: "15px" }}
-                                >
-                                  Other
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="invalid-feedback"
-                        style={{ display: "block", marginLeft: "5px" }}
-                      >
-                        {formErrors.findOutAboutUs}
-                      </div>
-                    </div>
-
-                    <div className="col-md-12">
-                      <button className="btn btn-theme btn-radius w-100">
-                        <span>Send Message</span>
-                      </button>
-                    </div>
-
-                    {Object.keys(formErrors).length !== 0 && isSubmit ? (
-                      <div className="messages" style={{ color: "red" }}>
-                        Please fill all the input fileds
-                      </div>
-                    ) : null}
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
       {/* hero section end */}
+
+      {/* would you mind to join us start */}
+      <ContactBtnBanner />
+      {/* would you mind to join us end */}
 
       {/* services section start */}
       <section className="position-relative">
@@ -904,11 +738,11 @@ const Landing = () => {
       {/* services section end */}
 
       {/* clients section start */}
-      <section>
+      <section className="pt-0 pt-md-5">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <div className="section-title">
+              <div className="section-title mb-1">
                 <h6>Our Clients</h6>
               </div>
               <div
@@ -924,6 +758,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/m-and-s.png"
                     alt="M and S"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -931,6 +766,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/acuver.png"
                     alt="Acuver"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -938,6 +774,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/car-dekho.png"
                     alt="Car Dekho"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -945,6 +782,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/design-pax.png"
                     alt="Design Pax"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -952,6 +790,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/dream-webies.png"
                     alt="Dream Webies"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -959,6 +798,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/epam.png"
                     alt="Epam"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -966,6 +806,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/life-trail.png"
                     alt="Life Trail"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -973,6 +814,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/listed.png"
                     alt="Listed"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -980,6 +822,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/m-and-s.png"
                     alt="M And S"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -987,6 +830,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/marsh-mc-lennan.png"
                     alt="Marsh Mc Lennan"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -994,6 +838,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/metamore.png"
                     alt="Metamore"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -1001,6 +846,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/startup-buddy.png"
                     alt="Startup Buddy"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -1008,6 +854,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/buildnetic.png"
                     alt="Buildnetic"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -1015,6 +862,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/air-tour-australia.png"
                     alt="Air Tour Australia"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -1022,6 +870,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/the-coding-trail.png"
                     alt="The Coding Trail"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
                 <div className="item">
@@ -1029,6 +878,7 @@ const Landing = () => {
                     className="img-fluid"
                     src="images/home/clients/ddf.png"
                     alt="Delhi Duty Free"
+                    style={{ margin: "0 auto", width: "300px" }}
                   />
                 </div>
               </div>
@@ -1040,8 +890,8 @@ const Landing = () => {
 
       {/* testimonial section start */}
       <section
-        className="animatedBackground"
-        data-bg-img="images/pattern/05.png"
+        className="animatedBackground pt-0 pt-md-5"
+        // data-bg-img="images/pattern/05.png"
       >
         <div className="container">
           <div className="row align-items-center">
@@ -1060,7 +910,7 @@ const Landing = () => {
                     <div className="testimonial-img">
                       <img
                         className="img-fluid"
-                        src="images/home/testimonial/milind.png"
+                        src="images/home/testimonial/milind-rounded.png"
                         alt="Milind Srivastava"
                       />
                     </div>
@@ -1090,7 +940,7 @@ const Landing = () => {
                     <div className="testimonial-img">
                       <img
                         className="img-fluid"
-                        src="images/home/testimonial/sunny.png"
+                        src="images/home/testimonial/sunny-rounded.png"
                         alt="Sunny Nandwani"
                       />
                     </div>
@@ -1125,7 +975,7 @@ const Landing = () => {
                     <div className="testimonial-img">
                       <img
                         className="img-fluid"
-                        src="images/home/testimonial/stuti.png"
+                        src="images/home/testimonial/stuti-rounded.png"
                         alt="Stuti Shukla"
                       />
                     </div>
@@ -1156,13 +1006,13 @@ const Landing = () => {
       {/* testimonial section end */}
 
       {/* blog start */}
-      <section>
+      <section className="pt-0 pt-md-5">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-8 col-md-12">
               <div className="section-title">
-                <h6>Blog's</h6>
-                <h2 className="title">Read our latest news</h2>
+                <h6>Stories</h6>
+                <h2 className="title">Success Stories</h2>
               </div>
             </div>
           </div>
@@ -1172,27 +1022,28 @@ const Landing = () => {
                 <div className="post-image">
                   <img
                     className="img-fluid h-100 w-100"
-                    src="images/blog/blog1.png"
-                    alt="Blog 1"
+                    src="images/success-stories/ddf.png"
+                    alt="Success Stories 1"
                   />
                 </div>
                 <div className="post-desc">
-                  <div className="post-date">
-                    02 <span>January 2023</span>
-                  </div>
                   <div className="post-title">
-                    <h5>
-                      <a href="/blogs/blog1">
-                        The role of SEO in modern digital marketing strategies
-                      </a>
-                    </h5>
+                    <h5 style={{ color: "#ff5e2c" }}>Delhi Duty Free</h5>
                   </div>
-                  <p>
-                    In today's digital landscape, search engine optimization
-                    (SEO) is more important than ever for businesses looking to
-                    reach their target audience...{" "}
-                    <a href="/blogs/blog1">read more</a>
-                  </p>
+                  <ul className="list-unstyled list-icon mt-3">
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
+                      PHP, Magento, MqSQL, AWS
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>
+                        Scope of Work:{" "}
+                      </span>{" "}
+                      Design, Development & Maintenance
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1201,27 +1052,29 @@ const Landing = () => {
                 <div className="post-image">
                   <img
                     className="img-fluid h-100 w-100"
-                    src="images/blog/blog2.png"
-                    alt="Blog 2"
+                    src="images/success-stories/m-and-s.png"
+                    alt="Success Stories 2"
                   />
                 </div>
                 <div className="post-desc">
-                  <div className="post-date">
-                    09 <span>January 2023</span>
-                  </div>
                   <div className="post-title">
-                    <h5>
-                      <a href="/blogs/blog2">
-                        10 Tips for Optimizing Your Social Media Presence
-                      </a>
-                    </h5>
+                    <h5 style={{ color: "#ff5e2c" }}>Marks & Spencer</h5>
                   </div>
-                  <p>
-                    Social media is an essential part of any modern marketing
-                    strategy, but with so many platforms to choose from and an
-                    ever-evolving set of best practices...{" "}
-                    <a href="/blogs/blog2">read more</a>
-                  </p>
+                  <ul className="list-unstyled list-icon mt-3">
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
+                      NodeJs, React, MongoDb, Azure
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>
+                        Scope of Work:{" "}
+                      </span>{" "}
+                      Consulting{" "}
+                      <span style={{ opacity: "0" }}>Lorem, ipsum.</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1230,27 +1083,28 @@ const Landing = () => {
                 <div className="post-image">
                   <img
                     className="img-fluid h-100 w-100"
-                    src="images/blog/blog3.png"
-                    alt="Blog 3"
+                    src="images/success-stories/epam.png"
+                    alt="Success Stories 3"
                   />
                 </div>
                 <div className="post-desc">
-                  <div className="post-date">
-                    11 <span>January 2023</span>
-                  </div>
                   <div className="post-title">
-                    <h5>
-                      <a href="/blogs/blog3">
-                        Advanced PPC Techniques: Taking Your Campaigns to the
-                        Next Level
-                      </a>
-                    </h5>
+                    <h5 style={{ color: "#ff5e2c" }}>EPAM</h5>
                   </div>
-                  <p>
-                    Pay-per-click (PPC) advertising is an effective way for
-                    businesses of all sizes to reach their target audience
-                    and... <a href="/blogs/blog3">read more</a>
-                  </p>
+                  <ul className="list-unstyled list-icon mt-3">
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
+                      Microsoft Power BI, React
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>
+                        Scope of Work:{" "}
+                      </span>{" "}
+                      Development & Maintenance
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
