@@ -38,6 +38,12 @@
   height: auto;
 }
 
+/* landing page */
+.landing h1 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
 /* mediaQuery start */
 @media (max-width: 992px) {
   .whyChooseUs {

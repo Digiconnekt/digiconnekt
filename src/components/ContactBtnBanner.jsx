@@ -58,7 +58,7 @@ const ContactBtnBanner = ({ fromSection }) => {
   return (
     <>
       <section
-        className="overflow-hidden dark-bg animatedBackground"
+        className="overflow-hidden dark-bg animatedBackground py-3"
         data-bg-img="../images/pattern/06.png"
         style={{
           backgroundImage: 'url("../images/pattern/06.png")',
@@ -66,12 +66,14 @@ const ContactBtnBanner = ({ fromSection }) => {
       >
         <div className="container">
           <div className="row justify-content-center text-center">
-            <div className="col-lg-8 col-md-12">
+            <div className="col-lg-9 col-md-12">
               <div className="section-title mb-0">
                 <div className="row">
                   <div className="col-lg-11 col-md-12 me-auto">
-                    <div className="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
-                      <h4 className="mb-3 mb-md-0">Let's Discuss</h4>
+                    <div className="align-items-center px-3 py-3 radius d-md-flex justify-content-between">
+                      <h4 className="mb-3 mb-md-0 text-white">
+                        Immediate Email Response
+                      </h4>
                       <div className="subscribe-form sm-mt-2">
                         <form
                           id="mc-form"
@@ -92,7 +94,7 @@ const ContactBtnBanner = ({ fromSection }) => {
                             className="btn btn-theme mt-3 mt-sm-0"
                             type="submit"
                             name="subscribe"
-                            value="Subscribe"
+                            value="Let's Discuss"
                           />
                         </form>
                         <div

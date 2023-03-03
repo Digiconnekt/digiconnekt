@@ -111,7 +111,7 @@ const Landing = () => {
       <section
         className="fullscreen-banner p-0 landing banner overflow-hidden"
         data-bg-img="images/pattern/01.png"
-        style={{ minHeight: "900px" }}
+        style={{ minHeight: "650px" }}
       >
         <div className="insideText">Digiconnekt</div>
         <div className="align-center">
@@ -119,11 +119,14 @@ const Landing = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 order-lg-1 animated bounceInRight delay-2 duration-3">
                 <div className="login-form box-shadow white-bg p-4 p-md-5 text-center">
-                  <h2 className="title mb-5">Get In Touch</h2>
+                  {/* <h2 className="title mb-5">Get In Touch</h2> */}
                   <form noValidate onSubmit={submitFormData}>
                     <div className="row">
                       <div className="col-md-6">
-                        <div className="form-group">
+                        <div
+                          className="form-group"
+                          style={{ marginBottom: "0px" }}
+                        >
                           <input
                             id="form_name"
                             type="text"
@@ -143,7 +146,10 @@ const Landing = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <div className="form-group">
+                        <div
+                          className="form-group"
+                          style={{ marginBottom: "0px" }}
+                        >
                           <input
                             id="form_phone"
                             type="tel"
@@ -163,7 +169,10 @@ const Landing = () => {
                         </div>
                       </div>
                       <div className="col-md-12">
-                        <div className="form-group">
+                        <div
+                          className="form-group"
+                          style={{ marginBottom: "0px" }}
+                        >
                           <input
                             id="form_email"
                             type="email"
@@ -183,7 +192,7 @@ const Landing = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group" style={{ marginBottom: "0px" }}>
                       <textarea
                         id="form_message"
                         name="message"
@@ -191,7 +200,13 @@ const Landing = () => {
                         placeholder="Enter Your Message..."
                         rows="3"
                         required
-                        style={inputBlockStyle}
+                        style={{
+                          border: "none",
+                          borderRadius: "0px",
+                          borderBottom: "1px solid #000000",
+                          boxShadow: "none",
+                          height: "auto",
+                        }}
                         onChange={onChangeHandler}
                       ></textarea>
                       <div
@@ -201,7 +216,10 @@ const Landing = () => {
                         {formErrors.message}
                       </div>
                     </div>
-                    <div className="form-group text-start">
+                    <div
+                      className="form-group text-start"
+                      style={{ marginBottom: "0px" }}
+                    >
                       <div className="">
                         <label
                           className="mb-2"
