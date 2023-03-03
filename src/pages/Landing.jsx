@@ -111,7 +111,7 @@ const Landing = () => {
       <section
         className="fullscreen-banner p-0 landing banner overflow-hidden"
         data-bg-img="images/pattern/01.png"
-        style={{ minHeight: "650px" }}
+        style={{ minHeight: "690px" }}
       >
         <div className="insideText">Digiconnekt</div>
         <div className="align-center">
@@ -119,7 +119,19 @@ const Landing = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 order-lg-1 animated bounceInRight delay-2 duration-3">
                 <div className="login-form box-shadow white-bg p-4 p-md-5 text-center">
-                  {/* <h2 className="title mb-5">Get In Touch</h2> */}
+                  <h3
+                    className="title"
+                    style={{
+                      color: "#1c2045",
+                      marginBottom: "6px",
+                      paddingBottom: "6px",
+                    }}
+                  >
+                    Get In Touch
+                  </h3>
+                  <p>
+                    Fill out the information below and we will reach you soon
+                  </p>
                   <form noValidate onSubmit={submitFormData}>
                     <div className="row">
                       <div className="col-md-6">
