@@ -57,7 +57,7 @@ const Header = () => {
                       {/* home link end */}
 
                       {/* about us link start */}
-                      {location !== "/landing" && (
+                      {location !== "/digital-marketing-proposal" && (
                         <li className="nav-item dropdown">
                           <a
                             href="/about-us"
@@ -200,7 +200,7 @@ const Header = () => {
                       {/* services link end */}
 
                       {/* blog link start */}
-                      {location !== "/landing" && (
+                      {location !== "/digital-marketing-proposal" && (
                         <li className="nav-item dropdown">
                           <a
                             href="/blogs"

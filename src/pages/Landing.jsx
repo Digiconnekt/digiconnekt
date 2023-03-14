@@ -1035,7 +1035,7 @@ const Landing = () => {
       </section>
       {/* testimonial section end */}
 
-      {/* blog start */}
+      {/* success stories start */}
       <section className="pt-0 pt-md-5">
         <div className="container">
           <div className="row justify-content-center text-center">
@@ -1063,15 +1063,22 @@ const Landing = () => {
                   <ul className="list-unstyled list-icon mt-3">
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
-                      PHP, Magento, MqSQL, AWS
+                      <span style={{ fontWeight: "bold" }}>Challenge: </span>{" "}
+                      Website Traffic
                     </li>
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>
-                        Scope of Work:{" "}
-                      </span>{" "}
-                      Design, Development & Maintenance
+                      <span style={{ fontWeight: "bold" }}>Solution: </span>{" "}
+                      Website Development
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Results: </span>{" "}
+                      Traffic increased by 30%
+                      <span style={{ opacity: "0" }}>
+                        Lorem, ipsum ipsum ipsum. Lorem, ipsum ipsum ipsum.
+                        Lorem, ipsum ipsum ipsum. Lorem, ipsum ipsum ipsum.
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1082,27 +1089,33 @@ const Landing = () => {
                 <div className="post-image">
                   <img
                     className="img-fluid h-100 w-100"
-                    src="images/success-stories/m-and-s.png"
+                    src="images/success-stories/tct.png"
                     alt="Success Stories 2"
                   />
                 </div>
                 <div className="post-desc">
                   <div className="post-title">
-                    <h5 style={{ color: "#ff5e2c" }}>Marks & Spencer</h5>
+                    <h5 style={{ color: "#ff5e2c" }}>The Coding Trail</h5>
                   </div>
                   <ul className="list-unstyled list-icon mt-3">
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
-                      NodeJs, React, MongoDb, Azure
+                      <span style={{ fontWeight: "bold" }}>Challenge: </span>{" "}
+                      Low Online Presence, Leads
                     </li>
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>
-                        Scope of Work:{" "}
-                      </span>{" "}
-                      Consulting{" "}
-                      <span style={{ opacity: "0" }}>Lorem, ipsum.</span>
+                      <span style={{ fontWeight: "bold" }}>Solution: </span>{" "}
+                      SMO, PPC Ads
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Results: </span> 70%
+                      of increased Online presence and Generating Good Quality
+                      Leads.{" "}
+                      <span style={{ opacity: "0" }}>
+                        Lorem, ipsum ipsum ipsum.
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1113,26 +1126,30 @@ const Landing = () => {
                 <div className="post-image">
                   <img
                     className="img-fluid h-100 w-100"
-                    src="images/success-stories/epam.png"
+                    src="images/success-stories/buildnetic.png"
                     alt="Success Stories 3"
                   />
                 </div>
                 <div className="post-desc">
                   <div className="post-title">
-                    <h5 style={{ color: "#ff5e2c" }}>EPAM</h5>
+                    <h5 style={{ color: "#ff5e2c" }}>Buildnetic</h5>
                   </div>
                   <ul className="list-unstyled list-icon mt-3">
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>Technology: </span>{" "}
-                      Microsoft Power BI, React
+                      <span style={{ fontWeight: "bold" }}>Challenge: </span>{" "}
+                      Website Traffic, Low Online Presence, Leads
                     </li>
                     <li className="mb-3">
                       <i className="flaticon-tick"></i>{" "}
-                      <span style={{ fontWeight: "bold" }}>
-                        Scope of Work:{" "}
-                      </span>{" "}
-                      Development & Maintenance
+                      <span style={{ fontWeight: "bold" }}>Solution: </span>{" "}
+                      SEO, SMO, PPC Ads
+                    </li>
+                    <li className="mb-3">
+                      <i className="flaticon-tick"></i>{" "}
+                      <span style={{ fontWeight: "bold" }}>Results: </span>{" "}
+                      Traffic increased by 50%, 60% of increased Online presence
+                      and Generating Good Quality Leads.
                     </li>
                   </ul>
                 </div>
@@ -1141,7 +1158,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      {/* blog end */}
+      {/* success stories end */}
     </>
   );
 };
