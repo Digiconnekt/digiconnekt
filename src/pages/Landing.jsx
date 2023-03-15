@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import AxiosPost from "../API";
 import ContactBtnBanner from "../components/ContactBtnBanner";
 
 const Landing = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [addScript, setAddScript] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -52,6 +54,9 @@ const Landing = () => {
       // console.log(formErrors);
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         AxiosPost(payload);
+        setAddScript(true);
+        // navigate("/thank-you");
+
         // console.log(formData);
       }
     },
@@ -107,11 +112,18 @@ const Landing = () => {
 
   return (
     <>
+      {addScript && (
+        <Helmet>
+          {/* script to load on send message is success */}
+          <script>fbq('track', 'CompleteRegistration');</script>
+        </Helmet>
+      )}
+
       {/* hero section start */}
       <section
         className="fullscreen-banner p-0 landing banner overflow-hidden"
         data-bg-img="images/pattern/01.png"
-        style={{ minHeight: "690px" }}
+        style={{ minHeight: "700px" }}
       >
         <div className="insideText">Digiconnekt</div>
         <div className="align-center">
@@ -389,11 +401,11 @@ const Landing = () => {
                       </button>
                     </div>
 
-                    {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                    {/* {Object.keys(formErrors).length !== 0 && isSubmit ? (
                       <div className="messages" style={{ color: "red" }}>
                         Please fill all the input fileds
                       </div>
-                    ) : null}
+                    ) : null} */}
                   </form>
                 </div>
               </div>
