@@ -81,7 +81,7 @@ const SearchEngineOptmization = () => {
           title={whatIsSeo.title}
           para={whatIsSeo.para}
         />
-        {/* what is seo start */}
+        {/* what is seo end */}
 
         {/* how does seo works start */}
         <ContentImg
@@ -409,6 +409,43 @@ const SearchEngineOptmization = () => {
           </div>
         </section>
         {/* Our Standard SEO Process end */}
+
+        {/* checkout SEO packages start */}
+        <section
+          className="overflow-hidden dark-bg animatedBackground py-3"
+          data-bg-img="../images/pattern/06.png"
+          style={{
+            backgroundImage: 'url("../images/pattern/06.png")',
+          }}
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center">
+              <div className="col-lg-9 col-md-12">
+                <div className="section-title mb-0">
+                  <div className="row">
+                    <div className="col-lg-11 col-md-12 me-auto">
+                      <div className="align-items-center px-3 py-3 radius d-md-flex justify-content-between">
+                        <h4 className="mb-3 mb-md-0 text-white">
+                          Chekout Our SEO Packages
+                        </h4>
+                        <div className="subscribe-form sm-mt-2">
+                          <a
+                            href="/packages"
+                            className="btn btn-theme btn-radius"
+                            style={{ width: "100%" }}
+                          >
+                            <span>View Packages</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* checkout SEO packages end */}
 
         {/* 3 block start */}
         <section className="light-bg position-relative text-center mb-5 overflow-hidden">

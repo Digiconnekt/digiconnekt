@@ -27,6 +27,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
+import Packages from "./pages/Packages";
 
 const App = () => {
   return (
@@ -69,6 +70,7 @@ const App = () => {
         <Route path="/digital-marketing-proposal" element={<Landing />} />
 
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/packages" element={<Packages />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
