@@ -1,6 +1,121 @@
 import React from "react";
 import TitleSection from "../components/Title";
 import ImgContent from "../components/ImgContent";
+import NationalSeo from "../components/packages/NationalSeo";
+import {
+  seoPackageContentMarketing,
+  seoPackageConversationTracking,
+  seoPackageCustomerSupport,
+  seoPackageInitialReview,
+  seoPackageLocalSearch,
+  seoPackageMonthlyReporting,
+  seoPackageOffPage,
+  seoPackageOnPage,
+  seoPackageSchemaAndStructure,
+} from "../data/packages/national/startupPackages";
+import {
+  growthSeoPackageOnPage,
+  growthSeoPackageInitialReview,
+  growthSeoPackageConversationTracking,
+  growthSeoPackageSchemaAndStructure,
+  growthSeoPackageLocalSearch,
+  growthSeoPackageContentMarketing,
+  growthSeoPackageOffPage,
+  growthSeoPackageMonthlyReporting,
+  growthSeoPackageCustomerSupport,
+} from "../data/packages/national/growthPackages ";
+import {
+  premiumSeoPackageOnPage,
+  premiumSeoPackageInitialReview,
+  premiumSeoPackageConversationTracking,
+  premiumSeoPackageSchemaAndStructure,
+  premiumSeoPackageLocalSearch,
+  premiumSeoPackageContentMarketing,
+  premiumSeoPackageOffPage,
+  premiumSeoPackageMonthlyReporting,
+  premiumSeoPackageCustomerSupport,
+} from "../data/packages/national/premiumPackages ";
+import {
+  highVolumeSeoPackageOnPage,
+  highVolumeSeoPackageInitialReview,
+  highVolumeSeoPackageConversationTracking,
+  highVolumeSeoPackageSchemaAndStructure,
+  highVolumeSeoPackageLocalSearch,
+  highVolumeSeoPackageContentMarketing,
+  highVolumeSeoPackageOffPage,
+  highVolumeSeoPackageMonthlyReporting,
+  highVolumeSeoPackageCustomerSupport,
+} from "../data/packages/national/highVolumePackages ";
+
+import LocalSeo from "../components/packages/LocalSeo";
+import {
+  localBasicSeoPackageContentMarketing,
+  localBasicSeoPackageCustomerSupport,
+  localBasicSeoPackageInitialReview,
+  localBasicSeoPackageLocalSearch,
+  localBasicSeoPackageMonthlyReporting,
+  localBasicSeoPackageOffPage,
+  localBasicSeoPackageOnPage,
+} from "../data/packages/local/basicPackages";
+import {
+  localGrowthSeoPackageInitialReview,
+  localGrowthSeoPackageOnPage,
+  localGrowthSeoPackageLocalSearch,
+  localGrowthSeoPackageOffPage,
+  localGrowthSeoPackageContentMarketing,
+  localGrowthSeoPackageMonthlyReporting,
+  localGrowthSeoPackageCustomerSupport,
+} from "../data/packages/local/growthPackages ";
+import {
+  localBoosterSeoPackageContentMarketing,
+  localBoosterSeoPackageCustomerSupport,
+  localBoosterSeoPackageInitialReview,
+  localBoosterSeoPackageLocalSearch,
+  localBoosterSeoPackageMonthlyReporting,
+  localBoosterSeoPackageOffPage,
+  localBoosterSeoPackageOnPage,
+} from "../data/packages/local/boosterPackages";
+import EcommSeo from "../components/packages/EcommSeo";
+import {
+  ecommNanoSeoPackageContentMarketing,
+  ecommNanoSeoPackageCustomerSupport,
+  ecommNanoSeoPackageInitialReview,
+  ecommNanoSeoPackageMonthlyReporting,
+  ecommNanoSeoPackageOffPage,
+  ecommNanoSeoPackageOnPage,
+  ecommNanoSeoPackageSalesFunnel,
+  ecommNanoSeoPackageSchemaAndStructure,
+} from "../data/packages/ecommerce/nanoPackages";
+import {
+  ecommEnterpriseSeoPackageContentMarketing,
+  ecommEnterpriseSeoPackageCustomerSupport,
+  ecommEnterpriseSeoPackageInitialReview,
+  ecommEnterpriseSeoPackageMonthlyReporting,
+  ecommEnterpriseSeoPackageOffPage,
+  ecommEnterpriseSeoPackageOnPage,
+  ecommEnterpriseSeoPackageSalesFunnel,
+  ecommEnterpriseSeoPackageSchemaAndStructure,
+} from "../data/packages/ecommerce/enterprisePackages";
+import {
+  ecommBlastSeoPackageContentMarketing,
+  ecommBlastSeoPackageCustomerSupport,
+  ecommBlastSeoPackageInitialReview,
+  ecommBlastSeoPackageMonthlyReporting,
+  ecommBlastSeoPackageOffPage,
+  ecommBlastSeoPackageOnPage,
+  ecommBlastSeoPackageSalesFunnel,
+  ecommBlastSeoPackageSchemaAndStructure,
+} from "../data/packages/ecommerce/blastPackages";
+import {
+  ecommMegaSeoPackageContentMarketing,
+  ecommMegaSeoPackageCustomerSupport,
+  ecommMegaSeoPackageInitialReview,
+  ecommMegaSeoPackageMonthlyReporting,
+  ecommMegaSeoPackageOffPage,
+  ecommMegaSeoPackageOnPage,
+  ecommMegaSeoPackageSalesFunnel,
+  ecommMegaSeoPackageSchemaAndStructure,
+} from "../data/packages/ecommerce/megaPackages";
 
 const Packages = () => {
   // what is seo start
@@ -221,7 +336,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Target:
-                                  </span>{" "}
+                                  </span>
                                   Google Maps
                                 </li>
                                 <li
@@ -239,7 +354,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Best suited for:
-                                  </span>{" "}
+                                  </span>
                                   Local / Niche Business
                                 </li>
                                 <li
@@ -257,7 +372,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Keywords are generally:
-                                  </span>{" "}
+                                  </span>
                                   Long Tail / City/ Town Specific
                                 </li>
                                 <li
@@ -275,7 +390,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Covers:
-                                  </span>{" "}
+                                  </span>
                                   SEO Related Technical Audits + On Page + Off
                                   Page + Content Syndication + Local Listings
                                 </li>
@@ -294,7 +409,7 @@ const Packages = () => {
                                     }}
                                   >
                                     What to expect:
-                                  </span>{" "}
+                                  </span>
                                   Better Rankings on Google Maps + More Calls /
                                   Enquiries
                                 </li>
@@ -313,11 +428,14 @@ const Packages = () => {
                                     }}
                                   >
                                     Improvements Expected:
-                                  </span>{" "}
+                                  </span>
                                   From 1 month onwards
                                 </li>
                               </ul>
                             </div>
+                            <a className="btn btn-theme mt-5" href="#pick-plan">
+                              <span>View</span>
+                            </a>
                           </div>
                         </div>
                         <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
@@ -355,7 +473,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Target:
-                                  </span>{" "}
+                                  </span>
                                   Organic Search Results
                                 </li>
                                 <li
@@ -373,7 +491,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Best suited for:
-                                  </span>{" "}
+                                  </span>
                                   Business that targets Nation Wide or with
                                   Audience
                                 </li>
@@ -392,7 +510,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Keywords are generally:
-                                  </span>{" "}
+                                  </span>
                                   Competitive, Mid Competitive & Low Competitive
                                   Keywords
                                 </li>
@@ -411,7 +529,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Covers:
-                                  </span>{" "}
+                                  </span>
                                   SEO Related Technical Audits + On Page + Off
                                   Page + Content Syndication
                                 </li>
@@ -430,7 +548,7 @@ const Packages = () => {
                                     }}
                                   >
                                     What to expect:
-                                  </span>{" "}
+                                  </span>
                                   Better Rankings + More, Calls + Enquiries
                                 </li>
                                 <li
@@ -448,11 +566,14 @@ const Packages = () => {
                                     }}
                                   >
                                     Improvements Expected:
-                                  </span>{" "}
+                                  </span>
                                   From 2 month onwards
                                 </li>
                               </ul>
                             </div>
+                            <a className="btn btn-theme mt-5" href="#pick-plan">
+                              <span>View</span>
+                            </a>
                           </div>
                         </div>
                         <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
@@ -490,7 +611,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Target:
-                                  </span>{" "}
+                                  </span>
                                   Organic Search Results + Product Listings
                                 </li>
                                 <li
@@ -508,7 +629,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Best suited for:
-                                  </span>{" "}
+                                  </span>
                                   Business that sells Products / Services
                                 </li>
                                 <li
@@ -526,7 +647,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Keywords are generally:
-                                  </span>{" "}
+                                  </span>
                                   Product Centric + Category, Oriented Keywords
                                 </li>
                                 <li
@@ -544,7 +665,7 @@ const Packages = () => {
                                     }}
                                   >
                                     Covers:
-                                  </span>{" "}
+                                  </span>
                                   SEO Related Technical Audits + On Page + Off
                                   Page + Content Syndication + Product Listings
                                 </li>
@@ -563,7 +684,7 @@ const Packages = () => {
                                     }}
                                   >
                                     What to expect:
-                                  </span>{" "}
+                                  </span>
                                   Better Rankings + More Sales
                                 </li>
                                 <li
@@ -581,11 +702,14 @@ const Packages = () => {
                                     }}
                                   >
                                     Improvements Expected:
-                                  </span>{" "}
+                                  </span>
                                   From 2 month onwards
                                 </li>
                               </ul>
                             </div>
+                            <a className="btn btn-theme mt-5" href="#pick-plan">
+                              <span>View</span>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -597,6 +721,343 @@ const Packages = () => {
           </div>
         </section>
         {/* 3 cards end */}
+
+        {/* pick you plan start */}
+        <section
+          id="pick-plan"
+          className="bg-contain bg-pos-r"
+          data-bg-img="images/bg/02.png"
+        >
+          <div className="container">
+            <div className="row justify-content-center text-center mb-4">
+              <div className="col-lg-8 col-md-12">
+                <div className="section-title mb-0">
+                  <h2 className="title">Pick Your Plan</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <div className="tab text-center">
+                  <nav>
+                    <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a
+                        className="nav-link mt-3"
+                        id="nav-tab1"
+                        data-bs-toggle="tab"
+                        href="#price-tab1-1"
+                        role="tab"
+                        aria-selected="true"
+                      >
+                        Local SEO Packages
+                      </a>
+                      <a
+                        className="nav-link active mt-3"
+                        id="nav-tab2"
+                        data-bs-toggle="tab"
+                        href="#price-tab1-2"
+                        role="tab"
+                        aria-selected="false"
+                      >
+                        National SEO Packages
+                      </a>
+                      <a
+                        className="nav-link mt-3"
+                        id="nav-tab3"
+                        data-bs-toggle="tab"
+                        href="#price-tab1-3"
+                        role="tab"
+                        aria-selected="false"
+                      >
+                        Ecomm. SEO Packages
+                      </a>
+                    </div>
+                  </nav>
+                  <div className="tab-content px-0 pb-0" id="nav-tabContent">
+                    {/* local seo start */}
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="price-tab1-1"
+                    >
+                      <div className="row">
+                        {/* Startup start */}
+                        <LocalSeo
+                          classes="col-lg-6 col-md-12"
+                          noOfLocation="1"
+                          title="Basic"
+                          price="275"
+                          keyPlan="Upto 10"
+                          keyTop="20%"
+                          initialReview={localBasicSeoPackageInitialReview}
+                          onPage={localBasicSeoPackageOnPage}
+                          localSearch={localBasicSeoPackageLocalSearch}
+                          contentMarketing={
+                            localBasicSeoPackageContentMarketing
+                          }
+                          offPage={localBasicSeoPackageOffPage}
+                          monthlyReport={localBasicSeoPackageMonthlyReporting}
+                          customerSupport={localBasicSeoPackageCustomerSupport}
+                        />
+                        {/* Startup end */}
+
+                        {/* Growth start */}
+                        <LocalSeo
+                          classes="col-lg-6 col-md-12 mt-5 mt-lg-0"
+                          noOfLocation="Upto 2"
+                          title="Growth"
+                          price="475"
+                          keyPlan="Upto 20"
+                          keyTop="25%"
+                          initialReview={localGrowthSeoPackageInitialReview}
+                          onPage={localGrowthSeoPackageOnPage}
+                          localSearch={localGrowthSeoPackageLocalSearch}
+                          contentMarketing={
+                            localGrowthSeoPackageContentMarketing
+                          }
+                          offPage={localGrowthSeoPackageOffPage}
+                          monthlyReport={localGrowthSeoPackageMonthlyReporting}
+                          customerSupport={localGrowthSeoPackageCustomerSupport}
+                        />
+                        {/* Growth end */}
+
+                        {/* Booster start */}
+                        <LocalSeo
+                          classes="col-lg-6 col-md-12 mt-5"
+                          noOfLocation="Upto 3"
+                          title="Booster"
+                          price="775"
+                          keyPlan="Upto 40"
+                          keyTop="30%"
+                          initialReview={localBoosterSeoPackageInitialReview}
+                          onPage={localBoosterSeoPackageOnPage}
+                          localSearch={localBoosterSeoPackageLocalSearch}
+                          contentMarketing={
+                            localBoosterSeoPackageContentMarketing
+                          }
+                          offPage={localBoosterSeoPackageOffPage}
+                          monthlyReport={localBoosterSeoPackageMonthlyReporting}
+                          customerSupport={
+                            localBoosterSeoPackageCustomerSupport
+                          }
+                        />
+                        {/* Booster end */}
+                      </div>
+                    </div>
+                    {/* local seo end */}
+
+                    {/* national seo start */}
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade show active"
+                      id="price-tab1-2"
+                    >
+                      <div className="row">
+                        {/* Startup start */}
+                        <NationalSeo
+                          classes="col-lg-6 col-md-12"
+                          title="Startup"
+                          price="200"
+                          keyPlan="Upto 15"
+                          keyTop="20%"
+                          initialReview={seoPackageInitialReview}
+                          onPage={seoPackageOnPage}
+                          conversationTracking={seoPackageConversationTracking}
+                          schemaAndStructured={seoPackageSchemaAndStructure}
+                          localSearch={seoPackageLocalSearch}
+                          contentMarketing={seoPackageContentMarketing}
+                          offPage={seoPackageOffPage}
+                          monthlyReport={seoPackageMonthlyReporting}
+                          customerSupport={seoPackageCustomerSupport}
+                        />
+                        {/* Startup end */}
+
+                        {/* Growth start */}
+                        <NationalSeo
+                          classes="col-lg-6 col-md-12 mt-5 mt-lg-0"
+                          title="Growth"
+                          price="350"
+                          keyPlan="Upto 25"
+                          keyTop="25%"
+                          initialReview={growthSeoPackageInitialReview}
+                          onPage={growthSeoPackageOnPage}
+                          conversationTracking={
+                            growthSeoPackageConversationTracking
+                          }
+                          schemaAndStructured={
+                            growthSeoPackageSchemaAndStructure
+                          }
+                          localSearch={growthSeoPackageLocalSearch}
+                          contentMarketing={growthSeoPackageContentMarketing}
+                          offPage={growthSeoPackageOffPage}
+                          monthlyReport={growthSeoPackageMonthlyReporting}
+                          customerSupport={growthSeoPackageCustomerSupport}
+                        />
+                        {/* Growth end */}
+
+                        {/* Premium start */}
+                        <NationalSeo
+                          classes="col-lg-6 col-md-12 mt-5"
+                          title="Premium"
+                          price="574"
+                          keyPlan="Upto 40"
+                          keyTop="30%"
+                          initialReview={premiumSeoPackageInitialReview}
+                          onPage={premiumSeoPackageOnPage}
+                          conversationTracking={
+                            premiumSeoPackageConversationTracking
+                          }
+                          schemaAndStructured={
+                            premiumSeoPackageSchemaAndStructure
+                          }
+                          localSearch={premiumSeoPackageLocalSearch}
+                          contentMarketing={premiumSeoPackageContentMarketing}
+                          offPage={premiumSeoPackageOffPage}
+                          monthlyReport={premiumSeoPackageMonthlyReporting}
+                          customerSupport={premiumSeoPackageCustomerSupport}
+                        />
+                        {/* Premium end */}
+
+                        {/* High Volume start */}
+                        <NationalSeo
+                          classes="col-lg-6 col-md-12 mt-5"
+                          title="High Volume"
+                          price="1074"
+                          keyPlan="Upto 75"
+                          keyTop="35%"
+                          initialReview={highVolumeSeoPackageInitialReview}
+                          onPage={highVolumeSeoPackageOnPage}
+                          conversationTracking={
+                            highVolumeSeoPackageConversationTracking
+                          }
+                          schemaAndStructured={
+                            highVolumeSeoPackageSchemaAndStructure
+                          }
+                          localSearch={highVolumeSeoPackageLocalSearch}
+                          contentMarketing={
+                            highVolumeSeoPackageContentMarketing
+                          }
+                          offPage={highVolumeSeoPackageOffPage}
+                          monthlyReport={highVolumeSeoPackageMonthlyReporting}
+                          customerSupport={highVolumeSeoPackageCustomerSupport}
+                        />
+                        {/* High Volume end */}
+                      </div>
+                    </div>
+                    {/* national seo end */}
+
+                    {/* ecomm seo start */}
+                    <div
+                      role="tabpanel"
+                      className="tab-pane fade"
+                      id="price-tab1-3"
+                    >
+                      <div className="row">
+                        {/* nano start */}
+                        <EcommSeo
+                          classes="col-lg-6 col-md-12"
+                          title="Nano"
+                          price="425"
+                          keyPlan="Upto 30"
+                          focusKey="15"
+                          otherKey="15"
+                          keyTop="25%"
+                          initialReview={ecommNanoSeoPackageInitialReview}
+                          salesFunnel={ecommNanoSeoPackageSalesFunnel}
+                          onPage={ecommNanoSeoPackageOnPage}
+                          schemaAndStructured={
+                            ecommNanoSeoPackageSchemaAndStructure
+                          }
+                          contentMarketing={ecommNanoSeoPackageContentMarketing}
+                          offPage={ecommNanoSeoPackageOffPage}
+                          monthlyReport={ecommNanoSeoPackageMonthlyReporting}
+                          customerSupport={ecommNanoSeoPackageCustomerSupport}
+                        />
+                        {/* nano end */}
+
+                        {/* enterprise start */}
+                        <EcommSeo
+                          classes="col-lg-6 col-md-12 mt-5 mt-lg-0"
+                          title="Enterprise"
+                          price="674"
+                          keyPlan="Upto 50"
+                          focusKey="25"
+                          otherKey="25"
+                          keyTop="30%"
+                          initialReview={ecommEnterpriseSeoPackageInitialReview}
+                          salesFunnel={ecommEnterpriseSeoPackageSalesFunnel}
+                          onPage={ecommEnterpriseSeoPackageOnPage}
+                          schemaAndStructured={
+                            ecommEnterpriseSeoPackageSchemaAndStructure
+                          }
+                          contentMarketing={
+                            ecommEnterpriseSeoPackageContentMarketing
+                          }
+                          offPage={ecommEnterpriseSeoPackageOffPage}
+                          monthlyReport={
+                            ecommEnterpriseSeoPackageMonthlyReporting
+                          }
+                          customerSupport={
+                            ecommEnterpriseSeoPackageCustomerSupport
+                          }
+                        />
+                        {/* enterprise end */}
+
+                        {/* blast start */}
+                        <EcommSeo
+                          classes="col-lg-6 col-md-12 mt-5"
+                          title="Blast"
+                          price="1175"
+                          keyPlan="Upto 100"
+                          focusKey="50"
+                          otherKey="50"
+                          keyTop="35%"
+                          initialReview={ecommBlastSeoPackageInitialReview}
+                          salesFunnel={ecommBlastSeoPackageSalesFunnel}
+                          onPage={ecommBlastSeoPackageOnPage}
+                          schemaAndStructured={
+                            ecommBlastSeoPackageSchemaAndStructure
+                          }
+                          contentMarketing={
+                            ecommBlastSeoPackageContentMarketing
+                          }
+                          offPage={ecommBlastSeoPackageOffPage}
+                          monthlyReport={ecommBlastSeoPackageMonthlyReporting}
+                          customerSupport={ecommBlastSeoPackageCustomerSupport}
+                        />
+                        {/* blast end */}
+
+                        {/* mega start */}
+                        <EcommSeo
+                          classes="col-lg-6 col-md-12 mt-5"
+                          title="Mega"
+                          price="2075"
+                          keyPlan="Upto 200"
+                          focusKey="100"
+                          otherKey="100"
+                          keyTop="45%"
+                          initialReview={ecommMegaSeoPackageInitialReview}
+                          salesFunnel={ecommMegaSeoPackageSalesFunnel}
+                          onPage={ecommMegaSeoPackageOnPage}
+                          schemaAndStructured={
+                            ecommMegaSeoPackageSchemaAndStructure
+                          }
+                          contentMarketing={ecommMegaSeoPackageContentMarketing}
+                          offPage={ecommMegaSeoPackageOffPage}
+                          monthlyReport={ecommMegaSeoPackageMonthlyReporting}
+                          customerSupport={ecommMegaSeoPackageCustomerSupport}
+                        />
+                        {/* mega end */}
+                      </div>
+                    </div>
+                    {/* ecomm seo end */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* pick your plan end */}
 
         {/* 4 cards start */}
         <section className="light-bg position-relative overflow-hidden">
@@ -624,15 +1085,15 @@ const Packages = () => {
                     <h5 className="fw-bold">E-Commerce</h5>
                   </div>
                   <div className="featured-desc">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="counter ps-0">
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+150%</span>
                           <h6>Organic Revenue</h6>
                         </div>
                       </div>
-                      <div class="col-sm-6 mt-5 mt-sm-0">
-                        <div class="counter ps-0">
+                      <div className="col-sm-6 mt-5 mt-sm-0">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+80%</span>
                           <h6>Website Traffic</h6>
                         </div>
@@ -654,15 +1115,15 @@ const Packages = () => {
                     <h5 className="fw-bold">Real Estate</h5>
                   </div>
                   <div className="featured-desc">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="counter ps-0">
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+180%</span>
                           <h6>Online Leads</h6>
                         </div>
                       </div>
-                      <div class="col-sm-6 mt-5 mt-sm-0">
-                        <div class="counter ps-0">
+                      <div className="col-sm-6 mt-5 mt-sm-0">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+243%</span>
                           <h6>Website Sales</h6>
                         </div>
@@ -684,15 +1145,15 @@ const Packages = () => {
                     <h5 className="fw-bold">Health Care</h5>
                   </div>
                   <div className="featured-desc">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="counter ps-0">
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+210%</span>
                           <h6>Qualified Leads</h6>
                         </div>
                       </div>
-                      <div class="col-sm-6 mt-5 mt-sm-0">
-                        <div class="counter ps-0">
+                      <div className="col-sm-6 mt-5 mt-sm-0">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+98%</span>
                           <h6>Keywords Ranked Page #1</h6>
                         </div>
@@ -714,15 +1175,15 @@ const Packages = () => {
                     <h5 className="fw-bold">Law Firm</h5>
                   </div>
                   <div className="featured-desc">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="counter ps-0">
+                    <div className="row">
+                      <div className="col-sm-6">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+95%</span>
                           <h6>Keywords Ranked in Top 5</h6>
                         </div>
                       </div>
-                      <div class="col-sm-6 mt-5 mt-sm-0">
-                        <div class="counter ps-0">
+                      <div className="col-sm-6 mt-5 mt-sm-0">
+                        <div className="counter ps-0">
                           <span style={{ fontSize: "35px" }}>+140%</span>
                           <h6>Organic Search Traffic</h6>
                         </div>

@@ -430,7 +430,7 @@ const SearchEngineOptmization = () => {
                         </h4>
                         <div className="subscribe-form sm-mt-2">
                           <a
-                            href="/packages"
+                            href="/seo-packages"
                             className="btn btn-theme btn-radius"
                             style={{ width: "100%" }}
                           >
