@@ -282,7 +282,7 @@ const Packages = () => {
         </section>
 
         {/* 3 cards start */}
-        <section className="bg-contain bg-pos-r" data-bg-img="images/bg/02.png">
+        {/* <section className="bg-contain bg-pos-r" data-bg-img="images/bg/02.png">
           <div className="container">
             <div className="row justify-content-center text-center mb-4">
               <div className="col-lg-8 col-md-12">
@@ -719,7 +719,7 @@ const Packages = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* 3 cards end */}
 
         {/* pick you plan start */}
