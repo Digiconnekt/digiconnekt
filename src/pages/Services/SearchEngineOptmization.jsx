@@ -8,6 +8,7 @@ import OneLiner from "../../components/OneLiner";
 import ServicesLinkCarousel from "../../components/ServicesLinkCarousel";
 import TitleSection from "../../components/Title";
 import "./scrollBar.css";
+import StickyViewSeoPackageBtn from "../../components/StickyViewSeoPackageBtn";
 
 const SearchEngineOptmization = () => {
   // what is seo start
@@ -801,6 +802,8 @@ const SearchEngineOptmization = () => {
         {/* contact btn end */}
       </div>
       {/* page content end */}
+
+      <StickyViewSeoPackageBtn />
     </>
   );
 };
