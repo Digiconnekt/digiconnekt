@@ -100,6 +100,7 @@ const Footer = () => {
                         <a
                           href="https://www.facebook.com/DigiConnekt/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <i className="fab fa-facebook-f"></i>
                         </a>
@@ -108,6 +109,7 @@ const Footer = () => {
                         <a
                           href="https://www.instagram.com/digiconnekt/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <i className="fab fa-instagram"></i>
                         </a>
@@ -116,6 +118,7 @@ const Footer = () => {
                         <a
                           href="https://www.linkedin.com/company/digiconnekt/mycompany/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <i className="fab fa-linkedin-in"></i>
                         </a>
@@ -124,6 +127,7 @@ const Footer = () => {
                         <a
                           href="https://twitter.com/DigiConnekt"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <i className="fab fa-twitter"></i>
                         </a>
@@ -213,8 +217,12 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="tel:+6587993124" target="_blank">
-                          +65 8799 3124
+                        <a
+                          href="tel:+917032258068"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          +91 70322 58068
                         </a>
                       </li>
                     </ul>

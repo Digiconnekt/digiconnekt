@@ -5,7 +5,12 @@ const StickyWhatsapp = () => {
   return (
     <>
       <div className="whatsapp">
-        <a className="block" href="https://wa.me/+6587993124" target="_blank">
+        <a
+          className="block"
+          href="https://wa.me/+917032258068"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
