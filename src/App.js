@@ -21,6 +21,7 @@ import Blogs from "./pages/Blogs";
 import Blog1 from "./pages/Blogs/Blog1";
 import Blog2 from "./pages/Blogs/Blog2";
 import Blog3 from "./pages/Blogs/Blog3";
+import Blog4 from "./pages/Blogs/Blog4";
 import ServiceForm from "./pages/ServiceForm";
 
 import { ToastContainer } from "react-toastify";
@@ -64,6 +65,7 @@ const App = () => {
         <Route path="/blogs/blog1" element={<Blog1 />} />
         <Route path="/blogs/blog2" element={<Blog2 />} />
         <Route path="/blogs/blog3" element={<Blog3 />} />
+        <Route path="/blogs/blog4" element={<Blog4 />} />
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

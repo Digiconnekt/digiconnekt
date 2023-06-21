@@ -36,7 +36,52 @@ const Blogs = () => {
             <div className="row">
               {/* right side content start */}
               <div className="col-lg-8 col-md-12 order-lg-1">
-                {/* blog 1 start */}
+                {/* blog start */}
+                <div className="blog-classic">
+                  <div className="post">
+                    <div className="post-image">
+                      <img
+                        className="img-fluid h-100 w-100"
+                        src="images/blog/blog4.png"
+                        alt="Blog"
+                      />
+                    </div>
+                    <div className="post-desc">
+                      <div className="post-date">
+                        14 <span>June 2023</span>
+                      </div>
+                      <div className="post-title">
+                        <h5>
+                          <a href="/blogs/blog4">
+                            Digital Marketing in the age of Social Media : Tips
+                            to SUCCESS
+                          </a>
+                        </h5>
+                      </div>
+                      <p>
+                        Welcome to the digital age, where social media has
+                        become an integral part of our daily lives. From
+                        checking updates on Facebook and Instagram to sharing
+                        tweets on Twitter, social media has transformed the way
+                        we communicate, interact, and even do business...{" "}
+                        <a href="/blogs/blog4">read more</a>
+                      </p>
+                      {/* <div className="post-author">
+                        <div className="post-author-img">
+                          <img
+                            className="img-fluid"
+                            src="images/thumbnail/01.png"
+                            alt=""
+                          />
+                        </div>
+                        <span>Romi kelly</span>
+                      </div> */}
+                    </div>
+                  </div>
+                </div>
+                {/* blog end */}
+
+                {/* blog start */}
                 <div className="blog-classic">
                   <div className="post">
                     <div className="post-image">
@@ -77,9 +122,9 @@ const Blogs = () => {
                     </div>
                   </div>
                 </div>
-                {/* blog 1 end */}
+                {/* blog end */}
 
-                {/* blog 2 start */}
+                {/* blog start */}
                 <div className="blog-classic">
                   <div className="post">
                     <div className="post-image">
@@ -109,9 +154,9 @@ const Blogs = () => {
                     </div>
                   </div>
                 </div>
-                {/* blog 2 end */}
+                {/* blog end */}
 
-                {/* blog 3 start */}
+                {/* blog start */}
                 <div className="blog-classic">
                   <div className="post">
                     <div className="post-image">
@@ -141,7 +186,7 @@ const Blogs = () => {
                     </div>
                   </div>
                 </div>
-                {/* blog 3 end */}
+                {/* blog end */}
 
                 {/* pagination start */}
                 {/* <nav aria-label="Page navigation" className="mt-8">
