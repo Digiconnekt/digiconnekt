@@ -1,12 +1,162 @@
-import React from "react";
 import TitleSection from "../components/Title";
+import React, { useEffect, useState } from "react";
+import AxiosPost from "../API";
 
 const ProgramLanding = () => {
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+  });
+
+  const onChangeHandler = (e) => {
+    const handlerName = e.target.name;
+    const handlerValue = e.target.value;
+
+    setFormData(() => ({ ...formData, [handlerName]: handlerValue }));
+  };
+
+  const payload = {
+    name: formData.name,
+    email: formData.email,
+    mobile: formData.mobile,
+
+    organisation: "digiconnekt",
+    messageFrom: window.location.href,
+  };
+
+  useEffect(
+    (e) => {
+      // console.log(formErrors);
+      if (Object.keys(formErrors).length === 0 && isSubmit) {
+        AxiosPost(payload);
+        // console.log(formData);
+      }
+    },
+    [formErrors]
+  );
+
+  const submitFormData = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formData));
+    setIsSubmit(true);
+  };
+
+  // validation start
+  const validate = (values) => {
+    const errors = {};
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    if (!values.name) {
+      errors.name = "Name is required";
+    }
+
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regexEmail.test(values.email)) {
+      errors.email = "Please enter a Valid Email";
+    }
+
+    if (!values.mobile) {
+      errors.mobile = "Mobile is required";
+    }
+
+    return errors;
+  };
+  // validation end
+
   return (
     <>
       {/* title section start */}
       <TitleSection title="Welcome to DigiConnekt's Student Ambassador Programme!" />
       {/* title section end */}
+
+      <section
+        className="overflow-hidden dark-bg animatedBackground pt-4 pb-4 px-2"
+        data-bg-img="../images/pattern/06.png"
+        style={{
+          backgroundImage: 'url("../images/pattern/06.png")',
+        }}
+      >
+        <div className="container">
+          <div className="row justify-content-center text-center">
+            <div className="col-md-12" style={{ marginTop: "22px" }}>
+              <form noValidate onSubmit={submitFormData}>
+                <div className="row">
+                  <div className="col-md-3 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Name"
+                      required
+                      onChange={onChangeHandler}
+                      style={{ background: "none", borderColor: "#ff7810" }}
+                    />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.name}
+                    </div>
+                  </div>
+                  <div className="col-md-3 mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      placeholder="Email"
+                      required
+                      onChange={onChangeHandler}
+                      style={{ background: "none", borderColor: "#ff7810" }}
+                    />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.email}
+                    </div>
+                  </div>
+                  <div className="col-md-3 mb-3">
+                    <input
+                      type="text"
+                      name="mobile"
+                      className="form-control"
+                      placeholder="Mobile"
+                      required
+                      onChange={onChangeHandler}
+                      style={{ background: "none", borderColor: "#ff7810" }}
+                    />
+                    <div
+                      className="invalid-feedback"
+                      style={{ display: "block", marginLeft: "5px" }}
+                    >
+                      {formErrors.mobile}
+                    </div>
+                  </div>
+                  <div className="col-md-3 ">
+                    <button
+                      className="btn btn-theme btn-radius"
+                      style={{ width: "100%" }}
+                    >
+                      <span>Submit</span>
+                    </button>
+                  </div>
+
+                  {Object.keys(formErrors).length !== 0 && isSubmit ? (
+                    <div className="messages" style={{ color: "red" }}>
+                      Please fill all the input fileds
+                    </div>
+                  ) : null}
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="overflow-hidden">
         <div className="container">
