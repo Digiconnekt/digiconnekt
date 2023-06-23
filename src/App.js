@@ -29,6 +29,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
+import ProgramLanding from "./pages/ProgramLanding";
 
 const App = () => {
   return (
@@ -73,6 +74,11 @@ const App = () => {
 
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/seo-packages" element={<Packages />} />
+
+        <Route
+          path="/student-ambassador-programme"
+          element={<ProgramLanding />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
