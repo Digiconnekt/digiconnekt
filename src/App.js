@@ -30,6 +30,7 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
+import Blog5 from "./pages/Blogs/Blog5";
 
 const App = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
         <Route path="/blogs/blog2" element={<Blog2 />} />
         <Route path="/blogs/blog3" element={<Blog3 />} />
         <Route path="/blogs/blog4" element={<Blog4 />} />
+        <Route path="/blogs/blog5" element={<Blog5 />} />
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

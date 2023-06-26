@@ -42,6 +42,51 @@ const Blogs = () => {
                     <div className="post-image">
                       <img
                         className="img-fluid h-100 w-100"
+                        src="images/blog/blog5.png"
+                        alt="Blog"
+                      />
+                    </div>
+                    <div className="post-desc">
+                      <div className="post-date">
+                        21 <span>June 2023</span>
+                      </div>
+                      <div className="post-title">
+                        <h5>
+                          <a href="/blogs/blog5">
+                            The Ultimate Guide To Seo: Tips And Strategies To
+                            Success
+                          </a>
+                        </h5>
+                      </div>
+                      <p>
+                        SEO, or Search Engine Optimization, is an essential part
+                        of any successful digital marketing strategy. It is the
+                        process of optimizing your website and its content to
+                        rank higher in search engine results pages (SERPs) for
+                        specific keywords and phrases...{" "}
+                        <a href="/blogs/blog5">read more</a>
+                      </p>
+                      {/* <div className="post-author">
+                        <div className="post-author-img">
+                          <img
+                            className="img-fluid"
+                            src="images/thumbnail/01.png"
+                            alt=""
+                          />
+                        </div>
+                        <span>Romi kelly</span>
+                      </div> */}
+                    </div>
+                  </div>
+                </div>
+                {/* blog end */}
+
+                {/* blog start */}
+                <div className="blog-classic">
+                  <div className="post">
+                    <div className="post-image">
+                      <img
+                        className="img-fluid h-100 w-100"
                         src="images/blog/blog4.png"
                         alt="Blog"
                       />
