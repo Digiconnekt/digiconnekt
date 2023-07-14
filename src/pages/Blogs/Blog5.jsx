@@ -3,6 +3,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import TitleSection from "../../components/Title";
+import RecentPost from "../../components/RecentPost";
 
 const Blog5 = () => {
   return (
@@ -201,71 +202,7 @@ best practices in seo, digital marketing services usa"
               {/* right side content end */}
 
               {/* left side content start */}
-              <div className="col-lg-4 col-md-12 sidebar mt-5 mt-lg-0">
-                {/* recent post start */}
-                <div className="widget recent-post">
-                  <h5 className="widget-title">Recent Post</h5>
-                  <article>
-                    <div className="row">
-                      <div className="col-sm">
-                        <img
-                          src="../images/blog/blog1-sm.png"
-                          className="img-fluid"
-                          alt="Blog 1"
-                        />
-                      </div>
-                      <div className="col-sm-9 mt-3 mt-sm-0">
-                        <a href="/blogs/blog1">
-                          The Role Of SEO In Modern Digital Marketing Strategies
-                        </a>
-                        <div className="post-date">
-                          02 <span>January 2023</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <article>
-                    <div className="row mt-4">
-                      <div className="col-sm">
-                        <img
-                          src="../images/blog/blog2-sm.png"
-                          className="img-fluid"
-                          alt="Blog 2"
-                        />
-                      </div>
-                      <div className="col-sm-9 mt-3 mt-sm-0">
-                        <a href="/blogs/blog2">
-                          10 Tips for Optimizing Your Social Media Presence
-                        </a>
-                        <div className="post-date">
-                          09 <span>January 2023</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <article>
-                    <div className="row mt-4">
-                      <div className="col-sm">
-                        <img
-                          src="../images/blog/blog3-sm.png"
-                          className="img-fluid"
-                          alt="Blog 3"
-                        />
-                      </div>
-                      <div className="col-sm-9 mt-3 mt-sm-0">
-                        <a href="/blogs/blog3">
-                          Advanced PPC Techniques: Taking Your Campaigns to the
-                          Next Level
-                        </a>
-                        <div className="post-date">
-                          11 <span>January 2023</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                {/* recent post end */}
-              </div>
+              <RecentPost />
               {/* left side content end */}
             </div>
           </div>

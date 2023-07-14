@@ -22,6 +22,8 @@ import Blog1 from "./pages/Blogs/Blog1";
 import Blog2 from "./pages/Blogs/Blog2";
 import Blog3 from "./pages/Blogs/Blog3";
 import Blog4 from "./pages/Blogs/Blog4";
+import Blog5 from "./pages/Blogs/Blog5";
+import Blog6 from "./pages/Blogs/Blog6";
 import ServiceForm from "./pages/ServiceForm";
 
 import { ToastContainer } from "react-toastify";
@@ -30,7 +32,6 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
-import Blog5 from "./pages/Blogs/Blog5";
 
 const App = () => {
   return (
@@ -64,11 +65,30 @@ const App = () => {
         <Route path="/service-form/:id" element={<ServiceForm />} />
 
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogs/blog1" element={<Blog1 />} />
-        <Route path="/blogs/blog2" element={<Blog2 />} />
-        <Route path="/blogs/blog3" element={<Blog3 />} />
-        <Route path="/blogs/blog4" element={<Blog4 />} />
-        <Route path="/blogs/blog5" element={<Blog5 />} />
+        <Route
+          path="/blogs/the-role-of-seo-in-modern-digital-marketing-strategies"
+          element={<Blog1 />}
+        />
+        <Route
+          path="/blogs/10-tips-for-optimizing-your-social-media-presence"
+          element={<Blog2 />}
+        />
+        <Route
+          path="/blogs/advanced-ppc-techniques:-taking-your-campaigns-to-the-next-level"
+          element={<Blog3 />}
+        />
+        <Route
+          path="/blogs/digital-marketing-in-the-age-of-social-media-:-tips-to-success"
+          element={<Blog4 />}
+        />
+        <Route
+          path="/blogs/the-ultimate-guide-to-seo:-tips-and-strategies-to-success"
+          element={<Blog5 />}
+        />
+        <Route
+          path="/blogs/seo-and-content-marketing:-a-winning-combination-in-digital-marketing"
+          element={<Blog6 />}
+        />
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
