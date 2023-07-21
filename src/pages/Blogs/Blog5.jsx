@@ -4,6 +4,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import TitleSection from "../../components/Title";
 import RecentPost from "../../components/RecentPost";
+import CheckoutOtherBlogs from "../../components/CheckoutOtherBlogs";
 
 const Blog5 = () => {
   return (
@@ -209,106 +210,7 @@ best practices in seo, digital marketing services usa"
         </section>
 
         {/* blog start */}
-        <section>
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8 col-md-12">
-                <div className="section-title">
-                  <h2 className="title">Checkout Our Other Blog's</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 col-md-12">
-                <div className="post style-2">
-                  <div className="post-image">
-                    <img
-                      className="img-fluid h-100 w-100"
-                      src="../images/blog/blog1.png"
-                      alt="Blog 1"
-                    />
-                  </div>
-                  <div className="post-desc">
-                    <div className="post-date">
-                      02 <span>January 2023</span>
-                    </div>
-                    <div className="post-title">
-                      <h5>
-                        <a href="/blogs/blog1">
-                          The role of SEO in modern digital marketing strategies
-                        </a>
-                      </h5>
-                    </div>
-                    <p>
-                      In today's digital landscape, search engine optimization
-                      (SEO) is more important than ever for businesses looking
-                      to reach their target audience...{" "}
-                      <a href="/blogs/blog1">read more</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
-                <div className="post style-2">
-                  <div className="post-image">
-                    <img
-                      className="img-fluid h-100 w-100"
-                      src="../images/blog/blog2.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="post-desc">
-                    <div className="post-date">
-                      09 <span>January 2023</span>
-                    </div>
-                    <div className="post-title">
-                      <h5>
-                        <a href="/blogs/blog2">
-                          10 Tips for Optimizing Your Social Media Presence
-                        </a>
-                      </h5>
-                    </div>
-                    <p>
-                      Social media is an essential part of any modern marketing
-                      strategy, but with so many platforms to choose from and an
-                      ever-evolving set of best practices...{" "}
-                      <a href="/blogs/blog2">read more</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
-                <div className="post style-2">
-                  <div className="post-image">
-                    <img
-                      className="img-fluid h-100 w-100"
-                      src="../images/blog/blog3.png"
-                      alt=""
-                    />
-                  </div>
-                  <div className="post-desc">
-                    <div className="post-date">
-                      11 <span>January 2023</span>
-                    </div>
-                    <div className="post-title">
-                      <h5>
-                        <a href="/blogs/blog3">
-                          Advanced PPC Techniques: Taking Your Campaigns to the
-                          Next Level
-                        </a>
-                      </h5>
-                    </div>
-                    <p>
-                      Pay-per-click (PPC) advertising is an effective way for
-                      businesses of all sizes to reach their target audience
-                      and... <a href="/blogs/blog3">read more</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CheckoutOtherBlogs id="5" />
         {/* blog end */}
       </div>
       {/* page content end */}

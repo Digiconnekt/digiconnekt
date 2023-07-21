@@ -32,6 +32,7 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
+import Blog7 from "./pages/Blogs/Blog7";
 
 const App = () => {
   return (
@@ -88,6 +89,10 @@ const App = () => {
         <Route
           path="/blogs/seo-and-content-marketing:-a-winning-combination-in-digital-marketing"
           element={<Blog6 />}
+        />
+        <Route
+          path="/blogs/why-content-marketing-is-essential-for-business:-a-deep-dive"
+          element={<Blog7 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />
