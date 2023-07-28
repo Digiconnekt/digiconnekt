@@ -24,6 +24,10 @@ import Blog3 from "./pages/Blogs/Blog3";
 import Blog4 from "./pages/Blogs/Blog4";
 import Blog5 from "./pages/Blogs/Blog5";
 import Blog6 from "./pages/Blogs/Blog6";
+import Blog7 from "./pages/Blogs/Blog7";
+import Blog8 from "./pages/Blogs/Blog8";
+import Blog9 from "./pages/Blogs/Blog9";
+
 import ServiceForm from "./pages/ServiceForm";
 
 import { ToastContainer } from "react-toastify";
@@ -32,7 +36,6 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
-import Blog7 from "./pages/Blogs/Blog7";
 
 const App = () => {
   return (
@@ -93,6 +96,14 @@ const App = () => {
         <Route
           path="/blogs/why-content-marketing-is-essential-for-business:-a-deep-dive"
           element={<Blog7 />}
+        />
+        <Route
+          path="/blogs/from-strategy-to-success:-how-digiconnekt-transforms-your-digital-marketing-journey"
+          element={<Blog8 />}
+        />
+        <Route
+          path="/blogs/revolutionizing-digital-marketing:-how-digiconnekt-is-pioneering-the-future-of-customer-engagement"
+          element={<Blog9 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />

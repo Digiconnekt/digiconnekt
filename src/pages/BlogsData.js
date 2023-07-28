@@ -1,5 +1,29 @@
 export const blogsData = [
   {
+    id: 9,
+    fullDate: {
+      date: "28",
+      monthYr: "July 2023",
+    },
+    title:
+      "Revolutionizing Digital Marketing: How DigiConnekt is Pioneering the Future of Customer Engagement",
+    content:
+      "In today's rapidly evolving digital landscape, traditional marketing approaches are no longer sufficient to engage and captivate customers. Digital marketing has become the new frontier, and businesses are constantly seeking innovative ways to connect with their target audience. In this...",
+    img: "../images/blog/blog9.png",
+  },
+  {
+    id: 8,
+    fullDate: {
+      date: "24",
+      monthYr: "July 2023",
+    },
+    title:
+      "From Strategy to Success: How DigiConnekt Transforms Your Digital Marketing Journey",
+    content:
+      "In today's fast-paced digital landscape, effective marketing strategies are crucial for businesses to thrive and succeed. With the ever-evolving technological advancements, finding the right tools and platforms to navigate the digital realm can be a daunting task. However...",
+    img: "../images/blog/blog8.png",
+  },
+  {
     id: 7,
     fullDate: {
       date: "21",
