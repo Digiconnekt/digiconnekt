@@ -580,13 +580,6 @@ const About = () => {
                       alt="The Coding Trail"
                     />
                   </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/home/clients/ddf.png"
-                      alt="Delhi Duty Free"
-                    />
-                  </div>
                 </div>
               </div>
             </div>
