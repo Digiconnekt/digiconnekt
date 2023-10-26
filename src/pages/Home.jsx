@@ -987,6 +987,14 @@ const Home = () => {
                       alt="The Coding Trail"
                     />
                   </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/healbox.png"
+                      alt="Healbox"
+                      style={{ maxWidth: "200px", height: "72px" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
