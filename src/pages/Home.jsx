@@ -941,8 +941,9 @@ const Home = () => {
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/home/clients/m-and-s.png"
-                      alt="M And S"
+                      src="images/home/clients/healbox.png"
+                      alt="Healbox"
+                      style={{ maxWidth: "200px", height: "72px" }}
                     />
                   </div>
                   <div className="clients-logo">
@@ -990,8 +991,8 @@ const Home = () => {
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
-                      src="images/home/clients/healbox.png"
-                      alt="Healbox"
+                      src="images/home/clients/oneretailworld.png"
+                      alt="One Retail World"
                       style={{ maxWidth: "200px", height: "72px" }}
                     />
                   </div>
