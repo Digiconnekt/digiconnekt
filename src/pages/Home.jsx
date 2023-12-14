@@ -885,8 +885,31 @@ const Home = () => {
                   <div className="clients-logo">
                     <img
                       className="img-fluid"
+                      src="images/home/clients/nostra.svg"
+                      alt="Nostra"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/ek-katha.svg"
+                      alt="Ek Katha"
+                      style={{ maxWidth: "200px", height: "72px" }}
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
                       src="images/home/clients/m-and-s.png"
                       alt="M and S"
+                    />
+                  </div>
+                  <div className="clients-logo">
+                    <img
+                      className="img-fluid"
+                      src="images/home/clients/oneretailworld.png"
+                      alt="One Retail World"
+                      style={{ maxWidth: "200px", height: "72px" }}
                     />
                   </div>
                   <div className="clients-logo">
@@ -986,14 +1009,6 @@ const Home = () => {
                       className="img-fluid"
                       src="images/home/clients/the-coding-trail.png"
                       alt="The Coding Trail"
-                    />
-                  </div>
-                  <div className="clients-logo">
-                    <img
-                      className="img-fluid"
-                      src="images/home/clients/oneretailworld.png"
-                      alt="One Retail World"
-                      style={{ maxWidth: "200px", height: "72px" }}
                     />
                   </div>
                 </div>
