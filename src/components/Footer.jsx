@@ -207,8 +207,8 @@ const Footer = () => {
                     <ul className="media-icon list-unstyled">
                       <li>
                         <p className="mb-0">
-                          1 Marine Parade Central, #04-06 Above McDonald's
-                          Marine Cove, Parkway Centre, Singapore 449408
+                          1 Marine Parade Central, #04-06, Parkway Centre,
+                          Singapore 449408
                         </p>
                       </li>
                       <li>
@@ -218,11 +218,11 @@ const Footer = () => {
                       </li>
                       <li>
                         <a
-                          href="tel:+917032258068"
+                          href="tel:+6587993124"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          +91 70322 58068
+                          +65 8799 3124
                         </a>
                       </li>
                     </ul>
