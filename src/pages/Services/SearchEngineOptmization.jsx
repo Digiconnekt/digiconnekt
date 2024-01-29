@@ -47,13 +47,13 @@ const SearchEngineOptmization = () => {
       <Helmet>
         {/* Title */}
         <title>
-          We are the best Search Engine Optimization (SEO) agency USA & Canada
+          Digiconnekt: Leading SEO Agency in USA | Free SEO Audit in Singapore
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Choose Digiconnekt as a Local SEO Company in USA & Canada to promote your business from the best Seo Company. We as SEO Agency offer top SEO services in the USA."
+          content="Elevate your online presence with Digiconnekt, the top SEO agency in the USA. Get a free SEO site audit in Singapore. Expert on-page and technical SEO services in Singapore for optimal search engine performance."
         />
 
         {/* Keywords */}

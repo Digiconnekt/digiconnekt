@@ -8,13 +8,14 @@ const Services = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Digiconnekt offers top Digital Marketing Solutions in USA & Canada
+          Digiconnekt: Top Marketing Agency in USA & Digital Marketing in
+          Singapore
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="We are the Digital Marketing Service Provider in USA & Canada. Digiconnekt is an Internet Marketing Agency in the USA that offers digital marketing as a service."
+          content="Elevate your brand with Digiconnekt, a leading marketing agency in the USA. Transform your digital presence with our expert digital marketing services in Singapore. Drive success with strategic solutions tailored to your business goals."
         />
 
         {/* Keywords */}

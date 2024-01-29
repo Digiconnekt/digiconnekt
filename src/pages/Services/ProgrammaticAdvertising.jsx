@@ -42,12 +42,14 @@ const ProgrammaticAdvertising = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Top Programmatic Advertising Companies in USA & Canada.</title>
+        <title>
+          Top Programmatic Advertising Agency in USA & Canada | Digiconnekt
+        </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="We ranked the No.1 Programmatic Marketing, and Advertising agency in USA & Canada. We offer the Best Marktech Services as Ad Tech Agency from Best Adtech Companies"
+          content="Digiconnekt, a leading programmatic advertising service provider. Unlock targeted campaigns in the USA, Canada, and Singapore. Optimize your reach with our expert programmatic solutions today."
         />
 
         {/* Keywords */}

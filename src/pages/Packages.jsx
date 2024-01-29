@@ -116,6 +116,7 @@ import {
   ecommMegaSeoPackageSalesFunnel,
   ecommMegaSeoPackageSchemaAndStructure,
 } from "../data/packages/ecommerce/megaPackages";
+import { Helmet } from "react-helmet-async";
 
 const Packages = () => {
   // what is seo start
@@ -132,6 +133,17 @@ const Packages = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Title */}
+        <title>Digiconnekt SEO Package | Best SEO Company in Singapore</title>
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Explore Digiconnekt's comprehensive SEO package for unparalleled online visibility. We are the leading SEO company in Singapore, offering a free SEO site audit. "
+        />
+      </Helmet>
+
       {/* title section start */}
       <TitleSection title="SEO Packages" />
       {/* title section end */}

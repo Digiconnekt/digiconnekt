@@ -24,12 +24,15 @@ const ContentMarketing = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Get SEO Content Marketing Services in USA & Canada</title>
+        <title>
+          Leading Content Marketing Agency in Canada | SEO Writing &
+          Optimization Services in Singapore
+        </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Connect with us for Content Marketing Agency Services in USA & Canada. We offer Seo Content Writing Services, Seo Optimized, and content marketing services."
+          content="Elevate your brand with Digiconnekt, a premier content marketing agency in USA and Canada. Unlock SEO content writing excellence in Singapore. Optimize your content for success with our expert content optimization service in Canada."
         />
 
         {/* Keywords */}

@@ -69,13 +69,13 @@ const EmailMarketing = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Best Email Marketing Company USA & Canada | Email Marketing Agency
+          Premier Email Marketing Agency in USA & Canada | Digiconnekt
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Digiconnekt offers top Email Marketing Automation Services in the USA & Canada. Get the right Email Marketing Strategy as Email Campaign Services for your business."
+          content="Upscale your brand with Digiconnekt's top-notch Email Marketing Services in the USA and Singapore. Expert Email Campaign Management for unparalleled success."
         />
 
         {/* Keywords */}

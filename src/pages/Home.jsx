@@ -17,12 +17,14 @@ const Home = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Best Internet, Digital Marketing Service in USA & Canada</title>
+        <title>
+          Digiconnekt: Leading Digital Marketing Agency in USA & Singapore
+        </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="We are the best Digital Marketing Company in USA & Canada. From our Digital Marketing Agency, we provide various services like- Performance & Internet for clients."
+          content="Digiconnekt is a top-rated digital marketing agency providing internet marketing services in Singapore and the USA. Contact us for effective digital solutions."
         />
 
         {/* Keywords */}

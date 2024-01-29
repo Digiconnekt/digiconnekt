@@ -7,12 +7,12 @@ const About = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>DigiConnekt- Online Advertising Companies USA & Canada</title>
+        <title>Digiconnekt: Leading Online Advertising Company USA</title>
 
         {/* Description */}
         <meta
           name="description"
-          content="DigiConnekt is a leading Marketing Agency in USA & Canada. We offer Digital Advertising Services to all small and big businesses from our Digital Agency USA."
+          content="Discover Digiconnekt, a top-tier online advertising company in the USA offering unparalleled digital marketing services in Singapore. Elevate your brand presence and drive success with our innovative solutions."
         />
 
         {/* Keywords */}

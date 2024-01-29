@@ -26,12 +26,15 @@ const PPC = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Paid Search Marketing in USA, Canada | Paid Ads campaign</title>
+        <title>
+          Leading PPC Agency in USA, Canada & Singapore | Expert Paid Ads
+          Campaign Management
+        </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Digiconnekt provides ROI-driven Google PPC Management Services in USA & Canada. Get leads by choosing our Pay Per Click Management Agency for PPC Search Advertising"
+          content="We are the top PPC agency in USA, Canada, and Singapore. Our expert team specializes in Pay Per Click (PPC) advertising, ensuring strategic and impactful Paid Ads Campaign management. Drive targeted traffic and maximize ROI with our tailored solutions. Partner with Digiconnekt for unrivaled PPC expertise and results-driven digital marketing services."
         />
 
         {/* Keywords */}

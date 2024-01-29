@@ -132,13 +132,14 @@ const Contact = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Contact Us For Digital Branding | Online Marketing Company in USA
+          Contact Us for Free SEO Site Audit & Expert Lead Generation Services
+          in USA & Singapore
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Do you ready to hire Internet Marketing Company to grow your business? Do contact us for Best digital marketing strategy in USA & Canada for online digital branding."
+          content="Reach out to Digiconnekt, a leading digital marketing agency in Singapore. Contact us for a free SEO site audit and discover our expertise in effective lead generation strategies."
         />
 
         {/* Keywords */}

@@ -28,13 +28,14 @@ const LeadGeneration = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Top B2B Lead Generation Companies in USA & Canada- Digiconnekt
+          Top B2B & B2C Lead Generation Agency in USA, Canada, Singapore |
+          Digiconnekt
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Digiconnekt is the top Lead Generation Agency in USA & Canada. We are the Online lead generation companies that offer Sales Lead Generation Services, B2B Lead Generation"
+          content="Digiconnekt, a top-tier B2B & B2C lead generation agency serving USA, Canada, and Singapore. Unlock growth opportunities with our expert B2B lead generation services in Canada and targeted B2C lead generation solutions in Singapore. Trust Digiconnekt to optimize your sales funnel and drive unparalleled success in the North American and Asian markets."
         />
 
         {/* Keywords */}

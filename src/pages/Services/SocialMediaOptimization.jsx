@@ -47,13 +47,13 @@ const SocialMediaOptimization = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Social Media Marketing & Advertising Agency in USA & Canada
+          Social Media Optimization Agency in USA & Singapore | Digiconnekt
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Digiconnekt offers Social Media Marketing Services in USA & Canada. Hire our Online Marketing and Social Media Manager team for your Community manager as services."
+          content="As a Leading SMO Agency, our expert services in the USA and Singapore cover Online Marketing, Facebook, Instagram, Linkedin, and Youtube Marketing. Maximize your online impact with tailored strategies for unparalleled results."
         />
 
         {/* Keywords */}

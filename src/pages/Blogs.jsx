@@ -9,12 +9,15 @@ const Blogs = () => {
     <>
       <Helmet>
         {/* Title */}
-        <title>Get the latest Digital Marketing News from Digiconnekt</title>
+        <title>
+          Explore the Insights From Leading Internet Marketing Agency in USA &
+          Canada
+        </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Get the latest news on digital marketing, SEO tips, social media, and content marketing from our blog. Our blog page has everything you need to know."
+          content="Explore innovative insights and strategies on Digiconnekt's blogs, your go-to resource for online advertising excellence. Elevate your brand with the top internet marketing agency in USA and Singapore."
         />
 
         {/* Keywords */}

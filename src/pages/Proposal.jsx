@@ -170,13 +170,13 @@ const Proposal = () => {
       <Helmet>
         {/* Title */}
         <title>
-          Get Digital Marketing Proposal for your business in USA & Canada
+          Boost Your Business with Top Digital Marketing Services | Digiconnekt
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Check out Digital Marketing Pricing Packages to learn more about our Digital Marketing Services Costs. Our digital marketing quotations for USA & Canada are distinct."
+          content="Explore expert digital advertising services and SEO solutions tailored for success from Digiconnekt, a leading digital marketing agency in the USA and Singapore. Get a customized proposal today!"
         />
 
         {/* Keywords */}
