@@ -1,6 +1,19 @@
 export const blogsData = [
   {
+    id: 10,
+    path: "a-game-changer-in-email-marketing-service",
+    fullDate: {
+      date: "01",
+      monthYr: "Feb 2024",
+    },
+    title: "DigiConnekt: A Game-Changer in Email Marketing Service",
+    content:
+      "For companies looking to establish and sustain a strong online presence, staying ahead of the curve in the ever evolving digital marketing is essential. Email marketing is an essential component of this, an effective tool that has developed over time...",
+    img: "../images/blog/blog10.jpeg",
+  },
+  {
     id: 9,
+    path: "revolutionizing-digital-marketing:-how-digiconnekt-is-pioneering-the-future-of-customer-engagement",
     fullDate: {
       date: "28",
       monthYr: "July 2023",
@@ -13,6 +26,7 @@ export const blogsData = [
   },
   {
     id: 8,
+    path: "from-strategy-to-success:-how-digiconnekt-transforms-your-digital-marketing-journey",
     fullDate: {
       date: "24",
       monthYr: "July 2023",
@@ -25,6 +39,7 @@ export const blogsData = [
   },
   {
     id: 7,
+    path: "why-content-marketing-is-essential-for-business:-a-deep-dive",
     fullDate: {
       date: "21",
       monthYr: "July 2023",
@@ -36,6 +51,7 @@ export const blogsData = [
   },
   {
     id: 6,
+    path: "seo-and-content-marketing:-a-winning-combination-in-digital-marketing",
     fullDate: {
       date: "12",
       monthYr: "July 2023",
@@ -48,6 +64,7 @@ export const blogsData = [
   },
   {
     id: 5,
+    path: "the-ultimate-guide-to-seo:-tips-and-strategies-to-success",
     fullDate: {
       date: "21",
       monthYr: "June 2023",
@@ -59,6 +76,7 @@ export const blogsData = [
   },
   {
     id: 4,
+    path: "digital-marketing-in-the-age-of-social-media-:-tips-to-success",
     fullDate: {
       date: "14",
       monthYr: "June 2023",
@@ -70,6 +88,7 @@ export const blogsData = [
   },
   {
     id: 3,
+    path: "advanced-ppc-techniques:-taking-your-campaigns-to-the-next-level",
     fullDate: {
       date: "11",
       monthYr: "January 2023",
@@ -81,6 +100,7 @@ export const blogsData = [
   },
   {
     id: 2,
+    path: "10-tips-for-optimizing-your-social-media-presence",
     fullDate: {
       date: "09",
       monthYr: "January 2023",
@@ -92,6 +112,7 @@ export const blogsData = [
   },
   {
     id: 1,
+    path: "the-role-of-seo-in-modern-digital-marketing-strategies",
     fullDate: {
       date: "02",
       monthYr: "January 2023",

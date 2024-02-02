@@ -59,24 +59,12 @@ const Blogs = () => {
                         </div>
                         <div className="post-title">
                           <h5>
-                            <a
-                              href={`blogs/${blog.title
-                                .toLowerCase()
-                                .replace(/ /g, "-")}`}
-                            >
-                              {blog.title}
-                            </a>
+                            <a href={`blogs/${blog.path}`}>{blog.title}</a>
                           </h5>
                         </div>
                         <p>
                           {blog.content}{" "}
-                          <a
-                            href={`blogs/${blog.title
-                              .toLowerCase()
-                              .replace(/ /g, "-")}`}
-                          >
-                            read more
-                          </a>
+                          <a href={`blogs/${blog.path}`}>read more</a>
                         </p>
                       </div>
                     </div>

@@ -15,13 +15,7 @@ const RecentPost = () => {
                   <img src={blog.img} className="img-fluid" alt={blog.title} />
                 </div>
                 <div className="col-sm-9 mt-3 mt-sm-0">
-                  <a
-                    href={`/blogs/${blog.title
-                      .toLowerCase()
-                      .replace(/ /g, "-")}`}
-                  >
-                    {blog.title}
-                  </a>
+                  <a href={`/blogs/${blog.path}`}>{blog.title}</a>
                   <div className="post-date">
                     {blog.fullDate.date} <span>{blog.fullDate.monthYr}</span>
                   </div>

@@ -36,6 +36,7 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
+import Blog10 from "./pages/Blogs/Blog10";
 
 const App = () => {
   return (
@@ -104,6 +105,10 @@ const App = () => {
         <Route
           path="/blogs/revolutionizing-digital-marketing:-how-digiconnekt-is-pioneering-the-future-of-customer-engagement"
           element={<Blog9 />}
+        />
+        <Route
+          path="/blogs/a-game-changer-in-email-marketing-service"
+          element={<Blog10 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />
