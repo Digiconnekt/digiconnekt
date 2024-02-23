@@ -27,6 +27,8 @@ import Blog6 from "./pages/Blogs/Blog6";
 import Blog7 from "./pages/Blogs/Blog7";
 import Blog8 from "./pages/Blogs/Blog8";
 import Blog9 from "./pages/Blogs/Blog9";
+import Blog10 from "./pages/Blogs/Blog10";
+import Blog11 from "./pages/Blogs/Blog11";
 
 import ServiceForm from "./pages/ServiceForm";
 
@@ -36,7 +38,6 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
-import Blog10 from "./pages/Blogs/Blog10";
 
 const App = () => {
   return (
@@ -109,6 +110,10 @@ const App = () => {
         <Route
           path="/blogs/a-game-changer-in-email-marketing-service"
           element={<Blog10 />}
+        />
+        <Route
+          path="/blogs/internet-marketing-agency-in-the-usa-your-pathway-to-online-triumph"
+          element={<Blog11 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />

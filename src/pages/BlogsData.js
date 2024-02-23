@@ -1,5 +1,18 @@
 export const blogsData = [
   {
+    id: 11,
+    path: "internet-marketing-agency-in-the-usa-your-pathway-to-online-triumph",
+    fullDate: {
+      date: "20",
+      monthYr: "Feb 2024",
+    },
+    title:
+      "Internet Marketing Agency in the USA: Your Pathway to Online Triumph",
+    content:
+      "Digital marketing, also known as online marketing promotes a client’s brand, products and services through the medium; internet or other online channels.  To increase brand awareness among current and potential customers, a digital marketing campaign...",
+    img: "../images/blog/blog11.jpg",
+  },
+  {
     id: 10,
     path: "a-game-changer-in-email-marketing-service",
     fullDate: {
