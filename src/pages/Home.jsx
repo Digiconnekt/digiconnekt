@@ -9,8 +9,21 @@ const Home = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setModal(true);
+      setModal(false);
     }, 10000);
+  }, []);
+
+  useEffect(() => {
+    // Dynamically add script when component mounts
+    const script = document.createElement("script");
+    script.src = "https://static-bundles.visme.co/forms/vismeforms-embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Clean up function to remove the script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -1124,6 +1137,16 @@ const Home = () => {
         </section>
         {/* blog end */}
       </div>
+
+      <div
+        className="visme_d"
+        data-title="Free Site Audit Form"
+        data-url="w46w3vp6-free-site-audit-form?fullPage=true"
+        data-domain="forms"
+        data-full-page="true"
+        data-min-height="100vh"
+        data-form-id="28986"
+      ></div>
     </>
   );
 };
