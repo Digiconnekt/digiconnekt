@@ -38,6 +38,10 @@ import Landing from "./pages/Landing";
 import ThankYou from "./pages/ThankYou";
 import Packages from "./pages/Packages";
 import ProgramLanding from "./pages/ProgramLanding";
+import Blog12 from "./pages/Blogs/Blog12";
+import Blog13 from "./pages/Blogs/Blog13";
+import Blog14 from "./pages/Blogs/Blog14";
+import Blog15 from "./pages/Blogs/Blog15";
 
 const App = () => {
   return (
@@ -114,6 +118,22 @@ const App = () => {
         <Route
           path="/blogs/internet-marketing-agency-in-the-usa-your-pathway-to-online-triumph"
           element={<Blog11 />}
+        />
+        <Route
+          path="/blogs/digiconnekt-best-seo-agency-in-singapore-what-makes-us-best"
+          element={<Blog12 />}
+        />
+        <Route
+          path="/blogs/turn-likes-into-leads-digiconnekts-smo-tactics-for-conversion-success"
+          element={<Blog13 />}
+        />
+        <Route
+          path="/blogs/digiconnekt-your-ultimate-content-marketing-agency-partner"
+          element={<Blog14 />}
+        />
+        <Route
+          path="/blogs/ready-to-dominate-serps-unleash-the-power-of-digiconnekts-seo-service-for-your-business"
+          element={<Blog15 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />

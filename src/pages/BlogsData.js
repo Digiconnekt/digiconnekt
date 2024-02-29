@@ -1,5 +1,55 @@
 export const blogsData = [
   {
+    id: 15,
+    path: "ready-to-dominate-serps-unleash-the-power-of-digiconnekts-seo-service-for-your-business",
+    fullDate: {
+      date: "29",
+      monthYr: "Feb 2024",
+    },
+    title:
+      "Ready to Dominate SERPs? Unleash the Power of Digiconnekt's SEO Service For Your Business",
+    content:
+      "Welcome to the world of Search Engine Optimization Service, where your company can achieve limitless success through careful selection of keywords. The rules of the game have changed in this era of digital domination...",
+    img: "../images/blog/blog15.jpg",
+  },
+  {
+    id: 14,
+    path: "digiconnekt-your-ultimate-content-marketing-agency-partner",
+    fullDate: {
+      date: "28",
+      monthYr: "Feb 2024",
+    },
+    title: "Digiconnekt: Your Ultimate Content Marketing Agency Partner",
+    content:
+      "Content marketing is an advertising strategy that involves producing and disseminating pieces of content, including emails, videos, social media postings, and articles, to build audiences, create authority, raise brand awareness...",
+    img: "../images/blog/blog14.jpg",
+  },
+  {
+    id: 13,
+    path: "turn-likes-into-leads-digiconnekts-smo-tactics-for-conversion-success",
+    fullDate: {
+      date: "26",
+      monthYr: "Feb 2024",
+    },
+    title:
+      "Turn Likes into Leads: Digiconnekt's SMO Tactics for Conversion Success",
+    content:
+      "SMO involves altering your material to fit the features and preferences of the users of each social media platform. Social Media Optimization Service in UK is similar to tailoring your product to the interests and tastes of the customers at...",
+    img: "../images/blog/blog13.jpg",
+  },
+  {
+    id: 12,
+    path: "digiconnekt-best-seo-agency-in-singapore-what-makes-us-best",
+    fullDate: {
+      date: "22",
+      monthYr: "Feb 2024",
+    },
+    title: "Digiconnekt - Best SEO Agency in Singapore. What Makes Us Best?",
+    content:
+      "Search Engine Optimization is integral to building a business because it enhances visibility and drives organic traffic to the website. In this era of constantly changing trends and algorithms, availing Search Engine Optimization services...",
+    img: "../images/blog/blog12.jpg",
+  },
+  {
     id: 11,
     path: "internet-marketing-agency-in-the-usa-your-pathway-to-online-triumph",
     fullDate: {
