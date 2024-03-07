@@ -324,7 +324,7 @@ const Blog13 = () => {
         </section>
 
         {/* blog start */}
-        <CheckoutOtherBlogs id="9" />
+        <CheckoutOtherBlogs id="13" />
         {/* blog end */}
       </div>
       {/* page content end */}

@@ -1,5 +1,44 @@
 export const blogsData = [
   {
+    id: 18,
+    path: "the-ultimate-guide-to-social-media-marketing-in-2024",
+    fullDate: {
+      date: "08",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "The Ultimate Guide to Social Media Marketing in 2024",
+    content:
+      "A crucial component of digital marketing for companies of all sizes, across all markets, is social networking. To make the most of their social media channels, organisations must be abreast of the most recent advancements .........",
+    img: "../images/blog/blog18.jpg",
+  },
+  {
+    id: 17,
+    path: "maximizing-roi-with-paid-digital-media-optimization",
+    fullDate: {
+      date: "07",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "Maximizing ROI with Paid Digital Media Optimization",
+    content:
+      "To connect with their target market and increase sales in the modern digital era, businesses must have a strong online presence. Businesses now have more options than ever to contact potential clients online because of the growth of digital paid media.........",
+    img: "../images/blog/blog17.jpg",
+  },
+  {
+    id: 16,
+    path: "5-seo-mistakes-that-are-killing-your-website-traffic-and-how-to-fix-them",
+    fullDate: {
+      date: "06",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "5 SEO Mistakes That Are Killing Your Website Traffic (And How to Fix Them)",
+    content:
+      "Enhancing a website's content and search engine rankings is known as search engine optimization or SEO. It involves several strategies, such as technical detail tweaking and on-page optimisation.Securing the top spots on search engine result pages is the primary objective .........",
+    img: "../images/blog/blog16.jpg",
+  },
+  {
     id: 15,
     path: "ready-to-dominate-serps-unleash-the-power-of-digiconnekts-seo-service-for-your-business",
     fullDate: {

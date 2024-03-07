@@ -6,7 +6,7 @@ import TitleSection from "../../components/Title";
 import RecentPost from "../../components/RecentPost";
 import CheckoutOtherBlogs from "../../components/CheckoutOtherBlogs";
 
-const Blog15 = () => {
+const Blog16 = () => {
   return (
     <>
       <Helmet>
@@ -330,7 +330,7 @@ const Blog15 = () => {
         </section>
 
         {/* blog start */}
-        <CheckoutOtherBlogs id="15" />
+        <CheckoutOtherBlogs id="16" />
         {/* blog end */}
       </div>
       {/* page content end */}
@@ -338,4 +338,4 @@ const Blog15 = () => {
   );
 };
 
-export default Blog15;
+export default Blog16;

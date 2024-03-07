@@ -42,6 +42,9 @@ import Blog12 from "./pages/Blogs/Blog12";
 import Blog13 from "./pages/Blogs/Blog13";
 import Blog14 from "./pages/Blogs/Blog14";
 import Blog15 from "./pages/Blogs/Blog15";
+import Blog16 from "./pages/Blogs/Blog16";
+import Blog17 from "./pages/Blogs/Blog17";
+import Blog18 from "./pages/Blogs/Blog18";
 
 const App = () => {
   return (
@@ -135,6 +138,19 @@ const App = () => {
           path="/blogs/ready-to-dominate-serps-unleash-the-power-of-digiconnekts-seo-service-for-your-business"
           element={<Blog15 />}
         />
+        <Route
+          path="/blogs/5-seo-mistakes-that-are-killing-your-website-traffic-and-how-to-fix-them"
+          element={<Blog16 />}
+        />
+        <Route
+          path="/blogs/maximizing-roi-with-paid-digital-media-optimization"
+          element={<Blog17 />}
+        />
+        <Route
+          path="/blogs/the-ultimate-guide-to-social-media-marketing-in-2024"
+          element={<Blog18 />}
+        />
+        
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

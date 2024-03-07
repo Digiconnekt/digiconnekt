@@ -6,20 +6,20 @@ import TitleSection from "../../components/Title";
 import RecentPost from "../../components/RecentPost";
 import CheckoutOtherBlogs from "../../components/CheckoutOtherBlogs";
 
-const Blog15 = () => {
+const Blog18 = () => {
   return (
     <>
       <Helmet>
         {/* Title */}
         <title>
-          Ready to Dominate SERPs? Unleash the Power of Digiconnekt's SEO
-          Service For Your Business
+        5 SEO Mistakes That Are Killing Your Website Traffic (And How to Fix Them)
+
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Welcome to the world of Search Engine Optimization Service, where your company can achieve limitless success through careful selection of keywords. The rules of the game have changed in this era of digital domination, and you run the risk of disappearing into the shadows if you're not following them."
+          content=""
         />
 
         {/* Keywords */}
@@ -30,7 +30,7 @@ const Blog15 = () => {
       </Helmet>
 
       {/* title section start */}
-      <TitleSection title="Ready to Dominate SERPs? Unleash the Power of Digiconnekt's SEO Service For Your Business" />
+      <TitleSection title="5 SEO Mistakes That Are Killing Your Website Traffic (And How to Fix Them)" />
       {/* title section end */}
 
       {/* page content start */}
@@ -330,7 +330,7 @@ const Blog15 = () => {
         </section>
 
         {/* blog start */}
-        <CheckoutOtherBlogs id="15" />
+        <CheckoutOtherBlogs id="18" />
         {/* blog end */}
       </div>
       {/* page content end */}
@@ -338,4 +338,4 @@ const Blog15 = () => {
   );
 };
 
-export default Blog15;
+export default Blog18;
