@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/HeroSection";
 import PopUpHome from "../components/PopUpHome";
+import { blogsData } from "./BlogsData";
 
 const Home = () => {
   const [modal, setModal] = useState(false);
@@ -1045,36 +1046,39 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-4 col-md-12">
-                <div className="post style-2">
-                  <div className="post-image">
-                    <img
-                      className="img-fluid h-100 w-100"
-                      src="images/blog/blog1.png"
-                      alt="Blog 1"
-                    />
-                  </div>
-                  <div className="post-desc">
-                    <div className="post-date">
-                      02 <span>January 2023</span>
+              {blogsData.slice(0, 3).map((blog, i) => (
+                <div
+                  className={`col-lg-4 col-md-12 ${i !== 0 && "mt-5 mt-lg-0"}`}
+                  key={i}
+                >
+                  <div className="post style-2">
+                    <div className="post-image">
+                      <img
+                        className="img-fluid h-100 w-100"
+                        src={blog.img}
+                        alt={blog.title}
+                      />
                     </div>
-                    <div className="post-title">
-                      <h5>
-                        <a href="/blogs/blog1">
-                          The role of SEO in modern digital marketing strategies
-                        </a>
-                      </h5>
+                    <div className="post-desc">
+                      <div className="post-date">
+                        {blog.fullDate.date}{" "}
+                        <span>{blog.fullDate.monthYr}</span>
+                      </div>
+                      <div className="post-title">
+                        <h5>
+                          <a href={`/blogs/${blog.path}`}>{blog.title}</a>
+                        </h5>
+                      </div>
+                      <p>
+                        {blog.content}
+                        <a href={`/blogs/${blog.path}`}>read more</a>
+                      </p>
                     </div>
-                    <p>
-                      In today's digital landscape, search engine optimization
-                      (SEO) is more important than ever for businesses looking
-                      to reach their target audience...{" "}
-                      <a href="/blogs/blog1">read more</a>
-                    </p>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
+              ))}
+
+              {/* <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
                 <div className="post style-2">
                   <div className="post-image">
                     <img
@@ -1131,7 +1135,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
