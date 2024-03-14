@@ -16,6 +16,7 @@ const CheckoutOtherBlogs = ({ id }) => {
           <div className="row">
             {blogsData
               .filter((blog) => blog.id !== parseInt(id))
+              .slice(0, 3)
               .map((blog) => (
                 <div className="col-lg-4 col-md-12 mt-5 mt-lg-0" key={blog.id}>
                   <div className="post style-2">
