@@ -46,7 +46,7 @@ const Blog18 = () => {
                     <div className="post-image">
                       <img
                         className="img-fluid h-100 w-100"
-                        src="../images/blog/blog15.jpg"
+                        src="../images/blog/blog18.jpg"
                         alt="Blog"
                       />
                     </div>

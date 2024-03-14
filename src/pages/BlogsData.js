@@ -1,5 +1,32 @@
 export const blogsData = [
   {
+    id: 20,
+    path: "elevate-your-brand-dentity-with-digiconnekt-branding-solutions",
+    fullDate: {
+      date: "15",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "Elevate Your Brand Identity with Digiconnekt Branding Solutions",
+    content:
+      "Building a solid brand identity is essential for success in the cutthroat corporate world of today. A strong brand identity not only helps you stand out from the competition but also connects with your target market, building loyalty and trust. .........",
+    img: "../images/blog/blog20.jpg",
+  },
+  
+  {
+    id: 19,
+    path: "expert-email-marketing-solutions-in-the-usa-drive-results-for-your-business",
+    fullDate: {
+      date: "14",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "Expert Email Marketing Solutions in the USA: Drive Results for Your Business",
+    content:
+      "A business owner can't reply to every email from a consumer; instead, they must find strategies to expand within the allotted period. This is where email marketing automation may help. .........",
+    img: "../images/blog/blog19.jpg",
+  },
+  {
     id: 18,
     path: "the-ultimate-guide-to-social-media-marketing-in-2024",
     fullDate: {

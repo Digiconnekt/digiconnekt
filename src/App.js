@@ -45,6 +45,8 @@ import Blog15 from "./pages/Blogs/Blog15";
 import Blog16 from "./pages/Blogs/Blog16";
 import Blog17 from "./pages/Blogs/Blog17";
 import Blog18 from "./pages/Blogs/Blog18";
+import Blog19 from "./pages/Blogs/Blog19";
+import Blog20 from "./pages/Blogs/Blog20";
 
 const App = () => {
   return (
@@ -150,7 +152,14 @@ const App = () => {
           path="/blogs/the-ultimate-guide-to-social-media-marketing-in-2024"
           element={<Blog18 />}
         />
-        
+         <Route
+          path="/blogs/expert-email-marketing-solutions-in-the-usa-drive-results-for-your-business"
+          element={<Blog19 />}
+        />
+        <Route
+          path="/blogs/elevate-your-brand-dentity-with-digiconnekt-branding-solutions"
+          element={<Blog20 />}
+        />
 
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
