@@ -47,6 +47,7 @@ import Blog17 from "./pages/Blogs/Blog17";
 import Blog18 from "./pages/Blogs/Blog18";
 import Blog19 from "./pages/Blogs/Blog19";
 import Blog20 from "./pages/Blogs/Blog20";
+import Blog21 from "./pages/Blogs/Blog21";
 
 const App = () => {
   return (
@@ -159,6 +160,10 @@ const App = () => {
         <Route
           path="/blogs/elevate-your-brand-dentity-with-digiconnekt-branding-solutions"
           element={<Blog20 />}
+        />
+<Route
+          path="/blogs/10-tips-to-boost-your-local-seo-ranking"
+          element={<Blog21 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />

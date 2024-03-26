@@ -1,5 +1,18 @@
 export const blogsData = [
   {
+    id: 21,
+    path: "10-tips-to-boost-your-local-seo-ranking",
+    fullDate: {
+      date: "26",
+      monthYr: "Mar 2024",
+    },
+    title:
+      "10 tips to boost your local SEO ranking",
+    content:
+      "Local businesses have a tremendous chance to attract nearby prospects through search. How? By employing tactics that prioritize enhancing visibility at a local level .........",
+    img: "../images/blog/blog21.jpg",
+  },
+  {
     id: 20,
     path: "elevate-your-brand-dentity-with-digiconnekt-branding-solutions",
     fullDate: {
