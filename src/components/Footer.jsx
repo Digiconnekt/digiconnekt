@@ -218,11 +218,11 @@ const Footer = () => {
                       </li>
                       <li>
                         <a
-                          href="tel:+6587993124"
+                          href="tel:+917032258068"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          +65 8799 3124
+                          +91 70322 58068
                         </a>
                       </li>
                     </ul>
@@ -274,7 +274,7 @@ const Footer = () => {
             <div className="copyright">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <span>Copyright 2023 | All Rights Reserved</span>
+                  <span>Copyright 2024 | All Rights Reserved</span>
                 </div>
                 <div className="col-md-6 text-md-end sm-mt-2">
                   <span>
