@@ -1,5 +1,57 @@
 export const blogsData = [
   {
+    id: 25,
+    path: "link-building-strategies-for-2024-a-step-by-step-guide",
+    fullDate: {
+      date: "4",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "Link Building Strategies for 2024: A Step-by-Step Guide",
+    content:
+      "You've come to the correct spot if you want to raise your website's search engine position and strengthen its Search Engine Optimization Service and strategy. It can be intimidating .........",
+    img: "../images/blog/blog25.jpg",
+  },
+  {
+    id: 24,
+    path: "the-impact-of-seo-slugs-on-website-ranking-a-deep-dive",
+    fullDate: {
+      date: "3",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "The Impact of SEO Slugs on Website Ranking: A Deep Dive",
+    content:
+      "Businesses are continuously seeking to enhance their online presence and visibility as the digital landscape changes. Search engine optimization is an important.........",
+    img: "../images/blog/blog24.jpg",
+  },
+  {
+    id: 23,
+    path: "bounce-rate-mastery-expert-tips-for-website-retention",
+    fullDate: {
+      date: "2",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "Bounce Rate Mastery: Expert Tips for Website Retention",
+    content:
+      "Website owners and marketers constantly struggle to draw in visitors and keep them on their platforms in the ever-changing digital landscape. The bounce rate is a crucial metric that.........",
+    img: "../images/blog/blog23.jpg",
+  },
+  {
+    id: 22,
+    path: "keyword-optimization-strategies-mastering-google-keyword-planner",
+    fullDate: {
+      date: "1",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "Keyword Optimization Strategies: Mastering Google Keyword Planner",
+    content:
+      "Keyword research is the cornerstone of any successful search engine optimization (SEO) campaign in the changing world ..........",
+    img: "../images/blog/blog22.jpg",
+  },
+  {
     id: 21,
     path: "10-tips-to-boost-your-local-seo-ranking",
     fullDate: {

@@ -48,6 +48,10 @@ import Blog18 from "./pages/Blogs/Blog18";
 import Blog19 from "./pages/Blogs/Blog19";
 import Blog20 from "./pages/Blogs/Blog20";
 import Blog21 from "./pages/Blogs/Blog21";
+import Blog22 from "./pages/Blogs/Blog22";
+import Blog23 from "./pages/Blogs/Blog23";
+import Blog24 from "./pages/Blogs/Blog24";
+import Blog25 from "./pages/Blogs/Blog25";
 
 const App = () => {
   return (
@@ -164,6 +168,22 @@ const App = () => {
 <Route
           path="/blogs/10-tips-to-boost-your-local-seo-ranking"
           element={<Blog21 />}
+        />
+        <Route
+          path="/blogs/keyword-optimization-strategies-mastering-google-keyword-planner"
+          element={<Blog22 />}
+        />
+        <Route
+          path="/blogs/bounce-rate-mastery-expert-tips-for-website-retention"
+          element={<Blog23 />}
+        />
+        <Route
+          path="/blogs/the-impact-of-seo-slugs-on-website-ranking-a-deep-dive"
+          element={<Blog24 />}
+        />
+        <Route
+          path="/blogs/link-building-strategies-for-2024-a-step-by-step-guide"
+          element={<Blog25 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />
