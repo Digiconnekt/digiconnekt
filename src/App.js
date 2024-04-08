@@ -52,6 +52,8 @@ import Blog22 from "./pages/Blogs/Blog22";
 import Blog23 from "./pages/Blogs/Blog23";
 import Blog24 from "./pages/Blogs/Blog24";
 import Blog25 from "./pages/Blogs/Blog25";
+import Blog26 from "./pages/Blogs/Blog26";
+import Blog27 from "./pages/Blogs/Blog27";
 
 const App = () => {
   return (
@@ -184,6 +186,14 @@ const App = () => {
         <Route
           path="/blogs/link-building-strategies-for-2024-a-step-by-step-guide"
           element={<Blog25 />}
+        />
+        <Route
+          path="/blogs/video-marketing-domination-engaging-audiences-with-visual-content"
+          element={<Blog26 />}
+        />
+        <Route
+          path="/blogs/personalization-in-email-marketing-crafting-tailored-campaigns-for-success"
+          element={<Blog27 />}
         />
 
         <Route path="/proposal" element={<Proposal />} />
