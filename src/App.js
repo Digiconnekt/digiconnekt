@@ -157,7 +157,7 @@ const App = () => {
           path="/blogs/the-ultimate-guide-to-social-media-marketing-in-2024"
           element={<Blog18 />}
         />
-         <Route
+        <Route
           path="/blogs/expert-email-marketing-solutions-in-the-usa-drive-results-for-your-business"
           element={<Blog19 />}
         />
@@ -165,7 +165,7 @@ const App = () => {
           path="/blogs/elevate-your-brand-dentity-with-digiconnekt-branding-solutions"
           element={<Blog20 />}
         />
-<Route
+        <Route
           path="/blogs/10-tips-to-boost-your-local-seo-ranking"
           element={<Blog21 />}
         />
