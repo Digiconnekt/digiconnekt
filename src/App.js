@@ -54,7 +54,11 @@ import Blog24 from "./pages/Blogs/Blog24";
 import Blog25 from "./pages/Blogs/Blog25";
 import Blog26 from "./pages/Blogs/Blog26";
 import Blog27 from "./pages/Blogs/Blog27";
-
+import Blog28 from "./pages/Blogs/Blog28";
+import Blog29 from "./pages/Blogs/Blog29";
+import Blog30 from "./pages/Blogs/Blog30";
+import Blog31 from "./pages/Blogs/Blog31";
+import Blog32 from "./pages/Blogs/Blog32";
 const App = () => {
   return (
     <>
@@ -195,7 +199,26 @@ const App = () => {
           path="/blogs/personalization-in-email-marketing-crafting-tailored-campaigns-for-success"
           element={<Blog27 />}
         />
-
+         <Route
+          path="/blogs/the-8-benefits-of-digital-pr-for your-business-building-trust-engaging-audiences-and-driving-sales"
+          element={<Blog28 />}
+        />
+        <Route
+          path="/blogs/10-proven-techniques-to-encourage-customers-to-write-positive-reviews"
+          element={<Blog29 />}
+        />
+        <Route
+          path="/blogs/drive-traffic-to-your-website-with-social-media-optimization"
+          element={<Blog30 />}
+        />
+        <Route
+          path="/blogs/local-seo-tips-for-ranking-higher-on-google"
+          element={<Blog31 />}
+        />
+         <Route
+          path="/blogs/step-by-step-guide-to-competitive-analysis"
+          element={<Blog32 />}
+        />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/digital-marketing-proposal" element={<Landing />} />
