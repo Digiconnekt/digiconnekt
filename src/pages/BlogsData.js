@@ -1,5 +1,70 @@
 export const blogsData = [
   {
+    id: 32,
+    path: "step-by-step-guide-to-competitive-analysis",
+    fullDate: {
+      date: "8",
+      monthYr: "May 2024",
+    },
+    title:
+      "Step-by-step Guide to Competitive Analysis",
+    content:
+      "In today's hyper-competitive digital landscape, businesses must have a comprehensive understanding of their market, competitors, and industry positioning. Conducting a thorough competitive analysis allows   .........",
+    img: "../images/blog/blog32.jpg",
+  },
+  {
+    id: 31,
+    path: "local-seo-tips-for-ranking-higher-on-google",
+    fullDate: {
+      date: "7",
+      monthYr: "May 2024",
+    },
+    title:
+      "Local SEO Tips for Ranking Higher on Google",
+    content:
+      "In today's digital age, having a strong online presence is crucial for businesses looking to attract local customers and drive foot traffic. With more  .........",
+    img: "../images/blog/blog31.jpg",
+  },
+  {
+    id: 30,
+    path: "drive-traffic-to-your-website-with-social-media-optimization",
+    fullDate: {
+      date: "6",
+      monthYr: "May 2024",
+    },
+    title:
+      "Drive Traffic to Your Website with Social Media Optimization",
+    content:
+      "In today's digital landscape, social media has become an indispensable channel for businesses looking to increase their online visibility, engage with audiences, and ultimately drive more traffic  .........",
+    img: "../images/blog/blog30.jpg",
+  },
+  {
+    id: 29,
+    path: "10-proven-techniques-to-encourage-customers-to-write-positive-reviews",
+    fullDate: {
+      date: "5",
+      monthYr: "May 2024",
+    },
+    title:
+      "10 Proven Techniques to Encourage Customers to Write Positive Reviews",
+    content:
+      "As a leading Local SEO Company in the USA & Canada, Digiconnekt understands the invaluable impact that positive customer reviews can have on a business's online reputation and .........",
+    img: "../images/blog/blog29.jpg",
+  },
+  {
+    id: 28,
+    path: "the-8-benefits-of-digital-pr-for your-business-building-trust-engaging-audiences-and-driving-sales",
+    fullDate: {
+      date: "4",
+      monthYr: "May 2024",
+    },
+    title:
+      "The 8 Benefits of Digital PR for Your Business: Building Trust, Engaging Audiences, and Driving Sales",
+    content:
+      "In today's digital age, businesses need to adapt to the ever-changing landscape of marketing and public relations. Traditional PR methods are no longer enough to reach and engage with modern .........",
+    img: "../images/blog/blog28.jpg",
+  },
+  {
     id: 27,
     path: "personalization-in-email-marketing-crafting-tailored-campaigns-for-success",
     fullDate: {
