@@ -1,5 +1,31 @@
 export const blogsData = [
   {
+    id: 27,
+    path: "personalization-in-email-marketing-crafting-tailored-campaigns-for-success",
+    fullDate: {
+      date: "9",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "Personalization in Email Marketing: Crafting Tailored Campaigns for Success",
+    content:
+      "Currently, it is getting harder for businesses to catch customers' interest with email marketing. People receive many promotional emails every day - maybe even hundreds or thousands in total. They all look.........",
+    img: "../images/blog/blog27.jpg",
+  },
+  {
+    id: 26,
+    path: "video-marketing-domination-engaging-audiences-with-visual-content",
+    fullDate: {
+      date: "8",
+      monthYr: "Apr 2024",
+    },
+    title:
+      "Video Marketing Domination: Engaging Audiences with Visual Content",
+    content:
+      "In the present dynamic era of digital technology, retaining someone's attention is becoming more difficult. We receive content from everywhere - social media, emails, websites, ads and so on. .........",
+    img: "../images/blog/blog26.jpg",
+  },
+  {
     id: 25,
     path: "link-building-strategies-for-2024-a-step-by-step-guide",
     fullDate: {
