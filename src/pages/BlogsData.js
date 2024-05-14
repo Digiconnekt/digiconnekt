@@ -1,4 +1,70 @@
 export const blogsData = [
+  {    
+    id: 37,
+    path: "5-best-mailchimp-alternatives-to-try-in-2024",
+    fullDate: {
+      date: "13",
+      monthYr: "May 2024",
+    },
+    title:
+      "5 Best Mailchimp Alternatives to Try in 2024",
+    content:
+      "Email marketing continues to be one of the most effective channels for businesses to connect with audiences, nurture leads, and drive conversions. While Mailchimp is a popular email marketing platform........",
+    img: "../images/blog/blog37.jpg",
+  }, 
+  {    
+    id: 36,
+    path: "top-pr-agencies-you-should-absolutely-check-out-in-2024",
+    fullDate: {
+      date: "12",
+      monthYr: "May 2024",
+    },
+    title:
+      "Top PR Agencies You Should Absolutely Check Out in 2024",
+    content:
+      "In today's fast-paced, highly competitive business landscape, effective public relations (PR) has become a critical component of any successful marketing strategy. A well-executed PR campaign can elevate brand awareness, establish industry authority, and.........",
+    img: "../images/blog/blog36.jpg",
+  }, 
+  {    
+    id: 35,
+    path: "local-seo-master-guide-boost-your-business-s-visibility",
+    fullDate: {
+      date: "11",
+      monthYr: "May 2024",
+    },
+    title:
+      "Local SEO Master Guide: Boost Your Business's Visibility",
+    content:
+      "In today's digital age, local businesses face fierce competition, making it crucial to stand out and be visible to potential customers in their immediate vicinity. Enter local SEO – a powerful strategy.........",
+    img: "../images/blog/blog35.jpg",
+  }, 
+  {
+    
+    id: 34,
+    path: "the-benefits-of-paid-search-marketing-maximize-your-roi-and-grow-your-business",
+    fullDate: {
+      date: "10",
+      monthYr: "May 2024",
+    },
+    title:
+      "The Benefits of Paid Search Marketing: Maximize Your ROI and Grow Your Business",
+    content:
+      "In the fast-paced world of digital marketing, paid search marketing has emerged as a powerful tool for businesses to reach their target audience and drive tangible results. As a leading provider .........",
+    img: "../images/blog/blog34.jpg",
+  }, 
+  {
+    id: 33,
+    path: "content-marketing-the-key-to-online-success",
+    fullDate: {
+      date: "9",
+      monthYr: "May 2024",
+    },
+    title:
+      "Content Marketing: The Key to Online Success",
+    content:
+      "In the dynamic world of digital marketing, where attention spans are fleeting and competition is fierce, content marketing has emerged as a powerful strategy for businesses   .........",
+    img: "../images/blog/blog33.jpg",
+  },
   {
     id: 32,
     path: "step-by-step-guide-to-competitive-analysis",

@@ -59,6 +59,13 @@ import Blog29 from "./pages/Blogs/Blog29";
 import Blog30 from "./pages/Blogs/Blog30";
 import Blog31 from "./pages/Blogs/Blog31";
 import Blog32 from "./pages/Blogs/Blog32";
+import Blog33 from "./pages/Blogs/Blog33";
+import Blog34 from "./pages/Blogs/Blog34";
+import Blog35 from "./pages/Blogs/Blog35";
+import Blog36 from "./pages/Blogs/Blog36";
+import Blog37 from "./pages/Blogs/Blog37";
+
+
 const App = () => {
   return (
     <>
@@ -215,9 +222,30 @@ const App = () => {
           path="/blogs/local-seo-tips-for-ranking-higher-on-google"
           element={<Blog31 />}
         />
-         <Route
+        
+        <Route
           path="/blogs/step-by-step-guide-to-competitive-analysis"
           element={<Blog32 />}
+        />
+        <Route
+          path="/blogs/content-marketing-the-key-to-online-success"
+          element={<Blog33 />}
+        />
+        <Route
+          path="/blogs/the-benefits-of-paid-search-marketing-maximize-your-roi-and-grow-your-business"
+          element={<Blog34 />}
+        />
+        <Route
+          path="/blogs/local-seo-master-guide-boost-your-business-s-visibility"
+          element={<Blog35 />}
+        />
+        <Route
+          path="/blogs/top-pr-agencies-you-should-absolutely-check-out-in-2024"
+          element={<Blog36 />}
+        />
+        <Route
+          path="/blogs/5-best-mailchimp-alternatives-to-try-in-2024"
+          element={<Blog37 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
