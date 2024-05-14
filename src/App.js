@@ -65,7 +65,6 @@ import Blog35 from "./pages/Blogs/Blog35";
 import Blog36 from "./pages/Blogs/Blog36";
 import Blog37 from "./pages/Blogs/Blog37";
 
-
 const App = () => {
   return (
     <>
@@ -206,8 +205,8 @@ const App = () => {
           path="/blogs/personalization-in-email-marketing-crafting-tailored-campaigns-for-success"
           element={<Blog27 />}
         />
-         <Route
-          path="/blogs/the-8-benefits-of-digital-pr-for your-business-building-trust-engaging-audiences-and-driving-sales"
+        <Route
+          path="/blogs/the-8-benefits-of-digital-pr-for-your-business-building-trust-engaging-audiences-and-driving-sales"
           element={<Blog28 />}
         />
         <Route
@@ -222,7 +221,7 @@ const App = () => {
           path="/blogs/local-seo-tips-for-ranking-higher-on-google"
           element={<Blog31 />}
         />
-        
+
         <Route
           path="/blogs/step-by-step-guide-to-competitive-analysis"
           element={<Blog32 />}

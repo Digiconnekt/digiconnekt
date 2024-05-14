@@ -1,45 +1,41 @@
 export const blogsData = [
-  {    
+  {
     id: 37,
     path: "5-best-mailchimp-alternatives-to-try-in-2024",
     fullDate: {
       date: "13",
       monthYr: "May 2024",
     },
-    title:
-      "5 Best Mailchimp Alternatives to Try in 2024",
+    title: "5 Best Mailchimp Alternatives to Try in 2024",
     content:
       "Email marketing continues to be one of the most effective channels for businesses to connect with audiences, nurture leads, and drive conversions. While Mailchimp is a popular email marketing platform........",
     img: "../images/blog/blog37.jpg",
-  }, 
-  {    
+  },
+  {
     id: 36,
     path: "top-pr-agencies-you-should-absolutely-check-out-in-2024",
     fullDate: {
       date: "12",
       monthYr: "May 2024",
     },
-    title:
-      "Top PR Agencies You Should Absolutely Check Out in 2024",
+    title: "Top PR Agencies You Should Absolutely Check Out in 2024",
     content:
       "In today's fast-paced, highly competitive business landscape, effective public relations (PR) has become a critical component of any successful marketing strategy. A well-executed PR campaign can elevate brand awareness, establish industry authority, and.........",
     img: "../images/blog/blog36.jpg",
-  }, 
-  {    
+  },
+  {
     id: 35,
     path: "local-seo-master-guide-boost-your-business-s-visibility",
     fullDate: {
       date: "11",
       monthYr: "May 2024",
     },
-    title:
-      "Local SEO Master Guide: Boost Your Business's Visibility",
+    title: "Local SEO Master Guide: Boost Your Business's Visibility",
     content:
       "In today's digital age, local businesses face fierce competition, making it crucial to stand out and be visible to potential customers in their immediate vicinity. Enter local SEO – a powerful strategy.........",
     img: "../images/blog/blog35.jpg",
-  }, 
+  },
   {
-    
     id: 34,
     path: "the-benefits-of-paid-search-marketing-maximize-your-roi-and-grow-your-business",
     fullDate: {
@@ -51,7 +47,7 @@ export const blogsData = [
     content:
       "In the fast-paced world of digital marketing, paid search marketing has emerged as a powerful tool for businesses to reach their target audience and drive tangible results. As a leading provider .........",
     img: "../images/blog/blog34.jpg",
-  }, 
+  },
   {
     id: 33,
     path: "content-marketing-the-key-to-online-success",
@@ -59,8 +55,7 @@ export const blogsData = [
       date: "9",
       monthYr: "May 2024",
     },
-    title:
-      "Content Marketing: The Key to Online Success",
+    title: "Content Marketing: The Key to Online Success",
     content:
       "In the dynamic world of digital marketing, where attention spans are fleeting and competition is fierce, content marketing has emerged as a powerful strategy for businesses   .........",
     img: "../images/blog/blog33.jpg",
@@ -72,8 +67,7 @@ export const blogsData = [
       date: "8",
       monthYr: "May 2024",
     },
-    title:
-      "Step-by-step Guide to Competitive Analysis",
+    title: "Step-by-step Guide to Competitive Analysis",
     content:
       "In today's hyper-competitive digital landscape, businesses must have a comprehensive understanding of their market, competitors, and industry positioning. Conducting a thorough competitive analysis allows   .........",
     img: "../images/blog/blog32.jpg",
@@ -85,8 +79,7 @@ export const blogsData = [
       date: "7",
       monthYr: "May 2024",
     },
-    title:
-      "Local SEO Tips for Ranking Higher on Google",
+    title: "Local SEO Tips for Ranking Higher on Google",
     content:
       "In today's digital age, having a strong online presence is crucial for businesses looking to attract local customers and drive foot traffic. With more  .........",
     img: "../images/blog/blog31.jpg",
@@ -98,8 +91,7 @@ export const blogsData = [
       date: "6",
       monthYr: "May 2024",
     },
-    title:
-      "Drive Traffic to Your Website with Social Media Optimization",
+    title: "Drive Traffic to Your Website with Social Media Optimization",
     content:
       "In today's digital landscape, social media has become an indispensable channel for businesses looking to increase their online visibility, engage with audiences, and ultimately drive more traffic  .........",
     img: "../images/blog/blog30.jpg",
@@ -119,7 +111,7 @@ export const blogsData = [
   },
   {
     id: 28,
-    path: "the-8-benefits-of-digital-pr-for your-business-building-trust-engaging-audiences-and-driving-sales",
+    path: "the-8-benefits-of-digital-pr-for-your-business-building-trust-engaging-audiences-and-driving-sales",
     fullDate: {
       date: "4",
       monthYr: "May 2024",
@@ -150,8 +142,7 @@ export const blogsData = [
       date: "8",
       monthYr: "Apr 2024",
     },
-    title:
-      "Video Marketing Domination: Engaging Audiences with Visual Content",
+    title: "Video Marketing Domination: Engaging Audiences with Visual Content",
     content:
       "In the present dynamic era of digital technology, retaining someone's attention is becoming more difficult. We receive content from everywhere - social media, emails, websites, ads and so on. .........",
     img: "../images/blog/blog26.jpg",
@@ -163,8 +154,7 @@ export const blogsData = [
       date: "4",
       monthYr: "Apr 2024",
     },
-    title:
-      "Link Building Strategies for 2024: A Step-by-Step Guide",
+    title: "Link Building Strategies for 2024: A Step-by-Step Guide",
     content:
       "You've come to the correct spot if you want to raise your website's search engine position and strengthen its Search Engine Optimization Service and strategy. It can be intimidating .........",
     img: "../images/blog/blog25.jpg",
@@ -176,8 +166,7 @@ export const blogsData = [
       date: "3",
       monthYr: "Apr 2024",
     },
-    title:
-      "The Impact of SEO Slugs on Website Ranking: A Deep Dive",
+    title: "The Impact of SEO Slugs on Website Ranking: A Deep Dive",
     content:
       "Businesses are continuously seeking to enhance their online presence and visibility as the digital landscape changes. Search engine optimization is an important.........",
     img: "../images/blog/blog24.jpg",
@@ -189,8 +178,7 @@ export const blogsData = [
       date: "2",
       monthYr: "Apr 2024",
     },
-    title:
-      "Bounce Rate Mastery: Expert Tips for Website Retention",
+    title: "Bounce Rate Mastery: Expert Tips for Website Retention",
     content:
       "Website owners and marketers constantly struggle to draw in visitors and keep them on their platforms in the ever-changing digital landscape. The bounce rate is a crucial metric that.........",
     img: "../images/blog/blog23.jpg",
@@ -202,8 +190,7 @@ export const blogsData = [
       date: "1",
       monthYr: "Apr 2024",
     },
-    title:
-      "Keyword Optimization Strategies: Mastering Google Keyword Planner",
+    title: "Keyword Optimization Strategies: Mastering Google Keyword Planner",
     content:
       "Keyword research is the cornerstone of any successful search engine optimization (SEO) campaign in the changing world ..........",
     img: "../images/blog/blog22.jpg",
@@ -215,8 +202,7 @@ export const blogsData = [
       date: "26",
       monthYr: "Mar 2024",
     },
-    title:
-      "10 tips to boost your local SEO ranking",
+    title: "10 tips to boost your local SEO ranking",
     content:
       "Local businesses have a tremendous chance to attract nearby prospects through search. How? By employing tactics that prioritize enhancing visibility at a local level .........",
     img: "../images/blog/blog21.jpg",
@@ -228,13 +214,12 @@ export const blogsData = [
       date: "15",
       monthYr: "Mar 2024",
     },
-    title:
-      "Elevate Your Brand Identity with Digiconnekt Branding Solutions",
+    title: "Elevate Your Brand Identity with Digiconnekt Branding Solutions",
     content:
       "Building a solid brand identity is essential for success in the cutthroat corporate world of today. A strong brand identity not only helps you stand out from the competition but also connects with your target market, building loyalty and trust. .........",
     img: "../images/blog/blog20.jpg",
   },
-  
+
   {
     id: 19,
     path: "expert-email-marketing-solutions-in-the-usa-drive-results-for-your-business",
@@ -255,8 +240,7 @@ export const blogsData = [
       date: "08",
       monthYr: "Mar 2024",
     },
-    title:
-      "The Ultimate Guide to Social Media Marketing in 2024",
+    title: "The Ultimate Guide to Social Media Marketing in 2024",
     content:
       "A crucial component of digital marketing for companies of all sizes, across all markets, is social networking. To make the most of their social media channels, organisations must be abreast of the most recent advancements .........",
     img: "../images/blog/blog18.jpg",
@@ -268,8 +252,7 @@ export const blogsData = [
       date: "07",
       monthYr: "Mar 2024",
     },
-    title:
-      "Maximizing ROI with Paid Digital Media Optimization",
+    title: "Maximizing ROI with Paid Digital Media Optimization",
     content:
       "To connect with their target market and increase sales in the modern digital era, businesses must have a strong online presence. Businesses now have more options than ever to contact potential clients online because of the growth of digital paid media.........",
     img: "../images/blog/blog17.jpg",
