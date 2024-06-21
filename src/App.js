@@ -64,6 +64,11 @@ import Blog34 from "./pages/Blogs/Blog34";
 import Blog35 from "./pages/Blogs/Blog35";
 import Blog36 from "./pages/Blogs/Blog36";
 import Blog37 from "./pages/Blogs/Blog37";
+import Blog38 from "./pages/Blogs/Blog38";
+import Blog39 from "./pages/Blogs/Blog39";
+import Blog40 from "./pages/Blogs/Blog40";
+import Blog41 from "./pages/Blogs/Blog41";
+import Blog42 from "./pages/Blogs/Blog42";
 
 const App = () => {
   return (
@@ -245,6 +250,26 @@ const App = () => {
         <Route
           path="/blogs/5-best-mailchimp-alternatives-to-try-in-2024"
           element={<Blog37 />}
+        />
+        <Route
+          path="/blogs/ai-fued-musk-vs-apple-who-will-win-the-privacy-battle"
+          element={<Blog38 />}
+        />
+        <Route
+          path="/blogs/decoding-technical-seo-insider-tips-from-the-best-agency-in-the-uk"
+          element={<Blog39 />}
+        />
+        <Route
+          path="/blogs/do-you-know-your-websites-weak-points-find-out-with-an-seo-audit-service"
+          element={<Blog40 />}
+        />
+        <Route
+          path="/blogs/5-proven-strategies-a-usa-performance-marketing-agency-uses-for-effective-lead-generation"
+          element={<Blog41 />}
+        />
+        <Route
+          path="/blogs/are-you-missing-out-on-leads-learn-how-smo-can-drive-targeted-traffic"
+          element={<Blog42 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

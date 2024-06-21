@@ -1,5 +1,69 @@
 export const blogsData = [
   {
+    id: 42,
+    path: "are-you-missing-out-on-leads-learn-how-smo-can-drive-targeted-traffic",
+    fullDate: {
+      date: "20",
+      monthYr: "June 2024",
+    },
+    title:
+      "Are You Missing Out on Leads? Learn How SMO Can Drive Targeted Traffic!",
+    content:
+      "As a business owner or marketer, you're always on the lookout for new sources of leads and targeted website traffic. You've likely tried various tactics like search engine optimization (SEO), pay-per-click advertising (PCP)..",
+    img: "../images/blog/blog42.png",
+  },
+  {
+    id: 41,
+    path: "5-proven-strategies-a-usa-performance-marketing-agency-uses-for-effective-lead-generation",
+    fullDate: {
+      date: "15",
+      monthYr: "June 2024",
+    },
+    title:
+      "5 Proven Strategies a USA Performance Marketing Agency Uses for Effective Lead Generation",
+    content:
+      "In the cutthroat business world, the quest for quality leads is a relentless pursuit, a high-stakes game where only the savviest players emerge victorious...",
+    img: "../images/blog/blog41.png",
+  },
+  {
+    id: 40,
+    path: "do-you-know-your-websites-weak-points-find-out-with-an-seo-audit-service",
+    fullDate: {
+      date: "01",
+      monthYr: "June 2024",
+    },
+    title:
+      "Do You Know Your Website's Weak Points? Find Out with an SEO Audit Service",
+    content:
+      "Do you ever feel like your website is underperforming, failing to attract the online traffic and leads you expected? It's a frustrating situation that many businesses find themselves in – investing time...",
+    img: "../images/blog/blog40.png",
+  },
+  {
+    id: 39,
+    path: "decoding-technical-seo-insider-tips-from-the-best-agency-in-the-uk",
+    fullDate: {
+      date: "25",
+      monthYr: "May 2024",
+    },
+    title:
+      "Decoding Technical SEO: Insider Tips from the Best Agency in the UK",
+    content:
+      "Greetings, SEO enthusiasts and digital marketing aficionados! This is Digiconnekt, the best SEO Agency in the UK, coming at you with an insider's guide to the mystical realm of technical SEO...",
+    img: "../images/blog/blog39.png",
+  },
+  {
+    id: 38,
+    path: "ai-fued-musk-vs-apple-who-will-win-the-privacy-battle",
+    fullDate: {
+      date: "18",
+      monthYr: "May 2024",
+    },
+    title: "AI Fued: Musk vs. Apple - Who Will Win the Privacy Battle?",
+    content:
+      "It's a clash of the tech titans! In one corner, we have Elon Musk, the billionaire known for his bold moves in electric cars, space exploration, and social media...",
+    img: "../images/blog/blog38.png",
+  },
+  {
     id: 37,
     path: "5-best-mailchimp-alternatives-to-try-in-2024",
     fullDate: {
