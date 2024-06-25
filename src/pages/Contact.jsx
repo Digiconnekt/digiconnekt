@@ -210,6 +210,19 @@ const Contact = () => {
                       <br />
                       <a href="tel:+447470379052">+44 7470 379052</a>
                     </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Canada
+                      </span>
+                      <br />
+                      <a href="tel:+16478198634">+1(647) 819 8634</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -274,6 +287,25 @@ const Contact = () => {
                       </p>
                       <p className="lead">
                         409 Pinner Road, Harrow England HA1 4HN
+                      </p>
+                    </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Canada
+                      </span>
+                      <br />
+                      <p className="lead mb-0" style={{ color: "#ff7810" }}>
+                        Zreti Solutions Inc
+                      </p>
+                      <p className="lead">
+                        441 Centre street East, Richmond Hill, L4C1B8, Ontario,
+                        Canada
                       </p>
                     </li>
                   </ul>
