@@ -248,8 +248,7 @@ const Contact = () => {
                         Macaire Solutions Pte Ltd
                       </p>
                       <p className="lead">
-                        1 Marine Parade Central, #04-06, Parkway Centre,
-                        Singapore 449408
+                        5-03 Plus, 20 Cecil Street Singapore 049705
                       </p>
                     </li>
                     <li className="mb-3 text-center ps-0">
