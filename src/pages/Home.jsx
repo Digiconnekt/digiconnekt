@@ -1,32 +1,9 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/HeroSection";
-import PopUpHome from "../components/PopUpHome";
 import { blogsData } from "./BlogsData";
 
 const Home = () => {
-  const [modal, setModal] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setModal(false);
-    }, 10000);
-  }, []);
-
-  useEffect(() => {
-    // Dynamically add script when component mounts
-    const script = document.createElement("script");
-    script.src = "https://static-bundles.visme.co/forms/vismeforms-embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Clean up function to remove the script when component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
       <Helmet>
@@ -50,8 +27,6 @@ const Home = () => {
         {/* Author */}
         {/* <meta name="author" content="www.themeht.com" /> */}
       </Helmet>
-
-      {modal ? <PopUpHome /> : ""}
 
       {/* hero section start */}
       <HeroSection />

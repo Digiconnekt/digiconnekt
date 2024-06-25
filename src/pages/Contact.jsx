@@ -162,6 +162,134 @@ const Contact = () => {
           data-bg-img="images/pattern/02.png"
           style={{ backgroundImage: "url(images/pattern/02.png)" }}
         >
+          <div className="container mx-auto">
+            <div className="row justify-content-center">
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="p-5 h-100" style={{ ...style, ...bgStyle }}>
+                  <div className="section-title text-center mb-2">
+                    <h2 className="title">Call Us</h2>
+                  </div>
+
+                  <ul className="list-unstyled list-icon">
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Singapore
+                      </span>
+                      <br />
+                      <a href="tel:+6587993124">+65 879 93124</a>
+                    </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        India
+                      </span>
+                      <br />
+                      <a href="tel:+917032258068">+91 70322 58068</a>
+                    </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        UK
+                      </span>
+                      <br />
+                      <a href="tel:+447470379052">+44 7470 379052</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                <div className="p-5 h-100" style={{ ...style, ...bgStyle }}>
+                  <div className="section-title text-center mb-2">
+                    <h2 className="title">Our Offices</h2>
+                  </div>
+
+                  <ul className="list-unstyled list-icon">
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        Singapore
+                      </span>
+                      <br />
+                      <p className="lead mb-0" style={{ color: "#ff7810" }}>
+                        Macaire Solutions Pte Ltd
+                      </p>
+                      <p className="lead">
+                        1 Marine Parade Central, #04-06, Parkway Centre,
+                        Singapore 449408
+                      </p>
+                    </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        India
+                      </span>
+                      <br />
+                      <p className="lead mb-0" style={{ color: "#ff7810" }}>
+                        Arunarcis Solutions Pvt Ltd
+                      </p>
+                      <p className="lead">
+                        927, JMD Megapolis, Sohna Road, Sector 48 Gurgaon,
+                        Haryana 122018, India
+                      </p>
+                    </li>
+                    <li className="mb-3 text-center ps-0">
+                      <span
+                        style={{
+                          color: "#1c2045",
+                          fontWeight: "bold",
+                          fontSize: "20px",
+                        }}
+                      >
+                        UK
+                      </span>
+                      <br />
+                      <p className="lead mb-0" style={{ color: "#ff7810" }}>
+                        Macaire Solutions Ltd
+                      </p>
+                      <p className="lead">
+                        409 Pinner Road, Harrow England HA1 4HN
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="page-content">
+        <section
+          className="contact-1"
+          data-bg-img="images/pattern/02.png"
+          style={{ backgroundImage: "url(images/pattern/02.png)" }}
+        >
           <div className="container">
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-8 col-md-7">
