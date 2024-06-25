@@ -207,8 +207,7 @@ const Footer = () => {
                     <ul className="media-icon list-unstyled">
                       <li>
                         <p className="mb-0">
-                          1 Marine Parade Central, #04-06, Parkway Centre,
-                          Singapore 449408
+                          5-03 Plus, 20 Cecil Street Singapore 049705
                         </p>
                       </li>
                       <li>
