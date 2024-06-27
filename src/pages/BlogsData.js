@@ -1,9 +1,83 @@
 export const blogsData = [
   {
+    id: 48,
+    path: "video-seo-marketing-tips-how-to-optimize-for-youtube-in-2024",
+    fullDate: {
+      date: "27",
+      monthYr: "June 2024",
+    },
+    title: "Video SEO Marketing Tips: How To Optimize for YouTube in 2024",
+    content:
+      "As we step into 2024, video content continues to dominate the digital landscape, with YouTube remaining at the forefront of this trend. For businesses and content creators alike, mastering YouTube SEO Services has become more crucial than ever...",
+    img: "../images/blog/blog48.png",
+  },
+  {
+    id: 47,
+    path: "11-proven-ideas-to-improve-roi-in-your-online-marketing-campaigns",
+    fullDate: {
+      date: "25",
+      monthYr: "June 2024",
+    },
+    title: "11 Proven Ideas to Improve ROI in Your Online Marketing Campaigns",
+    content:
+      "In the fast-paced digital world, businesses are constantly seeking ways to maximize their return on investment (ROI) from digital marketing campaigns. With limited resources and fierce competition, it's crucial to optimize every...",
+    img: "../images/blog/blog47.png",
+  },
+  {
+    id: 46,
+    path: "paid-digital-media-optimization-are-you-ready-to-take-your-smm-service-to-the-next-level",
+    fullDate: {
+      date: "24",
+      monthYr: "June 2024",
+    },
+    title:
+      "Paid Digital Media Optimization: Are You Ready to Take Your SMM Service to the Next Level?",
+    content:
+      "In the ever-evolving digital landscape, businesses are constantly seeking innovative ways to connect with their target audiences and stay ahead of the competition. Social media marketing (SMM) has emerged as a game-changer, enabling companies to engage...",
+    img: "../images/blog/blog46.png",
+  },
+  {
+    id: 45,
+    path: "google-ppc-agency-in-singapore-stop-wasting-budget-start-generating-leads",
+    fullDate: {
+      date: "20",
+      monthYr: "June 2024",
+    },
+    title:
+      "Google PPC Agency in Singapore: Stop Wasting Budget, Start Generating Leads",
+    content:
+      "In the cutthroat digital landscape, businesses are constantly vying for the attention of their target audience. One of the most effective ways to cut through the noise and reach potential customers is through pay-per-click (PPC) advertising...",
+    img: "../images/blog/blog45.png",
+  },
+  {
+    id: 44,
+    path: "4-kpis-you-should-care-about-to-ace-your-business-marketing",
+    fullDate: {
+      date: "17",
+      monthYr: "June 2024",
+    },
+    title: "4 KPIs You Should Care About to Ace Your Business Marketing!",
+    content:
+      "In the fast-paced world of digital marketing, success isn't just about creating catchy ads or having a sleek website. It's about understanding what's working, what's not, and how to optimize your strategies for maximum impact...",
+    img: "../images/blog/blog44.png",
+  },
+  {
+    id: 43,
+    path: "content-marketing-magic-turning-readers-into-customers",
+    fullDate: {
+      date: "13",
+      monthYr: "June 2024",
+    },
+    title: "Content Marketing Magic: Turning Readers into Customers",
+    content:
+      "You're a master illusionist, standing on a grand stage. Your audience? A sea of curious faces, each one a potential customer. Your wand? The power of words. Your trick? Transforming their curiosity into unwavering loyalty...",
+    img: "../images/blog/blog43.png",
+  },
+  {
     id: 42,
     path: "are-you-missing-out-on-leads-learn-how-smo-can-drive-targeted-traffic",
     fullDate: {
-      date: "20",
+      date: "10",
       monthYr: "June 2024",
     },
     title:
@@ -16,7 +90,7 @@ export const blogsData = [
     id: 41,
     path: "5-proven-strategies-a-usa-performance-marketing-agency-uses-for-effective-lead-generation",
     fullDate: {
-      date: "15",
+      date: "06",
       monthYr: "June 2024",
     },
     title:
@@ -29,7 +103,7 @@ export const blogsData = [
     id: 40,
     path: "do-you-know-your-websites-weak-points-find-out-with-an-seo-audit-service",
     fullDate: {
-      date: "01",
+      date: "03",
       monthYr: "June 2024",
     },
     title:

@@ -69,6 +69,12 @@ import Blog39 from "./pages/Blogs/Blog39";
 import Blog40 from "./pages/Blogs/Blog40";
 import Blog41 from "./pages/Blogs/Blog41";
 import Blog42 from "./pages/Blogs/Blog42";
+import Blog43 from "./pages/Blogs/Blog43";
+import Blog44 from "./pages/Blogs/Blog44";
+import Blog45 from "./pages/Blogs/Blog45";
+import Blog46 from "./pages/Blogs/Blog46";
+import Blog47 from "./pages/Blogs/Blog47";
+import Blog48 from "./pages/Blogs/Blog48";
 
 const App = () => {
   return (
@@ -270,6 +276,30 @@ const App = () => {
         <Route
           path="/blogs/are-you-missing-out-on-leads-learn-how-smo-can-drive-targeted-traffic"
           element={<Blog42 />}
+        />
+        <Route
+          path="/blogs/content-marketing-magic-turning-readers-into-customers"
+          element={<Blog43 />}
+        />
+        <Route
+          path="/blogs/4-kpis-you-should-care-about-to-ace-your-business-marketing"
+          element={<Blog44 />}
+        />
+        <Route
+          path="/blogs/google-ppc-agency-in-singapore-stop-wasting-budget-start-generating-leads"
+          element={<Blog45 />}
+        />
+        <Route
+          path="/blogs/paid-digital-media-optimization-are-you-ready-to-take-your-smm-service-to-the-next-level"
+          element={<Blog46 />}
+        />
+        <Route
+          path="/blogs/11-proven-ideas-to-improve-roi-in-your-online-marketing-campaigns"
+          element={<Blog47 />}
+        />
+        <Route
+          path="/blogs/video-seo-marketing-tips-how-to-optimize-for-youtube-in-2024"
+          element={<Blog48 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

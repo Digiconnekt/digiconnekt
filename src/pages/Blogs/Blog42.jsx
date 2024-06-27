@@ -54,7 +54,7 @@ const Blog42 = () => {
                     </div>
                     <div className="post-desc">
                       <div className="post-date mb-2">
-                        20 <span>June 2024</span>
+                        10 <span>June 2024</span>
                       </div>
                       <div className="post-title">
                         <h2>
