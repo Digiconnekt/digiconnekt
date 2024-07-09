@@ -75,6 +75,10 @@ import Blog45 from "./pages/Blogs/Blog45";
 import Blog46 from "./pages/Blogs/Blog46";
 import Blog47 from "./pages/Blogs/Blog47";
 import Blog48 from "./pages/Blogs/Blog48";
+import Blog49 from "./pages/Blogs/Blog49";
+import Blog50 from "./pages/Blogs/Blog50";
+import Blog51 from "./pages/Blogs/Blog51";
+import Blog52 from "./pages/Blogs/Blog52";
 
 const App = () => {
   return (
@@ -300,6 +304,22 @@ const App = () => {
         <Route
           path="/blogs/video-seo-marketing-tips-how-to-optimize-for-youtube-in-2024"
           element={<Blog48 />}
+        />
+        <Route
+          path="/blogs/enterprise-marketing-definition-and-strategies-a-complete-guide"
+          element={<Blog49 />}
+        />
+        <Route
+          path="/blogs/plagiarism-vs-seo-why-copying-content-is-a-big-crime-for-rankings"
+          element={<Blog50 />}
+        />
+        <Route
+          path="/blogs/how-to-use-social-media-effectively-for-small-businesses-in-2024"
+          element={<Blog51 />}
+        />
+        <Route
+          path="/blogs/mastering-return-on-ad-spend-defining-roas-and-why-it-matters"
+          element={<Blog52 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

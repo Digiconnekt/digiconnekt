@@ -1,5 +1,53 @@
 export const blogsData = [
   {
+    id: 52,
+    path: "mastering-return-on-ad-spend-defining-roas-and-why-it-matters",
+    fullDate: {
+      date: "08",
+      monthYr: "July 2024",
+    },
+    title: "Mastering Return on Ad Spend: Defining ROAS and Why It Matters",
+    content:
+      "In the dynamic world of digital marketing, understanding and optimising Return on Ad Spend (ROAS) is crucial for businesses aiming to maximise their advertising efforts. ROAS is a key performance metric that measures the effectiveness of digital advertising campaigns, providing valuable insights into the revenue generated for every dollar spent on advertising...",
+    img: "../images/blog/blog52.png",
+  },
+  {
+    id: 51,
+    path: "how-to-use-social-media-effectively-for-small-businesses-in-2024",
+    fullDate: {
+      date: "04",
+      monthYr: "July 2024",
+    },
+    title: "How To Use Social Media Effectively for Small Businesses in 2024",
+    content:
+      "As we enter 2024, social media continues to be a powerful tool for small businesses to connect with their audience, build brand awareness, and drive growth. With the digital landscape constantly evolving, small businesses must stay ahead of the curve and leverage social media optimization services effectively...",
+    img: "../images/blog/blog51.png",
+  },
+  {
+    id: 50,
+    path: "plagiarism-vs-seo-why-copying-content-is-a-big-crime-for-rankings",
+    fullDate: {
+      date: "02",
+      monthYr: "July 2024",
+    },
+    title: "Plagiarism Vs SEO: Why Copying Content is a Big Crime for Rankings",
+    content:
+      "In the competitive world of digital marketing, the temptation to cut corners and copy content from other sources can be strong. However, this approach could affect your Search Engine Optimization efforts negatively....",
+    img: "../images/blog/blog50.png",
+  },
+  {
+    id: 49,
+    path: "enterprise-marketing-definition-and-strategies-a-complete-guide",
+    fullDate: {
+      date: "28",
+      monthYr: "June 2024",
+    },
+    title: "Enterprise Marketing: Definition and Strategies - A Complete Guide",
+    content:
+      "Enterprise marketing has become a crucial component for large-scale organizations looking to maintain their market position and drive growth...",
+    img: "../images/blog/blog49.png",
+  },
+  {
     id: 48,
     path: "video-seo-marketing-tips-how-to-optimize-for-youtube-in-2024",
     fullDate: {
