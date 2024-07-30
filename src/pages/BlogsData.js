@@ -1,5 +1,69 @@
 export const blogsData = [
   {
+    id: 57,
+    path: "google-ads-ptimization-checklist-7-insider-tips-to-beat-your-competitors",
+    fullDate: {
+      date: "26",
+      monthYr: "July 2024",
+    },
+    title:
+      "Google Ads Optimization Checklist: 7 Insider Tips to Beat Your Competitors",
+    content:
+      "In the competitive world of digital advertising, staying ahead requires constant refinement of your Google Ads campaigns. Whether managing your ads or working with a Google Ads marketing agency, this optimisation checklist will help you outperform your rivals and maximise your return on investment. Let's dive into seven insider tips that can give your campaigns the needed edge....",
+    img: "../images/blog/blog57.jpg",
+  },
+  {
+    id: 56,
+    path: "generate-leads-like-a-pro-top-10-strategies-for-success-leads-campaign",
+    fullDate: {
+      date: "22",
+      monthYr: "July 2024",
+    },
+    title:
+      "Generate Leads Like a Pro: Top 10 Strategies for Success Leads Campaign",
+    content:
+      "In today's competitive business landscape, effective lead-generation strategies are crucial for sustainable growth. Whether you're a small startup or an established enterprise, mastering the art of lead generation can significantly impact your bottom line. ..",
+    img: "../images/blog/blog56.jpg",
+  },
+  {
+    id: 55,
+    path: "how-content-marketing-agencies-in-the-uk-drive-results-expert-insights",
+    fullDate: {
+      date: "16",
+      monthYr: "July 2024",
+    },
+    title:
+      "How Content Marketing Agencies in the UK Drive Results? Expert Insights",
+    content:
+      "In today's digital landscape, content marketing has become an essential strategy for businesses looking to engage their audience and drive meaningful results. As the demand for high-quality content grows, many companies in the United Kingdom are turning to specialised content marketing agencies for expert guidance and execution. ..",
+    img: "../images/blog/blog55.jpg",
+  },
+  {
+    id: 54,
+    path: "the-way-to-set-up-a-website-for-lead-generation",
+    fullDate: {
+      date: "19",
+      monthYr: "July 2024",
+    },
+    title: "The Way to set up a website for lead generation",
+    content:
+      "In today's digital world, a well-optimized website is crucial for attracting and converting potential customers. As a leading lead generation agency in the UK, we understand the importance of creating a website that not only looks good but also functions as a powerful lead generation tool....",
+    img: "../images/blog/blog54.jpg",
+  },
+  {
+    id: 53,
+    path: "are-you-thinking-why-your-ads-arent-converting-heres-the-solution",
+    fullDate: {
+      date: "12",
+      monthYr: "July 2024",
+    },
+    title:
+      "Are You Thinking Why Your Ads Aren't Converting? Here's the Solution!",
+    content:
+      "In the world of digital marketing, running ads is just the first step. The real challenge lies in making those ads convert. If you're frustrated with low conversion rates despite investing in paid digital media optimization, you're not alone. Many businesses struggle with this issue, but there's hope. Let's dive into why your ads might not be converting and explore solutions that can turn things around....",
+    img: "../images/blog/blog53.jpeg",
+  },
+  {
     id: 52,
     path: "mastering-return-on-ad-spend-defining-roas-and-why-it-matters",
     fullDate: {

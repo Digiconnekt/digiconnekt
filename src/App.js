@@ -79,6 +79,11 @@ import Blog49 from "./pages/Blogs/Blog49";
 import Blog50 from "./pages/Blogs/Blog50";
 import Blog51 from "./pages/Blogs/Blog51";
 import Blog52 from "./pages/Blogs/Blog52";
+import Blog57 from "./pages/Blogs/Blog57";
+import Blog56 from "./pages/Blogs/Blog56";
+import Blog55 from "./pages/Blogs/Blog55";
+import Blog54 from "./pages/Blogs/Blog54";
+import Blog53 from "./pages/Blogs/Blog53";
 
 const App = () => {
   return (
@@ -320,6 +325,26 @@ const App = () => {
         <Route
           path="/blogs/mastering-return-on-ad-spend-defining-roas-and-why-it-matters"
           element={<Blog52 />}
+        />
+        <Route
+          path="/blogs/are-you-thinking-why-your-ads-arent-converting-heres-the-solution"
+          element={<Blog53 />}
+        />
+        <Route
+          path="/blogs/the-way-to-set-up-a-website-for-lead-generation"
+          element={<Blog54 />}
+        />
+        <Route
+          path="/blogs/how-content-marketing-agencies-in-the-uk-drive-results-expert-insights"
+          element={<Blog55 />}
+        />
+        <Route
+          path="/blogs/generate-leads-like-a-pro-top-10-strategies-for-success-leads-campaign"
+          element={<Blog56 />}
+        />
+        <Route
+          path="/blogs/google-ads-ptimization-checklist-7-insider-tips-to-beat-your-competitors"
+          element={<Blog57 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />
