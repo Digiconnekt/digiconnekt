@@ -40,7 +40,7 @@ export const blogsData = [
   },
   {
     id: 54,
-    path: "the-way-to-set-up-a-website-for-lead-generation",
+    path: "lead-generation-agency-in-uk",
     fullDate: {
       date: "19",
       monthYr: "July 2024",
@@ -52,7 +52,7 @@ export const blogsData = [
   },
   {
     id: 53,
-    path: "are-you-thinking-why-your-ads-arent-converting-heres-the-solution",
+    path: "ppc-marketing-agency",
     fullDate: {
       date: "12",
       monthYr: "July 2024",

@@ -326,12 +326,9 @@ const App = () => {
           path="/blogs/mastering-return-on-ad-spend-defining-roas-and-why-it-matters"
           element={<Blog52 />}
         />
+        <Route path="/blogs/ppc-marketing-agency" element={<Blog53 />} />
         <Route
-          path="/blogs/are-you-thinking-why-your-ads-arent-converting-heres-the-solution"
-          element={<Blog53 />}
-        />
-        <Route
-          path="/blogs/the-way-to-set-up-a-website-for-lead-generation"
+          path="/blogs/lead-generation-agency-in-uk"
           element={<Blog54 />}
         />
         <Route
