@@ -1,5 +1,42 @@
 export const blogsData = [
   {
+    id: 60,
+    path: "seo-for-small-business-a-starter-guide",
+    fullDate: {
+      date: "06",
+      monthYr: "Aug 2024",
+    },
+    title: "SEO For Small Business - A Starter Guide",
+    content:
+      "In today's digital landscape, having a strong online presence is crucial for small businesses to thrive. One of the most effective ways to achieve this is through Search Engine Optimization (SEO)......",
+    img: "../images/blog/blog60.jpeg",
+  },
+  {
+    id: 59,
+    path: "how-to-maximize-the-roi-with-a-programmatic-ad-agency-in-the-usa",
+    fullDate: {
+      date: "02",
+      monthYr: "Aug 2024",
+    },
+    title: "How to Maximize the ROI With a Programmatic AD Agency In the USA?",
+    content:
+      "In today's digital landscape, maximizing return on investment (ROI) for advertising campaigns is crucial for businesses of all sizes. One of the most effective ways to achieve this is by partnering with a programmatic ad agency in the USA. These agencies leverage cutting-edge technology and data-driven strategies to optimize ad placements and target the right audience at the right time......",
+    img: "../images/blog/blog59.jpeg",
+  },
+  {
+    id: 58,
+    path: "youtube-marketing-domination-engaging-audiences-with-video-content",
+    fullDate: {
+      date: "29",
+      monthYr: "July 2024",
+    },
+    title:
+      "YouTube Marketing Domination: Engaging Audiences with Video Content",
+    content:
+      "In today's digital landscape, video content reigns supreme, and YouTube stands as the undisputed king of video platforms. For businesses looking to expand their reach and engage audiences effectively, YouTube marketing has become an essential strategy.....",
+    img: "../images/blog/blog58.jpeg",
+  },
+  {
     id: 57,
     path: "google-ads-ptimization-checklist-7-insider-tips-to-beat-your-competitors",
     fullDate: {
