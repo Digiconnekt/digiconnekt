@@ -87,6 +87,10 @@ import Blog53 from "./pages/Blogs/Blog53";
 import Blog58 from "./pages/Blogs/Blog58";
 import Blog59 from "./pages/Blogs/Blog59";
 import Blog60 from "./pages/Blogs/Blog60";
+import Blog61 from "./pages/Blogs/Blog61";
+import Blog62 from "./pages/Blogs/Blog62";
+import Blog63 from "./pages/Blogs/Blog63";
+import Blog64 from "./pages/Blogs/Blog64";
 
 const App = () => {
   return (
@@ -357,6 +361,22 @@ const App = () => {
         <Route
           path="/blogs/seo-for-small-business-a-starter-guide"
           element={<Blog60 />}
+        />
+        <Route
+          path="/blogs/10-powerful-instagram-marketing-strategies-to-follow"
+          element={<Blog61 />}
+        />
+        <Route
+          path="/blogs/best-off-page-seo-techniques-that-boosts-organic-traffic"
+          element={<Blog62 />}
+        />
+        <Route
+          path="/blogs/the-shift-from-search-engines-to-social-media-a-new-paradigm-for-seo"
+          element={<Blog63 />}
+        />
+        <Route
+          path="/blogs/how-combining-seo-and-cro-can-supercharge-your-digital-strategy"
+          element={<Blog64 />}
         />
         <Route path="/proposal" element={<Proposal />} />
         <Route path="/contact" element={<Contact />} />

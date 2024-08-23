@@ -1,5 +1,54 @@
 export const blogsData = [
   {
+    id: 64,
+    path: "how-combining-seo-and-cro-can-supercharge-your-digital-strategy",
+    fullDate: {
+      date: "20",
+      monthYr: "Aug 2024",
+    },
+    title: "How Combining SEO and CRO Can Supercharge Your Digital Strategy?",
+    content:
+      "In the ever-evolving digital landscape, businesses are constantly seeking ways to enhance their online presence and drive conversions. Two powerful strategies that, when combined, can significantly boost your digital marketing efforts are Search Engine Optimization (SEO) and Conversion Rate Optimization (CRO). As a leading provider of Search Engine Optimization Services, DigiConnekt understands the synergy between these two approaches and how they can supercharge your digital strategy......",
+    img: "../images/blog/blog64.jpeg",
+  },
+  {
+    id: 63,
+    path: "the-shift-from-search-engines-to-social-media-a-new-paradigm-for-seo",
+    fullDate: {
+      date: "16",
+      monthYr: "Aug 2024",
+    },
+    title:
+      "The Shift from Search Engines to Social Media: A New Paradigm for SEO",
+    content:
+      "In recent years, the digital landscape has undergone a significant transformation, with social media platforms increasingly becoming the go-to source for information, entertainment, and even product searches. This shift has profound implications for Search Engine Optimization (SEO) strategies, challenging businesses and marketers to adapt their approaches. As the best SEO agency in Singapore, DigiConnekt recognizes the importance of evolving with these changes to provide expert SEO services that deliver results in this new paradigm......",
+    img: "../images/blog/blog63.jpeg",
+  },
+  {
+    id: 62,
+    path: "best-off-page-seo-techniques-that-boosts-organic-traffic",
+    fullDate: {
+      date: "12",
+      monthYr: "Aug 2024",
+    },
+    title: "Best Off-Page SEO Techniques That Boosts Organic Traffic",
+    content:
+      "In the ever-evolving world of digital marketing, off-page SEO remains a crucial factor in improving your website's visibility and organic traffic. As a leading SEO Agency in Canada, we understand the importance of implementing effective Off-Page SEO Service strategies to boost your online presence......",
+    img: "../images/blog/blog62.png",
+  },
+  {
+    id: 61,
+    path: "10-powerful-instagram-marketing-strategies-to-follow",
+    fullDate: {
+      date: "09",
+      monthYr: "Aug 2024",
+    },
+    title: "10 Powerful Instagram Marketing Strategies To Follow",
+    content:
+      "Instagram has become a growing powerhouse for brands looking to connect with their audience and drive engagement. As a leading social media optimization agency in the UK, we've compiled a list of 10 powerful strategies to supercharge your Instagram Marketing Service and achieve remarkable results......",
+    img: "../images/blog/blog61.png",
+  },
+  {
     id: 60,
     path: "seo-for-small-business-a-starter-guide",
     fullDate: {
