@@ -7,7 +7,7 @@ const StickyWhatsapp = () => {
       <div className="whatsapp">
         <a
           className="block"
-          href="https://wa.me/+917032258068"
+          href="https://wa.me/+919953306911"
           target="_blank"
           rel="noreferrer"
         >

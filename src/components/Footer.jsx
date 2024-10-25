@@ -217,11 +217,11 @@ const Footer = () => {
                       </li>
                       <li>
                         <a
-                          href="tel:+917032258068"
+                          href="tel:+919953306911"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          +91 70322 58068
+                          +91 99533 06911
                         </a>
                       </li>
                     </ul>

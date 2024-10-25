@@ -195,7 +195,7 @@ const Contact = () => {
                         India
                       </span>
                       <br />
-                      <a href="tel:+917032258068">+91 70322 58068</a>
+                      <a href="tel:+919953306911">+91 99533 06911</a>
                     </li>
                     <li className="mb-3 text-center ps-0">
                       <span
