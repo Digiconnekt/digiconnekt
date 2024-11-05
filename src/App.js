@@ -383,7 +383,7 @@ const App = () => {
         <Route path="/digital-marketing-proposal" element={<Landing />} />
 
         <Route path="/thank-you" element={<ThankYou />} />
-        <Route path="/seo-packages" element={<Packages />} />
+        {/* <Route path="/seo-packages" element={<Packages />} /> */}
 
         <Route
           path="/student-ambassador-programme"
