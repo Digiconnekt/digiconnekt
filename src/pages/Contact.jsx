@@ -245,7 +245,7 @@ const Contact = () => {
                       </span>
                       <br />
                       <p className="lead mb-0" style={{ color: "#ff7810" }}>
-                        Macaire Solutions Pte Ltd
+                        Digiconnekt Pte Ltd
                       </p>
                       <p className="lead">
                         5-03 Plus, 20 Cecil Street Singapore 049705
